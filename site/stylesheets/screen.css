@@ -514,7 +514,7 @@ nav#main li a:hover, nav#main li a:focus {
   }
   /* line 94, /Users/Detrimental/apps/rubyfuza/src/stylesheets/partials/_queries.sass */
   nav#main li a {
-    padding: 10px 8px;
+    padding: 10px 5px;
   }
   /* line 96, /Users/Detrimental/apps/rubyfuza/src/stylesheets/partials/_queries.sass */
   nav#main .register-now {
