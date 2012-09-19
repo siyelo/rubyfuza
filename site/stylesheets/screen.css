@@ -520,23 +520,24 @@ nav#main li a:hover, nav#main li a:focus {
 
   /* line 99, /Users/Detrimental/apps/rubyfuza/src/stylesheets/partials/_queries.sass */
   header#header .wrapper {
+    padding: 0;
     width: 100%;
   }
-  /* line 101, /Users/Detrimental/apps/rubyfuza/src/stylesheets/partials/_queries.sass */
+  /* line 102, /Users/Detrimental/apps/rubyfuza/src/stylesheets/partials/_queries.sass */
   header#header h1 {
     padding: 30px 0 0;
   }
-  /* line 103, /Users/Detrimental/apps/rubyfuza/src/stylesheets/partials/_queries.sass */
+  /* line 104, /Users/Detrimental/apps/rubyfuza/src/stylesheets/partials/_queries.sass */
   header#header h2 {
     margin-top: 0;
   }
-  /* line 105, /Users/Detrimental/apps/rubyfuza/src/stylesheets/partials/_queries.sass */
+  /* line 106, /Users/Detrimental/apps/rubyfuza/src/stylesheets/partials/_queries.sass */
   header#header h3 {
     font-size: 1.5em;
     padding-top: 30px;
   }
 
-  /* line 109, /Users/Detrimental/apps/rubyfuza/src/stylesheets/partials/_queries.sass */
+  /* line 110, /Users/Detrimental/apps/rubyfuza/src/stylesheets/partials/_queries.sass */
   #speakers li {
     margin: 0 5% 2em;
     width: 40%;
