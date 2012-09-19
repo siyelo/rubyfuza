@@ -213,8 +213,18 @@ section .wrapper {
 header#header h1 {
   float: left;
   padding: 60px 0 42px;
+  width: 35%;
 }
-/* line 6, /Users/Detrimental/apps/rubyfuza/src/stylesheets/partials/_header.sass */
+/* line 7, /Users/Detrimental/apps/rubyfuza/src/stylesheets/partials/_header.sass */
+header#header h1 a {
+  display: block;
+}
+/* line 9, /Users/Detrimental/apps/rubyfuza/src/stylesheets/partials/_header.sass */
+header#header h1 img {
+  max-width: 330px;
+  width: 100%;
+}
+/* line 12, /Users/Detrimental/apps/rubyfuza/src/stylesheets/partials/_header.sass */
 header#header h2 {
   background: url("../images/tablemountain.png") no-repeat center top;
   float: right;
@@ -224,28 +234,28 @@ header#header h2 {
   text-align: center;
   width: 329px;
 }
-/* line 14, /Users/Detrimental/apps/rubyfuza/src/stylesheets/partials/_header.sass */
+/* line 20, /Users/Detrimental/apps/rubyfuza/src/stylesheets/partials/_header.sass */
 header#header h2 span {
   display: block;
   font-size: 0.75em;
 }
-/* line 17, /Users/Detrimental/apps/rubyfuza/src/stylesheets/partials/_header.sass */
+/* line 23, /Users/Detrimental/apps/rubyfuza/src/stylesheets/partials/_header.sass */
 header#header h3 {
   clear: both;
   font: 1.9em "Patua One", sans-serif;
   margin-bottom: 12px;
   text-transform: uppercase;
 }
-/* line 24, /Users/Detrimental/apps/rubyfuza/src/stylesheets/partials/_header.sass */
+/* line 30, /Users/Detrimental/apps/rubyfuza/src/stylesheets/partials/_header.sass */
 header#header h2, header#header h3 {
   text-align: center;
 }
-/* line 26, /Users/Detrimental/apps/rubyfuza/src/stylesheets/partials/_header.sass */
+/* line 32, /Users/Detrimental/apps/rubyfuza/src/stylesheets/partials/_header.sass */
 header#header h2 span, header#header h3 span {
   color: #98c9ee;
 }
 
-/* line 29, /Users/Detrimental/apps/rubyfuza/src/stylesheets/partials/_header.sass */
+/* line 35, /Users/Detrimental/apps/rubyfuza/src/stylesheets/partials/_header.sass */
 nav#main {
   background: rgba(0, 0, 0, 0.2);
   *zoom: 1;
@@ -256,7 +266,7 @@ nav#main:after {
   display: table;
   clear: both;
 }
-/* line 32, /Users/Detrimental/apps/rubyfuza/src/stylesheets/partials/_header.sass */
+/* line 38, /Users/Detrimental/apps/rubyfuza/src/stylesheets/partials/_header.sass */
 nav#main ul {
   float: left;
   *zoom: 1;
@@ -267,11 +277,11 @@ nav#main ul:after {
   display: table;
   clear: both;
 }
-/* line 35, /Users/Detrimental/apps/rubyfuza/src/stylesheets/partials/_header.sass */
+/* line 41, /Users/Detrimental/apps/rubyfuza/src/stylesheets/partials/_header.sass */
 nav#main li {
   display: inline;
 }
-/* line 37, /Users/Detrimental/apps/rubyfuza/src/stylesheets/partials/_header.sass */
+/* line 43, /Users/Detrimental/apps/rubyfuza/src/stylesheets/partials/_header.sass */
 nav#main li a {
   display: inline-block;
   font-size: 1.2em;
@@ -279,30 +289,30 @@ nav#main li a {
   text-decoration: none;
   text-transform: uppercase;
 }
-/* line 43, /Users/Detrimental/apps/rubyfuza/src/stylesheets/partials/_header.sass */
+/* line 49, /Users/Detrimental/apps/rubyfuza/src/stylesheets/partials/_header.sass */
 nav#main li a:hover, nav#main li a:focus {
   background: rgba(0, 0, 0, 0.2);
 }
 
-/* line 46, /Users/Detrimental/apps/rubyfuza/src/stylesheets/partials/_header.sass */
+/* line 52, /Users/Detrimental/apps/rubyfuza/src/stylesheets/partials/_header.sass */
 .register-now {
   float: right;
   padding: 20px 0;
   text-decoration: none;
 }
-/* line 50, /Users/Detrimental/apps/rubyfuza/src/stylesheets/partials/_header.sass */
+/* line 56, /Users/Detrimental/apps/rubyfuza/src/stylesheets/partials/_header.sass */
 .register-now span {
   color: #c93131;
   font-weight: bold;
   text-decoration: underline;
   text-transform: uppercase;
 }
-/* line 56, /Users/Detrimental/apps/rubyfuza/src/stylesheets/partials/_header.sass */
+/* line 62, /Users/Detrimental/apps/rubyfuza/src/stylesheets/partials/_header.sass */
 .register-now:hover span, .register-now:focus span {
   color: #eb5353;
 }
 
-/* line 59, /Users/Detrimental/apps/rubyfuza/src/stylesheets/partials/_header.sass */
+/* line 65, /Users/Detrimental/apps/rubyfuza/src/stylesheets/partials/_header.sass */
 .conf img {
   border: 5px solid rgba(0, 0, 0, 0.1);
   margin-bottom: 40px;
