@@ -1,0 +1,63 @@
+
+header#header
+	h1
+		float: left
+		padding: 60px 0 42px
+	h2
+		background: url("../images/tablemountain.png") no-repeat center top
+		float: right
+		font: 20px Skranji, sans-serif
+		margin-top: 40px
+		padding: 40px 0 0
+		text-align: center
+		width: 329px
+		span
+			display: block
+			font-size: 15px
+	h3
+		//background: url("../images/tm-big.png") no-repeat center top
+		clear: both
+		font: 22px "Patua One", sans-serif
+		margin-bottom: 12px
+		text-transform: uppercase
+		//padding-top: 100px
+	h2, h3
+		text-align: center
+		span
+			color: $one
+	
+nav#main
+	background: rgba(0, 0, 0, 0.2)
+	+pie-clearfix
+	ul
+		float: left
+		+pie-clearfix
+	li
+		display: inline
+		a
+			display: inline-block
+			font-size: 14px
+			padding: 20px
+			text-decoration: none
+			text-transform: uppercase
+			&:hover, &:focus
+				background: rgba(0, 0, 0, 0.2)
+
+.register-now
+	float: right
+	padding: 20px 0
+	text-decoration: none
+	span
+		color: $two
+		font-weight: bold
+		text-decoration: underline
+		text-transform: uppercase
+	&:hover, &:focus
+		span
+			color: $two + #222
+	
+.conf img
+	border: 5px solid rgba(0, 0, 0, 0.1)
+	margin-bottom: 40px
+	max-width: 950px
+	width: 100%

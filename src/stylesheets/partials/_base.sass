@@ -1,10 +1,10 @@
 
 //
 // Custom colors
-$one			: #06121d
-$two			: #ed9322
-$three    : #c20000
-$black    : #444
+$one			: #98c9ee
+$two			: #c93131
+$three		: #c20000
+$black		: #444
 $light		: #eee
 $lighter	: #f9f9f9
 
@@ -12,8 +12,9 @@ $lighter	: #f9f9f9
 //
 // Basic styles
 body
-	font: normal 16px/1.6 'Open Sans', Arial, sans-serif
-	text-align: center
+	background: url("../images/bg.png")
+	color: #fff
+	font: normal 12px/1.6 'Open Sans', Arial, sans-serif
 
 .horizontal
 	+pie-clearfix
@@ -23,6 +24,14 @@ body
 		float: left
 
 h1, h2, h3, h4, h5, h6
-	font-family: Arial, sans-serif
+	font-family: "Patua One", Arial, sans-serif
 	line-height: 1.6
+	+text-shadow(rgba(0, 0, 0, 0.2) 0 -2px 0)
 	
+h2
+	font-size: 20px
+	
+a
+	color: $one
+	&:hover, &:focus
+		color: #fff
