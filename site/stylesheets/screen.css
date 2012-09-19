@@ -503,26 +503,26 @@ nav#main li a:hover, nav#main li a:focus {
     text-align: center;
   }
   /* line 88, /Users/Detrimental/apps/rubyfuza/src/stylesheets/partials/_queries.sass */
+  nav#main .wrapper {
+    padding: 0;
+    width: 100%;
+  }
+  /* line 91, /Users/Detrimental/apps/rubyfuza/src/stylesheets/partials/_queries.sass */
   nav#main ul {
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
     float: none;
   }
-  /* line 91, /Users/Detrimental/apps/rubyfuza/src/stylesheets/partials/_queries.sass */
+  /* line 94, /Users/Detrimental/apps/rubyfuza/src/stylesheets/partials/_queries.sass */
   nav#main li a {
     padding: 10px 8px;
   }
-  /* line 93, /Users/Detrimental/apps/rubyfuza/src/stylesheets/partials/_queries.sass */
+  /* line 96, /Users/Detrimental/apps/rubyfuza/src/stylesheets/partials/_queries.sass */
   nav#main .register-now {
     display: inline-block;
     float: none;
     padding: 9px 0 12px;
   }
 
-  /* line 99, /Users/Detrimental/apps/rubyfuza/src/stylesheets/partials/_queries.sass */
-  header#header .wrapper {
-    padding: 0;
-    width: 100%;
-  }
   /* line 102, /Users/Detrimental/apps/rubyfuza/src/stylesheets/partials/_queries.sass */
   header#header h1 {
     padding: 30px 0 0;
