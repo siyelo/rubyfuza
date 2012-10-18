@@ -1,14 +1,23 @@
 .heading
 	//background: rgba(0, 0, 0, 0.1)
-	border-bottom: 2px solid rgba(0, 0, 0, 0.07)
+	//border-bottom: 2px solid rgba(0, 0, 0, 0.07)
+	background: url("../images/border.png") repeat-x center
 	color: $one
-	font-size: 1.2em
-	margin-bottom: 20px
-	padding: 40px 0 7px
+	font-size: 4em
+	letter-spacing: 0.05em
+	margin: 50px 0 20px
+	padding: 7px 0
+	text-align: center
 	text-transform: uppercase
+	+text-shadow(rgba(0, 0, 0, 0.3) 0 4px 0)
 	span
-		text-transform: none
-	
+		background: url("../images/bg.png")
+		border-left: 1px solid rgba(255, 255, 255, 0.08)
+		border-right: 1px solid rgba(255, 255, 255, 0.08)
+		display: inline-block
+		line-height: 1
+		padding: 0 30px
+
 #speakers
 	li
 		display: inline
@@ -23,9 +32,25 @@
 		border: 6px solid rgba(0, 0, 0, 0.1)
 		width: 80%
 		+border-radius(50%)
-
-#speakers, #sponsors
-	
+	.you img
+		border-color: rgba(255, 255, 255, 0.1)
+		
+#sponsors
+	h2
+		background: rgba(0, 0, 0, 0.1)
+		font-family: "Open Sans", arial
+		margin: 0
+		padding: 20px 0
+		text-align: center
+	ul
+		margin-bottom: 20px
+		+pie-clearfix
+		a
+			display: block
+		img
+			display: block
+			margin-right: 20px
+			width: 92%
 	
 #venue
 	a
@@ -39,4 +64,4 @@
 			background: rgba(0, 0, 0, 0.1)
 
 .light
-	background: rgba(255, 255, 255, 0.03)
+	background: rgba(0, 0, 0, 0.2)

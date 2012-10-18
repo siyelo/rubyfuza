@@ -1,7 +1,8 @@
 
-%section#speakers.light
+%section#speakers
   .wrapper
-    %h1.heading Speakers
+    %h1.heading
+      %span Speakers
     %ul
       %li
         = img "../images/speakers/dolph.jpg"
@@ -40,34 +41,61 @@
   
 %section#venue
   .wrapper
-    %h1.heading Venue
-    %h2 Strand Tower Hotel
+    %h1.heading
+      %span Venue
+    %h2
+      %span Strand Tower Hotel
+    = img "../images/strand.png"
     %p Cape Town’s business centre is within easy walking distance from the Strand Tower Hotel. The city’s many major tourist attractions, such as Table Mountain, Robben Island and the V&A Waterfront, are also within easy access from the hotel. Other notable landmarks nearby include the Cape Town International Convention Centre, which is just 2 kilometers away, and the Green Point Stadium, which was constructed for the 2010 FIFA World Cup. The stadium, which is 3.5 kilometers from the hotel, is now home to many other major sports tournaments.
     = link_to "View map", "#"
     = link_to "Find accommodation", "#"
   
-%section#sponsors.light
+%section#sponsors
   .wrapper
     %h1.heading
-      Sponsors
-      %span.right
-        Interested in sponsoring this event? Drop us an 
-        %a{:href=>"mailto:info@rugyfuza.org"} e-mail
+      %span Sponsors
+    
     %ul
       %li
-        %p Founded in 2009 in Europe´s technology hub, Berlin, Wooga is the third largest social games developer in the world. Wooga's 190 employees from 35 nations create high quality games for Facebook and iOS, with a specific focus on emotional character development, usability, and superb localization in seven languages. Wooga is committed to creating innovative and original game titles for players of all ages, bringing millions of users around the world together through a world of gaming. Berlin’s is the second largest social games developer worldwide as their free-to-play Facebook games are enjoyed by over 35 million active players per month, enabling them to compete with their friends online.
-      %li= link_to "img", "#"
-      %li= link_to "img", "#"
-      %li= link_to "img", "#"
+        %a{:href=>"#", :class=>"left"}
+          %img{:src=>"../images/ads.jpg"}
+
+        %p Founded in 2009 in Europe´s technology hub, Berlin, Wooga is the third largest social games developer in the world. Wooga's 190 employees from 35 nations create high quality games for Facebook and iOS, with a specific focus on emotional character development, usability, and superb localization in seven languages. Wooga is committed to creating innovative and original game titles for players of all ages, bringing millions of users around the world together through a world of gaming.
+        %br
+        %p Berlin’s is the second largest social games developer worldwide as their free-to-play Facebook games are enjoyed by over 35 million active players per month, enabling them to compete with their friends online.
     %ul
-      %li= link_to "img", "#"
-      %li= link_to "img", "#"
-      %li= link_to "img", "#"
-      %li= link_to "img", "#"
-    
+      %li.third
+        %a{:href=>"#"}
+          %img{:src=>"../images/ads.jpg"}
+      %li.third
+        %a{:href=>"#"}
+          %img{:src=>"../images/ads.jpg"}
+      %li.third
+        %a{:href=>"#"}
+          %img{:src=>"../images/ads.jpg"}
+          
+    %ul
+      %li.fourth
+        %a{:href=>"#"}
+          %img{:src=>"../images/asd.jpg"}
+      %li.fourth
+        %a{:href=>"#"}
+          %img{:src=>"../images/asd.jpg"}
+      %li.fourth
+        %a{:href=>"#"}
+          %img{:src=>"../images/asd.jpg"}
+      %li.fourth
+        %a{:href=>"#"}
+          %img{:src=>"../images/asd.jpg"}
+          
+    %h2.sponsor
+      Interested in sponsoring this event? Drop us an 
+      %a{:href=>"mailto:info@rugyfuza.org"} e-mail
+
 %section#blog
   .wrapper
-    %h1.heading Blog
+    %h1.heading
+      %span Blog
     %ul
       %li.half
         %article
