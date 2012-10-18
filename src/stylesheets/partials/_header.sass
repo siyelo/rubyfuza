@@ -4,6 +4,7 @@ header#header
 	margin-bottom: 80px
 	padding-top: 70px
 	> .wrapper
+		position: relative
 		+radial-gradient(color-stops(rgba(255, 255, 255, 0.08), rgba(255, 255, 255, 0) 50%))
 	h1
 		//+background(radial-gradient($one + #191919, $one) 50%)
@@ -47,32 +48,31 @@ header#header
 		text-align: center
 		span
 			color: $one
+			
 	a.action
 		background: $two
+		border: 3px dashed $two - #222
 		color: #fff
 		display: block
-		font: 1.5em "patua one"
-		margin: 20px 0 0 8%
+		font: 1.4em "patua one"
+		letter-spacing: .05em
+		margin-left: 33%
 		padding: 15px 0
+		position: absolute
 		text-align: center
 		text-decoration: none
-		width: 40%
-		+border-radius(10px)
-		+box-shadow(rgba(0, 0, 0, 0.5) 0 3px 0)
-		+text-shadow(rgba(0, 0, 0, 0.3) 0 2px 0)
-	a.action2
-		background: $one
-		color: #fff
-		display: block
-		font: 1.5em "patua one"
-		margin: 20px 8% 0 0
-		padding: 15px 0
-		text-align: center
-		text-decoration: none
-		width: 40%
-		+border-radius(10px)
-		+box-shadow(rgba(0, 0, 0, 0.5) 0 3px 0)
-		+text-shadow(rgba(0, 0, 0, 0.3) 0 2px 0)
+		text-transform: uppercase
+		top: 63%
+		width: 27%
+		z-index: 11
+		+box-shadow(rgba(0, 0, 0, 0.6) 0 0 5px)
+		+rotate(4deg)
+		+text-shadow(rgba(0, 0, 0, 0.4) 0 3px 0)
+		&:hover, &:focus
+			background: #fff
+			color: #222
+			+text-shadow(rgba(255, 255, 255, 0.3) 0 2px 0)
+
 	.conf
 		position: relative
 		text-align: center
@@ -80,7 +80,7 @@ header#header
 		
 			
 	.features
-		margin: 25px 0 75px
+		margin: 30px 0 60px
 		+pie-clearfix
 		p
 			font: 1.2em "Patua One", Arial, sans-serif
@@ -113,6 +113,9 @@ header#header
 					display: block
 					font: .45em "open sans"
 					padding-top: 12px
+			.left
+				max-width: 70px
+				width: 25%
 
 		.full
 			float: left

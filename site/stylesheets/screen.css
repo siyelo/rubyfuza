@@ -217,6 +217,7 @@ header#header {
 }
 /* line 6, /Users/exterminateart/apps/rubyfuza/src/stylesheets/partials/_header.sass */
 header#header > .wrapper {
+  position: relative;
   background-image: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 50, color-stop(0%, rgba(255, 255, 255, 0.08)), color-stop(50%, rgba(255, 255, 255, 0)));
   background-image: -webkit-radial-gradient(center center, rgba(255, 255, 255, 0.08), rgba(255, 255, 255, 0) 50%);
   background-image: -moz-radial-gradient(center center, rgba(255, 255, 255, 0.08), rgba(255, 255, 255, 0) 50%);
@@ -224,22 +225,22 @@ header#header > .wrapper {
   background-image: -ms-radial-gradient(center center, rgba(255, 255, 255, 0.08), rgba(255, 255, 255, 0) 50%);
   background-image: radial-gradient(center center, rgba(255, 255, 255, 0.08), rgba(255, 255, 255, 0) 50%);
 }
-/* line 8, /Users/exterminateart/apps/rubyfuza/src/stylesheets/partials/_header.sass */
+/* line 9, /Users/exterminateart/apps/rubyfuza/src/stylesheets/partials/_header.sass */
 header#header h1 {
   float: left;
   padding: 60px 0 90px;
   width: 40%;
 }
-/* line 13, /Users/exterminateart/apps/rubyfuza/src/stylesheets/partials/_header.sass */
+/* line 14, /Users/exterminateart/apps/rubyfuza/src/stylesheets/partials/_header.sass */
 header#header h1 a {
   display: block;
 }
-/* line 15, /Users/exterminateart/apps/rubyfuza/src/stylesheets/partials/_header.sass */
+/* line 16, /Users/exterminateart/apps/rubyfuza/src/stylesheets/partials/_header.sass */
 header#header h1 img {
   max-width: 380px;
   width: 100%;
 }
-/* line 19, /Users/exterminateart/apps/rubyfuza/src/stylesheets/partials/_header.sass */
+/* line 20, /Users/exterminateart/apps/rubyfuza/src/stylesheets/partials/_header.sass */
 header#header h2 {
   background: url("../images/date.png") no-repeat center right;
   float: right;
@@ -249,12 +250,12 @@ header#header h2 {
   padding: 13px 50px 11px 0;
   text-align: right;
 }
-/* line 28, /Users/exterminateart/apps/rubyfuza/src/stylesheets/partials/_header.sass */
+/* line 29, /Users/exterminateart/apps/rubyfuza/src/stylesheets/partials/_header.sass */
 header#header h2 span {
   display: block;
   font-size: 0.75em;
 }
-/* line 32, /Users/exterminateart/apps/rubyfuza/src/stylesheets/partials/_header.sass */
+/* line 33, /Users/exterminateart/apps/rubyfuza/src/stylesheets/partials/_header.sass */
 header#header h3 {
   clear: both;
   font: 4.4em/1.2 "Patua One", sans-serif;
@@ -264,65 +265,53 @@ header#header h3 {
   text-transform: uppercase;
   text-shadow: rgba(0, 0, 0, 0.25) 0 4px 0px;
 }
-/* line 41, /Users/exterminateart/apps/rubyfuza/src/stylesheets/partials/_header.sass */
+/* line 42, /Users/exterminateart/apps/rubyfuza/src/stylesheets/partials/_header.sass */
 header#header h3 span {
   display: block;
   font-size: 0.7em;
   text-transform: none;
 }
-/* line 46, /Users/exterminateart/apps/rubyfuza/src/stylesheets/partials/_header.sass */
+/* line 47, /Users/exterminateart/apps/rubyfuza/src/stylesheets/partials/_header.sass */
 header#header h2, header#header h3 {
   text-align: center;
 }
-/* line 48, /Users/exterminateart/apps/rubyfuza/src/stylesheets/partials/_header.sass */
+/* line 49, /Users/exterminateart/apps/rubyfuza/src/stylesheets/partials/_header.sass */
 header#header h2 span, header#header h3 span {
   color: #98c9ee;
 }
-/* line 50, /Users/exterminateart/apps/rubyfuza/src/stylesheets/partials/_header.sass */
+/* line 52, /Users/exterminateart/apps/rubyfuza/src/stylesheets/partials/_header.sass */
 header#header a.action {
   background: #c93131;
+  border: 3px dashed #a70f0f;
   color: white;
   display: block;
-  font: 1.5em "patua one";
-  margin: 20px 0 0 8%;
+  font: 1.4em "patua one";
+  letter-spacing: 0.05em;
+  margin-left: 33%;
   padding: 15px 0;
+  position: absolute;
   text-align: center;
   text-decoration: none;
-  width: 40%;
-  -moz-border-radius: 10px;
-  -webkit-border-radius: 10px;
-  -o-border-radius: 10px;
-  -ms-border-radius: 10px;
-  -khtml-border-radius: 10px;
-  border-radius: 10px;
-  -moz-box-shadow: rgba(0, 0, 0, 0.5) 0 3px 0;
-  -webkit-box-shadow: rgba(0, 0, 0, 0.5) 0 3px 0;
-  -o-box-shadow: rgba(0, 0, 0, 0.5) 0 3px 0;
-  box-shadow: rgba(0, 0, 0, 0.5) 0 3px 0;
-  text-shadow: rgba(0, 0, 0, 0.3) 0 2px 0;
+  text-transform: uppercase;
+  top: 63%;
+  width: 27%;
+  z-index: 11;
+  -moz-box-shadow: rgba(0, 0, 0, 0.6) 0 0 5px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.6) 0 0 5px;
+  -o-box-shadow: rgba(0, 0, 0, 0.6) 0 0 5px;
+  box-shadow: rgba(0, 0, 0, 0.6) 0 0 5px;
+  -moz-transform: rotate(4deg);
+  -webkit-transform: rotate(4deg);
+  -o-transform: rotate(4deg);
+  -ms-transform: rotate(4deg);
+  transform: rotate(4deg);
+  text-shadow: rgba(0, 0, 0, 0.4) 0 3px 0;
 }
-/* line 63, /Users/exterminateart/apps/rubyfuza/src/stylesheets/partials/_header.sass */
-header#header a.action2 {
-  background: #98c9ee;
-  color: white;
-  display: block;
-  font: 1.5em "patua one";
-  margin: 20px 8% 0 0;
-  padding: 15px 0;
-  text-align: center;
-  text-decoration: none;
-  width: 40%;
-  -moz-border-radius: 10px;
-  -webkit-border-radius: 10px;
-  -o-border-radius: 10px;
-  -ms-border-radius: 10px;
-  -khtml-border-radius: 10px;
-  border-radius: 10px;
-  -moz-box-shadow: rgba(0, 0, 0, 0.5) 0 3px 0;
-  -webkit-box-shadow: rgba(0, 0, 0, 0.5) 0 3px 0;
-  -o-box-shadow: rgba(0, 0, 0, 0.5) 0 3px 0;
-  box-shadow: rgba(0, 0, 0, 0.5) 0 3px 0;
-  text-shadow: rgba(0, 0, 0, 0.3) 0 2px 0;
+/* line 71, /Users/exterminateart/apps/rubyfuza/src/stylesheets/partials/_header.sass */
+header#header a.action:hover, header#header a.action:focus {
+  background: white;
+  color: #222222;
+  text-shadow: rgba(255, 255, 255, 0.3) 0 2px 0;
 }
 /* line 76, /Users/exterminateart/apps/rubyfuza/src/stylesheets/partials/_header.sass */
 header#header .conf {
@@ -338,7 +327,7 @@ header#header .conf:after {
 }
 /* line 82, /Users/exterminateart/apps/rubyfuza/src/stylesheets/partials/_header.sass */
 header#header .features {
-  margin: 25px 0 75px;
+  margin: 30px 0 60px;
   *zoom: 1;
 }
 /* line 38, /usr/local/opt/rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/compass-0.11.7/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
@@ -381,13 +370,18 @@ header#header .features li:last-child span {
   font: 0.45em "open sans";
   padding-top: 12px;
 }
-/* line 117, /Users/exterminateart/apps/rubyfuza/src/stylesheets/partials/_header.sass */
+/* line 116, /Users/exterminateart/apps/rubyfuza/src/stylesheets/partials/_header.sass */
+header#header .features li .left {
+  max-width: 70px;
+  width: 25%;
+}
+/* line 120, /Users/exterminateart/apps/rubyfuza/src/stylesheets/partials/_header.sass */
 header#header .features .full {
   float: left;
   width: 100%;
 }
 
-/* line 121, /Users/exterminateart/apps/rubyfuza/src/stylesheets/partials/_header.sass */
+/* line 124, /Users/exterminateart/apps/rubyfuza/src/stylesheets/partials/_header.sass */
 nav#main {
   background: url("../images/bg2.png");
   position: fixed;
@@ -403,7 +397,7 @@ nav#main:after {
   display: table;
   clear: both;
 }
-/* line 131, /Users/exterminateart/apps/rubyfuza/src/stylesheets/partials/_header.sass */
+/* line 134, /Users/exterminateart/apps/rubyfuza/src/stylesheets/partials/_header.sass */
 nav#main ul {
   float: left;
   *zoom: 1;
@@ -414,11 +408,11 @@ nav#main ul:after {
   display: table;
   clear: both;
 }
-/* line 134, /Users/exterminateart/apps/rubyfuza/src/stylesheets/partials/_header.sass */
+/* line 137, /Users/exterminateart/apps/rubyfuza/src/stylesheets/partials/_header.sass */
 nav#main li {
   display: inline;
 }
-/* line 136, /Users/exterminateart/apps/rubyfuza/src/stylesheets/partials/_header.sass */
+/* line 139, /Users/exterminateart/apps/rubyfuza/src/stylesheets/partials/_header.sass */
 nav#main li a {
   display: inline-block;
   font-size: 1.1em;
@@ -426,30 +420,30 @@ nav#main li a {
   text-decoration: none;
   text-transform: uppercase;
 }
-/* line 142, /Users/exterminateart/apps/rubyfuza/src/stylesheets/partials/_header.sass */
+/* line 145, /Users/exterminateart/apps/rubyfuza/src/stylesheets/partials/_header.sass */
 nav#main li a:hover, nav#main li a:focus {
   background: rgba(0, 0, 0, 0.2);
 }
 
-/* line 145, /Users/exterminateart/apps/rubyfuza/src/stylesheets/partials/_header.sass */
+/* line 148, /Users/exterminateart/apps/rubyfuza/src/stylesheets/partials/_header.sass */
 .register-now {
   float: right;
   padding: 20px 0;
   text-decoration: none;
 }
-/* line 149, /Users/exterminateart/apps/rubyfuza/src/stylesheets/partials/_header.sass */
+/* line 152, /Users/exterminateart/apps/rubyfuza/src/stylesheets/partials/_header.sass */
 .register-now span {
   color: #c93131;
   font-weight: bold;
   text-decoration: underline;
   text-transform: uppercase;
 }
-/* line 155, /Users/exterminateart/apps/rubyfuza/src/stylesheets/partials/_header.sass */
+/* line 158, /Users/exterminateart/apps/rubyfuza/src/stylesheets/partials/_header.sass */
 .register-now:hover span, .register-now:focus span {
   color: #eb5353;
 }
 
-/* line 158, /Users/exterminateart/apps/rubyfuza/src/stylesheets/partials/_header.sass */
+/* line 161, /Users/exterminateart/apps/rubyfuza/src/stylesheets/partials/_header.sass */
 .conf img {
   display: inline-block;
   max-width: 940px;
@@ -541,8 +535,31 @@ nav#main li a:hover, nav#main li a:focus {
   text-align: center;
 }
 /* line 62, /Users/exterminateart/apps/rubyfuza/src/stylesheets/partials/_content.sass */
+#sponsors .big-sponsor {
+  display: table;
+  margin-bottom: 40px;
+}
+/* line 65, /Users/exterminateart/apps/rubyfuza/src/stylesheets/partials/_content.sass */
+#sponsors .big-sponsor p, #sponsors .big-sponsor a {
+  display: table-cell;
+  vertical-align: middle;
+}
+/* line 68, /Users/exterminateart/apps/rubyfuza/src/stylesheets/partials/_content.sass */
+#sponsors .big-sponsor p {
+  margin-bottom: 1em;
+  padding-left: 5%;
+  width: 65%;
+}
+/* line 72, /Users/exterminateart/apps/rubyfuza/src/stylesheets/partials/_content.sass */
+#sponsors .big-sponsor a {
+  width: 30%;
+}
+/* line 74, /Users/exterminateart/apps/rubyfuza/src/stylesheets/partials/_content.sass */
+#sponsors .big-sponsor a img {
+  width: 100%;
+}
+/* line 77, /Users/exterminateart/apps/rubyfuza/src/stylesheets/partials/_content.sass */
 #sponsors ul {
-  margin-bottom: 20px;
   *zoom: 1;
 }
 /* line 38, /usr/local/opt/rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/compass-0.11.7/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
@@ -551,39 +568,135 @@ nav#main li a:hover, nav#main li a:focus {
   display: table;
   clear: both;
 }
-/* line 65, /Users/exterminateart/apps/rubyfuza/src/stylesheets/partials/_content.sass */
+/* line 79, /Users/exterminateart/apps/rubyfuza/src/stylesheets/partials/_content.sass */
+#sponsors ul li {
+  margin-bottom: 40px;
+}
+/* line 81, /Users/exterminateart/apps/rubyfuza/src/stylesheets/partials/_content.sass */
 #sponsors ul a {
   display: block;
 }
-/* line 67, /Users/exterminateart/apps/rubyfuza/src/stylesheets/partials/_content.sass */
+/* line 83, /Users/exterminateart/apps/rubyfuza/src/stylesheets/partials/_content.sass */
 #sponsors ul img {
   display: block;
   margin-right: 20px;
   width: 92%;
 }
 
-/* line 73, /Users/exterminateart/apps/rubyfuza/src/stylesheets/partials/_content.sass */
-#venue a {
-  background: rgba(0, 0, 0, 0.07);
+/* line 89, /Users/exterminateart/apps/rubyfuza/src/stylesheets/partials/_content.sass */
+#venue .wrapper > a {
+  background: #1e3146;
+  background: rgba(0, 0, 0, 0.15);
   display: inline-block;
   font: 1.2em "Patua One", Arial, sans-serif;
-  margin-top: 10px;
-  padding: 10px 20px;
+  margin-top: 15px;
+  margin-left: -70px;
+  padding: 10px 30px 10px 70px;
   text-decoration: none;
 }
-/* line 80, /Users/exterminateart/apps/rubyfuza/src/stylesheets/partials/_content.sass */
-#venue a:hover, #venue a:focus {
+/* line 98, /Users/exterminateart/apps/rubyfuza/src/stylesheets/partials/_content.sass */
+#venue .wrapper > a:hover, #venue .wrapper > a:focus {
   background: rgba(0, 0, 0, 0.1);
 }
+/* line 100, /Users/exterminateart/apps/rubyfuza/src/stylesheets/partials/_content.sass */
+#venue img {
+  border-top: 5px solid white;
+  border-bottom: 5px solid white;
+  margin: 10px 0 30px;
+  width: 100%;
+}
+/* line 105, /Users/exterminateart/apps/rubyfuza/src/stylesheets/partials/_content.sass */
+#venue iframe {
+  border: 6px solid #1e3146;
+  margin: 0 25px 0 10px;
+  position: relative;
+  z-index: 10;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -o-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -khtml-border-radius: 50%;
+  border-radius: 50%;
+}
+/* line 111, /Users/exterminateart/apps/rubyfuza/src/stylesheets/partials/_content.sass */
+#venue p {
+  margin-top: 15px;
+}
 
-/* line 83, /Users/exterminateart/apps/rubyfuza/src/stylesheets/partials/_content.sass */
+/* line 116, /Users/exterminateart/apps/rubyfuza/src/stylesheets/partials/_content.sass */
+#blog .wrapper > a {
+  border-top: 1px solid rgba(255, 255, 255, 0.07);
+  display: block;
+  margin-top: 60px;
+  padding: 15px 0;
+  text-align: center;
+}
+/* line 122, /Users/exterminateart/apps/rubyfuza/src/stylesheets/partials/_content.sass */
+#blog ul {
+  *zoom: 1;
+}
+/* line 38, /usr/local/opt/rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/compass-0.11.7/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+#blog ul:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* line 124, /Users/exterminateart/apps/rubyfuza/src/stylesheets/partials/_content.sass */
+#blog article {
+  margin-left: 20px;
+  padding: 0 45px;
+  position: relative;
+}
+/* line 128, /Users/exterminateart/apps/rubyfuza/src/stylesheets/partials/_content.sass */
+#blog article header {
+  padding-bottom: 12px;
+}
+/* line 130, /Users/exterminateart/apps/rubyfuza/src/stylesheets/partials/_content.sass */
+#blog article h2 {
+  line-height: 1.3;
+}
+/* line 132, /Users/exterminateart/apps/rubyfuza/src/stylesheets/partials/_content.sass */
+#blog article small {
+  color: #98c9ee;
+}
+/* line 134, /Users/exterminateart/apps/rubyfuza/src/stylesheets/partials/_content.sass */
+#blog article time {
+  left: 0;
+  position: absolute;
+  top: 2px;
+}
+/* line 138, /Users/exterminateart/apps/rubyfuza/src/stylesheets/partials/_content.sass */
+#blog article time span {
+  color: #98c9ee;
+  font-family: "Patua One", "open sans", arial, sans-serif;
+  display: block;
+  letter-spacing: 0.075em;
+  text-transform: uppercase;
+}
+/* line 144, /Users/exterminateart/apps/rubyfuza/src/stylesheets/partials/_content.sass */
+#blog article time span.day {
+  font-size: 2.5em;
+  line-height: 0.9;
+}
+/* line 147, /Users/exterminateart/apps/rubyfuza/src/stylesheets/partials/_content.sass */
+#blog article time span.month {
+  font-size: 1.3em;
+  line-height: 1;
+}
+/* line 150, /Users/exterminateart/apps/rubyfuza/src/stylesheets/partials/_content.sass */
+#blog article time span.year {
+  font-size: 1.05em;
+  line-height: 1;
+}
+
+/* line 154, /Users/exterminateart/apps/rubyfuza/src/stylesheets/partials/_content.sass */
 .light {
   background: rgba(0, 0, 0, 0.2);
 }
 
 /* line 1, /Users/exterminateart/apps/rubyfuza/src/stylesheets/partials/_footer.sass */
 #footer {
-  background: url("../images/bg2.png");
+  background: rgba(0, 0, 0, 0.12);
   color: rgba(255, 255, 255, 0.5);
   margin-top: 30px;
   padding: 40px 0;
@@ -657,67 +770,96 @@ nav#main li a:hover, nav#main li a:focus {
   header#header .features li:last-child p span {
     font-size: 0.5em;
   }
+  /* line 42, /Users/exterminateart/apps/rubyfuza/src/stylesheets/partials/_queries.sass */
+  header#header a.action {
+    display: block;
+    margin: 20px 0 20px 20%;
+    position: static;
+    width: 60%;
+    -moz-transform: rotate(0);
+    -webkit-transform: rotate(0);
+    -o-transform: rotate(0);
+    -ms-transform: rotate(0);
+    transform: rotate(0);
+  }
+
+  /* line 50, /Users/exterminateart/apps/rubyfuza/src/stylesheets/partials/_queries.sass */
+  #sponsors .big-sponsor {
+    display: block;
+    margin-bottom: 40px;
+  }
+  /* line 53, /Users/exterminateart/apps/rubyfuza/src/stylesheets/partials/_queries.sass */
+  #sponsors .big-sponsor p, #sponsors .big-sponsor a {
+    display: block;
+    padding-left: 0;
+    vertical-align: middle;
+    width: 100%;
+  }
+  /* line 58, /Users/exterminateart/apps/rubyfuza/src/stylesheets/partials/_queries.sass */
+  #sponsors .big-sponsor p {
+    padding-right: 10px;
+  }
 }
 @media only screen and (max-width: 740px) {
-  /* line 47, /Users/exterminateart/apps/rubyfuza/src/stylesheets/partials/_queries.sass */
+  /* line 64, /Users/exterminateart/apps/rubyfuza/src/stylesheets/partials/_queries.sass */
   h2 {
     font-size: 1.5em;
   }
 
-  /* line 50, /Users/exterminateart/apps/rubyfuza/src/stylesheets/partials/_queries.sass */
+  /* line 67, /Users/exterminateart/apps/rubyfuza/src/stylesheets/partials/_queries.sass */
   nav#main {
     text-align: center;
   }
-  /* line 52, /Users/exterminateart/apps/rubyfuza/src/stylesheets/partials/_queries.sass */
+  /* line 69, /Users/exterminateart/apps/rubyfuza/src/stylesheets/partials/_queries.sass */
   nav#main ul {
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
     float: none;
   }
-  /* line 55, /Users/exterminateart/apps/rubyfuza/src/stylesheets/partials/_queries.sass */
+  /* line 72, /Users/exterminateart/apps/rubyfuza/src/stylesheets/partials/_queries.sass */
   nav#main li a {
     padding: 10px;
   }
-  /* line 57, /Users/exterminateart/apps/rubyfuza/src/stylesheets/partials/_queries.sass */
+  /* line 74, /Users/exterminateart/apps/rubyfuza/src/stylesheets/partials/_queries.sass */
   nav#main .register-now {
     display: inline-block;
     float: none;
     padding: 10px 0 15px;
   }
 
-  /* line 64, /Users/exterminateart/apps/rubyfuza/src/stylesheets/partials/_queries.sass */
+  /* line 81, /Users/exterminateart/apps/rubyfuza/src/stylesheets/partials/_queries.sass */
   header#header h2, header#header h1 {
     display: block;
     float: none;
     width: auto;
   }
-  /* line 68, /Users/exterminateart/apps/rubyfuza/src/stylesheets/partials/_queries.sass */
+  /* line 85, /Users/exterminateart/apps/rubyfuza/src/stylesheets/partials/_queries.sass */
   header#header h1 {
     padding: 30px 0 0;
     text-align: center;
   }
-  /* line 71, /Users/exterminateart/apps/rubyfuza/src/stylesheets/partials/_queries.sass */
+  /* line 88, /Users/exterminateart/apps/rubyfuza/src/stylesheets/partials/_queries.sass */
   header#header h2 {
     margin-top: 10px;
   }
-  /* line 73, /Users/exterminateart/apps/rubyfuza/src/stylesheets/partials/_queries.sass */
+  /* line 90, /Users/exterminateart/apps/rubyfuza/src/stylesheets/partials/_queries.sass */
   header#header h3 {
-    font-size: 1.75em;
+    font-size: 2.5em;
     padding-top: 40px;
   }
 
-  /* line 77, /Users/exterminateart/apps/rubyfuza/src/stylesheets/partials/_queries.sass */
+  /* line 94, /Users/exterminateart/apps/rubyfuza/src/stylesheets/partials/_queries.sass */
   #speakers li {
     margin: 0 3% 2em;
     width: 27%;
   }
 }
 @media only screen and (max-width: 540px) {
-  /* line 84, /Users/exterminateart/apps/rubyfuza/src/stylesheets/partials/_queries.sass */
+  /* line 101, /Users/exterminateart/apps/rubyfuza/src/stylesheets/partials/_queries.sass */
   .wrapper {
     min-width: 300px;
   }
 
-  /* line 87, /Users/exterminateart/apps/rubyfuza/src/stylesheets/partials/_queries.sass */
+  /* line 104, /Users/exterminateart/apps/rubyfuza/src/stylesheets/partials/_queries.sass */
   #main_nav, .half, .third, .two-thirds, .fourth {
     clear: both;
     display: block;
@@ -725,51 +867,51 @@ nav#main li a:hover, nav#main li a:focus {
     width: 100%;
   }
 
-  /* line 93, /Users/exterminateart/apps/rubyfuza/src/stylesheets/partials/_queries.sass */
+  /* line 110, /Users/exterminateart/apps/rubyfuza/src/stylesheets/partials/_queries.sass */
   h2 {
     font-size: 1.5em;
   }
 
-  /* line 96, /Users/exterminateart/apps/rubyfuza/src/stylesheets/partials/_queries.sass */
+  /* line 113, /Users/exterminateart/apps/rubyfuza/src/stylesheets/partials/_queries.sass */
   nav#main {
     text-align: center;
   }
-  /* line 98, /Users/exterminateart/apps/rubyfuza/src/stylesheets/partials/_queries.sass */
+  /* line 115, /Users/exterminateart/apps/rubyfuza/src/stylesheets/partials/_queries.sass */
   nav#main .wrapper {
     padding: 0;
     width: 100%;
   }
-  /* line 101, /Users/exterminateart/apps/rubyfuza/src/stylesheets/partials/_queries.sass */
+  /* line 118, /Users/exterminateart/apps/rubyfuza/src/stylesheets/partials/_queries.sass */
   nav#main ul {
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
     float: none;
   }
-  /* line 104, /Users/exterminateart/apps/rubyfuza/src/stylesheets/partials/_queries.sass */
+  /* line 121, /Users/exterminateart/apps/rubyfuza/src/stylesheets/partials/_queries.sass */
   nav#main li a {
     padding: 10px 5px;
   }
-  /* line 106, /Users/exterminateart/apps/rubyfuza/src/stylesheets/partials/_queries.sass */
+  /* line 123, /Users/exterminateart/apps/rubyfuza/src/stylesheets/partials/_queries.sass */
   nav#main .register-now {
     display: inline-block;
     float: none;
     padding: 7px 0 10px;
   }
 
-  /* line 112, /Users/exterminateart/apps/rubyfuza/src/stylesheets/partials/_queries.sass */
+  /* line 129, /Users/exterminateart/apps/rubyfuza/src/stylesheets/partials/_queries.sass */
   header#header h1 {
     padding: 30px 0 0;
   }
-  /* line 114, /Users/exterminateart/apps/rubyfuza/src/stylesheets/partials/_queries.sass */
+  /* line 131, /Users/exterminateart/apps/rubyfuza/src/stylesheets/partials/_queries.sass */
   header#header h2 {
     margin-top: 0;
   }
-  /* line 116, /Users/exterminateart/apps/rubyfuza/src/stylesheets/partials/_queries.sass */
+  /* line 133, /Users/exterminateart/apps/rubyfuza/src/stylesheets/partials/_queries.sass */
   header#header h3 {
     font-size: 1.6em;
     padding-top: 30px;
   }
 
-  /* line 120, /Users/exterminateart/apps/rubyfuza/src/stylesheets/partials/_queries.sass */
+  /* line 137, /Users/exterminateart/apps/rubyfuza/src/stylesheets/partials/_queries.sass */
   #speakers li {
     margin: 0 5% 2em;
     width: 40%;
