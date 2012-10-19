@@ -110,9 +110,8 @@ a:hover, a:focus {
 /* line 1, /Users/exterminateart/apps/rubyfuza/src/stylesheets/partials/_layout.sass */
 .wrapper {
   margin: 0 auto;
-  padding: 0 3%;
   position: relative;
-  width: 94%;
+  width: 100%;
   *zoom: 1;
 }
 /* line 38, /usr/local/opt/rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/compass-0.11.7/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
@@ -122,7 +121,7 @@ a:hover, a:focus {
   clear: both;
 }
 
-/* line 8, /Users/exterminateart/apps/rubyfuza/src/stylesheets/partials/_layout.sass */
+/* line 7, /Users/exterminateart/apps/rubyfuza/src/stylesheets/partials/_layout.sass */
 section {
   *zoom: 1;
 }
@@ -132,18 +131,18 @@ section:after {
   display: table;
   clear: both;
 }
-/* line 10, /Users/exterminateart/apps/rubyfuza/src/stylesheets/partials/_layout.sass */
+/* line 9, /Users/exterminateart/apps/rubyfuza/src/stylesheets/partials/_layout.sass */
 section .wrapper {
   margin-bottom: 40px;
 }
 
-/* line 13, /Users/exterminateart/apps/rubyfuza/src/stylesheets/partials/_layout.sass */
+/* line 12, /Users/exterminateart/apps/rubyfuza/src/stylesheets/partials/_layout.sass */
 .row {
   display: block;
   width: 100%;
 }
 
-/* line 17, /Users/exterminateart/apps/rubyfuza/src/stylesheets/partials/_layout.sass */
+/* line 16, /Users/exterminateart/apps/rubyfuza/src/stylesheets/partials/_layout.sass */
 .half, .third, .two-thirds, .fourth, .three-fourths, .fifth {
   display: inline;
   float: left;
@@ -156,49 +155,49 @@ section .wrapper {
   clear: both;
 }
 
-/* line 22, /Users/exterminateart/apps/rubyfuza/src/stylesheets/partials/_layout.sass */
+/* line 21, /Users/exterminateart/apps/rubyfuza/src/stylesheets/partials/_layout.sass */
 .half {
   width: 50%;
 }
 
-/* line 25, /Users/exterminateart/apps/rubyfuza/src/stylesheets/partials/_layout.sass */
+/* line 24, /Users/exterminateart/apps/rubyfuza/src/stylesheets/partials/_layout.sass */
 .third {
   width: 33.33%;
 }
 
-/* line 28, /Users/exterminateart/apps/rubyfuza/src/stylesheets/partials/_layout.sass */
+/* line 27, /Users/exterminateart/apps/rubyfuza/src/stylesheets/partials/_layout.sass */
 .two-thirds {
   width: 66.66%;
 }
 
-/* line 31, /Users/exterminateart/apps/rubyfuza/src/stylesheets/partials/_layout.sass */
+/* line 30, /Users/exterminateart/apps/rubyfuza/src/stylesheets/partials/_layout.sass */
 .fourth {
   width: 25%;
 }
 
-/* line 34, /Users/exterminateart/apps/rubyfuza/src/stylesheets/partials/_layout.sass */
+/* line 33, /Users/exterminateart/apps/rubyfuza/src/stylesheets/partials/_layout.sass */
 .three-fourths {
   width: 75%;
 }
 
-/* line 37, /Users/exterminateart/apps/rubyfuza/src/stylesheets/partials/_layout.sass */
+/* line 36, /Users/exterminateart/apps/rubyfuza/src/stylesheets/partials/_layout.sass */
 .fifth {
   width: 20%;
 }
 
-/* line 40, /Users/exterminateart/apps/rubyfuza/src/stylesheets/partials/_layout.sass */
+/* line 39, /Users/exterminateart/apps/rubyfuza/src/stylesheets/partials/_layout.sass */
 .left {
   display: inline;
   float: left;
 }
 
-/* line 44, /Users/exterminateart/apps/rubyfuza/src/stylesheets/partials/_layout.sass */
+/* line 43, /Users/exterminateart/apps/rubyfuza/src/stylesheets/partials/_layout.sass */
 .right {
   display: inline;
   float: right;
 }
 
-/* line 48, /Users/exterminateart/apps/rubyfuza/src/stylesheets/partials/_layout.sass */
+/* line 47, /Users/exterminateart/apps/rubyfuza/src/stylesheets/partials/_layout.sass */
 .clearfix {
   *zoom: 1;
 }
@@ -703,74 +702,87 @@ nav#main li a:hover, nav#main li a:focus {
   text-align: center;
 }
 
-@media only screen and (min-width: 960px) {
+@media only screen and (min-width: 1300px) {
   /* line 3, /Users/exterminateart/apps/rubyfuza/src/stylesheets/partials/_queries.sass */
+  .wrapper {
+    max-width: 1050px !important;
+  }
+
+  /* line 6, /Users/exterminateart/apps/rubyfuza/src/stylesheets/partials/_queries.sass */
+  #header h3 {
+    font-size: 4.8em !important;
+  }
+}
+@media only screen and (min-width: 960px) {
+  /* line 11, /Users/exterminateart/apps/rubyfuza/src/stylesheets/partials/_queries.sass */
   .wrapper {
     max-width: 960px;
   }
 }
 @media only screen and (max-width: 960px) {
-  /* line 9, /Users/exterminateart/apps/rubyfuza/src/stylesheets/partials/_queries.sass */
+  /* line 16, /Users/exterminateart/apps/rubyfuza/src/stylesheets/partials/_queries.sass */
   .wrapper {
     max-width: 960px;
+    padding: 0 3%;
+    width: 94%;
   }
 
-  /* line 11, /Users/exterminateart/apps/rubyfuza/src/stylesheets/partials/_queries.sass */
+  /* line 20, /Users/exterminateart/apps/rubyfuza/src/stylesheets/partials/_queries.sass */
   .heading {
     margin: 30px -3% 20px;
     padding: 7px 3%;
   }
 
-  /* line 14, /Users/exterminateart/apps/rubyfuza/src/stylesheets/partials/_queries.sass */
+  /* line 23, /Users/exterminateart/apps/rubyfuza/src/stylesheets/partials/_queries.sass */
   h2 {
     font-size: 1.6em;
   }
 
-  /* line 18, /Users/exterminateart/apps/rubyfuza/src/stylesheets/partials/_queries.sass */
+  /* line 27, /Users/exterminateart/apps/rubyfuza/src/stylesheets/partials/_queries.sass */
   nav#main li a {
     font-size: 1.1em;
     padding: 15px;
   }
 
-  /* line 21, /Users/exterminateart/apps/rubyfuza/src/stylesheets/partials/_queries.sass */
+  /* line 30, /Users/exterminateart/apps/rubyfuza/src/stylesheets/partials/_queries.sass */
   .register-now {
     padding: 15px 0;
   }
 
-  /* line 25, /Users/exterminateart/apps/rubyfuza/src/stylesheets/partials/_queries.sass */
+  /* line 34, /Users/exterminateart/apps/rubyfuza/src/stylesheets/partials/_queries.sass */
   header#header h1 {
     padding: 40px 0 0;
   }
-  /* line 27, /Users/exterminateart/apps/rubyfuza/src/stylesheets/partials/_queries.sass */
+  /* line 36, /Users/exterminateart/apps/rubyfuza/src/stylesheets/partials/_queries.sass */
   header#header h2 {
     margin-top: 15px;
   }
-  /* line 29, /Users/exterminateart/apps/rubyfuza/src/stylesheets/partials/_queries.sass */
+  /* line 38, /Users/exterminateart/apps/rubyfuza/src/stylesheets/partials/_queries.sass */
   header#header h3 {
     font-size: 3.3em;
     padding-top: 80px;
   }
-  /* line 32, /Users/exterminateart/apps/rubyfuza/src/stylesheets/partials/_queries.sass */
+  /* line 41, /Users/exterminateart/apps/rubyfuza/src/stylesheets/partials/_queries.sass */
   header#header .features {
     margin-bottom: 50px;
   }
-  /* line 34, /Users/exterminateart/apps/rubyfuza/src/stylesheets/partials/_queries.sass */
+  /* line 43, /Users/exterminateart/apps/rubyfuza/src/stylesheets/partials/_queries.sass */
   header#header .features p {
     padding-right: 0;
   }
-  /* line 36, /Users/exterminateart/apps/rubyfuza/src/stylesheets/partials/_queries.sass */
+  /* line 45, /Users/exterminateart/apps/rubyfuza/src/stylesheets/partials/_queries.sass */
   header#header .features p span {
     font-size: 0.9em;
   }
-  /* line 38, /Users/exterminateart/apps/rubyfuza/src/stylesheets/partials/_queries.sass */
+  /* line 47, /Users/exterminateart/apps/rubyfuza/src/stylesheets/partials/_queries.sass */
   header#header .features li:last-child p {
     font-size: 0.9em;
   }
-  /* line 40, /Users/exterminateart/apps/rubyfuza/src/stylesheets/partials/_queries.sass */
+  /* line 49, /Users/exterminateart/apps/rubyfuza/src/stylesheets/partials/_queries.sass */
   header#header .features li:last-child p span {
     font-size: 0.5em;
   }
-  /* line 42, /Users/exterminateart/apps/rubyfuza/src/stylesheets/partials/_queries.sass */
+  /* line 51, /Users/exterminateart/apps/rubyfuza/src/stylesheets/partials/_queries.sass */
   header#header a.action {
     display: block;
     margin: 20px 0 20px 20%;
@@ -783,83 +795,83 @@ nav#main li a:hover, nav#main li a:focus {
     transform: rotate(0);
   }
 
-  /* line 50, /Users/exterminateart/apps/rubyfuza/src/stylesheets/partials/_queries.sass */
+  /* line 59, /Users/exterminateart/apps/rubyfuza/src/stylesheets/partials/_queries.sass */
   #sponsors .big-sponsor {
     display: block;
     margin-bottom: 40px;
   }
-  /* line 53, /Users/exterminateart/apps/rubyfuza/src/stylesheets/partials/_queries.sass */
+  /* line 62, /Users/exterminateart/apps/rubyfuza/src/stylesheets/partials/_queries.sass */
   #sponsors .big-sponsor p, #sponsors .big-sponsor a {
     display: block;
     padding-left: 0;
     vertical-align: middle;
     width: 100%;
   }
-  /* line 58, /Users/exterminateart/apps/rubyfuza/src/stylesheets/partials/_queries.sass */
+  /* line 67, /Users/exterminateart/apps/rubyfuza/src/stylesheets/partials/_queries.sass */
   #sponsors .big-sponsor p {
     padding-right: 10px;
   }
 }
 @media only screen and (max-width: 740px) {
-  /* line 64, /Users/exterminateart/apps/rubyfuza/src/stylesheets/partials/_queries.sass */
+  /* line 73, /Users/exterminateart/apps/rubyfuza/src/stylesheets/partials/_queries.sass */
   h2 {
     font-size: 1.5em;
   }
 
-  /* line 67, /Users/exterminateart/apps/rubyfuza/src/stylesheets/partials/_queries.sass */
+  /* line 76, /Users/exterminateart/apps/rubyfuza/src/stylesheets/partials/_queries.sass */
   nav#main {
     text-align: center;
   }
-  /* line 69, /Users/exterminateart/apps/rubyfuza/src/stylesheets/partials/_queries.sass */
+  /* line 78, /Users/exterminateart/apps/rubyfuza/src/stylesheets/partials/_queries.sass */
   nav#main ul {
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
     float: none;
   }
-  /* line 72, /Users/exterminateart/apps/rubyfuza/src/stylesheets/partials/_queries.sass */
+  /* line 81, /Users/exterminateart/apps/rubyfuza/src/stylesheets/partials/_queries.sass */
   nav#main li a {
     padding: 10px;
   }
-  /* line 74, /Users/exterminateart/apps/rubyfuza/src/stylesheets/partials/_queries.sass */
+  /* line 83, /Users/exterminateart/apps/rubyfuza/src/stylesheets/partials/_queries.sass */
   nav#main .register-now {
     display: inline-block;
     float: none;
     padding: 10px 0 15px;
   }
 
-  /* line 81, /Users/exterminateart/apps/rubyfuza/src/stylesheets/partials/_queries.sass */
+  /* line 90, /Users/exterminateart/apps/rubyfuza/src/stylesheets/partials/_queries.sass */
   header#header h2, header#header h1 {
     display: block;
     float: none;
     width: auto;
   }
-  /* line 85, /Users/exterminateart/apps/rubyfuza/src/stylesheets/partials/_queries.sass */
+  /* line 94, /Users/exterminateart/apps/rubyfuza/src/stylesheets/partials/_queries.sass */
   header#header h1 {
     padding: 30px 0 0;
     text-align: center;
   }
-  /* line 88, /Users/exterminateart/apps/rubyfuza/src/stylesheets/partials/_queries.sass */
+  /* line 97, /Users/exterminateart/apps/rubyfuza/src/stylesheets/partials/_queries.sass */
   header#header h2 {
     margin-top: 10px;
   }
-  /* line 90, /Users/exterminateart/apps/rubyfuza/src/stylesheets/partials/_queries.sass */
+  /* line 99, /Users/exterminateart/apps/rubyfuza/src/stylesheets/partials/_queries.sass */
   header#header h3 {
     font-size: 2.5em;
     padding-top: 40px;
   }
 
-  /* line 94, /Users/exterminateart/apps/rubyfuza/src/stylesheets/partials/_queries.sass */
+  /* line 103, /Users/exterminateart/apps/rubyfuza/src/stylesheets/partials/_queries.sass */
   #speakers li {
     margin: 0 3% 2em;
     width: 27%;
   }
 }
 @media only screen and (max-width: 540px) {
-  /* line 101, /Users/exterminateart/apps/rubyfuza/src/stylesheets/partials/_queries.sass */
+  /* line 110, /Users/exterminateart/apps/rubyfuza/src/stylesheets/partials/_queries.sass */
   .wrapper {
     min-width: 300px;
   }
 
-  /* line 104, /Users/exterminateart/apps/rubyfuza/src/stylesheets/partials/_queries.sass */
+  /* line 113, /Users/exterminateart/apps/rubyfuza/src/stylesheets/partials/_queries.sass */
   #main_nav, .half, .third, .two-thirds, .fourth {
     clear: both;
     display: block;
@@ -867,51 +879,51 @@ nav#main li a:hover, nav#main li a:focus {
     width: 100%;
   }
 
-  /* line 110, /Users/exterminateart/apps/rubyfuza/src/stylesheets/partials/_queries.sass */
+  /* line 119, /Users/exterminateart/apps/rubyfuza/src/stylesheets/partials/_queries.sass */
   h2 {
     font-size: 1.5em;
   }
 
-  /* line 113, /Users/exterminateart/apps/rubyfuza/src/stylesheets/partials/_queries.sass */
+  /* line 122, /Users/exterminateart/apps/rubyfuza/src/stylesheets/partials/_queries.sass */
   nav#main {
     text-align: center;
   }
-  /* line 115, /Users/exterminateart/apps/rubyfuza/src/stylesheets/partials/_queries.sass */
+  /* line 124, /Users/exterminateart/apps/rubyfuza/src/stylesheets/partials/_queries.sass */
   nav#main .wrapper {
     padding: 0;
     width: 100%;
   }
-  /* line 118, /Users/exterminateart/apps/rubyfuza/src/stylesheets/partials/_queries.sass */
+  /* line 127, /Users/exterminateart/apps/rubyfuza/src/stylesheets/partials/_queries.sass */
   nav#main ul {
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
     float: none;
   }
-  /* line 121, /Users/exterminateart/apps/rubyfuza/src/stylesheets/partials/_queries.sass */
+  /* line 130, /Users/exterminateart/apps/rubyfuza/src/stylesheets/partials/_queries.sass */
   nav#main li a {
     padding: 10px 5px;
   }
-  /* line 123, /Users/exterminateart/apps/rubyfuza/src/stylesheets/partials/_queries.sass */
+  /* line 132, /Users/exterminateart/apps/rubyfuza/src/stylesheets/partials/_queries.sass */
   nav#main .register-now {
     display: inline-block;
     float: none;
     padding: 7px 0 10px;
   }
 
-  /* line 129, /Users/exterminateart/apps/rubyfuza/src/stylesheets/partials/_queries.sass */
+  /* line 138, /Users/exterminateart/apps/rubyfuza/src/stylesheets/partials/_queries.sass */
   header#header h1 {
     padding: 30px 0 0;
   }
-  /* line 131, /Users/exterminateart/apps/rubyfuza/src/stylesheets/partials/_queries.sass */
+  /* line 140, /Users/exterminateart/apps/rubyfuza/src/stylesheets/partials/_queries.sass */
   header#header h2 {
     margin-top: 0;
   }
-  /* line 133, /Users/exterminateart/apps/rubyfuza/src/stylesheets/partials/_queries.sass */
+  /* line 142, /Users/exterminateart/apps/rubyfuza/src/stylesheets/partials/_queries.sass */
   header#header h3 {
     font-size: 1.6em;
     padding-top: 30px;
   }
 
-  /* line 137, /Users/exterminateart/apps/rubyfuza/src/stylesheets/partials/_queries.sass */
+  /* line 146, /Users/exterminateart/apps/rubyfuza/src/stylesheets/partials/_queries.sass */
   #speakers li {
     margin: 0 5% 2em;
     width: 40%;
