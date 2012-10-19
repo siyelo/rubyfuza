@@ -490,7 +490,7 @@ nav#main a {
 /* line 21, /Users/exterminateart/apps/rubyfuza/src/stylesheets/partials/_content.sass */
 .rounded {
   border: 6px solid rgba(0, 0, 0, 0.1);
-  max-width: 220px;
+  max-width: 200px;
   -moz-border-radius: 50%;
   -webkit-border-radius: 50%;
   -o-border-radius: 50%;
@@ -778,71 +778,76 @@ nav#main a {
   .wrapper {
     max-width: 960px;
   }
+
+  /* line 13, /Users/exterminateart/apps/rubyfuza/src/stylesheets/partials/_queries.sass */
+  .rounded {
+    margin-left: 20px;
+  }
 }
 @media only screen and (max-width: 960px) {
-  /* line 16, /Users/exterminateart/apps/rubyfuza/src/stylesheets/partials/_queries.sass */
+  /* line 18, /Users/exterminateart/apps/rubyfuza/src/stylesheets/partials/_queries.sass */
   .wrapper {
     max-width: 960px;
     padding: 0 3%;
     width: 94%;
   }
 
-  /* line 20, /Users/exterminateart/apps/rubyfuza/src/stylesheets/partials/_queries.sass */
+  /* line 22, /Users/exterminateart/apps/rubyfuza/src/stylesheets/partials/_queries.sass */
   .heading {
     margin: 30px -3% 20px;
     padding: 7px 3%;
   }
 
-  /* line 23, /Users/exterminateart/apps/rubyfuza/src/stylesheets/partials/_queries.sass */
+  /* line 25, /Users/exterminateart/apps/rubyfuza/src/stylesheets/partials/_queries.sass */
   h2 {
     font-size: 1.6em;
   }
 
-  /* line 27, /Users/exterminateart/apps/rubyfuza/src/stylesheets/partials/_queries.sass */
+  /* line 29, /Users/exterminateart/apps/rubyfuza/src/stylesheets/partials/_queries.sass */
   nav#main li a {
     font-size: 1.1em;
     padding: 15px;
   }
 
-  /* line 30, /Users/exterminateart/apps/rubyfuza/src/stylesheets/partials/_queries.sass */
+  /* line 32, /Users/exterminateart/apps/rubyfuza/src/stylesheets/partials/_queries.sass */
   .register-now {
     padding: 15px 0;
   }
 
-  /* line 34, /Users/exterminateart/apps/rubyfuza/src/stylesheets/partials/_queries.sass */
+  /* line 36, /Users/exterminateart/apps/rubyfuza/src/stylesheets/partials/_queries.sass */
   header#header h1 {
     padding: 40px 0 0;
   }
-  /* line 36, /Users/exterminateart/apps/rubyfuza/src/stylesheets/partials/_queries.sass */
+  /* line 38, /Users/exterminateart/apps/rubyfuza/src/stylesheets/partials/_queries.sass */
   header#header h2 {
     margin-top: 15px;
   }
-  /* line 38, /Users/exterminateart/apps/rubyfuza/src/stylesheets/partials/_queries.sass */
+  /* line 40, /Users/exterminateart/apps/rubyfuza/src/stylesheets/partials/_queries.sass */
   header#header h3 {
     font-size: 3.3em;
     padding-top: 80px;
   }
-  /* line 41, /Users/exterminateart/apps/rubyfuza/src/stylesheets/partials/_queries.sass */
+  /* line 43, /Users/exterminateart/apps/rubyfuza/src/stylesheets/partials/_queries.sass */
   header#header .features {
     margin-bottom: 50px;
   }
-  /* line 43, /Users/exterminateart/apps/rubyfuza/src/stylesheets/partials/_queries.sass */
+  /* line 45, /Users/exterminateart/apps/rubyfuza/src/stylesheets/partials/_queries.sass */
   header#header .features p {
     padding-right: 0;
   }
-  /* line 45, /Users/exterminateart/apps/rubyfuza/src/stylesheets/partials/_queries.sass */
+  /* line 47, /Users/exterminateart/apps/rubyfuza/src/stylesheets/partials/_queries.sass */
   header#header .features p span {
     font-size: 0.9em;
   }
-  /* line 47, /Users/exterminateart/apps/rubyfuza/src/stylesheets/partials/_queries.sass */
+  /* line 49, /Users/exterminateart/apps/rubyfuza/src/stylesheets/partials/_queries.sass */
   header#header .features li:last-child p {
     font-size: 0.9em;
   }
-  /* line 49, /Users/exterminateart/apps/rubyfuza/src/stylesheets/partials/_queries.sass */
+  /* line 51, /Users/exterminateart/apps/rubyfuza/src/stylesheets/partials/_queries.sass */
   header#header .features li:last-child p span {
     font-size: 0.5em;
   }
-  /* line 51, /Users/exterminateart/apps/rubyfuza/src/stylesheets/partials/_queries.sass */
+  /* line 53, /Users/exterminateart/apps/rubyfuza/src/stylesheets/partials/_queries.sass */
   header#header a.action {
     display: block;
     margin: 20px 0 20px 20%;
@@ -855,83 +860,83 @@ nav#main a {
     transform: rotate(0);
   }
 
-  /* line 59, /Users/exterminateart/apps/rubyfuza/src/stylesheets/partials/_queries.sass */
+  /* line 61, /Users/exterminateart/apps/rubyfuza/src/stylesheets/partials/_queries.sass */
   #sponsors .big-sponsor {
     display: block;
     margin-bottom: 40px;
   }
-  /* line 62, /Users/exterminateart/apps/rubyfuza/src/stylesheets/partials/_queries.sass */
+  /* line 64, /Users/exterminateart/apps/rubyfuza/src/stylesheets/partials/_queries.sass */
   #sponsors .big-sponsor p, #sponsors .big-sponsor a {
     display: block;
     padding-left: 0;
     vertical-align: middle;
     width: 100%;
   }
-  /* line 67, /Users/exterminateart/apps/rubyfuza/src/stylesheets/partials/_queries.sass */
+  /* line 69, /Users/exterminateart/apps/rubyfuza/src/stylesheets/partials/_queries.sass */
   #sponsors .big-sponsor p {
     padding-right: 10px;
   }
 }
 @media only screen and (max-width: 740px) {
-  /* line 73, /Users/exterminateart/apps/rubyfuza/src/stylesheets/partials/_queries.sass */
+  /* line 75, /Users/exterminateart/apps/rubyfuza/src/stylesheets/partials/_queries.sass */
   h2 {
     font-size: 1.5em;
   }
 
-  /* line 76, /Users/exterminateart/apps/rubyfuza/src/stylesheets/partials/_queries.sass */
+  /* line 78, /Users/exterminateart/apps/rubyfuza/src/stylesheets/partials/_queries.sass */
   nav#main {
     text-align: center;
   }
-  /* line 78, /Users/exterminateart/apps/rubyfuza/src/stylesheets/partials/_queries.sass */
+  /* line 80, /Users/exterminateart/apps/rubyfuza/src/stylesheets/partials/_queries.sass */
   nav#main ul {
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
     float: none;
   }
-  /* line 81, /Users/exterminateart/apps/rubyfuza/src/stylesheets/partials/_queries.sass */
+  /* line 83, /Users/exterminateart/apps/rubyfuza/src/stylesheets/partials/_queries.sass */
   nav#main li a {
     padding: 10px;
   }
-  /* line 83, /Users/exterminateart/apps/rubyfuza/src/stylesheets/partials/_queries.sass */
+  /* line 85, /Users/exterminateart/apps/rubyfuza/src/stylesheets/partials/_queries.sass */
   nav#main .register-now {
     display: inline-block;
     float: none;
     padding: 10px 0 15px;
   }
 
-  /* line 90, /Users/exterminateart/apps/rubyfuza/src/stylesheets/partials/_queries.sass */
+  /* line 92, /Users/exterminateart/apps/rubyfuza/src/stylesheets/partials/_queries.sass */
   header#header h2, header#header h1 {
     display: block;
     float: none;
     width: auto;
   }
-  /* line 94, /Users/exterminateart/apps/rubyfuza/src/stylesheets/partials/_queries.sass */
+  /* line 96, /Users/exterminateart/apps/rubyfuza/src/stylesheets/partials/_queries.sass */
   header#header h1 {
     padding: 30px 0 0;
     text-align: center;
   }
-  /* line 97, /Users/exterminateart/apps/rubyfuza/src/stylesheets/partials/_queries.sass */
+  /* line 99, /Users/exterminateart/apps/rubyfuza/src/stylesheets/partials/_queries.sass */
   header#header h2 {
     margin-top: 10px;
   }
-  /* line 99, /Users/exterminateart/apps/rubyfuza/src/stylesheets/partials/_queries.sass */
+  /* line 101, /Users/exterminateart/apps/rubyfuza/src/stylesheets/partials/_queries.sass */
   header#header h3 {
     font-size: 2.5em;
     padding-top: 40px;
   }
 
-  /* line 103, /Users/exterminateart/apps/rubyfuza/src/stylesheets/partials/_queries.sass */
+  /* line 105, /Users/exterminateart/apps/rubyfuza/src/stylesheets/partials/_queries.sass */
   #speakers li {
     margin: 0 3% 2em;
     width: 27%;
   }
 }
 @media only screen and (max-width: 540px) {
-  /* line 110, /Users/exterminateart/apps/rubyfuza/src/stylesheets/partials/_queries.sass */
+  /* line 112, /Users/exterminateart/apps/rubyfuza/src/stylesheets/partials/_queries.sass */
   .wrapper {
     min-width: 300px;
   }
 
-  /* line 113, /Users/exterminateart/apps/rubyfuza/src/stylesheets/partials/_queries.sass */
+  /* line 115, /Users/exterminateart/apps/rubyfuza/src/stylesheets/partials/_queries.sass */
   #main_nav, .half, .third, .two-thirds, .fourth {
     clear: both;
     display: block;
@@ -939,51 +944,51 @@ nav#main a {
     width: 100%;
   }
 
-  /* line 119, /Users/exterminateart/apps/rubyfuza/src/stylesheets/partials/_queries.sass */
+  /* line 121, /Users/exterminateart/apps/rubyfuza/src/stylesheets/partials/_queries.sass */
   h2 {
     font-size: 1.5em;
   }
 
-  /* line 122, /Users/exterminateart/apps/rubyfuza/src/stylesheets/partials/_queries.sass */
+  /* line 124, /Users/exterminateart/apps/rubyfuza/src/stylesheets/partials/_queries.sass */
   nav#main {
     text-align: center;
   }
-  /* line 124, /Users/exterminateart/apps/rubyfuza/src/stylesheets/partials/_queries.sass */
+  /* line 126, /Users/exterminateart/apps/rubyfuza/src/stylesheets/partials/_queries.sass */
   nav#main .wrapper {
     padding: 0;
     width: 100%;
   }
-  /* line 127, /Users/exterminateart/apps/rubyfuza/src/stylesheets/partials/_queries.sass */
+  /* line 129, /Users/exterminateart/apps/rubyfuza/src/stylesheets/partials/_queries.sass */
   nav#main ul {
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
     float: none;
   }
-  /* line 130, /Users/exterminateart/apps/rubyfuza/src/stylesheets/partials/_queries.sass */
+  /* line 132, /Users/exterminateart/apps/rubyfuza/src/stylesheets/partials/_queries.sass */
   nav#main li a {
     padding: 10px 5px;
   }
-  /* line 132, /Users/exterminateart/apps/rubyfuza/src/stylesheets/partials/_queries.sass */
+  /* line 134, /Users/exterminateart/apps/rubyfuza/src/stylesheets/partials/_queries.sass */
   nav#main .register-now {
     display: inline-block;
     float: none;
     padding: 7px 0 10px;
   }
 
-  /* line 138, /Users/exterminateart/apps/rubyfuza/src/stylesheets/partials/_queries.sass */
+  /* line 140, /Users/exterminateart/apps/rubyfuza/src/stylesheets/partials/_queries.sass */
   header#header h1 {
     padding: 30px 0 0;
   }
-  /* line 140, /Users/exterminateart/apps/rubyfuza/src/stylesheets/partials/_queries.sass */
+  /* line 142, /Users/exterminateart/apps/rubyfuza/src/stylesheets/partials/_queries.sass */
   header#header h2 {
     margin-top: 0;
   }
-  /* line 142, /Users/exterminateart/apps/rubyfuza/src/stylesheets/partials/_queries.sass */
+  /* line 144, /Users/exterminateart/apps/rubyfuza/src/stylesheets/partials/_queries.sass */
   header#header h3 {
     font-size: 1.6em;
     padding-top: 30px;
   }
 
-  /* line 146, /Users/exterminateart/apps/rubyfuza/src/stylesheets/partials/_queries.sass */
+  /* line 148, /Users/exterminateart/apps/rubyfuza/src/stylesheets/partials/_queries.sass */
   #speakers li {
     margin: 0 5% 2em;
     width: 40%;
