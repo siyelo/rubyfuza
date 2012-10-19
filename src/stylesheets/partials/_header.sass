@@ -51,12 +51,12 @@ header#header
 			
 	a.action
 		background: $two
-		border: 3px dashed $two - #222
+		border: 3px dashed $two - #191919
 		color: #fff
 		display: block
 		font: 1.3em "patua one"
 		letter-spacing: .05em
-		margin-left: 34%
+		margin-left: 38%
 		padding: 12px 0
 		position: absolute
 		text-align: center
@@ -64,13 +64,15 @@ header#header
 		text-transform: uppercase
 		top: 64%
 		width: 24%
-		z-index: 11
+		z-index: 13
 		+box-shadow(rgba(0, 0, 0, 0.6) 0 0 5px)
 		+rotate(4deg)
 		+text-shadow(rgba(0, 0, 0, 0.4) 0 3px 0)
+		+transition(all .3s)
 		&:hover, &:focus
 			background: #fff
 			color: #222
+			+rotate(-1deg)
 			+text-shadow(rgba(255, 255, 255, 0.3) 0 2px 0)
 
 	.conf
@@ -127,7 +129,7 @@ nav#main
 	position: fixed
 	top: 0
 	width: 100%
-	z-index: 10
+	z-index: 12
 	+pie-clearfix
 	border-bottom: 1px solid rgba(0, 0, 0, 0.15)
 
@@ -144,6 +146,8 @@ nav#main
 			text-transform: uppercase
 			&:hover, &:focus
 				background: rgba(0, 0, 0, 0.2)
+	a
+		+transition(all .3s)
 
 .register-now
 	float: right
