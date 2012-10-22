@@ -25,6 +25,7 @@
 	+pie-clearfix
 	img
 		float: left
+
 .you .rounded
 	border-color: rgba(255, 255, 255, 0.1)
 
@@ -64,6 +65,54 @@
 		right: 55px
 	.twitter img
 		right: 25px
+		
+		
+#schedule
+	.timeline
+		padding-top: 10px
+		+pie-clearfix
+	.half
+		padding: 0 2.5%
+		width: 45%
+	.full
+		width: 95%
+		padding: 0 2.5%
+	h2
+		margin-bottom: 20px
+		span
+			color: $one
+			display: block
+			font: bold .6em "open sans", arial, sans-serif
+	ul
+		margin-bottom: 30px
+	li
+		border-top: 1px solid rgba(255, 255, 255, 0.08)
+		display: table
+		padding: 10px
+		width: 100%
+		> *
+			display: table-cell
+		time
+			color: $one
+			width: 50px
+		p
+			padding: 0 10px
+			span
+				display: block
+				font-weight: normal
+				font-style: italic
+			&.speaker
+				font-weight: bold
+				white-space: nowrap
+		a
+			display: block
+			vertical-align: middle
+			text-align: right
+	img
+		float: left
+		margin-right: 10px
+		max-width: 40px
+		+border-radius(50%)
 		
 		
 #sponsors
