@@ -648,8 +648,8 @@ nav#main a {
 }
 /* line 107, /Users/exterminateart/apps/rubyfuza/src/stylesheets/partials/_content.sass */
 #schedule li a {
-  display: block;
-  vertical-align: middle;
+  font-weight: normal;
+  margin-left: 3px;
   text-align: right;
 }
 /* line 111, /Users/exterminateart/apps/rubyfuza/src/stylesheets/partials/_content.sass */
