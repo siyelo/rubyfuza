@@ -4,17 +4,18 @@
 
     .wrapper
       %ul
-        %li= link_to "Features", "#"
-        %li= link_to "Speakers", "#"
-        %li= link_to "Venue", "#"
-        %li= link_to "Sponsors", "#"
-        %li= link_to "Blog", "#"
+        %li= link_to "Features", "#features"
+        %li= link_to "Speakers", "#speakers"
+        %li= link_to "Venue", "#venue"
+        %li= link_to "Sponsors", "#sponsors"
+        %li= link_to "Blog", "#blog"
 
       %a{:href=>"#", :class=>"register-now"}
         Earlybird tickets are available!
         %span Register now!
 
   .wrapper
+    %a{:name=>"features"}
     %h1
       %a{:href=>"#", :alt=>"RubyFuza 2013"}
         %img{:src=>"../images/logo.png"}
@@ -28,7 +29,7 @@
       %span Great talks, great people and great parties!
     %a{:href=>"#", :class=>"action"} Book Your Ticket Now!
     //%a{:href=>"#", :class=>"action2 right"} Book Your Ticket Now!
-      
+
     .conf
       = img "../images/collage3.png"
 
