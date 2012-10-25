@@ -143,13 +143,13 @@ section .wrapper {
 }
 
 /* line 16, /Users/marc/Projects/Rubyfuza/rubyfuza/src/stylesheets/partials/_layout.sass */
-.half, .third, .two-thirds, .fourth, .three-fourths, .fifth {
+.half, .third, .two-thirds, .fourth, .three-fourths, .fifth, .eighth {
   display: inline;
   float: left;
   *zoom: 1;
 }
 /* line 38, /Users/marc/.rvm/gems/ruby-1.9.2-p290@rubyfuza/gems/compass-0.11.7/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
-.half:after, .third:after, .two-thirds:after, .fourth:after, .three-fourths:after, .fifth:after {
+.half:after, .third:after, .two-thirds:after, .fourth:after, .three-fourths:after, .fifth:after, .eighth:after {
   content: "";
   display: table;
   clear: both;
@@ -186,18 +186,23 @@ section .wrapper {
 }
 
 /* line 39, /Users/marc/Projects/Rubyfuza/rubyfuza/src/stylesheets/partials/_layout.sass */
+.eighth {
+  width: 12.5%;
+}
+
+/* line 42, /Users/marc/Projects/Rubyfuza/rubyfuza/src/stylesheets/partials/_layout.sass */
 .left {
   display: inline;
   float: left;
 }
 
-/* line 43, /Users/marc/Projects/Rubyfuza/rubyfuza/src/stylesheets/partials/_layout.sass */
+/* line 46, /Users/marc/Projects/Rubyfuza/rubyfuza/src/stylesheets/partials/_layout.sass */
 .right {
   display: inline;
   float: right;
 }
 
-/* line 47, /Users/marc/Projects/Rubyfuza/rubyfuza/src/stylesheets/partials/_layout.sass */
+/* line 50, /Users/marc/Projects/Rubyfuza/rubyfuza/src/stylesheets/partials/_layout.sass */
 .clearfix {
   *zoom: 1;
 }
@@ -537,11 +542,21 @@ nav#main a {
   border-color: rgba(255, 255, 255, 0.2);
 }
 /* line 47, /Users/marc/Projects/Rubyfuza/rubyfuza/src/stylesheets/partials/_content.sass */
+#speakers li .hot {
+  color: #c93131;
+  font-weight: bold;
+  display: block;
+}
+/* line 51, /Users/marc/Projects/Rubyfuza/rubyfuza/src/stylesheets/partials/_content.sass */
+#speakers li .hot:hover {
+  color: #98c9ee;
+}
+/* line 53, /Users/marc/Projects/Rubyfuza/rubyfuza/src/stylesheets/partials/_content.sass */
 #speakers h2 {
   color: #98c9ee;
   white-space: nowrap;
 }
-/* line 50, /Users/marc/Projects/Rubyfuza/rubyfuza/src/stylesheets/partials/_content.sass */
+/* line 56, /Users/marc/Projects/Rubyfuza/rubyfuza/src/stylesheets/partials/_content.sass */
 #speakers img {
   max-width: 220px;
   width: 100%;
@@ -556,7 +571,7 @@ nav#main a {
   -o-transition: border 0.3s;
   transition: border 0.3s;
 }
-/* line 56, /Users/marc/Projects/Rubyfuza/rubyfuza/src/stylesheets/partials/_content.sass */
+/* line 62, /Users/marc/Projects/Rubyfuza/rubyfuza/src/stylesheets/partials/_content.sass */
 #speakers .github, #speakers .twitter {
   opacity: 0.7;
   -moz-transition: all 0.3s;
@@ -564,23 +579,23 @@ nav#main a {
   -o-transition: all 0.3s;
   transition: all 0.3s;
 }
-/* line 59, /Users/marc/Projects/Rubyfuza/rubyfuza/src/stylesheets/partials/_content.sass */
+/* line 65, /Users/marc/Projects/Rubyfuza/rubyfuza/src/stylesheets/partials/_content.sass */
 #speakers .github img, #speakers .twitter img {
   border: none;
   position: absolute;
   top: 20px;
   width: auto;
 }
-/* line 64, /Users/marc/Projects/Rubyfuza/rubyfuza/src/stylesheets/partials/_content.sass */
+/* line 70, /Users/marc/Projects/Rubyfuza/rubyfuza/src/stylesheets/partials/_content.sass */
 #speakers .github img {
   right: 55px;
 }
-/* line 66, /Users/marc/Projects/Rubyfuza/rubyfuza/src/stylesheets/partials/_content.sass */
+/* line 72, /Users/marc/Projects/Rubyfuza/rubyfuza/src/stylesheets/partials/_content.sass */
 #speakers .twitter img {
   right: 25px;
 }
 
-/* line 71, /Users/marc/Projects/Rubyfuza/rubyfuza/src/stylesheets/partials/_content.sass */
+/* line 77, /Users/marc/Projects/Rubyfuza/rubyfuza/src/stylesheets/partials/_content.sass */
 #schedule .timeline {
   padding-top: 10px;
   *zoom: 1;
@@ -591,68 +606,68 @@ nav#main a {
   display: table;
   clear: both;
 }
-/* line 74, /Users/marc/Projects/Rubyfuza/rubyfuza/src/stylesheets/partials/_content.sass */
+/* line 80, /Users/marc/Projects/Rubyfuza/rubyfuza/src/stylesheets/partials/_content.sass */
 #schedule .half {
   padding: 0 2.5%;
   width: 45%;
 }
-/* line 77, /Users/marc/Projects/Rubyfuza/rubyfuza/src/stylesheets/partials/_content.sass */
+/* line 83, /Users/marc/Projects/Rubyfuza/rubyfuza/src/stylesheets/partials/_content.sass */
 #schedule .full {
   width: 95%;
   padding: 0 2.5%;
 }
-/* line 80, /Users/marc/Projects/Rubyfuza/rubyfuza/src/stylesheets/partials/_content.sass */
+/* line 86, /Users/marc/Projects/Rubyfuza/rubyfuza/src/stylesheets/partials/_content.sass */
 #schedule h2 {
   margin-bottom: 20px;
 }
-/* line 82, /Users/marc/Projects/Rubyfuza/rubyfuza/src/stylesheets/partials/_content.sass */
+/* line 88, /Users/marc/Projects/Rubyfuza/rubyfuza/src/stylesheets/partials/_content.sass */
 #schedule h2 span {
   color: #98c9ee;
   display: block;
   font: bold 0.6em "open sans", arial, sans-serif;
 }
-/* line 86, /Users/marc/Projects/Rubyfuza/rubyfuza/src/stylesheets/partials/_content.sass */
+/* line 92, /Users/marc/Projects/Rubyfuza/rubyfuza/src/stylesheets/partials/_content.sass */
 #schedule ul {
   margin-bottom: 30px;
 }
-/* line 88, /Users/marc/Projects/Rubyfuza/rubyfuza/src/stylesheets/partials/_content.sass */
+/* line 94, /Users/marc/Projects/Rubyfuza/rubyfuza/src/stylesheets/partials/_content.sass */
 #schedule li {
   border-top: 1px solid rgba(255, 255, 255, 0.08);
   display: table;
   padding: 10px;
   width: 100%;
 }
-/* line 93, /Users/marc/Projects/Rubyfuza/rubyfuza/src/stylesheets/partials/_content.sass */
+/* line 99, /Users/marc/Projects/Rubyfuza/rubyfuza/src/stylesheets/partials/_content.sass */
 #schedule li > * {
   display: table-cell;
 }
-/* line 95, /Users/marc/Projects/Rubyfuza/rubyfuza/src/stylesheets/partials/_content.sass */
+/* line 101, /Users/marc/Projects/Rubyfuza/rubyfuza/src/stylesheets/partials/_content.sass */
 #schedule li time {
   color: #98c9ee;
   width: 50px;
 }
-/* line 98, /Users/marc/Projects/Rubyfuza/rubyfuza/src/stylesheets/partials/_content.sass */
+/* line 104, /Users/marc/Projects/Rubyfuza/rubyfuza/src/stylesheets/partials/_content.sass */
 #schedule li p {
   padding: 0 10px;
 }
-/* line 100, /Users/marc/Projects/Rubyfuza/rubyfuza/src/stylesheets/partials/_content.sass */
+/* line 106, /Users/marc/Projects/Rubyfuza/rubyfuza/src/stylesheets/partials/_content.sass */
 #schedule li p span {
   display: block;
   font-weight: normal;
   font-style: italic;
 }
-/* line 104, /Users/marc/Projects/Rubyfuza/rubyfuza/src/stylesheets/partials/_content.sass */
+/* line 110, /Users/marc/Projects/Rubyfuza/rubyfuza/src/stylesheets/partials/_content.sass */
 #schedule li p.speaker {
   font-weight: bold;
   white-space: nowrap;
 }
-/* line 107, /Users/marc/Projects/Rubyfuza/rubyfuza/src/stylesheets/partials/_content.sass */
+/* line 113, /Users/marc/Projects/Rubyfuza/rubyfuza/src/stylesheets/partials/_content.sass */
 #schedule li a {
   font-weight: normal;
   margin-left: 3px;
   text-align: right;
 }
-/* line 111, /Users/marc/Projects/Rubyfuza/rubyfuza/src/stylesheets/partials/_content.sass */
+/* line 117, /Users/marc/Projects/Rubyfuza/rubyfuza/src/stylesheets/partials/_content.sass */
 #schedule img {
   float: left;
   margin-right: 10px;
@@ -665,7 +680,7 @@ nav#main a {
   border-radius: 50%;
 }
 
-/* line 119, /Users/marc/Projects/Rubyfuza/rubyfuza/src/stylesheets/partials/_content.sass */
+/* line 125, /Users/marc/Projects/Rubyfuza/rubyfuza/src/stylesheets/partials/_content.sass */
 #sponsors h2 {
   background: rgba(0, 0, 0, 0.1);
   font-family: "Open Sans", arial;
@@ -674,31 +689,31 @@ nav#main a {
   padding: 20px 0;
   text-align: center;
 }
-/* line 126, /Users/marc/Projects/Rubyfuza/rubyfuza/src/stylesheets/partials/_content.sass */
+/* line 132, /Users/marc/Projects/Rubyfuza/rubyfuza/src/stylesheets/partials/_content.sass */
 #sponsors .big-sponsor {
   display: table;
   margin-bottom: 40px;
 }
-/* line 129, /Users/marc/Projects/Rubyfuza/rubyfuza/src/stylesheets/partials/_content.sass */
+/* line 135, /Users/marc/Projects/Rubyfuza/rubyfuza/src/stylesheets/partials/_content.sass */
 #sponsors .big-sponsor p, #sponsors .big-sponsor a {
   display: table-cell;
   vertical-align: middle;
 }
-/* line 132, /Users/marc/Projects/Rubyfuza/rubyfuza/src/stylesheets/partials/_content.sass */
+/* line 138, /Users/marc/Projects/Rubyfuza/rubyfuza/src/stylesheets/partials/_content.sass */
 #sponsors .big-sponsor p {
   margin-bottom: 1em;
   padding-left: 5%;
   width: 65%;
 }
-/* line 136, /Users/marc/Projects/Rubyfuza/rubyfuza/src/stylesheets/partials/_content.sass */
+/* line 142, /Users/marc/Projects/Rubyfuza/rubyfuza/src/stylesheets/partials/_content.sass */
 #sponsors .big-sponsor a {
   width: 30%;
 }
-/* line 138, /Users/marc/Projects/Rubyfuza/rubyfuza/src/stylesheets/partials/_content.sass */
+/* line 144, /Users/marc/Projects/Rubyfuza/rubyfuza/src/stylesheets/partials/_content.sass */
 #sponsors .big-sponsor a img {
   width: 100%;
 }
-/* line 141, /Users/marc/Projects/Rubyfuza/rubyfuza/src/stylesheets/partials/_content.sass */
+/* line 147, /Users/marc/Projects/Rubyfuza/rubyfuza/src/stylesheets/partials/_content.sass */
 #sponsors ul {
   *zoom: 1;
 }
@@ -708,22 +723,22 @@ nav#main a {
   display: table;
   clear: both;
 }
-/* line 143, /Users/marc/Projects/Rubyfuza/rubyfuza/src/stylesheets/partials/_content.sass */
+/* line 149, /Users/marc/Projects/Rubyfuza/rubyfuza/src/stylesheets/partials/_content.sass */
 #sponsors ul li {
   margin-bottom: 40px;
 }
-/* line 145, /Users/marc/Projects/Rubyfuza/rubyfuza/src/stylesheets/partials/_content.sass */
+/* line 151, /Users/marc/Projects/Rubyfuza/rubyfuza/src/stylesheets/partials/_content.sass */
 #sponsors ul a {
   display: block;
 }
-/* line 147, /Users/marc/Projects/Rubyfuza/rubyfuza/src/stylesheets/partials/_content.sass */
+/* line 153, /Users/marc/Projects/Rubyfuza/rubyfuza/src/stylesheets/partials/_content.sass */
 #sponsors ul img {
   display: block;
   margin-right: 20px;
   width: 92%;
 }
 
-/* line 153, /Users/marc/Projects/Rubyfuza/rubyfuza/src/stylesheets/partials/_content.sass */
+/* line 159, /Users/marc/Projects/Rubyfuza/rubyfuza/src/stylesheets/partials/_content.sass */
 #venue .wrapper > a {
   background: #1e3146;
   background: rgba(0, 0, 0, 0.15);
@@ -734,28 +749,28 @@ nav#main a {
   padding: 10px 30px 10px 70px;
   text-decoration: none;
 }
-/* line 162, /Users/marc/Projects/Rubyfuza/rubyfuza/src/stylesheets/partials/_content.sass */
+/* line 168, /Users/marc/Projects/Rubyfuza/rubyfuza/src/stylesheets/partials/_content.sass */
 #venue .wrapper > a:hover, #venue .wrapper > a:focus {
   background: rgba(0, 0, 0, 0.1);
 }
-/* line 164, /Users/marc/Projects/Rubyfuza/rubyfuza/src/stylesheets/partials/_content.sass */
+/* line 170, /Users/marc/Projects/Rubyfuza/rubyfuza/src/stylesheets/partials/_content.sass */
 #venue .wrapper > a.more {
   margin-left: 10px;
   padding-left: 30px;
 }
-/* line 167, /Users/marc/Projects/Rubyfuza/rubyfuza/src/stylesheets/partials/_content.sass */
+/* line 173, /Users/marc/Projects/Rubyfuza/rubyfuza/src/stylesheets/partials/_content.sass */
 #venue img {
   border-top: 5px solid white;
   border-bottom: 5px solid white;
   margin: 10px 0 30px;
   width: 100%;
 }
-/* line 172, /Users/marc/Projects/Rubyfuza/rubyfuza/src/stylesheets/partials/_content.sass */
+/* line 178, /Users/marc/Projects/Rubyfuza/rubyfuza/src/stylesheets/partials/_content.sass */
 #venue .rounded {
   margin: 0 20px 0 0;
   max-width: 200px;
 }
-/* line 175, /Users/marc/Projects/Rubyfuza/rubyfuza/src/stylesheets/partials/_content.sass */
+/* line 181, /Users/marc/Projects/Rubyfuza/rubyfuza/src/stylesheets/partials/_content.sass */
 #venue iframe {
   float: left;
   position: relative;
@@ -767,12 +782,12 @@ nav#main a {
   -khtml-border-radius: 50%;
   border-radius: 50%;
 }
-/* line 181, /Users/marc/Projects/Rubyfuza/rubyfuza/src/stylesheets/partials/_content.sass */
+/* line 187, /Users/marc/Projects/Rubyfuza/rubyfuza/src/stylesheets/partials/_content.sass */
 #venue p {
   margin-top: 15px;
 }
 
-/* line 186, /Users/marc/Projects/Rubyfuza/rubyfuza/src/stylesheets/partials/_content.sass */
+/* line 192, /Users/marc/Projects/Rubyfuza/rubyfuza/src/stylesheets/partials/_content.sass */
 #blog .wrapper > a {
   border-top: 1px solid rgba(255, 255, 255, 0.07);
   display: block;
@@ -780,7 +795,7 @@ nav#main a {
   padding: 15px 0;
   text-align: center;
 }
-/* line 192, /Users/marc/Projects/Rubyfuza/rubyfuza/src/stylesheets/partials/_content.sass */
+/* line 198, /Users/marc/Projects/Rubyfuza/rubyfuza/src/stylesheets/partials/_content.sass */
 #blog ul {
   *zoom: 1;
 }
@@ -790,31 +805,31 @@ nav#main a {
   display: table;
   clear: both;
 }
-/* line 194, /Users/marc/Projects/Rubyfuza/rubyfuza/src/stylesheets/partials/_content.sass */
+/* line 200, /Users/marc/Projects/Rubyfuza/rubyfuza/src/stylesheets/partials/_content.sass */
 #blog article {
   margin-left: 20px;
   padding: 0 45px;
   position: relative;
 }
-/* line 198, /Users/marc/Projects/Rubyfuza/rubyfuza/src/stylesheets/partials/_content.sass */
+/* line 204, /Users/marc/Projects/Rubyfuza/rubyfuza/src/stylesheets/partials/_content.sass */
 #blog article header {
   padding-bottom: 12px;
 }
-/* line 200, /Users/marc/Projects/Rubyfuza/rubyfuza/src/stylesheets/partials/_content.sass */
+/* line 206, /Users/marc/Projects/Rubyfuza/rubyfuza/src/stylesheets/partials/_content.sass */
 #blog article h2 {
   line-height: 1.3;
 }
-/* line 202, /Users/marc/Projects/Rubyfuza/rubyfuza/src/stylesheets/partials/_content.sass */
+/* line 208, /Users/marc/Projects/Rubyfuza/rubyfuza/src/stylesheets/partials/_content.sass */
 #blog article small {
   color: #98c9ee;
 }
-/* line 204, /Users/marc/Projects/Rubyfuza/rubyfuza/src/stylesheets/partials/_content.sass */
+/* line 210, /Users/marc/Projects/Rubyfuza/rubyfuza/src/stylesheets/partials/_content.sass */
 #blog article time {
   left: 0;
   position: absolute;
   top: 2px;
 }
-/* line 208, /Users/marc/Projects/Rubyfuza/rubyfuza/src/stylesheets/partials/_content.sass */
+/* line 214, /Users/marc/Projects/Rubyfuza/rubyfuza/src/stylesheets/partials/_content.sass */
 #blog article time span {
   color: #98c9ee;
   font-family: "Patua One", "open sans", arial, sans-serif;
@@ -822,23 +837,23 @@ nav#main a {
   letter-spacing: 0.075em;
   text-transform: uppercase;
 }
-/* line 214, /Users/marc/Projects/Rubyfuza/rubyfuza/src/stylesheets/partials/_content.sass */
+/* line 220, /Users/marc/Projects/Rubyfuza/rubyfuza/src/stylesheets/partials/_content.sass */
 #blog article time span.day {
   font-size: 2.5em;
   line-height: 0.9;
 }
-/* line 217, /Users/marc/Projects/Rubyfuza/rubyfuza/src/stylesheets/partials/_content.sass */
+/* line 223, /Users/marc/Projects/Rubyfuza/rubyfuza/src/stylesheets/partials/_content.sass */
 #blog article time span.month {
   font-size: 1.3em;
   line-height: 1;
 }
-/* line 220, /Users/marc/Projects/Rubyfuza/rubyfuza/src/stylesheets/partials/_content.sass */
+/* line 226, /Users/marc/Projects/Rubyfuza/rubyfuza/src/stylesheets/partials/_content.sass */
 #blog article time span.year {
   font-size: 1.05em;
   line-height: 1;
 }
 
-/* line 224, /Users/marc/Projects/Rubyfuza/rubyfuza/src/stylesheets/partials/_content.sass */
+/* line 230, /Users/marc/Projects/Rubyfuza/rubyfuza/src/stylesheets/partials/_content.sass */
 .light {
   background: rgba(0, 0, 0, 0.2);
 }
