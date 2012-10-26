@@ -1209,4 +1209,10 @@ nav#main a {
   nav#main li a {
     font-size: 11px;
   }
+
+  /* line 212, /Users/exterminateart/apps/rubyfuza/src/stylesheets/partials/_queries.sass */
+  #speakers li {
+    height: 200px;
+    margin: 0 5% 2em;
+  }
 }
