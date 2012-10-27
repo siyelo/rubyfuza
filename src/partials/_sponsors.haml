@@ -1,116 +1,110 @@
 %section#sponsors
-  .wrapper
-    %h1.heading
-      %a{:name=>"sponsors"}
-      %span Sponsors
+	.wrapper
+		%h1.heading
+			%a{:name=>"sponsors"}
+			%span Sponsors
 
-    .rubyfuza.big-sponsor
-      %a{:href=>"#"}
-        %img{:src=>"../images/logo.png"}
-      %p
-        %strong Why sponsor Rubyfuza?
-        No conference can exist without sponsorship from its industry, and Rubyfuza is no different. Sponsorship will be needed to keep costs for the our delegates low, and to make South Africa's Rubyfuza an outstanding, worthwhile event. (Keep in mind, Rubyfuza is a not-for-profit event!)
-    .madmimi.big-sponsor.hidden
-      %a{:href=>"https://www.madmimi.com"}
-        %img{:src=>"../images/logos/madmimi.png"}
-      %span Ruby-level sponsor
-      %p
-        Mad Mimi is a simple, intelligent and powerful email marketing utility that anyone can use.
-        Mad Mimi makes email marketing easy for the creator, and easier on the eyes for the receiver.
-        With ground-breaking technology, Mad Mimi is the simplest way to create branded, well-designed newsletters and promotions.
-        Sign up free today and get started with simple, lovely email marketing.
-    .platform45.big-sponsor.hidden
-      %a{:href=>"http://platform45.com"}
-        %img{:src=>"../images/logos/platform45.png"}
-      %span Ruby-level sponsor
-      %p
-        Platform45 works closely with its clients to empower them to be self sufficient and thoroughly understand how software
-        development works and how to implement and manage the process. Platform45 is not an outsourcing firm.
-        Success depends on the customers involvement with both the design and development teams.
-        Emphasis is placed on relationships and generating maximum value for clients through communication and personal relationships.
-    .hetzner.big-sponsor.hidden
-      %a{:href=>"http://hetzner.co.za"}
-        %img{:src=>"../images/logos/hetzner.png"}
-      %span Ruby-level sponsor
-      %p
-        At Hetzner South Africa we are passionate about web hosting – it’s our core business and it’s what we do best.
-        By consistently delivering excellent service and cost effective web hosting, dedicated servers and custom hosting solutions,
-        Hetzner has exponentially grown its market share, making it the leading web hosting company in South Africa.
-        Inspired by our brand promise ‘Trusted in Hosting’, we focus on providing efficient, sustainable business models,
-        quality service and customer satisfaction. A key contributor to our success is our people.
-        We aim for our teams to manage themselves rather than rely on several layers of hierarchy.
-        We want to give our people the freedom to explore, innovate and create. We recognise that our customers expect reliability
-        and good value from us and it remains our ongoing commitment to earn and retain their trust.
-    .africanstay.big-sponsor.hidden
-      %a{:href=>"http://africanstay.co.za"}
-        %img{:src=>"../images/logos/africanstay.png"}
-      %span Conference organization sponsor
-      %p
-        African Stay is a reputable and reliable reservations company that arranges your accommodation in luxurious safari lodges,
-        camps and exclusive hotels throughout Southern Africa.The accommodation we represent all offer unique facilities.
-        Most especially, you will enjoy rare splendour and superb hospitality to make your visit unforgettable.
-    .siyelo.big-sponsor.hidden
-      %a{:href=>"http://hetzner.co.za"}
-        %img{:src=>"../images/logos/siyelo.png"}
-      %span Website design sponsor
-      %p
-        Siyelo designs and develops bespoke web applications.
-        We turn ideas into elegant applications through skill and a process that emphasizes collaboration and continuous refinement.
-        Our team delivers profitable and enjoyable user experiences. We love our work and so will you.
-    %ul
-      %li.third#madmimi
-        %a{:href=>"https://www.madmimi.com"}
-          %img{:src=>"../images/logos/madmimi.png"}
-      %li.third#platform45
-        %a{:href=>"http://platform45.com"}
-          %img{:src=>"../images/logos/platform45.png"}
-      %li.third#hetzner
-        %a{:href=>"http://hetzner.co.za"}
-          %img{:src=>"../images/logos/hetzner.png"}
+		%ul.sponsors-list
+			%li.third
+				%a{:href=>"http://www.madmimi.com", :target=>"_blank", :title=>"Mad Mimi"}
+					%img{:src=>"../images/logos/madmimi.png"}
+				.row
+					%a{:href=>"http://www.madmimi.com", :target=>"_blank", :title=>"Mad Mimi"} madmimi.com
+					%span &#9679;
+					%a{:href=>"#madmimi", :class=>"info fancybox", rel: 'sponsors'} info
+				%small Ruby level sponsor
+				
+				#madmimi.detail
+					%a{:href=>"https://www.madmimi.com"}
+						%img{:src=>"../images/logos/madmimi2.png", :class=>"square"}
+					%p Mad Mimi is a simple, intelligent and powerful email marketing utility that anyone can use. Mad Mimi makes email marketing easy for the creator, and easier on the eyes for the receiver. With ground-breaking technology, Mad Mimi is the simplest way to create branded, well-designed newsletters and promotions. Sign up free today and get started with simple, lovely email marketing.
+					%span.right Ruby-level sponsor
+					%a{:href=>"http://www.madmimi.com", :target=>"_blank", :title=>"Mad Mimi"} madmimi.com
+					
+			%li.third
+				%a{:href=>"http://www.platform45.com", :target=>"_blank", :title=>"Platform45"}
+					%img{:src=>"../images/logos/platform45.png"}
+				.row
+					%a{:href=>"http://www.platform45.com", :target=>"_blank", :title=>"Platform45"} platform45.com
+					%span &#9679;
+					%a{:href=>"#platform45", :class=>"info fancybox", rel: 'sponsors'} info
+				%small Ruby level sponsor
+				
+				#platform45.detail
+					%a{:href=>"http://platform45.com", :target=>"_blank", :title=>"Platform45"}
+						%img{:src=>"../images/logos/platform452.png", :class=>"square"}
+					%p Platform45 works closely with its clients to empower them to be self sufficient and thoroughly understand how software development works and how to implement and manage the process. Platform45 is not an outsourcing firm. Success depends on the customers involvement with both the design and development teams. Emphasis is placed on relationships and generating maximum value for clients through communication and personal relationships.
+					%span.right Ruby-level sponsor
+					%a{:href=>"http://www.platform45.com", :target=>"_blank", :title=>"Platform45"} platform45.com
+				
+			%li.third
+				%a{:href=>"http://hetzner.co.za", :target=>"_blank", :title=>"Hetzner, Trusted in Hosting"}
+					%img{:src=>"../images/logos/hetzner.png"}
+				.row
+					%a{:href=>"http://www.hetzner.co.za", :target=>"_blank", :title=>"Hetzner, Trusted in Hosting"} hetzner.co.za
+					%span &#9679;
+					%a{:href=>"#hetzner", :class=>"info fancybox", rel: 'sponsors'} info
+				%small Ruby level sponsor
+				
+				#hetzner.detail
+					%a{:href=>"http://www.hetzner.co.za", :target=>"_blank", :title=>"Hetzner, Trusted in Hosting"}
+						%img{:src=>"../images/logos/hetzner2.png", :class=>"square"}
+					%p At Hetzner South Africa we are passionate about web hosting – it’s our core business and it’s what we do best. By consistently delivering excellent service and cost effective web hosting, dedicated servers and custom hosting solutions, Hetzner has exponentially grown its market share, making it the leading web hosting company in South Africa. Inspired by our brand promise ‘Trusted in Hosting’, we focus on providing efficient, sustainable business models, quality service and customer satisfaction. A key contributor to our success is our people. We aim for our teams to manage themselves rather than rely on several layers of hierarchy. We want to give our people the freedom to explore, innovate and create. We recognise that our customers expect reliability and good value from us and it remains our ongoing commitment to earn and retain their trust.
+					%span.right Ruby-level sponsor
+					%a{:href=>"http://www.hetzner.co.za", :target=>"_blank", :title=>"Hetzner, Trusted in Hosting"} hetzner.co.za
+					
+		/ %ul.sponsors-list
+		/		%li.fourth
+		/			%a{:href=>"#"}
+		/				%img{:src=>"../images/logo.png"}
+		/		%li.fourth
+		/			%a{:href=>"#"}
+		/				%img{:src=>"../images/logo.png"}
+		/		%li.fourth
+		/			%a{:href=>"#"}
+		/				%img{:src=>"../images/logo.png"}
+		/		%li.fourth
+		/			%a{:href=>"#"}
+		/				%img{:src=>"../images/logo.png"}
 
-    / %ul
-    /   %li.fourth
-    /     %a{:href=>"#"}
-    /       %img{:src=>"../images/logo.png"}
-    /   %li.fourth
-    /     %a{:href=>"#"}
-    /       %img{:src=>"../images/logo.png"}
-    /   %li.fourth
-    /     %a{:href=>"#"}
-    /       %img{:src=>"../images/logo.png"}
-    /   %li.fourth
-    /     %a{:href=>"#"}
-    /       %img{:src=>"../images/logo.png"}
+		%ul.sponsors-list
+			%li.fifth
+				%a{:href=>"http://www.africanstay.co.za", :target=>"_blank", :title=>"African Stay"}
+					%img{:src=>"../images/logos/africanstay.png"}
+				.row
+					%a{:href=>"http://www.africanstay.co.za", :target=>"_blank", :title=>"African Stay"} africanstay.co.za
+					%span &#9679;
+					%a{:href=>"#africanstay", :class=>"info fancybox", rel: 'sponsors'} info
+				%small Conference organization
+				
+				#africanstay.detail
+					%a{:href=>"http://www.africanstay.co.za", :target=>"_blank", :title=>"African Stay"}
+						%img{:src=>"../images/logos/africanstay2.png", :class=>"square"}
+					%p African Stay is a reputable and reliable reservations company that arranges your accommodation in luxurious safari lodges, camps and exclusive hotels throughout Southern Africa.The accommodation we represent all offer unique facilities. Most especially, you will enjoy rare splendour and superb hospitality to make your visit unforgettable.
+					%span.right Conference organization sponsor
+					%a{:href=>"http://www.africanstay.co.za", :target=>"_blank", :title=>"African Stay"} africanstay.co.za
+				
+			%li.fifth
+				%a{:href=>"http://siyelo.com", :target=>"_blank", :title=>"Siyelo Software"}
+					%img{:src=>"../images/logos/siyelo.png"}
+				.row
+					%a{:href=>"http://www.siyelo.com", :target=>"_blank", :title=>"Siyelo Software"} siyelo.com
+					%span &#9679;
+					%a{:href=>"#siyelo", :class=>"info fancybox", rel: 'sponsors'} info
+				%small Website design
 
-    %ul
-      %li.eighth#africanstay
-        %a{:href=>"http://www.africanstay.co.za"}
-          %img{:src=>"../images/logos/africanstay.png"}
-      %li.eighth#siyelo
-        %a{:href=>"http://siyelo.com"}
-          %img{:src=>"../images/logos/siyelo.png"}
-      / %li.eighth
-      /   %a{:href=>"#"}
-      /     %img{:src=>"../images/logo.png"}
-      / %li.eighth
-      /   %a{:href=>"#"}
-      /     %img{:src=>"../images/logo.png"}
-      / %li.eighth
-      /   %a{:href=>"#"}
-      /     %img{:src=>"../images/logo.png"}
-      / %li.eighth
-      /   %a{:href=>"#"}
-      /     %img{:src=>"../images/logo.png"}
-      / %li.eighth
-      /   %a{:href=>"#"}
-      /     %img{:src=>"../images/logo.png"}
-      / %li.eighth
-      /   %a{:href=>"#"}
-      /     %img{:src=>"../images/logo.png"}
+				#siyelo.detail
+					%a{:href=>"http://hetzner.co.za"}
+						%img{:src=>"../images/logos/siyelo2.png", :class=>"square"}
+					
+					%p Siyelo designs and develops bespoke web applications. We turn ideas into elegant applications through skill and a process that emphasizes collaboration and continuous refinement. Our team delivers profitable and enjoyable user experiences. We love our work and so will you.
+					%span.right Website design sponsor
+					%a{:href=>"http://www.siyelo.com", :target=>"_blank", :title=>"Siyelo Software"} siyelo.com
 
-    %h2.sponsor
-      Interested in sponsoring this event?
-      Check out the
-      %a{:href=>"https://dl.dropbox.com/u/16854658/Rubyfuza/sponsors.pdf"} prospectus
-      and drop us an
-      %a{:href=>"mailto:sponsors@rubyfuza.org"} e-mail
+		%h2.sponsor
+			Interested in sponsoring this event?
+			Check out the
+			%a{:href=>"https://dl.dropbox.com/u/16854658/Rubyfuza/sponsors.pdf"} prospectus
+			and drop us an
+			%a{:href=>"mailto:sponsors@rubyfuza.org"} e-mail
+			
