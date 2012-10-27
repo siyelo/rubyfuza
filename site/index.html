@@ -325,7 +325,7 @@
       <a name='sponsors'></a>
       <span>Sponsors</span>
     </h1>
-    <div class='big-sponsor'>
+    <div class='rubyfuza big-sponsor'>
       <a href='#'>
         <img src='../images/logo.png' />
       </a>
@@ -334,18 +334,80 @@
         No conference can exist without sponsorship from its industry, and Rubyfuza is no different. Sponsorship will be needed to keep costs for the our delegates low, and to make South Africa's Rubyfuza an outstanding, worthwhile event. (Keep in mind, Rubyfuza is a not-for-profit event!)
       </p>
     </div>
+    <div class='madmimi big-sponsor hidden'>
+      <a href='https://www.madmimi.com'>
+        <img src='../images/logos/madmimi.png' />
+      </a>
+      <span>Ruby-level sponsor</span>
+      <p>
+        Mad Mimi is a simple, intelligent and powerful email marketing utility that anyone can use.
+        Mad Mimi makes email marketing easy for the creator, and easier on the eyes for the receiver.
+        With ground-breaking technology, Mad Mimi is the simplest way to create branded, well-designed newsletters and promotions.
+        Sign up free today and get started with simple, lovely email marketing.
+      </p>
+    </div>
+    <div class='platform45 big-sponsor hidden'>
+      <a href='http://platform45.com'>
+        <img src='../images/logos/platform45.png' />
+      </a>
+      <span>Ruby-level sponsor</span>
+      <p>
+        Platform45 works closely with its clients to empower them to be self sufficient and thoroughly understand how software
+        development works and how to implement and manage the process. Platform45 is not an outsourcing firm.
+        Success depends on the customers involvement with both the design and development teams.
+        Emphasis is placed on relationships and generating maximum value for clients through communication and personal relationships.
+      </p>
+    </div>
+    <div class='hetzner big-sponsor hidden'>
+      <a href='http://hetzner.co.za'>
+        <img src='../images/logos/hetzner.png' />
+      </a>
+      <span>Ruby-level sponsor</span>
+      <p>
+        At Hetzner South Africa we are passionate about web hosting – it’s our core business and it’s what we do best.
+        By consistently delivering excellent service and cost effective web hosting, dedicated servers and custom hosting solutions,
+        Hetzner has exponentially grown its market share, making it the leading web hosting company in South Africa.
+        Inspired by our brand promise ‘Trusted in Hosting’, we focus on providing efficient, sustainable business models,
+        quality service and customer satisfaction. A key contributor to our success is our people.
+        We aim for our teams to manage themselves rather than rely on several layers of hierarchy.
+        We want to give our people the freedom to explore, innovate and create. We recognise that our customers expect reliability
+        and good value from us and it remains our ongoing commitment to earn and retain their trust.
+      </p>
+    </div>
+    <div class='africanstay big-sponsor hidden'>
+      <a href='http://africanstay.co.za'>
+        <img src='../images/logos/africanstay.png' />
+      </a>
+      <span>Conference organization sponsor</span>
+      <p>
+        African Stay is a reputable and reliable reservations company that arranges your accommodation in luxurious safari lodges,
+        camps and exclusive hotels throughout Southern Africa.The accommodation we represent all offer unique facilities.
+        Most especially, you will enjoy rare splendour and superb hospitality to make your visit unforgettable.
+      </p>
+    </div>
+    <div class='siyelo big-sponsor hidden'>
+      <a href='http://hetzner.co.za'>
+        <img src='../images/logos/siyelo.png' />
+      </a>
+      <span>Website design sponsor</span>
+      <p>
+        Siyelo designs and develops bespoke web applications.
+        We turn ideas into elegant applications through skill and a process that emphasizes collaboration and continuous refinement.
+        Our team delivers profitable and enjoyable user experiences. We love our work and so will you.
+      </p>
+    </div>
     <ul>
-      <li class='third'>
+      <li class='third' id='madmimi'>
         <a href='https://www.madmimi.com'>
           <img src='../images/logos/madmimi.png' />
         </a>
       </li>
-      <li class='third'>
+      <li class='third' id='platform45'>
         <a href='http://platform45.com'>
           <img src='../images/logos/platform45.png' />
         </a>
       </li>
-      <li class='third'>
+      <li class='third' id='hetzner'>
         <a href='http://hetzner.co.za'>
           <img src='../images/logos/hetzner.png' />
         </a>
@@ -365,12 +427,12 @@
     <!-- %a{:href=>"#"} -->
     <!-- %img{:src=>"../images/logo.png"} -->
     <ul>
-      <li class='eighth'>
+      <li class='eighth' id='africanstay'>
         <a href='http://www.africanstay.co.za'>
           <img src='../images/logos/africanstay.png' />
         </a>
       </li>
-      <li class='eighth'>
+      <li class='eighth' id='siyelo'>
         <a href='http://siyelo.com'>
           <img src='../images/logos/siyelo.png' />
         </a>
@@ -452,11 +514,10 @@
       </p>
     </div>
   </footer>
-  <script src='//ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js'></script>
-  <script>window.jQuery || document.write('<script src="js/libs/jquery-1.6.2.min.js"><\/script>')</script>
-  <script src='js/libs/jquery.scrollTo.min.js'></script>
-  <script src='js/libs/jquery.localScroll.min.js'></script>
-  <script>jQuery.localScroll({ offset: -80 })</script>
+  <script src='//ajax.googleapis.com/ajax/libs/jquery/1.7.0/jquery.min.js'></script>
+  <script>window.jQuery || document.write('<script src="js/libs/jquery-1.7.0.min.js"><\/script>')</script>
+  <script src='js/plugins.js'></script>
+  <script src='js/script.js'></script>
   <script>
     window._gaq = [['_setAccount','UAXXXXXXXX1'],['_trackPageview'],['_trackPageLoadTime']];
     Modernizr.load({load: ('https:' == location.protocol ? '//ssl' : '//www') + '.google-analytics.com/ga.js'});
