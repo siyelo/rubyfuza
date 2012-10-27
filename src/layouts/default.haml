@@ -48,11 +48,10 @@
   -# JavaScript at the bottom for fast page loading
 
   -# Grab Google CDN's jQuery, with a protocol relative URL; fall back to local if offline
-  %script{:src => '//ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js'}
-  %script window.jQuery || document.write('<script src="js/libs/jquery-1.6.2.min.js"><\/script>')
-  %script{:src => 'js/libs/jquery.scrollTo.min.js'}
-  %script{:src => 'js/libs/jquery.localScroll.min.js'}
-  %script jQuery.localScroll({ offset: -80 })
+  %script{:src => '//ajax.googleapis.com/ajax/libs/jquery/1.7.0/jquery.min.js'}
+  %script window.jQuery || document.write('<script src="js/libs/jquery-1.7.0.min.js"><\/script>')
+  %script{:src => 'js/plugins.js'}
+  %script{:src => 'js/script.js'}
 
 
   -# end scripts
