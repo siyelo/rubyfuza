@@ -1,29 +1,530 @@
-<h1>SyntaxError</h1>
-<p>
-  (haml):44: unknown regexp options - hadr
-  (haml):44: syntax error, unexpected tSTRING_BEG, expecting '}'
-  ...se(( partial('../shared/header')
-  ...                               ^
-  (haml):46: unknown regexp options - ftr
-  (haml):46: syntax error, unexpected tSTRING_BEG, expecting '}'
-  ...se(( partial('../shared/footer')
-  ...                               ^
-  (haml):47: unknown regexp options - aja
-  (haml):47: no .<digit> floating literal anymore; put 0 before dot
-  ...eapis.com/ajax/libs/jquery/1.7.0/jquery.min.js'></script>\n ...
-  ...                               ^
-  (haml):47: syntax error, unexpected tINTEGER
-  ...apis.com/ajax/libs/jquery/1.7.0/jquery.min.js'></script>\n  ...
-  ...                               ^
-  (haml):47: syntax error, unexpected tSTRING_BEG, expecting '}'
-  ...ibs/jquery/1.7.0/jquery.min.js'></script>\n  <script>window....
-  ...                               ^
-  (haml):47: syntax error, unexpected tIDENTIFIER, expecting keyword_do or '{' or '('
-  ... || document.write('<script src=\"js/libs/jquery-1.7.0.min.j...
-  ...                               ^
-  (haml):47: syntax error, unexpected ',', expecting '}'
-  ...t>\n  <![endif]-->\n</body>\n", -1, false);;_erbout
-  ...                               ^
-</p>
-<h2>Stack Trace</h2>
-/Users/marc/.rvm/gems/ruby-1.9.2-p290@rubyfuza/gems/haml-3.1.6/lib/haml/engine.rb:191:in `eval'<br/>/Users/marc/.rvm/gems/ruby-1.9.2-p290@rubyfuza/gems/haml-3.1.6/lib/haml/engine.rb:191:in `render'<br/>/Users/marc/.rvm/gems/ruby-1.9.2-p290@rubyfuza/gems/staticmatic-0.11.1/lib/staticmatic/mixins/render.rb:112:in `generate_html_from_template_source'<br/>/Users/marc/.rvm/gems/ruby-1.9.2-p290@rubyfuza/gems/staticmatic-0.11.1/lib/staticmatic/mixins/render.rb:41:in `generate_html_with_layout'<br/>/Users/marc/.rvm/gems/ruby-1.9.2-p290@rubyfuza/gems/staticmatic-0.11.1/lib/staticmatic/mixins/build.rb:13:in `block in build_html'<br/>/Users/marc/.rvm/gems/ruby-1.9.2-p290@rubyfuza/gems/staticmatic-0.11.1/lib/staticmatic/mixins/build.rb:10:in `each'<br/>/Users/marc/.rvm/gems/ruby-1.9.2-p290@rubyfuza/gems/staticmatic-0.11.1/lib/staticmatic/mixins/build.rb:10:in `build_html'<br/>/Users/marc/.rvm/gems/ruby-1.9.2-p290@rubyfuza/gems/staticmatic-0.11.1/lib/staticmatic/mixins/build.rb:5:in `build'<br/>/Users/marc/.rvm/gems/ruby-1.9.2-p290@rubyfuza/gems/staticmatic-0.11.1/lib/staticmatic/base.rb:71:in `run'<br/>/Users/marc/.rvm/gems/ruby-1.9.2-p290@rubyfuza/gems/staticmatic-0.11.1/bin/staticmatic:16:in `<top (required)>'<br/>/Users/marc/.rvm/gems/ruby-1.9.2-p290@rubyfuza/bin/staticmatic:19:in `load'<br/>/Users/marc/.rvm/gems/ruby-1.9.2-p290@rubyfuza/bin/staticmatic:19:in `<main>'
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en"> <![endif]-->
+<!--[if IE 7]> <html class="no-js ie7 oldie" lang="en"> <![endif]-->
+<!--[if IE 8]> <html class="no-js ie8 oldie" lang="en"> <![endif]-->
+<!--[if gt IE 8]> <!--> <html class="no-js" lang="en"> <!-- <![endif]-->
+<head>
+  <meta charset='utf-8' />
+  <meta content='IE=edge,chrome=1' http-equiv='X-UA-Compatible' />
+  <link href='/favicon.png' rel='icon' type='image/x-png' />
+  <link href='http://fonts.googleapis.com/css?family=Lobster|Cagliostro|Berkshire+Swash|Belleza|Ruluko|PT+Serif+Caption|Yanone+Kaffeesatz|Amaranth|Squada+One|Chau+Philomene+One|Open+Sans' rel='stylesheet' type='text/css' />
+  <link href='http://fonts.googleapis.com/css?family=Bowlby+One+SC|Yanone+Kaffeesatz:400,700|Patua+One|Bree+Serif|Walter+Turncoat|Open+Sans:400,700|Skranji' rel='stylesheet' type='text/css' />
+  <title>Rubyfuza - Africa's premier Ruby conference</title>
+  <meta content='' name='description' />
+  <meta content='' name='author' />
+  <meta content='width=device-width,initial-scale=1' name='viewport' />
+  <link href="/stylesheets/screen.css" media="all" rel="stylesheet" type="text/css"/>
+  <script src='js/libs/modernizr-2.0.6.min.js'></script>
+</head>
+<body>
+  <header id='header'>
+  <nav id='main'>
+    <div class='wrapper'>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#speakers">Speakers</a></li>
+        <!-- /%li= link_to "Schedule", "#schedule" -->
+        <li><a href="#venue">Venue</a></li>
+        <li><a href="#sponsors">Sponsors</a></li>
+        <li><a href="#blog">Blog</a></li>
+        <li id='register'><a href="http://www.quicket.co.za/events/1209-rubyfuza-2013/">Register</a></li>
+      </ul>
+      <a class='register-now' href='http://www.quicket.co.za/events/1209-rubyfuza-2013/'>
+        Earlybird tickets are available!
+        <span>Register now!</span>
+      </a>
+    </div>
+  </nav>
+  <div class='wrapper'>
+    <a name='about'></a>
+    <h1>
+      <a alt='RubyFuza 2013' href='#'>
+        <img src='../images/logo.png' />
+      </a>
+    </h1>
+    <h2>
+      7-9 February 2013
+      <span>Cape Town, South Africa</span>
+    </h2>
+    <h3>
+      Africa's premier Ruby conference
+      <span>Great talks, great people and great parties!</span>
+    </h3>
+    <a class='action' href='http://www.quicket.co.za/events/1209-rubyfuza-2013/'>Book Your Ticket Now!</a>
+    <!-- /%a{:href=>"#", :class=>"action2 right"} Book Your Ticket Now! -->
+    <div class='conf'>
+      <img alt="Collage3" src="../images/collage3.png"/>
+    </div>
+    <ul class='features'>
+      <li class='third'>
+        <p>
+          <img class='left' src='../images/icon1.png' />
+          <span>2 days, 20 speakers, single track</span>
+        </p>
+      </li>
+      <li class='third'>
+        <p>
+          <img class='left' src='../images/icon2.png' />
+          <span>Evening functions / networking time</span>
+        </p>
+      </li>
+      <li class='third'>
+        <p>
+          <img class='left' src='../images/icon3.png' />
+          <span>Workshop day after the conference</span>
+        </p>
+      </li>
+      <li class='full'>
+        <p>
+          Early bird R900, Full price R1200
+          <span>* includes both days, snacks & workshop (seating limited)</span>
+        </p>
+      </li>
+    </ul>
+  </div>
+</header>
+  <section id='speakers'>
+  <div class='wrapper'>
+    <h1 class='heading'>
+      <a name='speakers'></a>
+      <span>Speakers</span>
+    </h1>
+    <ul>
+      <li>
+        <div class='detail'>
+          <div class='inner'>
+            <h1>Konstantin Haase</h1>
+            <p>
+              OSS developer. Conference-goer. Maintainer of @Sinatra, full time dev on @TravisCI, was full time on @Rubinius, core team member of Rack, Tilt and many more.
+            </p>
+            <h1>Ruby: Where Are You Going?</h1>
+            <p>
+              A look at the past, present and future of web development in Ruby. How does Rails work internally?
+              What is going to happen in Rails 4? What are the plans for Sinatra?
+              Right now, there are at least two replacements for Rack in the makings.
+              But it is the underlying technology used by Rails, Sinatra and nearly any other Ruby web framework out there.
+              Yet, it's the framework authors pushing for the changes. So, what's wrong with Rack?
+              And what does that mean for us as web developers?
+            </p>
+          </div>
+        </div>
+        <div class='rounded'>
+          <img alt="Konstantin" src="../images/speakers/konstantin.jpg"/>
+        </div>
+        <a class='twitter' href='https://twitter.com/konstantinhaase'><img alt="Twitter" src="../images/twitter.png"/></a>
+        <a class='github' href='https://github.com/rkh'><img alt="Github" src="../images/github.png"/></a>
+        <h2>Konstantin Haase</h2>
+        <p>Ruby: Where Are You Going?</p>
+      </li>
+      <li>
+        <div class='detail'>
+          <div class='inner'>
+            <h1>Danish Kahn</h1>
+            <p>
+              I realized I wanted to learn practical programming skills so once I found out about Ruby in college I immediately installed Locomotive on my Mac.
+              Was extremely excited to find out I already had Ruby 1.8.6 preinstalled on my iBook G4 and started hacking on my first Rails project.
+              I find teaching to be enjoyable and have been participating in the SF RailsBridge every so often. I'm still a level 1 whiskey/whisky drinker, but I'm working on that.
+              Currently I am working at GitHub doing cool stuff.
+            </p>
+            <h1>Don't Be an A**hole</h1>
+            <p>
+              Ruby is now 18 years old. It has become a very mature project and the developers that have been using it are a lot more mature now as well. Our community has long since crossed the chasm and we are in the early majority stage. This means that even though we have many people who are well versed in the language we are again having an influx of new people.
+              I want to help those new people feel comfortable enough to believe they can learn and become just as mature as the oldies who are part of the community. Also, I want to educate the oldies on how they can better help out these newbies.
+              The Ruby community has become very much like any other close-knit community. We are very biased towards certain philosophies such as agile development, pair programming, and TDD. Some might compare our community to other close-knit organizations such as fraternities/sororities, athletic clubs and the freemasons. They all have very idealistic philosophies they run their organizations on.
+              I want to show how we compare to these types of organizations. I want to highlight the good things we adopted from running our community this way as well as the bad. I want to show how we can improve and fix the bad habits so that we can create a more open community for new people to join and feel welcomed.
+            </p>
+          </div>
+        </div>
+        <div class='rounded'>
+          <img alt="Danishkhan" src="../images/speakers/danishkhan.jpeg"/>
+        </div>
+        <a class='twitter' href='https://twitter.com/danishkhan'><img alt="Twitter" src="../images/twitter.png"/></a>
+        <a class='github' href='https://github.com/danishkhan'><img alt="Github" src="../images/github.png"/></a>
+        <h2>Danish Khan</h2>
+        <p>Don't Be an A**hole</p>
+      </li>
+      <li>
+        <div class='detail left'>
+          <div class='inner'>
+            <h1>Aaron Kalin</h1>
+            <p>
+              Aaron Kalin is a developer for Treehouse hailing from Chicago and has been programming for over 15 years.
+              At night you'll find him hacking on game servers or experimenting with other programming languages.
+              He's passionate about solving problems and enjoys giving back as much as possible.
+              You'll sometimes find him dressed as a Stormtrooper to raise money for charity or cheering up sick kids in hospitals.
+            </p>
+            <h1>Hey Kid! Don't Copy That Floppy!</h1>
+            <p>
+              Software licensing sets up rules for everyone to follow when contributing or using code.
+              Some companies have specific policies on what types of licenses are compatible with their code base.
+              Other companies put rules on their developers on how they're allowed to contribute code to software. Do you license your software?
+              This talk will review some popular open source software licenses and considerations you should make before contributing code.
+              It's good to be aware of these rules before you end up on the wrong side of a Cease and Desist order.
+            </p>
+          </div>
+        </div>
+        <div class='rounded'>
+          <img alt="Aaron kalin" src="../images/speakers/aaron_kalin.jpg"/>
+        </div>
+        <a class='twitter' href='https://twitter.com/martinisoft'><img alt="Twitter" src="../images/twitter.png"/></a>
+        <a class='github' href='https://github.com/martinisoft'><img alt="Github" src="../images/github.png"/></a>
+        <h2>Aaron Kalin</h2>
+        <p>Hey Kid! Don't Copy That Floppy!</p>
+      </li>
+      <li>
+        <div class='detail left'>
+          <div class='inner'>
+            <h1>Chris Spring</h1>
+            <p>
+              Chris works at Mad Mimi where he spends his days toiling over features, scaling and performance.
+              He's also actively involved in growing the local dev community and is the founder and organiser of Code&Coffee Jhb,
+              as well as an organiser of RubyOnBeer
+            </p>
+            <h1>Rack based web apps with JRuby and TorqueBox</h1>
+            <p>
+              JRuby runs on the JVM to bring high levels of performance and parallelism to your long running ruby code.
+              TorqueBox is a performant and scaleable application server that reduces the complexity and dependencies of rack based web applications.
+              See how these two tools can be used to simplify your ruby web development while delivering excellent performance under heavy
+              loads with some real world examples.
+            </p>
+          </div>
+        </div>
+        <div class='rounded'>
+          <img alt="Chris spring" src="../images/speakers/chris_spring.jpeg"/>
+        </div>
+        <a class='twitter' href='https://twitter.com/autonomous'><img alt="Twitter" src="../images/twitter.png"/></a>
+        <a class='github' href='https://github.com/autonomous'><img alt="Github" src="../images/github.png"/></a>
+        <h2>Chris Spring</h2>
+        <p>Rack based web apps with JRuby and TorqueBox</p>
+      </li>
+      <li>
+        <div class='detail'>
+          <div class='inner'>
+            <h1>Lance Gleason</h1>
+            <p>
+              Lance has been a computer nut ever since his dad bought him a VIC 20 in the 80's.
+              For a number of years he was working in Java for large companies such as CNN, Kodak and GE.
+              Then one day about four years ago he did a self intervention and decided to end his addiction to heavy inheritance,
+              static typing and coding without tests.
+              These days he a committer on projects such as Adhearsion practicing clean Ruby living with lots of well-tested code,
+              class composition and fun dynamic languages as a startup CTO and freelance developer.
+              When he's not writing Ruby you will find him diving with sharks, trekking through a rain forest,
+              wine tasting or freaking out his neighbors with his ARDrone.
+            </p>
+            <h1>Dynamic Routing with Circuit</h1>
+            <p>
+              Rails and Rack both have mechanisms to route requests.
+              They are powerful, and offer some dynamic routing if you want to route within Rails.
+              But what if you need to dynamically route requests to multiple Rack based applications?
+              What if you want to control that routing dynamically with a database? Circuit allows you to do that.
+              In this talk will explore the basics of Rack Middleware and Routing.
+              Then we will show you how Circuit can help you to take Rack routing to the next level dynamically with lots of traffic.
+            </p>
+          </div>
+        </div>
+        <div class='rounded'>
+          <img alt="Lance" class="bg" src="../images/speakers/lance.png"/>
+        </div>
+        <a class='twitter' href='https://twitter.com/lgleasain'><img alt="Twitter" src="../images/twitter.png"/></a>
+        <a class='github' href='https://github.com/lgleasain'><img alt="Github" src="../images/github.png"/></a>
+        <h2>Lance Gleason</h2>
+        <p>Dynamic Routing with Circuit</p>
+      </li>
+      <li>
+        <div class='detail'>
+          <div class='inner'>
+            <h1>John Anderson</h1>
+            <p>
+              Ruby since 2004. Rails since 2005. Programming since 1994. Or 1989. Or was it 1983? I forget...
+            </p>
+            <h1>Do It Yerself, Rube</h1>
+            <p>
+              Abstraction is like alcohol: a little is nice; a little more is a little nicer. A lot is a headache.
+              Is it really worth writing one line when you can write 3? Or 8?
+              As a consumer, when is finding the right gem harder than just writing it yourself?
+              Some examples of over-gemmification and a few lines of code that do what you need.
+              As a producer, what does it take to get your code ready to be released as a gem?
+              It's turtles all the way down. Unless you make some assumptions for them to stand on.
+            </p>
+          </div>
+        </div>
+        <div class='rounded'>
+          <img alt="Johnanderson" class="bg" src="../images/speakers/johnanderson.png"/>
+        </div>
+        <a class='twitter' href='https://twitter.com/djellemah'><img alt="Twitter" src="../images/twitter.png"/></a>
+        <!-- %a{:href=>"#", :class=>"github"}= img "../images/github.png" -->
+        <h2>John Anderson</h2>
+        <p>Do It Yerself, Rube</p>
+      </li>
+      <li>
+        <div class='detail left'>
+          <div class='inner'>
+            <h1>Jesse Newland</h1>
+            <p>
+              Jesse Newland does Ops at GitHub. Prior to GitHub, Jesse was the CTO at Rails Machine.
+              There, he hacked on a large private cloud while managing, scaling and tuning several hundred production Ruby on Rails applications.
+              He lives in Savannah, Georgia, and plays guitar and piano for fun.
+            </p>
+            <h1>ChatOps at GitHub</h1>
+            <p>
+              Hubot, GitHub's open source chat bot, is completely revolutionizing how we do ops at GitHub.
+              Automating deployment, graphing, monitoring, provisioning, tweeting, and many other things with
+              Hubot has enabled and enhanced our culture of remote work.
+              We're standardizing how we interact with the applications and servers that run GitHub by
+              continuously expanding our library of Hubot commands that any GitHubber can run in multiple Campfire chat rooms.
+              Interacting with Hubot in the middle other of conversations has increased our awareness of what other
+              GitHubbers are working on and the speed at which new team members learn common practices.
+              In this talk, I'll give examples of how we deploy and interact with github.com via Hubot,
+              describe benefits we've seen from this approach, and describe how you can bring ChatOps into your daily workflow.
+            </p>
+          </div>
+        </div>
+        <div class='rounded'>
+          <img alt="Jessenewland" src="../images/speakers/jessenewland.jpg"/>
+        </div>
+        <a class='twitter' href='#'><img alt="Twitter" src="../images/twitter.png"/></a>
+        <a class='github' href='#'><img alt="Github" src="../images/github.png"/></a>
+        <h2>Jesse Newland</h2>
+        <p>ChatOps at GitHub</p>
+      </li>
+      <li class='you'>
+        <div class='rounded'>
+          <a href='http://rubyfuza.wufoo.com/forms/rubyfuza-2013-talk-proposal/'><img alt="You" src="../images/speakers/you.png"/></a>
+        </div>
+        <h2>You?</h2>
+        <p>
+          We're still looking for inspiring speakers!
+          <a class="hot" href="http://rubyfuza.wufoo.com/forms/rubyfuza-2013-talk-proposal/">I want to speak</a>
+        </p>
+      </li>
+    </ul>
+  </div>
+</section>
+<!-- = partial('../partials/schedule') -->
+<section id='venue'>
+  <div class='wrapper'>
+    <h1 class='heading'>
+      <a name='venue'></a>
+      <span>Venue</span>
+    </h1>
+    <h2>
+      <a href="http://strandtowerhotel.co.za">Strand Tower Hotel</a>
+    </h2>
+    <img alt="Strand" src="../images/strand.png"/>
+    <div class='rounded left'>
+      <iframe class='left' frameborder='0' height='200' marginheight='0' marginwidth='0' scrolling='no' src='http://maps.google.com/?ie=UTF8&amp;t=m&amp;ll=-33.919503,18.420897&amp;spn=0.029843,0.066047&amp;z=16&amp;output=embed' width='200'></iframe>
+    </div>
+    <p>Cape Town’s business centre is within easy walking distance from the Strand Tower Hotel.</p>
+    <p>The city’s many major tourist attractions, such as Table Mountain, Robben Island and the V&A Waterfront, are also within easy access from the hotel. Other notable landmarks nearby include the Cape Town International Convention Centre, which is just 2 kilometers away, and the Green Point Stadium, which was constructed for the 2010 FIFA World Cup. The stadium, which is 3.5 kilometers from the hotel, is now home to many other major sports tournaments.</p>
+    <a href="https://maps.google.co.za/maps?saddr=Strand+Tower+Hotel,+Strand+Street,+Cape+Town+8000&hl=en&sll=-33.919503,18.420897&sspn=0.029843,0.066047&geocode=CbNWnrGmKv1fFVRr-v0dsBQZASmvPWa3ZmfMHTGiLy2FymD1pg&mra=mift&t=m&z=15" target="rubyfuza_map">View Map</a>
+    <a class="more" href="mailto:tina@rubyfuza.org?subject=Looking%20for%20accommodation">Find accommodation</a>
+  </div>
+</section>
+<section id='sponsors'>
+  <div class='wrapper'>
+    <h1 class='heading'>
+      <a name='sponsors'></a>
+      <span>Sponsors</span>
+    </h1>
+    <div class='rubyfuza big-sponsor'>
+      <a href='#'>
+        <img src='../images/logo.png' />
+      </a>
+      <p>
+        <strong>Why sponsor Rubyfuza?</strong>
+        No conference can exist without sponsorship from its industry, and Rubyfuza is no different. Sponsorship will be needed to keep costs for the our delegates low, and to make South Africa's Rubyfuza an outstanding, worthwhile event. (Keep in mind, Rubyfuza is a not-for-profit event!)
+      </p>
+    </div>
+    <div class='madmimi big-sponsor hidden'>
+      <a href='https://www.madmimi.com'>
+        <img src='../images/logos/madmimi.png' />
+      </a>
+      <span>Ruby-level sponsor</span>
+      <p>
+        Mad Mimi is a simple, intelligent and powerful email marketing utility that anyone can use.
+        Mad Mimi makes email marketing easy for the creator, and easier on the eyes for the receiver.
+        With ground-breaking technology, Mad Mimi is the simplest way to create branded, well-designed newsletters and promotions.
+        Sign up free today and get started with simple, lovely email marketing.
+      </p>
+    </div>
+    <div class='platform45 big-sponsor hidden'>
+      <a href='http://platform45.com'>
+        <img src='../images/logos/platform45.png' />
+      </a>
+      <span>Ruby-level sponsor</span>
+      <p>
+        Platform45 works closely with its clients to empower them to be self sufficient and thoroughly understand how software
+        development works and how to implement and manage the process. Platform45 is not an outsourcing firm.
+        Success depends on the customers involvement with both the design and development teams.
+        Emphasis is placed on relationships and generating maximum value for clients through communication and personal relationships.
+      </p>
+    </div>
+    <div class='hetzner big-sponsor hidden'>
+      <a href='http://hetzner.co.za'>
+        <img src='../images/logos/hetzner.png' />
+      </a>
+      <span>Ruby-level sponsor</span>
+      <p>
+        At Hetzner South Africa we are passionate about web hosting – it’s our core business and it’s what we do best.
+        By consistently delivering excellent service and cost effective web hosting, dedicated servers and custom hosting solutions,
+        Hetzner has exponentially grown its market share, making it the leading web hosting company in South Africa.
+        Inspired by our brand promise ‘Trusted in Hosting’, we focus on providing efficient, sustainable business models,
+        quality service and customer satisfaction. A key contributor to our success is our people.
+        We aim for our teams to manage themselves rather than rely on several layers of hierarchy.
+        We want to give our people the freedom to explore, innovate and create. We recognise that our customers expect reliability
+        and good value from us and it remains our ongoing commitment to earn and retain their trust.
+      </p>
+    </div>
+    <div class='africanstay big-sponsor hidden'>
+      <a href='http://africanstay.co.za'>
+        <img src='../images/logos/africanstay.png' />
+      </a>
+      <span>Conference organization sponsor</span>
+      <p>
+        African Stay is a reputable and reliable reservations company that arranges your accommodation in luxurious safari lodges,
+        camps and exclusive hotels throughout Southern Africa.The accommodation we represent all offer unique facilities.
+        Most especially, you will enjoy rare splendour and superb hospitality to make your visit unforgettable.
+      </p>
+    </div>
+    <div class='siyelo big-sponsor hidden'>
+      <a href='http://hetzner.co.za'>
+        <img src='../images/logos/siyelo.png' />
+      </a>
+      <span>Website design sponsor</span>
+      <p>
+        Siyelo designs and develops bespoke web applications.
+        We turn ideas into elegant applications through skill and a process that emphasizes collaboration and continuous refinement.
+        Our team delivers profitable and enjoyable user experiences. We love our work and so will you.
+      </p>
+    </div>
+    <ul>
+      <li class='third' id='madmimi'>
+        <a href='https://www.madmimi.com'>
+          <img src='../images/logos/madmimi.png' />
+        </a>
+      </li>
+      <li class='third' id='platform45'>
+        <a href='http://platform45.com'>
+          <img src='../images/logos/platform45.png' />
+        </a>
+      </li>
+      <li class='third' id='hetzner'>
+        <a href='http://hetzner.co.za'>
+          <img src='../images/logos/hetzner.png' />
+        </a>
+      </li>
+    </ul>
+    <!-- %ul -->
+    <!-- %li.fourth -->
+    <!-- %a{:href=>"#"} -->
+    <!-- %img{:src=>"../images/logo.png"} -->
+    <!-- %li.fourth -->
+    <!-- %a{:href=>"#"} -->
+    <!-- %img{:src=>"../images/logo.png"} -->
+    <!-- %li.fourth -->
+    <!-- %a{:href=>"#"} -->
+    <!-- %img{:src=>"../images/logo.png"} -->
+    <!-- %li.fourth -->
+    <!-- %a{:href=>"#"} -->
+    <!-- %img{:src=>"../images/logo.png"} -->
+    <ul>
+      <li class='eighth' id='africanstay'>
+        <a href='http://www.africanstay.co.za'>
+          <img src='../images/logos/africanstay.png' />
+        </a>
+      </li>
+      <li class='eighth' id='siyelo'>
+        <a href='http://siyelo.com'>
+          <img src='../images/logos/siyelo.png' />
+        </a>
+      </li>
+      <!-- %li.eighth -->
+      <!-- %a{:href=>"#"} -->
+      <!-- %img{:src=>"../images/logo.png"} -->
+      <!-- %li.eighth -->
+      <!-- %a{:href=>"#"} -->
+      <!-- %img{:src=>"../images/logo.png"} -->
+      <!-- %li.eighth -->
+      <!-- %a{:href=>"#"} -->
+      <!-- %img{:src=>"../images/logo.png"} -->
+      <!-- %li.eighth -->
+      <!-- %a{:href=>"#"} -->
+      <!-- %img{:src=>"../images/logo.png"} -->
+      <!-- %li.eighth -->
+      <!-- %a{:href=>"#"} -->
+      <!-- %img{:src=>"../images/logo.png"} -->
+      <!-- %li.eighth -->
+      <!-- %a{:href=>"#"} -->
+      <!-- %img{:src=>"../images/logo.png"} -->
+    </ul>
+    <h2 class='sponsor'>
+      Interested in sponsoring this event?
+      Check out the
+      <a href='../downloads/sponsors.pdf'>prospectus</a>
+      and drop us an
+      <a href='mailto:sponsors@rubyfuza.org'>e-mail</a>
+    </h2>
+  </div>
+</section>
+<section id='blog'>
+  <div class='wrapper'>
+    <h1 class='heading'>
+      <a name='blog'></a>
+      <span>Blog</span>
+    </h1>
+    <ul>
+      <li class='half'>
+        <article>
+          <header>
+            <time>
+              <span class='day'>25</span>
+              <span class='month'>Oct</span>
+              <span class='year'>2012</span>
+            </time>
+            <h2><a href="http://rubyfuza.posterous.com/submit-your-talks-for-rubyfuza-2013">Submit your talks for Rubyfuza 2013</a></h2>
+            <small>by Marc Heiligers</small>
+          </header>
+          <p>Talks are again 20 min followed by 5 min of Q and A. Topics of interest range from Ruby (obviously), Rubygems, Rails and anything Ruby-related to interesting programming techniques, scaling strategies and even JavaScript/CoffeeScript. This year we will not be accepting talks on the Large Hadron Collider or dolphins...</p>
+        </article>
+      </li>
+      <!-- %li.half -->
+      <!-- %article -->
+      <!-- %header -->
+      <!-- %h2 RubyFuza mobile app -->
+      <!-- %time -->
+      <!-- %span.day 13 -->
+      <!-- %span.month Sep -->
+      <!-- %span.year 2012 -->
+      <!-- %small by Marc Heiligers -->
+      <!-- %p Talks are again 20 min followed by 5 min of Q and A. Topics of interest range from Ruby (obviously), Rubygems, Rails and anything Ruby-related to interesting programming techniques, scaling strategies and even JavaScript/CoffeeScript. This year we will not be accepting talks on the Large Hadron Collider or dolphins... -->
+    </ul>
+    <a href="http://rubyfuza.posterous.com/">View all posts</a>
+  </div>
+</section>
+  <footer id='footer'>
+    <div class='wrapper'>
+      © 2010 - 2012 Rubyfuza —
+      <a href="https://twitter.com/rubyfuza">Follow us on Twitter</a>
+      |
+      <a href="mailto:info@rubyfuza.org">Email us</a>
+      <p>
+        Design by
+        <a href="http://siyelo.com">Siyelo</a>
+        | Avatars from
+        <a href="http://findicons.com/pack/1072/face_avatars">Find Icons</a>
+      </p>
+    </div>
+  </footer>
+  <script src='//ajax.googleapis.com/ajax/libs/jquery/1.7.0/jquery.min.js'></script>
+  <script>window.jQuery || document.write('<script src="js/libs/jquery-1.7.0.min.js"><\/script>')</script>
+  <script src='js/plugins.js'></script>
+  <script src='js/script.js'></script>
+  <script>
+    window._gaq = [['_setAccount','UAXXXXXXXX1'],['_trackPageview'],['_trackPageLoadTime']];
+    Modernizr.load({load: ('https:' == location.protocol ? '//ssl' : '//www') + '.google-analytics.com/ga.js'});
+  </script>
+  <!--[if lt IE 7]>
+    <script src='//ajax.googleapis.com/ajax/libs/chrome-frame/1.0.3/CFInstall.min.js'></script>
+    <script>window.attachEvent('onload',function(){CFInstall.check({mode:'overlay'})})</script>
+  <![endif]-->
+</body>
