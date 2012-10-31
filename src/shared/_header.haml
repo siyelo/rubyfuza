@@ -4,12 +4,12 @@
 
     .wrapper
       %ul
-        %li= link_to "About", "#about"
-        %li= link_to "Speakers", "#speakers"
-        //%li= link_to "Schedule", "#schedule"
-        %li= link_to "Venue", "#venue"
-        %li= link_to "Sponsors", "#sponsors"
-        %li= link_to "Blog", "#blog"
+        %li.js_nav_link= link_to "About", "#about"
+        %li.js_nav_link= link_to "Speakers", "#speakers"
+        //%li.js_nav_link= link_to "Schedule", "#schedule"
+        %li.js_nav_link= link_to "Venue", "#venue"
+        %li.js_nav_link= link_to "Sponsors", "#sponsors"
+        %li.js_nav_link= link_to "Blog", "#blog"
         %li#register= link_to "Register", "http://www.quicket.co.za/events/1209-rubyfuza-2013/"
 
       %a{:href=>"http://www.quicket.co.za/events/1209-rubyfuza-2013/", :class=>"register-now"}
