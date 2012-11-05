@@ -25,6 +25,9 @@
 	+pie-clearfix
 	img
 		float: left
+	.fancybox
+		+border-radius(50%)
+		display: block
 
 .you .rounded
 	border-color: rgba(255, 255, 255, 0.1)
@@ -73,7 +76,9 @@
 	img
 		max-width: 220px
 		width: 100%
+		
 		+border-radius(50%)
+		+border-radius(300px)
 		+transition(border .3s)
 		&.bg
 			background: url("../images/bg2.png")
