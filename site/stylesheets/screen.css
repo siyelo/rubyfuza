@@ -143,13 +143,13 @@ section .wrapper {
 }
 
 /* line 16, /Users/marc/Projects/Rubyfuza/rubyfuza/src/stylesheets/partials/_layout.sass */
-.half, .third, .two-thirds, .fourth, .three-fourths, .fifth, .eighth {
+.half, .third, .two-thirds, .fourth, .three-fourths, .fifth, .sixth, .eighth {
   display: inline;
   float: left;
   *zoom: 1;
 }
 /* line 38, /Users/marc/.rvm/gems/ruby-1.9.2-p290@rubyfuza/gems/compass-0.11.7/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
-.half:after, .third:after, .two-thirds:after, .fourth:after, .three-fourths:after, .fifth:after, .eighth:after {
+.half:after, .third:after, .two-thirds:after, .fourth:after, .three-fourths:after, .fifth:after, .sixth:after, .eighth:after {
   content: "";
   display: table;
   clear: both;
@@ -186,23 +186,28 @@ section .wrapper {
 }
 
 /* line 39, /Users/marc/Projects/Rubyfuza/rubyfuza/src/stylesheets/partials/_layout.sass */
+.sixth {
+  width: 16.66%;
+}
+
+/* line 42, /Users/marc/Projects/Rubyfuza/rubyfuza/src/stylesheets/partials/_layout.sass */
 .eighth {
   width: 12.5%;
 }
 
-/* line 42, /Users/marc/Projects/Rubyfuza/rubyfuza/src/stylesheets/partials/_layout.sass */
+/* line 45, /Users/marc/Projects/Rubyfuza/rubyfuza/src/stylesheets/partials/_layout.sass */
 .left {
   display: inline;
   float: left;
 }
 
-/* line 46, /Users/marc/Projects/Rubyfuza/rubyfuza/src/stylesheets/partials/_layout.sass */
+/* line 49, /Users/marc/Projects/Rubyfuza/rubyfuza/src/stylesheets/partials/_layout.sass */
 .right {
   display: inline;
   float: right;
 }
 
-/* line 50, /Users/marc/Projects/Rubyfuza/rubyfuza/src/stylesheets/partials/_layout.sass */
+/* line 53, /Users/marc/Projects/Rubyfuza/rubyfuza/src/stylesheets/partials/_layout.sass */
 .clearfix {
   *zoom: 1;
 }
