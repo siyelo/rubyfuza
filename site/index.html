@@ -521,6 +521,96 @@
           </div>
         </div>
       </li>
+      <li class='speaker'>
+        <div class='rounded'>
+          <a class='fancybox' href='#speaker16' rel='speaker_image'>
+            <img alt="Jacob" class="bg" src="../images/speakers/jacob.jpg"/>
+          </a>
+          <a class='twitter' href='https://twitter.com/beanstalksurf'><img alt="Twitter" src="../images/twitter.png"/></a>
+          <a class='github' href='https://github.com/jacobo'><img alt="Github" src="../images/github.png"/></a>
+        </div>
+        <h2>
+          <a class='fancybox' href='#speaker16' rel='speakers'>Jacob Burkhart</a>
+        </h2>
+        <p>Living with Distributed Systems</p>
+        <div class='detail' id='speaker16'>
+          <div class='links right'>
+            <a class='twitter' href='https://twitter.com/beanstalksurf'><img alt="Twitter" src="../images/twitter.png"/></a>
+            <a class='github' href='https://github.com/jacobo'><img alt="Github" src="../images/github.png"/></a>
+          </div>
+          <div class='name'>
+            <img alt="Jacob" src="../images/speakers/jacob.jpg"/>
+            <h2>Jacob Burkhart</h2>
+          </div>
+          <div class='inner'>
+            <p>Jacob is the world's foremost expert on Distributed Systems (within the subset of people who: work in Ruby for a living, surf the Pacific regularly, and brew sour beers). He does all these things in San Francisco California, while working at Engine Yard.</p>
+            <h3>Living with Distributed Systems</h3>
+            <p>We all know the problem of the monolithic rails app, and we've all accepted the divine words of Service-Oriented Architecture. But what does your world look like once you get there? Or say, maybe, three-quarters of the way there.</p>
+            <p>Allow me to show you some of the mistakes we've made at Engine Yard on this path. It can be a bumpy road, but I promise you the destination is worth it.</p>
+          </div>
+        </div>
+      </li>
+      <li class='speaker'>
+        <div class='rounded'>
+          <a class='fancybox' href='#speaker17' rel='speaker_image'>
+            <img alt="Terrence" class="bg" src="../images/speakers/terrence.jpg"/>
+          </a>
+          <a class='twitter' href='https://twitter.com/hone02'><img alt="Twitter" src="../images/twitter.png"/></a>
+          <a class='github' href='https://github.com/hone'><img alt="Github" src="../images/github.png"/></a>
+        </div>
+        <h2>
+          <a class='fancybox' href='#speaker17' rel='speakers'>Terence Lee</a>
+        </h2>
+        <p>`bundle install` Y U SO SLOW: Server Edition</p>
+        <div class='detail' id='speaker17'>
+          <div class='links right'>
+            <a class='twitter' href='https://twitter.com/hone02'><img alt="Twitter" src="../images/twitter.png"/></a>
+            <a class='github' href='https://github.com/hone'><img alt="Github" src="../images/github.png"/></a>
+          </div>
+          <div class='name'>
+            <img alt="Terrence" src="../images/speakers/terrence.jpg"/>
+            <h2>Terence Lee</h2>
+          </div>
+          <div class='inner'>
+            <p>Terence works at Heroku maintaining the Ruby stack and a slew of OSS projects such as Bundler and Resque, as well as helping with the Rails Girls movement. When he's not going to an awesome Heroku or Ruby event, he lives in Austin, TX, the taco capital of America.</p>
+            <p>(Terence loves Friday hugs, EVERY DAY OF THE WEEK! Give him a big one when you see him!)</p>
+            <h3>`bundle install` Y U SO SLOW: Server Edition</h3>
+            <p>If you've ever done anything in ruby, you've probably used rubygems and rubygems.org to search or install your favorite gem. On October 17, 2012, rubygems.org went down. A Dependency API was built to be used by Bundler 1.1+ to speed up `bundle install`. Unfortunately, it was a bit too popular and the service caused too much load on the current infrasture. In order to get rubygems.org back up the API had to be disabled. You can watch the post-mortem, http://youtu.be/z73uiWKdJhw, for details.</p>
+            <p>Members in the community stepped up and built a compatible Dependency API service called the Bundler API. Working with the rubygems.org team, we were able to bring the API up for everyone within a week. In this talk, I will cover the process we went through of extracting the API out into a separate Sinatra app that now runs on Heroku. I'll go over how the API works and how Bundler itself uses it. Since we don't have direct access to their database, we needed to build a syncing service to keep our local cache up to date. We'll discuss the original sequential implementation of the sync code and how we improved performance through the use of a consumer thread pool. The sync time down was cut from 16 mins to 2-3 mins. Next, we'll talk about the productization steps we took for visibility to make sure the app is performing well.</p>
+            <p>We're prototyping a replay service, to replay production traffic to different Heroku apps. With this we can compare the performance between the current MRI app in production and the same app running on JRuby. This will also allow us to test any changes/features against real production load. We'll go over how to set this up.</p>
+          </div>
+        </div>
+      </li>
+      <li class='speaker'>
+        <div class='rounded'>
+          <a class='fancybox' href='#speaker18' rel='speaker_image'>
+            <img alt="Aslam" class="bg" src="../images/speakers/aslam.jpg"/>
+          </a>
+          <a class='twitter' href='https://twitter.com/aslamkhn'><img alt="Twitter" src="../images/twitter.png"/></a>
+          <a class='github' href='https://github.com/aslamkhn'><img alt="Github" src="../images/github.png"/></a>
+        </div>
+        <h2>
+          <a class='fancybox' href='#speaker18' rel='speakers'>Aslam Kahn</a>
+        </h2>
+        <p>Not Quite Object Oriented</p>
+        <div class='detail' id='speaker18'>
+          <div class='links right'>
+            <a class='twitter' href='https://twitter.com/aslamkhn'><img alt="Twitter" src="../images/twitter.png"/></a>
+            <a class='github' href='https://github.com/aslamkhn'><img alt="Github" src="../images/github.png"/></a>
+          </div>
+          <div class='name'>
+            <img alt="Aslam" src="../images/speakers/aslam.jpg"/>
+            <h2>Aslam Kahn</h2>
+          </div>
+          <div class='inner'>
+            <p>I'm a developer making peace with the fact that I dropped out of a Lisp class in high school because I figured that nobody in their right mind would ever write code like that.  Nowadays, I spend my time cracking really hard nuts, not P=NP hard, just very complex hard.  Sometimes, I contribute a bit to the agile software community by offering tissues at conferences to Scrum people who just realized that certification and time boxes were not all that it was cracked out to be. I also help insomniacs with my rather soporific blog at f3yourmind.net.</p>
+            <h3>Not Quite Object Oriented</h3>
+            <p>Ruby is a language, just a tool for a developer to build software. To use this tool effectively, the programmer must be familiar with object orientated programming. Object orientation is a paradigm, not a tool.  It is a very specific world view based on underlying theories.  Embracing this world view is a serious choice.  It means that the developer is obliged to think in a very specific way.  Nowadays, many Ruby developers also use other tools like JavaScript and CoffeeScript. These languages are not from the same world as Ruby.  They are from another paradigm - functional programming.  Functional programming is a different world view, based on different underlying theories.  Trying to use a tool from one world when your head is wired for the other world just results in is a code base that is messy and very expensive.</p>
+            <p>Since we are using these functional tools, we really do need to understand this world. So, what does this functional world look like?  How are functional minds wired?</p>
+            <p>In this talk, I will take you on a whirlwind tour of functional programming concepts.  You will see lots of code snippets in lots of different languages. My objective is simple - a tour guide view that will point out places of interest that you can explore at your leisure.  In the end, I hope we will make smaller messes.</p>
+          </div>
+        </div>
+      </li>
       <li class='you'>
         <div class='rounded'>
           <a href='http://rubyfuza.wufoo.com/forms/rubyfuza-2013-lightning-talk-proposal/'><img alt="You" src="../images/speakers/you.png"/></a>
