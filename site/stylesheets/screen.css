@@ -107,6 +107,16 @@ a:hover, a:focus {
   color: white;
 }
 
+/* line 39, /Users/marc/Projects/Rubyfuza/rubyfuza/src/stylesheets/partials/_base.sass */
+ul.list {
+  list-style-type: disc;
+  margin-bottom: 12px;
+}
+/* line 43, /Users/marc/Projects/Rubyfuza/rubyfuza/src/stylesheets/partials/_base.sass */
+ul.list li {
+  margin-left: 16px;
+}
+
 /* line 1, /Users/marc/Projects/Rubyfuza/rubyfuza/src/stylesheets/partials/_layout.sass */
 .wrapper {
   margin: 0 auto;
@@ -1079,7 +1089,7 @@ strong {
 
 /* line 52, /Users/marc/Projects/Rubyfuza/rubyfuza/src/stylesheets/partials/_overrides.sass */
 .fancybox-nav {
-  width: 50%;
+  width: 60px !important;
 }
 /* line 54, /Users/marc/Projects/Rubyfuza/rubyfuza/src/stylesheets/partials/_overrides.sass */
 .fancybox-nav.fancybox-prev {

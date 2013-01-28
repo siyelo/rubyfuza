@@ -6,12 +6,12 @@
 
 		%ul.sponsors-list
 			%li.third
-				%a{:href=>"http://www.madmimi.com", :target=>"_blank", :title=>"Mad Mimi"}
+				%a{:href=>"#madmimi", :class=>"info fancybox", rel: 'sponsors', :title=>"Mad Mimi"}
 					%img{:src=>"../images/logos/madmimi.png"}
 				.row
 					%a{:href=>"http://www.madmimi.com", :target=>"_blank", :title=>"Mad Mimi"} madmimi.com
-					%span &#9679;
-					%a{:href=>"#madmimi", :class=>"info fancybox", rel: 'sponsors'} info
+					/ %span &#9679;
+					/ %a{:href=>"#madmimi", :class=>"info fancybox", rel: 'sponsors'} info
 				%small Ruby-level sponsor
 
 				#madmimi.detail
@@ -22,12 +22,12 @@
 					%a{:href=>"http://www.madmimi.com", :target=>"_blank", :title=>"Mad Mimi"} madmimi.com
 
 			%li.third
-				%a{:href=>"http://www.platform45.com", :target=>"_blank", :title=>"Platform45"}
+				%a{:href=>"#platform45", :class=>"info fancybox", rel: 'sponsors', :title=>"Platform45"}
 					%img{:src=>"../images/logos/platform45.png"}
 				.row
 					%a{:href=>"http://www.platform45.com", :target=>"_blank", :title=>"Platform45"} platform45.com
-					%span &#9679;
-					%a{:href=>"#platform45", :class=>"info fancybox", rel: 'sponsors'} info
+					/ %span &#9679;
+					/ %a{:href=>"#platform45", :class=>"info fancybox", rel: 'sponsors'} info
 				%small Ruby-level sponsor
 
 				#platform45.detail
@@ -42,12 +42,12 @@
 					%a{:href=>"http://www.platform45.com", :target=>"_blank", :title=>"Platform45"} platform45.com
 
 			%li.third
-				%a{:href=>"http://hetzner.co.za", :target=>"_blank", :title=>"Hetzner, Trusted in Hosting"}
+				%a{:href=>"#hetzner", :class=>"info fancybox", rel: 'sponsors', :title=>"Hetzner, Trusted in Hosting"}
 					%img{:src=>"../images/logos/hetzner.png"}
 				.row
 					%a{:href=>"http://www.hetzner.co.za", :target=>"_blank", :title=>"Hetzner, Trusted in Hosting"} hetzner.co.za
-					%span &#9679;
-					%a{:href=>"#hetzner", :class=>"info fancybox", rel: 'sponsors'} info
+					/ %span &#9679;
+					/ %a{:href=>"#hetzner", :class=>"info fancybox", rel: 'sponsors'} info
 				%small Ruby-level sponsor
 
 				#hetzner.detail
@@ -61,28 +61,40 @@
 			%li.sixth
 
 			%li.third
-				%a{:href=>"http://aws.amazon.com", :target=>"_blank", :title=>"Amazon Web Services"}
+				%a{:href=>"#amazon", :class=>"info fancybox", rel: 'sponsors', :title=>"Amazon Web Services"}
 					%img{:src=>"../images/logos/amazon.png"}
 				.row
-					%a{:href=>"http://aws.amazon.com", :target=>"_blank", :title=>"Amazon Web Services"} aws.amazon.com
-					%span &#9679;
-					%a{:href=>"#amazon", :class=>"info fancybox", rel: 'sponsors'} info
+					%a{:href=>"http://bit.ly/awsrubyfuza", :target=>"_blank", :title=>"Amazon Web Services"} aws.amazon.com
+					/ %span &#9679;
+					/ %a{:href=>"#amazon", :class=>"info fancybox", rel: 'sponsors'} info
 				%small AWS Workshop and RailsBridge sponsor
 
 				#amazon.detail
-					%a{:href=>"https://aws.amazon.com"}
+					%a{:href=>"http://bit.ly/awsrubyfuza"}
 						%img{:src=>"../images/logos/amazon2.png", :class=>"square"}
 					%p In 2006, Amazon Web Services (AWS) began offering IT infrastructure services to businesses in the form of web services -- now commonly known as cloud computing. One of the key benefits of cloud computing is the opportunity to replace up-front capital infrastructure expenses with low variable costs that scale with your business. With the Cloud, businesses no longer need to plan for and procure servers and other IT infrastructure weeks or months in advance. Instead, they can instantly spin up hundreds or thousands of servers in minutes and deliver results faster. Today, Amazon Web Services provides a highly reliable, scalable, low-cost infrastructure platform in the cloud that powers hundreds of thousands of businesses in 190 countries around the world.
+					%p We have open roles available in Cape Town for:
+					%ul.list
+						%li Senior Software Development Managers
+						%li Senior Product Manager
+						%li Software Developers
+						%li Web Development Engineers
+						%li Systems Engineers
+						%li Security Engineers
+						%li Cloud Support Engineers – Linux
+					%p
+						If you have a background in Computer Science and are passionate about cloud computing, send your CV to
+						%a{:href => 'mailto:rubyfuza@amazon.com'} rubyfuza@amazon.com
 					%span.right AWS Workshop and RailsBridge sponsor
-					%a{:href=>"http://aws.amazon.com", :target=>"_blank", :title=>"Amazon Web Services"} aws.amazon.com
+					%a{:href=>"http://bit.ly/awsrubyfuza", :target=>"_blank", :title=>"Amazon Web Services"} aws.amazon.com
 
 			%li.third
-				%a{:href=>"http://www.thoughtworks.com", :target=>"_blank", :title=>"ThoughtWorks"}
+				%a{:href=>"#thoughtworks", :class=>"info fancybox", rel: 'sponsors', :title=>"ThoughtWorks"}
 					%img{:src=>"../images/logos/thoughtworks.png"}
 				.row
 					%a{:href=>"http://www.thoughtworks.com", :target=>"_blank", :title=>"ThoughtWorks"} thoughtworks.com
-					%span &#9679;
-					%a{:href=>"#thoughtworks", :class=>"info fancybox", rel: 'sponsors'} info
+					/ %span &#9679;
+					/ %a{:href=>"#thoughtworks", :class=>"info fancybox", rel: 'sponsors'} info
 				%small Sapphire-level and RailsBridge sponsor
 
 				#thoughtworks.detail
@@ -108,12 +120,12 @@
 
 		%ul.sponsors-list
 			%li.fifth
-				%a{:href=>"http://www.africanstay.co.za", :target=>"_blank", :title=>"African Stay"}
+				%a{:href=>"#africanstay", :class=>"info fancybox", rel: 'sponsors', :title=>"African Stay"}
 					%img{:src=>"../images/logos/africanstay.png"}
 				.row
 					%a{:href=>"http://www.africanstay.co.za", :target=>"_blank", :title=>"African Stay"} africanstay.co.za
-					%span &#9679;
-					%a{:href=>"#africanstay", :class=>"info fancybox", rel: 'sponsors'} info
+					/ %span &#9679;
+					/ %a{:href=>"#africanstay", :class=>"info fancybox", rel: 'sponsors'} info
 				%small Conference organization
 
 				#africanstay.detail
@@ -124,12 +136,12 @@
 					%a{:href=>"http://www.africanstay.co.za", :target=>"_blank", :title=>"African Stay"} africanstay.co.za
 
 			%li.fifth
-				%a{:href=>"http://siyelo.com", :target=>"_blank", :title=>"Siyelo Software"}
+				%a{:href=>"#siyelo", :class=>"info fancybox", rel: 'sponsors', :title=>"Siyelo Software"}
 					%img{:src=>"../images/logos/siyelo.png"}
 				.row
 					%a{:href=>"http://www.siyelo.com", :target=>"_blank", :title=>"Siyelo Software"} siyelo.com
-					%span &#9679;
-					%a{:href=>"#siyelo", :class=>"info fancybox", rel: 'sponsors'} info
+					/ %span &#9679;
+					/ %a{:href=>"#siyelo", :class=>"info fancybox", rel: 'sponsors'} info
 				%small The Website
 
 				#siyelo.detail
@@ -140,12 +152,12 @@
 					%a{:href=>"http://www.siyelo.com", :target=>"_blank", :title=>"Siyelo Software"} siyelo.com
 
 			%li.fifth
-				%a{:href=>"http://unboxedconsulting.com", :target=>"_blank", :title=>"Unboxed Consulting"}
+				%a{:href=>"#unboxedconsulting", :class=>"info fancybox", rel: 'sponsors', :title=>"Unboxed Consulting"}
 					%img{:src=>"../images/logos/unboxedconsulting.png"}
 				.row
 					%a{:href=>"http://unboxedconsulting.com", :target=>"_blank", :title=>"Unboxed Consulting"} unboxedconsulting.com
-					%span &#9679;
-					%a{:href=>"#unboxedconsulting", :class=>"info fancybox", rel: 'sponsors'} info
+					/ %span &#9679;
+					/ %a{:href=>"#unboxedconsulting", :class=>"info fancybox", rel: 'sponsors'} info
 				%small Emerald-level sponsor
 
 				#unboxedconsulting.detail
@@ -156,12 +168,12 @@
 					%a{:href=>"http://unboxedconsulting.com", :target=>"_blank", :title=>"Unboxed Consulting"} unboxedconsulting.com
 
 			%li.fifth
-				%a{:href=>"http://heroku.com", :target=>"_blank", :title=>"Heroku"}
+				%a{:href=>"#heroku", :class=>"info fancybox", rel: 'sponsors', :title=>"Heroku"}
 					%img{:src=>"../images/logos/heroku.png"}
 				.row
 					%a{:href=>"http://heroku.com", :target=>"_blank", :title=>"Heroku"} heroku.com
-					%span &#9679;
-					%a{:href=>"#heroku", :class=>"info fancybox", rel: 'sponsors'} info
+					/ %span &#9679;
+					/ %a{:href=>"#heroku", :class=>"info fancybox", rel: 'sponsors'} info
 				%small Emerald-level sponsor
 
 				#heroku.detail
@@ -172,12 +184,12 @@
 					%a{:href=>"http://heroku.com", :target=>"_blank", :title=>"Heroku"} heroku.com
 
 			%li.fifth
-				%a{:href=>"http://basho.com", :target=>"_blank", :title=>"Basho"}
+				%a{:href=>"#basho", :class=>"info fancybox", rel: 'sponsors', :target=>"_blank", :title=>"Basho"}
 					%img{:src=>"../images/logos/basho.png"}
 				.row
 					%a{:href=>"http://basho.com", :target=>"_blank", :title=>"Basho"} basho.com
-					%span &#9679;
-					%a{:href=>"#basho", :class=>"info fancybox", rel: 'sponsors'} info
+					/ %span &#9679;
+					/ %a{:href=>"#basho", :class=>"info fancybox", rel: 'sponsors'} info
 				%small Emerald-level sponsor
 
 				#basho.detail
