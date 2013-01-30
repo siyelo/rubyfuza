@@ -218,6 +218,12 @@ section .wrapper {
 }
 
 /* line 53, /Users/marc/Projects/Rubyfuza/rubyfuza/src/stylesheets/partials/_layout.sass */
+.center {
+  display: block;
+  text-align: center;
+}
+
+/* line 57, /Users/marc/Projects/Rubyfuza/rubyfuza/src/stylesheets/partials/_layout.sass */
 .clearfix {
   *zoom: 1;
 }
