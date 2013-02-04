@@ -111,6 +111,8 @@
 			color: $one
 			display: block
 			font: bold .6em "open sans", arial, sans-serif
+		&.highlight
+			margin-bottom: 40px
 	ul
 		margin-bottom: 30px
 	li
@@ -124,36 +126,37 @@
 			color: $one
 			width: 50px
 		p
-			padding: 0 10px
+			padding: 0 0 0 10px
 			span
 				display: block
 				font-weight: normal
 				font-style: italic
 			&.speaker
 				font-weight: bold
-				white-space: nowrap
 		a
 			font-weight: normal
 			margin-left: 3px
 			text-align: right
+		&:hover, &:focus
+			background: rgba(0, 0, 0, 0.03)
 	img
 		float: left
 		margin-right: 10px
 		max-width: 40px
 		+border-radius(50%)
 
-
+.highlight
+	background: rgba(0, 0, 0, 0.1)
+	font-family: "Open Sans", arial
+	font-size: 1.4em
+	margin: 0
+	padding: 20px 0
+	text-align: center
+	
 #sponsors
 
 	h1
 		margin-bottom: 1em
-	h2
-		background: rgba(0, 0, 0, 0.1)
-		font-family: "Open Sans", arial
-		font-size: 1.4em
-		margin: 0
-		padding: 20px 0
-		text-align: center
 
 	.big-sponsor
 		display: table
