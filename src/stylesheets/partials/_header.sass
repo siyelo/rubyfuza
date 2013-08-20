@@ -6,16 +6,33 @@ header#header
 	> .wrapper
 		position: relative
 		@include background-image(radial-gradient(rgba(255, 255, 255, 0.07), rgba(255, 255, 255, 0) 50%))
+
 	h1
 		float: left
 		padding: 60px 0 90px
-		width: 40%
+		width: 50%
+		font-family: Skranji, sans-serif
+		font-size: 5em
+
 		a
 			display: block
+			text-decoration: none
+			color: #fff
+
+			span
+				color: $one
+
+			&:hover, &:hover span
+				color: $two
+
 		img
 			max-width: 380px
 			width: 100%
-			
+			&.logo
+				max-width: 120px
+				width: 120px
+				vertical-align: middle
+
 	h2
 		background: url("../images/date.png") no-repeat center right
 		float: right
@@ -28,7 +45,7 @@ header#header
 		span
 			display: block
 			font-size: 0.75em
-			
+
 	h3
 		//background: url("../images/collage.png") no-repeat center top
 		clear: both
@@ -42,12 +59,12 @@ header#header
 			display: block
 			font-size: .7em
 			text-transform: none
-			
+
 	h2, h3
 		text-align: center
 		span
 			color: $one
-			
+
 	a.action
 		background: $two
 		border: 3px dashed $two - #191919
@@ -78,8 +95,8 @@ header#header
 		position: relative
 		text-align: center
 		+pie-clearfix
-		
-			
+
+
 	.features
 		margin: 30px 0 60px
 		+pie-clearfix
@@ -88,14 +105,14 @@ header#header
 			letter-spacing: .05em
 			//margin: 15px 0
 			padding: 0px 20px
-			
+
 			img
 				margin-right: 15px
 
 			span
 				display: block
 				padding-top: 22px
-				
+
 		li
 			//background: rgba(0, 0, 0, 0.1)
 			&:first-child p, &:nth-child(2) p
@@ -121,7 +138,7 @@ header#header
 		.full
 			float: left
 			width: 100%
-	
+
 nav#main
 	//background: rgba(0, 0, 0, 0.3)
 	background: url("../images/bg2.png")
@@ -164,7 +181,7 @@ nav#main
 	&:hover, &:focus
 		span
 			color: $two + #222
-	
+
 .conf img
 	//border: 5px solid rgba(0, 0, 0, 0.1)
 	display: inline-block
