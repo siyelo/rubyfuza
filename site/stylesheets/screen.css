@@ -234,6 +234,50 @@ section .wrapper {
   clear: both;
 }
 
+/* line 1, /Users/marc/Projects/Rubyfuza/rubyfuza/src/stylesheets/partials/_forms.sass */
+form {
+  text-align: center;
+}
+/* line 3, /Users/marc/Projects/Rubyfuza/rubyfuza/src/stylesheets/partials/_forms.sass */
+form div {
+  display: inline-block;
+}
+/* line 5, /Users/marc/Projects/Rubyfuza/rubyfuza/src/stylesheets/partials/_forms.sass */
+form input {
+  padding: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  font-size: 1.6em;
+  -moz-border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -o-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -khtml-border-radius: 6px;
+  border-radius: 6px;
+  margin: 8px;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #cccccc), color-stop(100%, #ffffff));
+  background-image: -webkit-linear-gradient(top, #cccccc, #ffffff);
+  background-image: -moz-linear-gradient(top, #cccccc, #ffffff);
+  background-image: -o-linear-gradient(top, #cccccc, #ffffff);
+  background-image: -ms-linear-gradient(top, #cccccc, #ffffff);
+  background-image: linear-gradient(top, #cccccc, #ffffff);
+}
+/* line 13, /Users/marc/Projects/Rubyfuza/rubyfuza/src/stylesheets/partials/_forms.sass */
+form input:focus, form input:hover {
+  border: 1px solid rgba(255, 255, 255, 0.8);
+}
+/* line 16, /Users/marc/Projects/Rubyfuza/rubyfuza/src/stylesheets/partials/_forms.sass */
+form input[type=submit] {
+  background-color: #999999;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffffff), color-stop(100%, #cccccc));
+  background-image: -webkit-linear-gradient(top, #ffffff, #cccccc);
+  background-image: -moz-linear-gradient(top, #ffffff, #cccccc);
+  background-image: -o-linear-gradient(top, #ffffff, #cccccc);
+  background-image: -ms-linear-gradient(top, #ffffff, #cccccc);
+  background-image: linear-gradient(top, #ffffff, #cccccc);
+  color: #666666;
+  cursor: pointer;
+}
+
 /* line 2, /Users/marc/Projects/Rubyfuza/rubyfuza/src/stylesheets/partials/_header.sass */
 header#header {
   background: url("../images/bg0.png") no-repeat 50% 29% rgba(0, 0, 0, 0.2);
@@ -250,22 +294,40 @@ header#header > .wrapper {
   background-image: -ms-radial-gradient(rgba(255, 255, 255, 0.07), rgba(255, 255, 255, 0) 50%);
   background-image: radial-gradient(rgba(255, 255, 255, 0.07), rgba(255, 255, 255, 0) 50%);
 }
-/* line 9, /Users/marc/Projects/Rubyfuza/rubyfuza/src/stylesheets/partials/_header.sass */
+/* line 10, /Users/marc/Projects/Rubyfuza/rubyfuza/src/stylesheets/partials/_header.sass */
 header#header h1 {
   float: left;
   padding: 60px 0 90px;
-  width: 40%;
+  width: 50%;
+  font-family: Skranji, sans-serif;
+  font-size: 5em;
 }
-/* line 13, /Users/marc/Projects/Rubyfuza/rubyfuza/src/stylesheets/partials/_header.sass */
+/* line 17, /Users/marc/Projects/Rubyfuza/rubyfuza/src/stylesheets/partials/_header.sass */
 header#header h1 a {
   display: block;
+  text-decoration: none;
+  color: white;
 }
-/* line 15, /Users/marc/Projects/Rubyfuza/rubyfuza/src/stylesheets/partials/_header.sass */
+/* line 22, /Users/marc/Projects/Rubyfuza/rubyfuza/src/stylesheets/partials/_header.sass */
+header#header h1 a span {
+  color: #98c9ee;
+}
+/* line 25, /Users/marc/Projects/Rubyfuza/rubyfuza/src/stylesheets/partials/_header.sass */
+header#header h1 a:hover, header#header h1 a:hover span {
+  color: #c93131;
+}
+/* line 28, /Users/marc/Projects/Rubyfuza/rubyfuza/src/stylesheets/partials/_header.sass */
 header#header h1 img {
   max-width: 380px;
   width: 100%;
 }
-/* line 19, /Users/marc/Projects/Rubyfuza/rubyfuza/src/stylesheets/partials/_header.sass */
+/* line 31, /Users/marc/Projects/Rubyfuza/rubyfuza/src/stylesheets/partials/_header.sass */
+header#header h1 img.logo {
+  max-width: 120px;
+  width: 120px;
+  vertical-align: middle;
+}
+/* line 36, /Users/marc/Projects/Rubyfuza/rubyfuza/src/stylesheets/partials/_header.sass */
 header#header h2 {
   background: url("../images/date.png") no-repeat center right;
   float: right;
@@ -275,12 +337,12 @@ header#header h2 {
   padding: 13px 50px 11px 0;
   text-align: right;
 }
-/* line 28, /Users/marc/Projects/Rubyfuza/rubyfuza/src/stylesheets/partials/_header.sass */
+/* line 45, /Users/marc/Projects/Rubyfuza/rubyfuza/src/stylesheets/partials/_header.sass */
 header#header h2 span {
   display: block;
   font-size: 0.75em;
 }
-/* line 32, /Users/marc/Projects/Rubyfuza/rubyfuza/src/stylesheets/partials/_header.sass */
+/* line 49, /Users/marc/Projects/Rubyfuza/rubyfuza/src/stylesheets/partials/_header.sass */
 header#header h3 {
   clear: both;
   font: 4.4em/1.2 "Patua One", sans-serif;
@@ -290,21 +352,21 @@ header#header h3 {
   text-transform: uppercase;
   text-shadow: rgba(0, 0, 0, 0.25) 0 4px 0px;
 }
-/* line 41, /Users/marc/Projects/Rubyfuza/rubyfuza/src/stylesheets/partials/_header.sass */
+/* line 58, /Users/marc/Projects/Rubyfuza/rubyfuza/src/stylesheets/partials/_header.sass */
 header#header h3 span {
   display: block;
   font-size: 0.7em;
   text-transform: none;
 }
-/* line 46, /Users/marc/Projects/Rubyfuza/rubyfuza/src/stylesheets/partials/_header.sass */
+/* line 63, /Users/marc/Projects/Rubyfuza/rubyfuza/src/stylesheets/partials/_header.sass */
 header#header h2, header#header h3 {
   text-align: center;
 }
-/* line 48, /Users/marc/Projects/Rubyfuza/rubyfuza/src/stylesheets/partials/_header.sass */
+/* line 65, /Users/marc/Projects/Rubyfuza/rubyfuza/src/stylesheets/partials/_header.sass */
 header#header h2 span, header#header h3 span {
   color: #98c9ee;
 }
-/* line 51, /Users/marc/Projects/Rubyfuza/rubyfuza/src/stylesheets/partials/_header.sass */
+/* line 68, /Users/marc/Projects/Rubyfuza/rubyfuza/src/stylesheets/partials/_header.sass */
 header#header a.action {
   background: #c93131;
   border: 3px dashed #b01818;
@@ -336,7 +398,7 @@ header#header a.action {
   -o-transition: all 0.3s;
   transition: all 0.3s;
 }
-/* line 71, /Users/marc/Projects/Rubyfuza/rubyfuza/src/stylesheets/partials/_header.sass */
+/* line 88, /Users/marc/Projects/Rubyfuza/rubyfuza/src/stylesheets/partials/_header.sass */
 header#header a.action:hover, header#header a.action:focus {
   background: white;
   color: #222222;
@@ -347,7 +409,7 @@ header#header a.action:hover, header#header a.action:focus {
   transform: rotate(-1deg);
   text-shadow: rgba(255, 255, 255, 0.3) 0 2px 0;
 }
-/* line 77, /Users/marc/Projects/Rubyfuza/rubyfuza/src/stylesheets/partials/_header.sass */
+/* line 94, /Users/marc/Projects/Rubyfuza/rubyfuza/src/stylesheets/partials/_header.sass */
 header#header .conf {
   position: relative;
   text-align: center;
@@ -359,7 +421,7 @@ header#header .conf:after {
   display: table;
   clear: both;
 }
-/* line 83, /Users/marc/Projects/Rubyfuza/rubyfuza/src/stylesheets/partials/_header.sass */
+/* line 100, /Users/marc/Projects/Rubyfuza/rubyfuza/src/stylesheets/partials/_header.sass */
 header#header .features {
   margin: 30px 0 60px;
   *zoom: 1;
@@ -370,52 +432,52 @@ header#header .features:after {
   display: table;
   clear: both;
 }
-/* line 86, /Users/marc/Projects/Rubyfuza/rubyfuza/src/stylesheets/partials/_header.sass */
+/* line 103, /Users/marc/Projects/Rubyfuza/rubyfuza/src/stylesheets/partials/_header.sass */
 header#header .features p {
   font: 1.2em "Patua One", Arial, sans-serif;
   letter-spacing: 0.05em;
   padding: 0px 20px;
 }
-/* line 92, /Users/marc/Projects/Rubyfuza/rubyfuza/src/stylesheets/partials/_header.sass */
+/* line 109, /Users/marc/Projects/Rubyfuza/rubyfuza/src/stylesheets/partials/_header.sass */
 header#header .features p img {
   margin-right: 15px;
 }
-/* line 95, /Users/marc/Projects/Rubyfuza/rubyfuza/src/stylesheets/partials/_header.sass */
+/* line 112, /Users/marc/Projects/Rubyfuza/rubyfuza/src/stylesheets/partials/_header.sass */
 header#header .features p span {
   display: block;
   padding-top: 22px;
 }
-/* line 103, /Users/marc/Projects/Rubyfuza/rubyfuza/src/stylesheets/partials/_header.sass */
+/* line 120, /Users/marc/Projects/Rubyfuza/rubyfuza/src/stylesheets/partials/_header.sass */
 header#header .features li:last-child {
   border-top: 1px solid rgba(255, 255, 255, 0.05);
   font-size: 2.2em;
   margin-top: 20px;
   text-align: center;
 }
-/* line 109, /Users/marc/Projects/Rubyfuza/rubyfuza/src/stylesheets/partials/_header.sass */
+/* line 126, /Users/marc/Projects/Rubyfuza/rubyfuza/src/stylesheets/partials/_header.sass */
 header#header .features li:last-child p {
   line-height: 1;
   padding-top: 20px;
 }
-/* line 112, /Users/marc/Projects/Rubyfuza/rubyfuza/src/stylesheets/partials/_header.sass */
+/* line 129, /Users/marc/Projects/Rubyfuza/rubyfuza/src/stylesheets/partials/_header.sass */
 header#header .features li:last-child span {
   color: #98c9ee;
   display: block;
   font: 0.45em "open sans";
   padding-top: 12px;
 }
-/* line 117, /Users/marc/Projects/Rubyfuza/rubyfuza/src/stylesheets/partials/_header.sass */
+/* line 134, /Users/marc/Projects/Rubyfuza/rubyfuza/src/stylesheets/partials/_header.sass */
 header#header .features li .left {
   max-width: 70px;
   width: 25%;
 }
-/* line 121, /Users/marc/Projects/Rubyfuza/rubyfuza/src/stylesheets/partials/_header.sass */
+/* line 138, /Users/marc/Projects/Rubyfuza/rubyfuza/src/stylesheets/partials/_header.sass */
 header#header .features .full {
   float: left;
   width: 100%;
 }
 
-/* line 125, /Users/marc/Projects/Rubyfuza/rubyfuza/src/stylesheets/partials/_header.sass */
+/* line 142, /Users/marc/Projects/Rubyfuza/rubyfuza/src/stylesheets/partials/_header.sass */
 nav#main {
   background: url("../images/bg2.png");
   position: fixed;
@@ -431,7 +493,7 @@ nav#main:after {
   display: table;
   clear: both;
 }
-/* line 135, /Users/marc/Projects/Rubyfuza/rubyfuza/src/stylesheets/partials/_header.sass */
+/* line 152, /Users/marc/Projects/Rubyfuza/rubyfuza/src/stylesheets/partials/_header.sass */
 nav#main ul {
   float: left;
   *zoom: 1;
@@ -442,11 +504,11 @@ nav#main ul:after {
   display: table;
   clear: both;
 }
-/* line 138, /Users/marc/Projects/Rubyfuza/rubyfuza/src/stylesheets/partials/_header.sass */
+/* line 155, /Users/marc/Projects/Rubyfuza/rubyfuza/src/stylesheets/partials/_header.sass */
 nav#main li {
   display: inline;
 }
-/* line 140, /Users/marc/Projects/Rubyfuza/rubyfuza/src/stylesheets/partials/_header.sass */
+/* line 157, /Users/marc/Projects/Rubyfuza/rubyfuza/src/stylesheets/partials/_header.sass */
 nav#main li a {
   display: inline-block;
   font-size: 1.1em;
@@ -454,19 +516,19 @@ nav#main li a {
   text-decoration: none;
   text-transform: uppercase;
 }
-/* line 146, /Users/marc/Projects/Rubyfuza/rubyfuza/src/stylesheets/partials/_header.sass */
+/* line 163, /Users/marc/Projects/Rubyfuza/rubyfuza/src/stylesheets/partials/_header.sass */
 nav#main li a:hover, nav#main li a:focus {
   background: rgba(0, 0, 0, 0.2);
 }
-/* line 148, /Users/marc/Projects/Rubyfuza/rubyfuza/src/stylesheets/partials/_header.sass */
+/* line 165, /Users/marc/Projects/Rubyfuza/rubyfuza/src/stylesheets/partials/_header.sass */
 nav#main li#register {
   display: none;
 }
-/* line 150, /Users/marc/Projects/Rubyfuza/rubyfuza/src/stylesheets/partials/_header.sass */
+/* line 167, /Users/marc/Projects/Rubyfuza/rubyfuza/src/stylesheets/partials/_header.sass */
 nav#main li#register a {
   color: #c93131;
 }
-/* line 152, /Users/marc/Projects/Rubyfuza/rubyfuza/src/stylesheets/partials/_header.sass */
+/* line 169, /Users/marc/Projects/Rubyfuza/rubyfuza/src/stylesheets/partials/_header.sass */
 nav#main a {
   -moz-transition: all 0.3s;
   -webkit-transition: all 0.3s;
@@ -474,25 +536,25 @@ nav#main a {
   transition: all 0.3s;
 }
 
-/* line 155, /Users/marc/Projects/Rubyfuza/rubyfuza/src/stylesheets/partials/_header.sass */
+/* line 172, /Users/marc/Projects/Rubyfuza/rubyfuza/src/stylesheets/partials/_header.sass */
 .register-now {
   float: right;
   padding: 20px 0;
   text-decoration: none;
 }
-/* line 159, /Users/marc/Projects/Rubyfuza/rubyfuza/src/stylesheets/partials/_header.sass */
+/* line 176, /Users/marc/Projects/Rubyfuza/rubyfuza/src/stylesheets/partials/_header.sass */
 .register-now span {
   color: #c93131;
   font-weight: bold;
   text-decoration: underline;
   text-transform: uppercase;
 }
-/* line 165, /Users/marc/Projects/Rubyfuza/rubyfuza/src/stylesheets/partials/_header.sass */
+/* line 182, /Users/marc/Projects/Rubyfuza/rubyfuza/src/stylesheets/partials/_header.sass */
 .register-now:hover span, .register-now:focus span {
   color: #eb5353;
 }
 
-/* line 168, /Users/marc/Projects/Rubyfuza/rubyfuza/src/stylesheets/partials/_header.sass */
+/* line 185, /Users/marc/Projects/Rubyfuza/rubyfuza/src/stylesheets/partials/_header.sass */
 .conf img {
   display: inline-block;
   max-width: 940px;
