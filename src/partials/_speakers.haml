@@ -4,10 +4,15 @@
       %a{:name=>"speakers"}
       %span Speakers
 
-    = partial('../partials/signup')
+    %ul
+      %li.you{style: 'padding-left:37.5%;'}
+        .rounded
+          %a{:href=>"http://rubyfuza.wufoo.com/forms/rubyfuza-2014-talk-proposal/"}= img "../images/speakers/you.png"
+        %h2 You?
+        %p
+          We're still looking for inspiring speakers!
+          = link_to "I want to speak", "http://rubyfuza.wufoo.com/forms/rubyfuza-2014-talk-proposal/", :class => "hot"
 
-    / %ul
-    /   %li.speaker
     /     .rounded
     /       %a{href: '#speaker1', rel: 'speaker_image', class: 'fancybox'}
     /         = img "../images/speakers/konstantin.jpg"
@@ -468,7 +473,8 @@
     /         %h3 CQRS
     /         %p A look at how this obscurely named pattern works and why you'd want to use it.
 
-    /   %div.clearfix
+    %div.clearfix
+    = partial('../partials/signup')
     /   %div.center
     /     %h2 You?
     /     %p
