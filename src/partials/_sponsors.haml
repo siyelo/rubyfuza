@@ -4,11 +4,24 @@
 			%a{:name=>"sponsors"}
 			%span Sponsors
 
-		%a.highlight.center{:href=>'/2013#sponsors'}
-			Check out last years sponsors.
+		%ul.sponsors-list
+			%li.third
+			%li.third
+				%a{:href=>"#hetzner", :class=>"info fancybox", rel: 'sponsors', :title=>"Hetzner, Trusted in Hosting"}
+					%img{:src=>"../images/logos/hetzner.png"}
+				.row
+					%a{:href=>"http://www.hetzner.co.za", :target=>"_blank", :title=>"Hetzner, Trusted in Hosting"} hetzner.co.za
+					/ %span &#9679;
+					/ %a{:href=>"#hetzner", :class=>"info fancybox", rel: 'sponsors'} info
+				%small Ruby-level sponsor
 
+				#hetzner.detail
+					%a{:href=>"http://www.hetzner.co.za", :target=>"_blank", :title=>"Hetzner, Trusted in Hosting"}
+						%img{:src=>"../images/logos/hetzner2.png", :class=>"square"}
+					%p At Hetzner South Africa we are passionate about web hosting – it’s our core business and it’s what we do best. By consistently delivering excellent service and cost effective web hosting, dedicated servers and custom hosting solutions, Hetzner has exponentially grown its market share, making it the leading web hosting company in South Africa. Inspired by our brand promise ‘Trusted in Hosting’, we focus on providing efficient, sustainable business models, quality service and customer satisfaction. A key contributor to our success is our people. We aim for our teams to manage themselves rather than rely on several layers of hierarchy. We want to give our people the freedom to explore, innovate and create. We recognise that our customers expect reliability and good value from us and it remains our ongoing commitment to earn and retain their trust.
+					%span.right Ruby-level sponsor
+					%a{:href=>"http://www.hetzner.co.za", :target=>"_blank", :title=>"Hetzner, Trusted in Hosting"} hetzner.co.za
 
-		/ %ul.sponsors-list
 		/ 	%li.third
 		/ 		%a{:href=>"#madmimi", :class=>"info fancybox", rel: 'sponsors', :title=>"Mad Mimi"}
 		/ 			%img{:src=>"../images/logos/madmimi.png"}
@@ -45,21 +58,6 @@
 		/ 			%span.right Ruby-level sponsor
 		/ 			%a{:href=>"http://www.platform45.com", :target=>"_blank", :title=>"Platform45"} platform45.com
 
-		/ 	%li.third
-		/ 		%a{:href=>"#hetzner", :class=>"info fancybox", rel: 'sponsors', :title=>"Hetzner, Trusted in Hosting"}
-		/ 			%img{:src=>"../images/logos/hetzner.png"}
-		/ 		.row
-		/ 			%a{:href=>"http://www.hetzner.co.za", :target=>"_blank", :title=>"Hetzner, Trusted in Hosting"} hetzner.co.za
-		/ 			/ %span &#9679;
-		/ 			/ %a{:href=>"#hetzner", :class=>"info fancybox", rel: 'sponsors'} info
-		/ 		%small Ruby-level sponsor
-
-		/ 		#hetzner.detail
-		/ 			%a{:href=>"http://www.hetzner.co.za", :target=>"_blank", :title=>"Hetzner, Trusted in Hosting"}
-		/ 				%img{:src=>"../images/logos/hetzner2.png", :class=>"square"}
-		/ 			%p At Hetzner South Africa we are passionate about web hosting – it’s our core business and it’s what we do best. By consistently delivering excellent service and cost effective web hosting, dedicated servers and custom hosting solutions, Hetzner has exponentially grown its market share, making it the leading web hosting company in South Africa. Inspired by our brand promise ‘Trusted in Hosting’, we focus on providing efficient, sustainable business models, quality service and customer satisfaction. A key contributor to our success is our people. We aim for our teams to manage themselves rather than rely on several layers of hierarchy. We want to give our people the freedom to explore, innovate and create. We recognise that our customers expect reliability and good value from us and it remains our ongoing commitment to earn and retain their trust.
-		/ 			%span.right Ruby-level sponsor
-		/ 			%a{:href=>"http://www.hetzner.co.za", :target=>"_blank", :title=>"Hetzner, Trusted in Hosting"} hetzner.co.za
 
 		/ %ul.sponsors-list
 		/ 	%li.third
@@ -265,5 +263,6 @@
 			Check out the
 			%a{:href=>"/downloads/Rubyfuza%202014%20Sponsorship%20Prospectus.pdf"} prospectus
 			and drop us an
-			%a{:href=>"mailto:sponsor@rubyfuza.org"} e-mail
+			= "#{link_to 'e-mail', 'mailto:sponsor@rubyfuza.org'}. Last year's #{link_to 'sponsors', '/2013#sponsors'}."
+
 
