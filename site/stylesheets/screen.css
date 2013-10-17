@@ -1,4 +1,4 @@
-/* line 17, /Users/marc/.rvm/gems/ruby-1.9.2-p290@rubyfuza/gems/compass-0.11.7/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 17, /Users/marc/.rvm/gems/ruby-2.0.0-p247@rubyfuza/gems/compass-0.11.7/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -20,45 +20,45 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
-/* line 20, /Users/marc/.rvm/gems/ruby-1.9.2-p290@rubyfuza/gems/compass-0.11.7/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 20, /Users/marc/.rvm/gems/ruby-2.0.0-p247@rubyfuza/gems/compass-0.11.7/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 body {
   line-height: 1;
 }
 
-/* line 22, /Users/marc/.rvm/gems/ruby-1.9.2-p290@rubyfuza/gems/compass-0.11.7/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 22, /Users/marc/.rvm/gems/ruby-2.0.0-p247@rubyfuza/gems/compass-0.11.7/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 24, /Users/marc/.rvm/gems/ruby-1.9.2-p290@rubyfuza/gems/compass-0.11.7/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 24, /Users/marc/.rvm/gems/ruby-2.0.0-p247@rubyfuza/gems/compass-0.11.7/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 26, /Users/marc/.rvm/gems/ruby-1.9.2-p290@rubyfuza/gems/compass-0.11.7/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 26, /Users/marc/.rvm/gems/ruby-2.0.0-p247@rubyfuza/gems/compass-0.11.7/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle;
 }
 
-/* line 28, /Users/marc/.rvm/gems/ruby-1.9.2-p290@rubyfuza/gems/compass-0.11.7/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 28, /Users/marc/.rvm/gems/ruby-2.0.0-p247@rubyfuza/gems/compass-0.11.7/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
   quotes: none;
 }
-/* line 101, /Users/marc/.rvm/gems/ruby-1.9.2-p290@rubyfuza/gems/compass-0.11.7/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 101, /Users/marc/.rvm/gems/ruby-2.0.0-p247@rubyfuza/gems/compass-0.11.7/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 q:before, q:after, blockquote:before, blockquote:after {
   content: "";
   content: none;
 }
 
-/* line 30, /Users/marc/.rvm/gems/ruby-1.9.2-p290@rubyfuza/gems/compass-0.11.7/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 30, /Users/marc/.rvm/gems/ruby-2.0.0-p247@rubyfuza/gems/compass-0.11.7/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none;
 }
 
-/* line 114, /Users/marc/.rvm/gems/ruby-1.9.2-p290@rubyfuza/gems/compass-0.11.7/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 114, /Users/marc/.rvm/gems/ruby-2.0.0-p247@rubyfuza/gems/compass-0.11.7/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
   display: block;
 }
@@ -74,7 +74,7 @@ body {
 .horizontal {
   *zoom: 1;
 }
-/* line 38, /Users/marc/.rvm/gems/ruby-1.9.2-p290@rubyfuza/gems/compass-0.11.7/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+/* line 38, /Users/marc/.rvm/gems/ruby-2.0.0-p247@rubyfuza/gems/compass-0.11.7/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
 .horizontal:after {
   content: "";
   display: table;
@@ -124,110 +124,121 @@ ul.list li {
   width: 100%;
   *zoom: 1;
 }
-/* line 38, /Users/marc/.rvm/gems/ruby-1.9.2-p290@rubyfuza/gems/compass-0.11.7/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+/* line 38, /Users/marc/.rvm/gems/ruby-2.0.0-p247@rubyfuza/gems/compass-0.11.7/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
 .wrapper:after {
   content: "";
   display: table;
   clear: both;
 }
+/* line 8, /Users/marc/Projects/Rubyfuza/rubyfuza/src/stylesheets/partials/_layout.sass */
+.wrapper.para h2 {
+  margin-bottom: 0.5em;
+  font-size: 4em;
+}
+/* line 11, /Users/marc/Projects/Rubyfuza/rubyfuza/src/stylesheets/partials/_layout.sass */
+.wrapper.para p {
+  padding: 0.5em;
+  margin-bottom: 0.5em;
+  font-size: 1.5em;
+}
 
-/* line 7, /Users/marc/Projects/Rubyfuza/rubyfuza/src/stylesheets/partials/_layout.sass */
+/* line 16, /Users/marc/Projects/Rubyfuza/rubyfuza/src/stylesheets/partials/_layout.sass */
 section {
   *zoom: 1;
 }
-/* line 38, /Users/marc/.rvm/gems/ruby-1.9.2-p290@rubyfuza/gems/compass-0.11.7/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+/* line 38, /Users/marc/.rvm/gems/ruby-2.0.0-p247@rubyfuza/gems/compass-0.11.7/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
 section:after {
   content: "";
   display: table;
   clear: both;
 }
-/* line 9, /Users/marc/Projects/Rubyfuza/rubyfuza/src/stylesheets/partials/_layout.sass */
+/* line 18, /Users/marc/Projects/Rubyfuza/rubyfuza/src/stylesheets/partials/_layout.sass */
 section .wrapper {
   margin-bottom: 40px;
 }
 
-/* line 12, /Users/marc/Projects/Rubyfuza/rubyfuza/src/stylesheets/partials/_layout.sass */
+/* line 21, /Users/marc/Projects/Rubyfuza/rubyfuza/src/stylesheets/partials/_layout.sass */
 .row {
   display: block;
   width: 100%;
 }
 
-/* line 16, /Users/marc/Projects/Rubyfuza/rubyfuza/src/stylesheets/partials/_layout.sass */
+/* line 25, /Users/marc/Projects/Rubyfuza/rubyfuza/src/stylesheets/partials/_layout.sass */
 .half, .third, .two-thirds, .fourth, .three-fourths, .fifth, .sixth, .eighth {
   display: inline;
   float: left;
   *zoom: 1;
 }
-/* line 38, /Users/marc/.rvm/gems/ruby-1.9.2-p290@rubyfuza/gems/compass-0.11.7/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+/* line 38, /Users/marc/.rvm/gems/ruby-2.0.0-p247@rubyfuza/gems/compass-0.11.7/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
 .half:after, .third:after, .two-thirds:after, .fourth:after, .three-fourths:after, .fifth:after, .sixth:after, .eighth:after {
   content: "";
   display: table;
   clear: both;
 }
 
-/* line 21, /Users/marc/Projects/Rubyfuza/rubyfuza/src/stylesheets/partials/_layout.sass */
+/* line 30, /Users/marc/Projects/Rubyfuza/rubyfuza/src/stylesheets/partials/_layout.sass */
 .half {
   width: 50%;
 }
 
-/* line 24, /Users/marc/Projects/Rubyfuza/rubyfuza/src/stylesheets/partials/_layout.sass */
+/* line 33, /Users/marc/Projects/Rubyfuza/rubyfuza/src/stylesheets/partials/_layout.sass */
 .third {
   width: 33.33%;
 }
 
-/* line 27, /Users/marc/Projects/Rubyfuza/rubyfuza/src/stylesheets/partials/_layout.sass */
+/* line 36, /Users/marc/Projects/Rubyfuza/rubyfuza/src/stylesheets/partials/_layout.sass */
 .two-thirds {
   width: 66.66%;
 }
 
-/* line 30, /Users/marc/Projects/Rubyfuza/rubyfuza/src/stylesheets/partials/_layout.sass */
+/* line 39, /Users/marc/Projects/Rubyfuza/rubyfuza/src/stylesheets/partials/_layout.sass */
 .fourth {
   width: 25%;
 }
 
-/* line 33, /Users/marc/Projects/Rubyfuza/rubyfuza/src/stylesheets/partials/_layout.sass */
+/* line 42, /Users/marc/Projects/Rubyfuza/rubyfuza/src/stylesheets/partials/_layout.sass */
 .three-fourths {
   width: 75%;
 }
 
-/* line 36, /Users/marc/Projects/Rubyfuza/rubyfuza/src/stylesheets/partials/_layout.sass */
+/* line 45, /Users/marc/Projects/Rubyfuza/rubyfuza/src/stylesheets/partials/_layout.sass */
 .fifth {
   width: 20%;
 }
 
-/* line 39, /Users/marc/Projects/Rubyfuza/rubyfuza/src/stylesheets/partials/_layout.sass */
+/* line 48, /Users/marc/Projects/Rubyfuza/rubyfuza/src/stylesheets/partials/_layout.sass */
 .sixth {
   width: 16.66%;
 }
 
-/* line 42, /Users/marc/Projects/Rubyfuza/rubyfuza/src/stylesheets/partials/_layout.sass */
+/* line 51, /Users/marc/Projects/Rubyfuza/rubyfuza/src/stylesheets/partials/_layout.sass */
 .eighth {
   width: 12.5%;
 }
 
-/* line 45, /Users/marc/Projects/Rubyfuza/rubyfuza/src/stylesheets/partials/_layout.sass */
+/* line 54, /Users/marc/Projects/Rubyfuza/rubyfuza/src/stylesheets/partials/_layout.sass */
 .left {
   display: inline;
   float: left;
 }
 
-/* line 49, /Users/marc/Projects/Rubyfuza/rubyfuza/src/stylesheets/partials/_layout.sass */
+/* line 58, /Users/marc/Projects/Rubyfuza/rubyfuza/src/stylesheets/partials/_layout.sass */
 .right {
   display: inline;
   float: right;
 }
 
-/* line 53, /Users/marc/Projects/Rubyfuza/rubyfuza/src/stylesheets/partials/_layout.sass */
+/* line 62, /Users/marc/Projects/Rubyfuza/rubyfuza/src/stylesheets/partials/_layout.sass */
 .center {
   display: block;
   text-align: center;
 }
 
-/* line 57, /Users/marc/Projects/Rubyfuza/rubyfuza/src/stylesheets/partials/_layout.sass */
+/* line 66, /Users/marc/Projects/Rubyfuza/rubyfuza/src/stylesheets/partials/_layout.sass */
 .clearfix {
   *zoom: 1;
 }
-/* line 38, /Users/marc/.rvm/gems/ruby-1.9.2-p290@rubyfuza/gems/compass-0.11.7/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+/* line 38, /Users/marc/.rvm/gems/ruby-2.0.0-p247@rubyfuza/gems/compass-0.11.7/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
 .clearfix:after {
   content: "";
   display: table;
@@ -415,7 +426,7 @@ header#header .conf {
   text-align: center;
   *zoom: 1;
 }
-/* line 38, /Users/marc/.rvm/gems/ruby-1.9.2-p290@rubyfuza/gems/compass-0.11.7/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+/* line 38, /Users/marc/.rvm/gems/ruby-2.0.0-p247@rubyfuza/gems/compass-0.11.7/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
 header#header .conf:after {
   content: "";
   display: table;
@@ -426,7 +437,7 @@ header#header .features {
   margin: 30px 0 60px;
   *zoom: 1;
 }
-/* line 38, /Users/marc/.rvm/gems/ruby-1.9.2-p290@rubyfuza/gems/compass-0.11.7/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+/* line 38, /Users/marc/.rvm/gems/ruby-2.0.0-p247@rubyfuza/gems/compass-0.11.7/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
 header#header .features:after {
   content: "";
   display: table;
@@ -487,7 +498,7 @@ nav#main {
   *zoom: 1;
   border-bottom: 1px solid rgba(0, 0, 0, 0.15);
 }
-/* line 38, /Users/marc/.rvm/gems/ruby-1.9.2-p290@rubyfuza/gems/compass-0.11.7/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+/* line 38, /Users/marc/.rvm/gems/ruby-2.0.0-p247@rubyfuza/gems/compass-0.11.7/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
 nav#main:after {
   content: "";
   display: table;
@@ -498,7 +509,7 @@ nav#main ul {
   float: left;
   *zoom: 1;
 }
-/* line 38, /Users/marc/.rvm/gems/ruby-1.9.2-p290@rubyfuza/gems/compass-0.11.7/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+/* line 38, /Users/marc/.rvm/gems/ruby-2.0.0-p247@rubyfuza/gems/compass-0.11.7/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
 nav#main ul:after {
   content: "";
   display: table;
@@ -595,7 +606,7 @@ nav#main a {
   border-radius: 50%;
   *zoom: 1;
 }
-/* line 38, /Users/marc/.rvm/gems/ruby-1.9.2-p290@rubyfuza/gems/compass-0.11.7/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+/* line 38, /Users/marc/.rvm/gems/ruby-2.0.0-p247@rubyfuza/gems/compass-0.11.7/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
 .rounded:after {
   content: "";
   display: table;
@@ -631,7 +642,7 @@ nav#main a {
   width: 23%;
   *zoom: 1;
 }
-/* line 38, /Users/marc/.rvm/gems/ruby-1.9.2-p290@rubyfuza/gems/compass-0.11.7/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+/* line 38, /Users/marc/.rvm/gems/ruby-2.0.0-p247@rubyfuza/gems/compass-0.11.7/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
 #speakers li:after {
   content: "";
   display: table;
@@ -731,7 +742,7 @@ nav#main a {
   padding-top: 10px;
   *zoom: 1;
 }
-/* line 38, /Users/marc/.rvm/gems/ruby-1.9.2-p290@rubyfuza/gems/compass-0.11.7/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+/* line 38, /Users/marc/.rvm/gems/ruby-2.0.0-p247@rubyfuza/gems/compass-0.11.7/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
 #schedule .timeline:after {
   content: "";
   display: table;
@@ -872,7 +883,7 @@ nav#main a {
 #sponsors ul {
   *zoom: 1;
 }
-/* line 38, /Users/marc/.rvm/gems/ruby-1.9.2-p290@rubyfuza/gems/compass-0.11.7/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+/* line 38, /Users/marc/.rvm/gems/ruby-2.0.0-p247@rubyfuza/gems/compass-0.11.7/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
 #sponsors ul:after {
   content: "";
   display: table;
@@ -1002,7 +1013,7 @@ nav#main a {
 #blog ul {
   *zoom: 1;
 }
-/* line 38, /Users/marc/.rvm/gems/ruby-1.9.2-p290@rubyfuza/gems/compass-0.11.7/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+/* line 38, /Users/marc/.rvm/gems/ruby-2.0.0-p247@rubyfuza/gems/compass-0.11.7/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
 #blog ul:after {
   content: "";
   display: table;
@@ -1150,7 +1161,7 @@ strong {
 .fancybox-inner .links {
   *zoom: 1;
 }
-/* line 38, /Users/marc/.rvm/gems/ruby-1.9.2-p290@rubyfuza/gems/compass-0.11.7/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+/* line 38, /Users/marc/.rvm/gems/ruby-2.0.0-p247@rubyfuza/gems/compass-0.11.7/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
 .fancybox-inner .links:after {
   content: "";
   display: table;

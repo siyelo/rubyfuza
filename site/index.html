@@ -21,12 +21,12 @@
   <nav id='main'>
     <div class='wrapper'>
       <ul>
-        <li class='js_nav_link'><a href="#about">About</a></li>
-        <li class='js_nav_link'><a href="#speakers">Speakers</a></li>
-        <!-- %li.js_nav_link= link_to "Schedule", "#schedule" -->
-        <li class='js_nav_link'><a href="#venue">Venue</a></li>
-        <li class='js_nav_link'><a href="#sponsors">Sponsors</a></li>
-        <li class='js_nav_link'><a href="#blog">Blog</a></li>
+        <li class='js_nav_link'><a href="/#about">About</a></li>
+        <li class='js_nav_link'><a href="/#speakers">Speakers</a></li>
+        <!-- %li.js_nav_link= link_to "Schedule", "/#schedule" -->
+        <li class='js_nav_link'><a href="/#venue">Venue</a></li>
+        <li class='js_nav_link'><a href="/#sponsors">Sponsors</a></li>
+        <li class='js_nav_link'><a href="/#blog">Blog</a></li>
         <li><a href="/2013">2013</a></li>
         <li id='register'><a href="http://www.quicket.co.za/events/1209-rubyfuza-2013/">Register</a></li>
       </ul>
@@ -657,7 +657,7 @@
       <span>Sponsors</span>
     </h1>
     <ul class='sponsors-list'>
-      <li class='third'></li>
+      <li class='sixth'></li>
       <li class='third'>
         <a class='info fancybox' href='#hetzner' rel='sponsors' title='Hetzner, Trusted in Hosting'>
           <img src='../images/logos/hetzner.png' />
@@ -677,21 +677,26 @@
           <a href='http://www.hetzner.co.za' target='_blank' title='Hetzner, Trusted in Hosting'>hetzner.co.za</a>
         </div>
       </li>
+      <li class='third'>
+        <a class='info fancybox' href='#madmimi' rel='sponsors' title='Mad Mimi'>
+          <img src='../images/logos/madmimi.png' />
+        </a>
+        <div class='row'>
+          <a href='http://www.madmimi.com' target='_blank' title='Mad Mimi'>madmimi.com</a>
+          <!-- %span &#9679; -->
+          <!-- %a{:href=>"#madmimi", :class=>"info fancybox", rel: 'sponsors'} info -->
+        </div>
+        <small>Ruby-level sponsor</small>
+        <div class='detail' id='madmimi'>
+          <a href='https://www.madmimi.com'>
+            <img class='square' src='../images/logos/madmimi2.png' />
+          </a>
+          <p>Mad Mimi is a simple, intelligent and powerful email marketing utility that anyone can use. Mad Mimi makes email marketing easy for the creator, and easier on the eyes for the receiver. With ground-breaking technology, Mad Mimi is the simplest way to create branded, well-designed newsletters and promotions. Sign up free today and get started with simple, lovely email marketing.</p>
+          <span class='right'>Ruby-level sponsor</span>
+          <a href='http://www.madmimi.com' target='_blank' title='Mad Mimi'>madmimi.com</a>
+        </div>
+      </li>
     </ul>
-    <!-- %li.third -->
-    <!-- %a{:href=>"#madmimi", :class=>"info fancybox", rel: 'sponsors', :title=>"Mad Mimi"} -->
-    <!-- %img{:src=>"../images/logos/madmimi.png"} -->
-    <!-- .row -->
-    <!-- %a{:href=>"http://www.madmimi.com", :target=>"_blank", :title=>"Mad Mimi"} madmimi.com -->
-    <!-- / %span &#9679; -->
-    <!-- / %a{:href=>"#madmimi", :class=>"info fancybox", rel: 'sponsors'} info -->
-    <!-- %small Ruby-level sponsor -->
-    <!-- #madmimi.detail -->
-    <!-- %a{:href=>"https://www.madmimi.com"} -->
-    <!-- %img{:src=>"../images/logos/madmimi2.png", :class=>"square"} -->
-    <!-- %p Mad Mimi is a simple, intelligent and powerful email marketing utility that anyone can use. Mad Mimi makes email marketing easy for the creator, and easier on the eyes for the receiver. With ground-breaking technology, Mad Mimi is the simplest way to create branded, well-designed newsletters and promotions. Sign up free today and get started with simple, lovely email marketing. -->
-    <!-- %span.right Ruby-level sponsor -->
-    <!-- %a{:href=>"http://www.madmimi.com", :target=>"_blank", :title=>"Mad Mimi"} madmimi.com -->
     <!-- %li.third -->
     <!-- %a{:href=>"#platform45", :class=>"info fancybox", rel: 'sponsors', :title=>"Platform45"} -->
     <!-- %img{:src=>"../images/logos/platform45.png"} -->
@@ -945,6 +950,10 @@
       <a href="http://lanyrd.com/2014/rubyfuza/">Join us on Lanyrd</a>
       |
       <a href="mailto:info@rubyfuza.org">Email us</a>
+      <p>
+        Rubyfuza is dedicated to a harassment-free conference experience for everyone. Our anti-harassment policy can be found at:
+        <a href='/coc'>rubyfuza.org/coc</a>
+      </p>
       <p>
         Design by
         <a href="http://siyelo.com">Siyelo</a>
