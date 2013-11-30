@@ -5,7 +5,156 @@
       %span Speakers
 
     %ul
-      %li.you{style: 'padding-left:37.5%;'}
+      %li.speaker
+        .rounded
+          %a{href: '#speaker2', rel: 'speaker_image', class: 'fancybox'}
+            = img "../images/speakers/alex.jpg"
+          %a{:href=>"https://twitter.com/myabc", :class=>"twitter"}= img "../images/twitter.png"
+          %a{:href=>"https://github.com/myabc", :class=>"github"}= img "../images/github.png"
+        %h2
+          %a{href: '#speaker2', rel: 'speakers', class: 'fancybox'} Alex Coles
+        %p Find Simplicity With Plain Old Ruby Objects
+
+        #speaker2.detail
+          .links.right
+            %a{:href=>"https://twitter.com/myabc", :class=>"twitter"}= img "../images/twitter.png"
+            %a{:href=>"https://github.com/myabc", :class=>"github"}= img "../images/github.png"
+          .name
+            = img "../images/speakers/alex.jpg"
+            %h2 Alex Coles
+          .inner
+            %p Alex Coles is a freelance web developer, unabashedly wearing the hat of "generalist". He is active in the Ruby community, having founded the annual eurucamp camp/conference in Berlin. He has also contributed extensively to many open-source projects including RefineryCMS and DataMapper.
+            %h3 Find Simplicity With Plain Old Ruby Objects
+            %p This talk will discuss why you might, when you set out to design a system, want to stop thinking about persistence. Rather than kicking off a project generating models that subclass ActiveRecord::Base, I will suggest beginning your application development by modelling behaviour with Plain Old Ruby Objects (POROs).
+            %p While including ideas from Avdi Grimm's Objects on Rails, the talk will primarily be based around my personal experience refactoring an-ActiveResource based system with Plain Old Ruby Objects and roar.
+            %p Included in this talk will be an exploration of:
+            %ul
+              %li patterns, such as Repository and Data Mapper, as coined by Martin Fowler,
+              %li how upcoming libraries &eldash; Curator, DataMappify, ROM.rb and Veritas &eldash; fit in with these patterns,
+              %li the parts of these libraries that are usable today,
+              %li how to make this methodology workable in the context of TDD (keeping components as testable as possible).
+            %p There will also be a discussion about the stage when you should begin implementing persistence.
+
+      %li.speaker
+        .rounded
+          %a{href: '#speaker3', rel: 'speaker_image', class: 'fancybox'}
+            = img "../images/speakers/andre.jpg"
+          %a{:href=>"https://twitter.com/indirect", :class=>"twitter"}= img "../images/twitter.png"
+          %a{:href=>"https://github.com/indirect", :class=>"github"}= img "../images/github.png"
+        %h2
+          %a{href: '#speaker3', rel: 'speakers', class: 'fancybox'} André Arko
+        %p Extreme Makeover: Rubygems Edition
+
+        #speaker3.detail
+          .links.right
+            %a{:href=>"https://twitter.com/indirect", :class=>"twitter"}= img "../images/twitter.png"
+            %a{:href=>"https://github.com/indirect", :class=>"github"}= img "../images/github.png"
+          .name
+            = img "../images/speakers/andre.jpg"
+            %h2 André Arko
+          .inner
+            %p André thinks Ruby is pretty cool. He designs and builds web applications at Cloud City Development by day, and works on Bundler and Rubygems by night… and also some days.
+            %h3 Extreme Makeover: Rubygems Edition
+            %p Rubygems.org provides every Rubyist with an amazing service: all the libraries in the Ruby world. As amazing as that is, installing gems can be a time-consuming and even error-prone process. (Just ask the Travis guys.) In this talk, you'll learn about the recent dramatic changes in Rubygems and Bundler to improve speed and reliability by rewriting the Rubygems client/server architecture. I'll show how the new system caches more information, makes fewer requests, and takes less time to install gems. Finally, I'll cover how the changes allow worldwide mirrors of rubygems.org, improving things for Rubyists around the globe.
+
+      %li.speaker
+        .rounded
+          %a{href: '#speaker4', rel: 'speaker_image', class: 'fancybox'}
+            = img "../images/speakers/mmongeau.jpg"
+          %a{:href=>"https://twitter.com/halogenandtoast", :class=>"twitter"}= img "../images/twitter.png"
+          %a{:href=>"https://github.com/halogenandtoast", :class=>"github"}= img "../images/github.png"
+        %h2
+          %a{href: '#speaker4', rel: 'speakers', class: 'fancybox'} Matthew Mongeau
+        %p The Art of Ruby
+
+        #speaker4.detail
+          .links.right
+            %a{:href=>"https://twitter.com/halogenandtoast", :class=>"twitter"}= img "../images/twitter.png"
+            %a{:href=>"https://github.com/halogenandtoast", :class=>"github"}= img "../images/github.png"
+          .name
+            = img "../images/speakers/mmongeau.jpg"
+            %h2 Matthew Mongeau
+          .inner
+            %p I've programming in Ruby and Ruby on Rails since late 2004 when the first 15 minute blog video hit the web. Forever changed by brief introduction to Rails I've spent the last 9 years honing my craft. I eventually found myself at thoughtbot where I currently spread the knowledge of Ruby to others by teaching workshops both online and in person.
+            %h3 The Art of Ruby
+            %p We should all be artists in our craft, but there is a balance between expressiveness and performance. This talk is about finding that balance and producing beautiful code that doesn't sacrifice syntax for speed. I'll explore real world examples of code and mold them into something far more expressive. During the process we'll take a look at how common design patterns are applied to larger applications and examine the repercussions.
+
+      %li.speaker
+        .rounded
+          %a{href: '#speaker5', rel: 'speaker_image', class: 'fancybox'}
+            = img "../images/speakers/daniel.jpg"
+          %a{:href=>"https://twitter.com/dasch", :class=>"twitter"}= img "../images/twitter.png"
+          %a{:href=>"https://github.com/dasch", :class=>"github"}= img "../images/github.png"
+        %h2
+          %a{href: '#speaker5', rel: 'speakers', class: 'fancybox'} Daniel Schierbeck
+        %p Curly — Refactoring the view layer
+
+        #speaker5.detail
+          .links.right
+            %a{:href=>"https://twitter.com/dasch", :class=>"twitter"}= img "../images/twitter.png"
+            %a{:href=>"https://github.com/dasch", :class=>"github"}= img "../images/github.png"
+          .name
+            = img "../images/speakers/daniel.jpg"
+            %h2 Daniel Schierbeck
+          .inner
+            %p Daniel Schierbeck has been programming in Ruby since 2005 after completing level 99 in PHP and figuring out there was no prize to win after all.
+            %p He studied Computer Science at the University of Copenhagen, where he primarily spent his time trying to avoid writing C++. He got into Concurrent Sequential Processes before it became cool, and wrote a Ruby implementation called Minx for his bachelor thesis. As with all academic code, it is used by no one.
+            %p He currently pumps out pull requests for a living at Zendesk, a San Francisco based Customer Support Software SaaS company.
+            %h3 Curly — Refactoring the view layer
+            %p While most parts of Rails have been thoroughly overhauled during the past few years, one part has stubbornly refused improvement. The view layer is still by default using ERB to transform your app’s objects into HTML. Though HAML has gained a lot of traction, it is not a fundamental shift away from ERB, but rather a preference for putting HTML in your Ruby rather than the other way around.
+            %p More recent efforts in the realm of JavaScript have produced Mustache and its ambitious younger brother, Handlebars. While these are more radical in their attempt to separate structure and logic, they still do not feel like native Rails code.
+            %p While trying to solve a seemingly unrelated problem we discovered a design that suddenly enabled us to move past the limitations of ERB. Though different only in subtle ways, it struck just the right balance between integration with Rails and separation of concerns. We called it Curly.
+            %p I will show how we use the same old OO techniques that you already know to clean up our views, making them less prone to bugs, more readable, and more reusable.
+            %p I’ll also show how a seemingly small change of our conceptual model enabled us to add advanced behavior to our view layer without ending with an unmaintainable mess.
+            %p Curly is open source and available at http://github.com/zendesk/curly
+
+      %li.speaker{style: 'padding-left:12.5%;'}
+        .rounded
+          %a{href: '#speaker6', rel: 'speaker_image', class: 'fancybox'}
+            = img "../images/speakers/lance.jpg"
+          %a{:href=>"https://twitter.com/lgleasain", :class=>"twitter"}= img "../images/twitter.png"
+          %a{:href=>"https://github.com/lgleasain", :class=>"github"}= img "../images/github.png"
+        %h2
+          %a{href: '#speaker6', rel: 'speakers', class: 'fancybox'} Lance Gleason
+        %p Analytics for the Busy Ruby Developer
+
+        #speaker6.detail
+          .links.right
+            %a{:href=>"https://twitter.com/lgleasain", :class=>"twitter"}= img "../images/twitter.png"
+            %a{:href=>"https://github.com/lgleasain", :class=>"github"}= img "../images/github.png"
+          .name
+            = img "../images/speakers/lance.jpg"
+            %h2 Lance Gleason
+          .inner
+            %p Lance has been a computer nut ever since his dad bought him a VIC 20 in the 1980s. After nearly a decade as a Java developer for companies like Kodak, CNN, and GE, he decided to end his addiction to heavy inheritance, static typing, and coding without tests. These days, he practices clean Ruby living with lots of well-tested code, class composition, and fun dynamic languages as a developer/startup CTO for hire with extensive experience in data science and committer on open source projects such as the Passbook-iOS, Asari and Active Asari Gems. He is known to practice interspecies pair (purr) programming with his orange tabby, Allie, and when he's not writing code, you will find him diving with sharks, trekking through Chernobyl, sampling wine, cheering on the Springboks or perfecting his biltong recipe.
+            %h3 Analytics for the Busy Ruby Developer
+            %p Our applications have the potential to produce a lot of data. Every time a user clicks a button, buys something, or our application does any number of things we have the opportunity to gain useful insights. But where do you begin? Should I gather every data point I can think of? What tools work the best? There is a lot of talk and hype about analytics. In this session, let's take a look at what goes into mining data and analyzing the insights. We'll discuss different approaches to gathering, storing, and querying data, how to determine the KPIs to focus on, and how to interpret and use information in meaningful ways. While you may not be a statistician, see how some basic statistics can help you to start to wrangle your data.
+
+      %li.speaker
+        .rounded
+          %a{href: '#speaker7', rel: 'speaker_image', class: 'fancybox'}
+            = img "../images/speakers/zachary.jpg"
+          %a{:href=>"https://twitter.com/_zzak", :class=>"twitter"}= img "../images/twitter.png"
+          %a{:href=>"https://github.com/zzak", :class=>"github"}= img "../images/github.png"
+        %h2
+          %a{href: '#speaker7', rel: 'speakers', class: 'fancybox'} Zachary Scott
+        %p Contributing to Ruby
+
+        #speaker7.detail
+          .links.right
+            %a{:href=>"https://twitter.com/_zzak", :class=>"twitter"}= img "../images/twitter.png"
+            %a{:href=>"https://github.com/zzak", :class=>"github"}= img "../images/github.png"
+          .name
+            = img "../images/speakers/zachary.jpg"
+            %h2 Zachary Scott
+          .inner
+            %p Zachary Scott has been a Ruby committer since 2012 and will share his experiences with contributing to CRuby.
+            %h3 Contributing to Ruby
+            %p Newcomer or seasoned veteran looking to get involved with Ruby documentation?
+            %p The path to eternal gratification can seem like a scary one, but we'll show you it's alot easier than you thought. Writing documentation is a great way to give back to the open source community and build your Ruby skills and fundamentals.
+            %p This talk will teach you the value of open-source, the benefits of contributing, and a little bit about how ruby-core works. You will learn what to look for when spotting documentation bugs in the CRuby source code. We will cover the guidelines to writing CRuby documentation, and how to submit a patch.
+
+      %li.you
         .rounded
           %a{:href=>"http://rubyfuza.wufoo.com/forms/rubyfuza-2014-talk-proposal/"}= img "../images/speakers/you.png"
         %h2 You?
@@ -34,138 +183,6 @@
     /         %h3 Ruby: Where Are You Going?
     /         %p A look at the past, present and future of web development in Ruby. How does Rails work internally? What is going to happen in Rails 4? What are the plans for Sinatra? Right now, there are at least two replacements for Rack in the makings. But it is the underlying technology used by Rails, Sinatra and nearly any other Ruby web framework out there. Yet, it's the framework authors pushing for the changes. So, what's wrong with Rack? And what does that mean for us as web developers?
 
-    /   %li.speaker
-    /     .rounded
-    /       %a{href: '#speaker2', rel: 'speaker_image', class: 'fancybox'}
-    /         = img "../images/speakers/renee.jpg"
-    /       %a{:href=>"https://twitter.com/gigglegirl4e", :class=>"twitter"}= img "../images/twitter.png"
-    /       %a{:href=>"https://github.com/reneedv", :class=>"github"}= img "../images/github.png"
-    /     %h2
-    /       %a{href: '#speaker2', rel: 'speakers', class: 'fancybox'} Renée De Voursney
-    /     %p Teaching Ruby for Fun and Profit!
-
-    /     #speaker2.detail
-    /       .links.right
-    /         %a{:href=>"https://twitter.com/gigglegirl4e", :class=>"twitter"}= img "../images/twitter.png"
-    /         %a{:href=>"https://github.com/reneedv", :class=>"github"}= img "../images/github.png"
-    /       .name
-    /         = img "../images/speakers/renee.jpg"
-    /         %h2 Renée De Voursney
-    /       .inner
-    /         %p Renée is the Chief Adventure Officer at a small RoR consultancy in Seattle WA USA called NIRD: Northwest Independent Ruby Development. She has been teaching Ruby, Rails, and everything else for the last couple of years to new programmers, experienced programmers, and sometimes to both at the same time! She is teaching the Ruby section of the University of Washington's Ruby on Rails Certificate program, and does RailsBridge workshops whenever she can. Her corporate trainings and paying clients take up the rest of the time that she's not traveling the world to speak at really cool conferences in really cool places!
-    /         %h3 Teaching Ruby for Fun and Profit!
-    /         %p How many companies are hiring Ruby developers right now? How many are finding qualified candidates? Why aren't workers swarming into our industry to fill up all these empty developer positions? Is learning Ruby really that hard? Why is learning Ruby so hard? Isn't it a language built by people for people? Shouldn't that be easy for anyone to pickup and use? Why isn't everyone building Ruby apps? I'm going to tell you. The good, the bad, and the goofy of trying to teach Ruby, Rails, and everything else we take for granted as RoR developers. There may even be a guest appearance from a real life Ruby Newbie to demonstrate!
-
-    /   %li.speaker
-    /     .rounded
-    /       %a{href: '#speaker3', rel: 'speaker_image', class: 'fancybox'}
-    /         = img "../images/speakers/danishkhan.jpeg"
-    /       %a{:href=>"https://twitter.com/danishkhan", :class=>"twitter"}= img "../images/twitter.png"
-    /       %a{:href=>"https://github.com/danishkhan", :class=>"github"}= img "../images/github.png"
-    /     %h2
-    /       %a{href: '#speaker3', rel: 'speakers', class: 'fancybox'} Danish Khan
-    /     %p Don't Be an A**hole
-
-    /     #speaker3.detail
-    /       .links.right
-    /         %a{:href=>"https://twitter.com/danishkhan", :class=>"twitter"}= img "../images/twitter.png"
-    /         %a{:href=>"https://github.com/danishkhan", :class=>"github"}= img "../images/github.png"
-    /       .name
-    /         = img "../images/speakers/danishkhan.jpeg"
-    /         %h2 Danish Khan
-    /       .inner
-    /         %p I realized I wanted to learn practical programming skills so once I found out about Ruby in college I immediately installed Locomotive on my Mac. Was extremely excited to find out I already had Ruby 1.8.6 preinstalled on my iBook G4 and started hacking on my first Rails project. I find teaching to be enjoyable and have been participating in the SF RailsBridge every so often. I'm still a level 1 whiskey/whisky drinker, but I'm working on that. Currently I am working at GitHub doing cool stuff.
-    /         %h3 Don't Be an A**hole
-    /         %p Ruby is now 18 years old. It has become a very mature project and the developers that have been using it are a lot more mature now as well. Our community has long since crossed the chasm and we are in the early majority stage. This means that even though we have many people who are well versed in the language we are again having an influx of new people. I want to help those new people feel comfortable enough to believe they can learn and become just as mature as the oldies who are part of the community. Also, I want to educate the oldies on how they can better help out these newbies.
-    /         %p The Ruby community has become very much like any other close-knit community. We are very biased towards certain philosophies such as agile development, pair programming, and TDD. Some might compare our community to other close-knit organizations such as fraternities/sororities, athletic clubs and the freemasons. They all have very idealistic philosophies they run their organizations on. I want to show how we compare to these types of organizations. I want to highlight the good things we adopted from running our community this way as well as the bad. I want to show how we can improve and fix the bad habits so that we can create a more open community for new people to join and feel welcomed.
-
-    /   %li.speaker
-    /     .rounded
-    /       %a{href: '#speaker4', rel: 'speaker_image', class: 'fancybox'}
-    /         = img "../images/speakers/aaron_kalin.jpg"
-    /       %a{:href=>"https://twitter.com/martinisoft", :class=>"twitter"}= img "../images/twitter.png"
-    /       %a{:href=>"https://github.com/martinisoft", :class=>"github"}= img "../images/github.png"
-    /     %h2
-    /       %a{href: '#speaker4', rel: 'speakers', class: 'fancybox'} Aaron Kalin
-    /     %p Hey Kid! Don't Copy That Floppy!
-
-    /     #speaker4.detail
-    /       .links.right
-    /         %a{:href=>"https://twitter.com/martinisoft", :class=>"twitter"}= img "../images/twitter.png"
-    /         %a{:href=>"https://github.com/martinisoft", :class=>"github"}= img "../images/github.png"
-    /       .name
-    /         = img "../images/speakers/aaron_kalin.jpg"
-    /         %h2 Aaron Kalin
-    /       .inner
-    /         %p Aaron Kalin is a developer for Treehouse hailing from Chicago and has been programming for over 15 years. At night you'll find him hacking on game servers or experimenting with other programming languages. He's passionate about solving problems and enjoys giving back as much as possible. You'll sometimes find him dressed as a Stormtrooper to raise money for charity or cheering up sick kids in hospitals.
-    /         %h3 Hey Kid! Don't Copy That Floppy!
-    /         %p Software licensing sets up rules for everyone to follow when contributing or using code. Some companies have specific policies on what types of licenses are compatible with their code base. Other companies put rules on their developers on how they're allowed to contribute code to software. Do you license your software? This talk will review some popular open source software licenses and considerations you should make before contributing code. It's good to be aware of these rules before you end up on the wrong side of a Cease and Desist order.
-
-    /   %li.speaker
-    /     .rounded
-    /       %a{href: '#speaker5', rel: 'speaker_image', class: 'fancybox'}
-    /         = img "../images/speakers/chris_spring.jpeg"
-    /       %a{:href=>"https://twitter.com/autonomous", :class=>"twitter"}= img "../images/twitter.png"
-    /       %a{:href=>"https://github.com/autonomous", :class=>"github"}= img "../images/github.png"
-    /     %h2
-    /       %a{href: '#speaker5', rel: 'speakers', class: 'fancybox'} Chris Spring
-    /     %p Rack based web apps with JRuby and TorqueBox
-
-    /     #speaker5.detail
-    /       .links.right
-    /         %a{:href=>"https://twitter.com/autonomous", :class=>"twitter"}= img "../images/twitter.png"
-    /         %a{:href=>"https://github.com/autonomous", :class=>"github"}= img "../images/github.png"
-    /       .name
-    /         = img "../images/speakers/chris_spring.jpeg"
-    /         %h2 Chris Spring
-    /       .inner
-    /         %p Chris works at Mad Mimi where he spends his days toiling over features, scaling and performance. He's also actively involved in growing the local dev community and is the founder and organiser of Code&Coffee Jhb, as well as an organiser of RubyOnBeer
-    /         %h3 Rack based web apps with JRuby and TorqueBox
-    /         %p JRuby runs on the JVM to bring high levels of performance and parallelism to your long running ruby code. TorqueBox is a performant and scaleable application server that reduces the complexity and dependencies of rack based web applications. See how these two tools can be used to simplify your ruby web development while delivering excellent performance under heavy loads with some real world examples.
-
-    /   %li.speaker
-    /     .rounded
-    /       %a{href: '#speaker6', rel: 'speaker_image', class: 'fancybox'}
-    /         = img "../images/speakers/lance.jpg"
-    /       %a{:href=>"https://twitter.com/lgleasain", :class=>"twitter"}= img "../images/twitter.png"
-    /       %a{:href=>"https://github.com/lgleasain", :class=>"github"}= img "../images/github.png"
-    /     %h2
-    /       %a{href: '#speaker6', rel: 'speakers', class: 'fancybox'} Lance Gleason
-    /     %p Dynamic Routing with Circuit
-
-    /     #speaker6.detail
-    /       .links.right
-    /         %a{:href=>"https://twitter.com/lgleasain", :class=>"twitter"}= img "../images/twitter.png"
-    /         %a{:href=>"https://github.com/lgleasain", :class=>"github"}= img "../images/github.png"
-    /       .name
-    /         = img "../images/speakers/lance.jpg"
-    /         %h2 Lance Gleason
-    /       .inner
-    /         %p Lance has been a computer nut ever since his dad bought him a VIC 20 in the 80's. For a number of years he was working in Java for large companies such as CNN, Kodak and GE. Then one day about four years ago he did a self intervention and decided to end his addiction to heavy inheritance, static typing and coding without tests. These days he a committer on projects such as Adhearsion practicing clean Ruby living with lots of well-tested code, class composition and fun dynamic languages as a startup CTO and freelance developer. When he's not writing Ruby you will find him diving with sharks, trekking through a rain forest, wine tasting or freaking out his neighbors with his ARDrone.
-    /         %h3 Dynamic Routing with Circuit
-    /         %p Rails and Rack both have mechanisms to route requests. They are powerful, and offer some dynamic routing if you want to route within Rails. But what if you need to dynamically route requests to multiple Rack based applications? What if you want to control that routing dynamically with a database? Circuit allows you to do that. In this talk will explore the basics of Rack Middleware and Routing. Then we will show you how Circuit can help you to take Rack routing to the next level dynamically with lots of traffic.
-
-    /   %li.speaker
-    /     .rounded
-    /       %a{href: '#speaker7', rel: 'speaker_image', class: 'fancybox'}
-    /         = img "../images/speakers/johnanderson.jpg"
-    /       %a{:href=>"https://twitter.com/djellemah", :class=>"twitter"}= img "../images/twitter.png"
-    /       / %a{:href=>"#", :class=>"github"}= img "../images/github.png"
-    /     %h2
-    /       %a{href: '#speaker7', rel: 'speakers', class: 'fancybox'} John Anderson
-    /     %p Do It Yerself, Rube
-
-    /     #speaker7.detail
-    /       .links.right
-    /         %a{:href=>"https://twitter.com/djellemah", :class=>"twitter"}= img "../images/twitter.png"
-    /         / %a{:href=>"#", :class=>"github"}= img "../images/github.png"
-    /       .name
-    /         = img "../images/speakers/johnanderson.jpg"
-    /         %h2 John Anderson
-    /       .inner
-    /         %p Ruby since 2004. Rails since 2005. Programming since 1994. Or 1989. Or was it 1983? I forget...
-    /         %h3 Do It Yerself, Rube
-    /         %p Abstraction is like alcohol: a little is nice; a little more is a little nicer. A lot is a headache. Is it really worth writing one line when you can write 3? Or 8? As a consumer, when is finding the right gem harder than just writing it yourself? Some examples of over-gemmification and a few lines of code that do what you need. As a producer, what does it take to get your code ready to be released as a gem? It's turtles all the way down. Unless you make some assumptions for them to stand on.
 
     /   %li.speaker
     /     .rounded
