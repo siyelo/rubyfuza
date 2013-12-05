@@ -7,6 +7,29 @@
     %ul
       %li.speaker
         .rounded
+          %a{href: '#speaker1', rel: 'speaker_image', class: 'fancybox'}
+            = img "../images/speakers/charlene.jpg"
+          %a{:href=>"https://twitter.com/charlymul", :class=>"twitter"}= img "../images/twitter.png"
+          %a{:href=>"https://github.com/nathilen", :class=>"github"}= img "../images/github.png"
+        %h2
+          %a{href: '#speaker1', rel: 'speakers', class: 'fancybox'} Charlene Tshitoka
+        %p Software Development in Africa
+
+        #speaker1.detail
+          .links.right
+            %a{:href=>"https://twitter.com/charlymul", :class=>"twitter"}= img "../images/twitter.png"
+            %a{:href=>"https://github.com/nathilen", :class=>"github"}= img "../images/github.png"
+          .name
+            = img "../images/speakers/charlene.jpg"
+            %h2 Charlene Tshitoka
+          .inner
+            %p Charlene is a developer who has recently started questioning whether there is really such a thing called devops. Between working with configuration management tools and orchestration frameworks, she has discovered there is a ruby community out there. Charlene has been trying to infiltrate it since then.  She is currently part of the ThoughtWorks team.
+            %h3 Software Development in Africa
+            %p Software development has gone through many upheavals and downhills to what it is currently. Still, it remains an impressive creation that is changing the lifestyles of many. Africa, on the other side, has a history that is yet to fully captivate many of its own people. So what could “software development” and “Africa” be doing in the same phrase?
+            %p Being passionate about code and enjoying a love-hate relationship with my continent, I will share how these words resonate with me. I will discuss some of the achievements and also challenges of developing software in Africa, my fears and hopes too. Let’s have a conversation on what these words mean for us; software development and Africa put together.
+
+      %li.speaker
+        .rounded
           %a{href: '#speaker2', rel: 'speaker_image', class: 'fancybox'}
             = img "../images/speakers/alex.jpg"
           %a{:href=>"https://twitter.com/myabc", :class=>"twitter"}= img "../images/twitter.png"
@@ -108,7 +131,7 @@
             %p I’ll also show how a seemingly small change of our conceptual model enabled us to add advanced behavior to our view layer without ending with an unmaintainable mess.
             %p Curly is open source and available at http://github.com/zendesk/curly
 
-      %li.speaker{style: 'padding-left:12.5%;'}
+      %li.speaker
         .rounded
           %a{href: '#speaker6', rel: 'speaker_image', class: 'fancybox'}
             = img "../images/speakers/lance.jpg"
@@ -154,57 +177,47 @@
             %p The path to eternal gratification can seem like a scary one, but we'll show you it's alot easier than you thought. Writing documentation is a great way to give back to the open source community and build your Ruby skills and fundamentals.
             %p This talk will teach you the value of open-source, the benefits of contributing, and a little bit about how ruby-core works. You will learn what to look for when spotting documentation bugs in the CRuby source code. We will cover the guidelines to writing CRuby documentation, and how to submit a patch.
 
-      %li.you
+      %li.speaker
+        .rounded
+          %a{href: '#speaker8', rel: 'speaker_image', class: 'fancybox'}
+            = img "../images/speakers/sallylehman.jpg"
+          %a{:href=>"https://twitter.com/SllyLhmn", :class=>"twitter"}= img "../images/twitter.png"
+          %a{:href=>"https://github.com/rothsa", :class=>"github"}= img "../images/github.png"
+        %h2
+          %a{href: '#speaker8', rel: 'speakers', class: 'fancybox'} Sally Lehman
+        %p Email Delivery for Rails Folks (or 'How to send lots of email and not look like spam')
+
+        #speaker8.detail
+          .links.right
+            %a{:href=>"https://twitter.com/SllyLhmn", :class=>"twitter"}= img "../images/twitter.png"
+            %a{:href=>"https://github.com/rothsa", :class=>"github"}= img "../images/github.png"
+          .name
+            = img "../images/speakers/sallylehman.jpg"
+            %h2 Sally Lehman
+          .inner
+            %p I grew up in various small towns in Oregon and Washington., and now live in the Pearl District of Portland, Oregon, USA. My first computer experiences were with EMACs, MS-DOS, and Ski Free at age <= 5.
+            %p At Github, I'm currently making improvements to email delivery, reputation and infrastructure, so that emails get delivered reliably and fast. I worked at Mad Mimi prior to this since 2009, focusing on email delivery there as well.
+            %p My favorite movie is Office Space, and I make a mean Tiramisu.
+            %h3 Email Delivery for Rails Folks (or 'How to send lots of email and not look like spam')
+            %p This talk will focus more on the delivery aspects of sending lots of email while including some basic configuration for Linux, Rails, & Postfix.
+            %ul
+              %li How to send lots of email and not look like spam.
+              %li What You Don't Know About Sending Email
+              %li Most People Who Send Lots of Email, are Sending Spam.
+              %li Make Sure You're not Sending Spam
+              %li Make Sure the Gatekeepers you're Sending to Know Who You Are
+              %li Make Sure You're Using the Right Tools for the Job
+              %li Gather Feedback From the People You are Sending to, and Act on it
+              %li How to comfortably forget most of what I said here (except for the not sending spam part)
+              %li Helpful Links
+
+      %li.you{style: 'padding-left:37.5%;'}
         .rounded
           %a{:href=>"http://rubyfuza.wufoo.com/forms/rubyfuza-2014-talk-proposal/"}= img "../images/speakers/you.png"
         %h2 You?
         %p
           We're still looking for inspiring speakers!
           = link_to "I want to speak", "http://rubyfuza.wufoo.com/forms/rubyfuza-2014-talk-proposal/", :class => "hot"
-
-    /     .rounded
-    /       %a{href: '#speaker1', rel: 'speaker_image', class: 'fancybox'}
-    /         = img "../images/speakers/konstantin.jpg"
-    /       %a{:href=>"https://twitter.com/konstantinhaase", :class=>"twitter"}= img "../images/twitter.png"
-    /       %a{:href=>"https://github.com/rkh", :class=>"github"}= img "../images/github.png"
-    /     %h2
-    /       %a{href: '#speaker1', rel: 'speakers', class: 'fancybox'} Konstantin Haase
-    /     %p Ruby: Where Are You Going?
-
-    /     #speaker1.detail
-    /       .links.right
-    /         %a{:href=>"https://twitter.com/konstantinhaase", :class=>"twitter"}= img "../images/twitter.png"
-    /         %a{:href=>"https://github.com/rkh", :class=>"github"}= img "../images/github.png"
-    /       .name
-    /         = img "../images/speakers/konstantin.jpg"
-    /         %h2 Konstantin Haase
-    /       .inner
-    /         %p OSS developer. Conference-goer. Maintainer of @Sinatra, full time dev on @TravisCI, was full time on @Rubinius, core team member of Rack, Tilt and many more.
-    /         %h3 Ruby: Where Are You Going?
-    /         %p A look at the past, present and future of web development in Ruby. How does Rails work internally? What is going to happen in Rails 4? What are the plans for Sinatra? Right now, there are at least two replacements for Rack in the makings. But it is the underlying technology used by Rails, Sinatra and nearly any other Ruby web framework out there. Yet, it's the framework authors pushing for the changes. So, what's wrong with Rack? And what does that mean for us as web developers?
-
-
-    /   %li.speaker
-    /     .rounded
-    /       %a{href: '#speaker8', rel: 'speaker_image', class: 'fancybox'}
-    /         = img "../images/speakers/jessenewland.jpg"
-    /       %a{:href=>"https://twitter.com/jnewland", :class=>"twitter"}= img "../images/twitter.png"
-    /       %a{:href=>"https://github.com/jnewland", :class=>"github"}= img "../images/github.png"
-    /     %h2
-    /       %a{href: '#speaker8', rel: 'speakers', class: 'fancybox'} Jesse Newland
-    /     %p ChatOps at GitHub
-
-    /     #speaker8.detail
-    /       .links.right
-    /         %a{:href=>"https://twitter.com/jnewland", :class=>"twitter"}= img "../images/twitter.png"
-    /         %a{:href=>"https://github.com/jnewland", :class=>"github"}= img "../images/github.png"
-    /       .name
-    /         = img "../images/speakers/jessenewland.jpg"
-    /         %h2 Jesse Newland
-    /       .inner
-    /         %p Jesse Newland does Ops at GitHub. Prior to GitHub, Jesse was the CTO at Rails Machine. There, he hacked on a large private cloud while managing, scaling and tuning several hundred production Ruby on Rails applications. He lives in Savannah, Georgia, and plays guitar and piano for fun.
-    /         %h3 ChatOps at GitHub
-    /         %p Hubot, GitHub's open source chat bot, is completely revolutionizing how we do ops at GitHub. Automating deployment, graphing, monitoring, provisioning, tweeting, and many other things with Hubot has enabled and enhanced our culture of remote work. We're standardizing how we interact with the applications and servers that run GitHub by continuously expanding our library of Hubot commands that any GitHubber can run in multiple Campfire chat rooms. Interacting with Hubot in the middle other of conversations has increased our awareness of what other GitHubbers are working on and the speed at which new team members learn common practices. In this talk, I'll give examples of how we deploy and interact with github.com via Hubot, describe benefits we've seen from this approach, and describe how you can bring ChatOps into your daily workflow.
 
     /   %li.speaker
     /     .rounded
