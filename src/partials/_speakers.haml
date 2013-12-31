@@ -211,8 +211,6 @@
               %li How to comfortably forget most of what I said here (except for the not sending spam part)
               %li Helpful Links
 
-      %li.speaker{style: 'width:11.5%;'}
-
       %li.speaker
         .rounded
           %a{href: '#speaker9', rel: 'speaker_image', class: 'fancybox'}
@@ -263,6 +261,53 @@
             %h3 TDD: When the thrill has gone
             %p I have been doing TDD for several years and of late, I have been left with the feeling that I am missing some key part of the value that it supposed to offer. This talk will cover some (not enough time for all) of the n00b mistakes I have made in the past, and I will try and present a TDD strategy that works for me and may help inform improvements in the way others approach their tests.
 
+      %li.speaker
+        .rounded
+          %a{href: '#speaker14', rel: 'speaker_image', class: 'fancybox'}
+            = img "../images/speakers/kevin.jpg", :class => 'bg'
+          %a{:href=>"https://twitter.com/kmckelvin", :class=>"twitter"}= img "../images/twitter.png"
+          %a{:href=>"https://github.com/kmckelvin", :class=>"github"}= img "../images/github.png"
+        %h2
+          %a{href: '#speaker14', rel: 'speakers', class: 'fancybox'} Kevin McKelvin
+        %p Clean Code: Applying Object Oriented Principles
+
+        #speaker14.detail
+          .links.right
+            %a{:href=>"https://twitter.com/kmckelvin", :class=>"twitter"}= img "../images/twitter.png"
+            %a{:href=>"https://github.com/kmckelvin", :class=>"github"}= img "../images/github.png"
+          .name
+            = img "../images/speakers/kevin.jpg"
+            %h2 Kevin McKelvin
+          .inner
+            %p Kevin is a Ruby developer at Platform45. He began his career working with C#, but made the switch to Ruby in 2011 and hasn't looked back since. He has strange obsessions with vim, code quality and guitars.
+            %h3 Clean Code: Applying Object Oriented Principles
+            %p Ruby gives us a lot of freedom when expressing code and draws features from various paradigms, but it's an object oriented language at heart. In this session we'll go back to first principles of object oriented programming and see how applying object inheritance, polymorphism and a bit of discipline can translate into an understandable and maintainable codebase.
+
+      %li.speaker
+        .rounded
+          %a{href: '#speaker11', rel: 'speaker_image', class: 'fancybox'}
+            = img "../images/speakers/simon.jpg", :class => 'bg'
+          %a{:href=>"https://twitter.com/siefi", :class=>"twitter"}= img "../images/twitter.png"
+          %a{:href=>"https://github.com/sighmin", :class=>"github"}= img "../images/github.png"
+        %h2
+          %a{href: '#speaker11', rel: 'speakers', class: 'fancybox'} Simon van Dyk
+        %p The Birds &amp; The Bees
+
+        #speaker11.detail
+          .links.right
+            %a{:href=>"https://twitter.com/siefi", :class=>"twitter"}= img "../images/twitter.png"
+            %a{:href=>"https://github.com/sighmin", :class=>"github"}= img "../images/github.png"
+          .name
+            = img "../images/speakers/simon.jpg"
+            %h2 Simon van Dyk
+          .inner
+            %p Hi There I'm Simon. My number one goal is to love my work. I love building robust, innovative, and creative systems with imaginative people.
+            %p I'm a fan of beautiful interfaces, usable and intuitive software. Software has such great potential to change the way that people live. Recently my love for AI and it's potential to solve some of the world's biggest problems is very quickly becoming my life long goal, to add value to peoples lives with the power of technology and software.
+            %h3 The Birds &amp; The Bees
+            %p An overview of computational intelligence (AI) paradigms focusing on their practical applications, the joy of programming in metaphors (birds, bees, ants etc). I'll introduce each paradigm in {neural networks, fuzzy systems, artificial immume systems, swarm intelligence and evolutionary computation} but focus on swarm intelligence and go through examples, like, simple data clustering using ants.
+
+      %li.speaker{style: 'width:34.5%;'}
+
       %li.you
         .rounded
           %a{:href=>"http://rubyfuza.wufoo.com/forms/rubyfuza-2014-talk-proposal/"}= img "../images/speakers/you.png"
@@ -270,30 +315,6 @@
         %p
           We're still looking for inspiring speakers!
           = link_to "I want to speak", "http://rubyfuza.wufoo.com/forms/rubyfuza-2014-talk-proposal/", :class => "hot"
-
-
-    /   %li.speaker
-    /     .rounded
-    /       %a{href: '#speaker11', rel: 'speaker_image', class: 'fancybox'}
-    /         = img "../images/speakers/kenneth.jpg", :class => 'bg'
-    /       %a{:href=>"https://twitter.com/kennethkalmer", :class=>"twitter"}= img "../images/twitter.png"
-    /       %a{:href=>"https://github.com/kennethkalmer", :class=>"github"}= img "../images/github.png"
-    /     %h2
-    /       %a{href: '#speaker11', rel: 'speakers', class: 'fancybox'} Kenneth Kalmer
-    /     %p Reusing your frontend JS on the server with The Ruby Racer and/or Ruby Rhino
-
-    /     #speaker11.detail
-    /       .links.right
-    /         %a{:href=>"https://twitter.com/kennethkalmer", :class=>"twitter"}= img "../images/twitter.png"
-    /         %a{:href=>"https://github.com/kennethkalmer", :class=>"github"}= img "../images/github.png"
-    /       .name
-    /         = img "../images/speakers/kenneth.jpg"
-    /         %h2 Kenneth Kalmer
-    /       .inner
-    /         %p Performing regular wizardry through open source software
-    /         %h3 Reusing your frontend JS on the server with The Ruby Racer and/or Ruby Rhino
-    /         %p Writing modern web applications requires a ton of JS, and somewhere in that JS lies some application logic (we're not just talking DOM manipulations here). If you require that same logic on the server-side for say, generating reports, what do you do? I'll show you how ValuationUP.com pushes the single responsibility principle to the max by "embedding" V8 into our report generation code so the same JS that powers our Backbone.js frontend powers our PDF's generated by Prawn.
-    /         %p Thin wrappers, no duplication, practical IoC, ultimate SRP.
 
     /   %li.speaker
     /     .rounded
@@ -338,28 +359,6 @@
     /         %p Garren is the founder of Red Comet Labs. He has bootstrapped his first product, Classroom 7, a learning management system for trainers. Garren spends most his time programming in Ruby and Javascript. He enjoys dabbling in other languages like Go and Erlang. Garren plays Bass guitar, tennis and is trying to get through the whole Wheel of Time series in his spare time.
     /         %h3 Developing multiple personalities to bootstrap your first product
     /         %p Ready, set, launch, (...crickets...). The tale of many a developer-turned-product-launcher, including me. But after a false start, I launched Classroom 7, a learning management system for trainers, which is now well on its way to paying the bills. Bootstrapping a product requires a bit of a multiple personality disorder - you’ve got to be a dreamer, engineer, critic, bank manager and sales exec all rolled into one. In this talk I'll share some of the lessons I've learned during the product launching journey and talk about some of the pitfalls that should be avoided when launching a product. Everyone has the ability to bootstrap a successful product, you've just got to start out right. This talk will set you on the right path.
-
-    /   %li.speaker
-    /     .rounded
-    /       %a{href: '#speaker14', rel: 'speaker_image', class: 'fancybox'}
-    /         = img "../images/speakers/kevin.jpg", :class => 'bg'
-    /       %a{:href=>"https://twitter.com/kmckelvin", :class=>"twitter"}= img "../images/twitter.png"
-    /       %a{:href=>"https://github.com/kmckelvin", :class=>"github"}= img "../images/github.png"
-    /     %h2
-    /       %a{href: '#speaker14', rel: 'speakers', class: 'fancybox'} Kevin McKelvin
-    /     %p Applying RSpec Best Practices
-
-    /     #speaker14.detail
-    /       .links.right
-    /         %a{:href=>"https://twitter.com/kmckelvin", :class=>"twitter"}= img "../images/twitter.png"
-    /         %a{:href=>"https://github.com/kmckelvin", :class=>"github"}= img "../images/github.png"
-    /       .name
-    /         = img "../images/speakers/kevin.jpg"
-    /         %h2 Kevin McKelvin
-    /       .inner
-    /         %p Kevin is a Ruby on Rails developer at Platform45. He began his career as a C# developer, but made the switch to Ruby in 2011 and hasn't looked back since. He has strange obsessions with vim, code quality and guitars.
-    /         %h3 Applying RSpec Best Practices
-    /         %p We all agree that tests are important. As a developer, coming into a new project with good tests makes you immediately feel more confident about making changes. But how do we ensure that our test suite consistently adds that value over a long project? We're going to look at best practices using RSpec and how applying a few simple rules and best practices can improve the overall quality of your application.
 
     /   %li.speaker
     /     .rounded
