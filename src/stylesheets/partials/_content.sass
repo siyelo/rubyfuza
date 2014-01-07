@@ -32,7 +32,7 @@
 .you .rounded
 	border-color: rgba(255, 255, 255, 0.1)
 
-#speakers
+#speakers, #workshops
 	li
 		display: inline
 		float: left
@@ -76,7 +76,7 @@
 	img
 		max-width: 220px
 		width: 100%
-		
+
 		+border-radius(50%)
 		+border-radius(300px)
 		+transition(border .3s)
@@ -94,6 +94,31 @@
 	.twitter img
 		right: 21%
 
+#workshops
+	li
+		width: 31%
+		h2
+			font-size: 2em
+		.date
+			color: $one
+
+.workshop.detail
+	h4
+		color: $two
+		+text-shadow(none)
+	.join
+		font-size: 2em
+		text-align: center
+		display: block
+		padding-bottom: 20px
+		a
+			color: $two
+	.inner
+		.name
+			clear: both
+			h3
+				color: $three
+				clear: none
 
 #schedule
 	.timeline
@@ -152,7 +177,7 @@
 	margin: 0
 	padding: 20px 0
 	text-align: center
-	
+
 #sponsors
 
 	h1
