@@ -383,7 +383,32 @@
             %p
               %a{ :href => 'http://za-schools-results.herokuapp.com/' } http://za-schools-results.herokuapp.com/
 
-      / %li.speaker{style: 'width:34.5%;'}
+      %li.speaker
+        .rounded
+          %a{href: '#speaker16', rel: 'speaker_image', class: 'fancybox'}
+            = img "../images/speakers/murtuza.jpg", :class => 'bg'
+          %a{:href=>"https://twitter.com/murtazz", :class=>"twitter"}= img "../images/twitter.png"
+          %a{:href=>"https://github.com/murtuzakz", :class=>"github"}= img "../images/github.png"
+        %h2
+          %a{href: '#speaker16', rel: 'speakers', class: 'fancybox'} Murtuza Kutub
+        %p The Ultimate Refactoring Cheat Sheet
+
+        #speaker16.detail
+          .links.right
+            %a{:href=>"https://twitter.com/murtazz", :class=>"twitter"}= img "../images/twitter.png"
+            %a{:href=>"https://github.com/murtuzakz", :class=>"github"}= img "../images/github.png"
+          .name
+            = img "../images/speakers/murtuza.jpg"
+            %h2 Murtuza Kutub
+          .inner
+            %p I would like to think of myself as an intermediate Ruby/Rails developer. I am always looking to learn new technologies, and meeting interesting folks.
+            %p I have worked as a Senior Rails developer at fab.com, and prior to that at Zynga.
+            %h3 The Ultimate Refactoring Cheat Sheet
+            %p The 'Get Shit Done' philosophy embraced at most startups, sometimes leads to bad, ugly, stinking code (its not your fault, you din't have enough time :) ).
+            %p So what do we do now? We wear our gas masks, grab the refactoring cheat sheet, and get hands down dirty into the shittiest code we have written, and we clean it up. We keep cleaning till it smells of jasmines.
+            %p And we come out with battle scars on our faces and a sense of accomplishment in our hearts.
+
+      %li.speaker{style: 'width:34.5%;'}
 
       %li.you
         .rounded
