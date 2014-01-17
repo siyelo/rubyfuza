@@ -109,12 +109,12 @@ a:hover, a:focus {
 
 /* line 39, /Users/marc/Projects/Rubyfuza/rubyfuza/src/stylesheets/partials/_base.sass */
 ul.list {
-  list-style-type: disc;
+  list-style-type: circle;
   margin-bottom: 12px;
 }
 /* line 43, /Users/marc/Projects/Rubyfuza/rubyfuza/src/stylesheets/partials/_base.sass */
 ul.list li {
-  margin-left: 16px;
+  margin-left: 24px;
 }
 
 /* line 1, /Users/marc/Projects/Rubyfuza/rubyfuza/src/stylesheets/partials/_layout.sass */
