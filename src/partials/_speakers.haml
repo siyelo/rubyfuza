@@ -409,8 +409,6 @@
             %p So what do we do now? We wear our gas masks, grab the refactoring cheat sheet, and get hands down dirty into the shittiest code we have written, and we clean it up. We keep cleaning till it smells of jasmines.
             %p And we come out with battle scars on our faces and a sense of accomplishment in our hearts.
 
-      %li.speaker{style: 'width:12.5%;'}
-
       %li.speaker
         .rounded
           %a{href: '#speaker17', rel: 'speaker_image', class: 'fancybox'}
@@ -456,61 +454,54 @@
             %h3 Ruby on Microsoft Azure
             %p The open source community is known for resisting anything Microsoft. We will convince you otherwise. We will share the hosting options for Tenderware (http://tenderware.co.za) on Microsoft Azure as our preferred cloud platform.
 
-      %li.you
+      %li.speaker
         .rounded
-          %a{:href=>"http://rubyfuza.wufoo.com/forms/rubyfuza-2014-talk-proposal/"}= img "../images/speakers/you.png"
-        %h2 You?
-        %p
-          We're looking for inspiring lightning talks!
-          = link_to "I want to speak", "http://rubyfuza.wufoo.com/forms/rubyfuza-2014-talk-proposal/", :class => "hot"
+          %a{href: '#speaker19', rel: 'speaker_image', class: 'fancybox'}
+            = img "../images/speakers/danieroux.jpg", :class => 'bg'
+          %a{:href=>"https://twitter.com/danieroux", :class=>"twitter"}= img "../images/twitter.png"
+          %a{:href=>"https://github.com/danieroux", :class=>"github"}= img "../images/github.png"
+        %h2
+          %a{href: '#speaker19', rel: 'speakers', class: 'fancybox'} Danie Roux
+        %p Persistent data structures - good for UI
 
+        #speaker19.detail
+          .links.right
+            %a{:href=>"https://twitter.com/danieroux", :class=>"twitter"}= img "../images/twitter.png"
+            %a{:href=>"https://github.com/danieroux", :class=>"github"}= img "../images/github.png"
+          .name
+            = img "../images/speakers/danieroux.jpg"
+            %h2 Danie Roux
+          .inner
+            %p People person, change agent. Journeyer through problem and solution space. Interested in being interested.
+            %p Independent consultant on the Why and How of value creation.
+            %h3 Persistent data structures - good for UI
+            %p Persistent data structures are being imported from the FP world.
+            %p What makes persistent data structures particularly interesting is that they cannot be modified in the traditional sense. These structures can model a timeline of changes quite naturally since every "change" creates a new "copy".
+            %p "Functional Reactive Programming" is another old/new idea. FRP has a time centric viewpoint.
+            %p Having persistent data structures on the Javascript/UI side of the world unlocks a lot of the magic that FRP has to offer.
+            %p In this talk Danie will explain why persistent data structures are good and specifically why they are good for (the) UI.
 
-    /   %li.speaker
-    /     .rounded
-    /       %a{href: '#speaker19', rel: 'speaker_image', class: 'fancybox'}
-    /         = img "../images/speakers/stu.jpg", :class => 'bg'
-    /       %a{:href=>"https://twitter.com/stucorbishley", :class=>"twitter"}= img "../images/twitter.png"
-    /       %a{:href=>"https://github.com/stuartc", :class=>"github"}= img "../images/github.png"
-    /     %h2
-    /       %a{href: '#speaker19', rel: 'speakers', class: 'fancybox'} Stuart Corbishley
-    /     %p Abstracting a Service - A Case Study in Forward Thinking with SOA
+      %li.speaker
+        .rounded
+          %a{href: '#speaker20', rel: 'speaker_image', class: 'fancybox'}
+            = img "../images/speakers/richard.jpg", :class => 'bg'
+          / %a{:href=>"https://twitter.com/luke_randall", :class=>"twitter"}= img "../images/twitter.png"
+          / %a{:href=>"https://github.com/lukerandall", :class=>"github"}= img "../images/github.png"
+        %h2
+          %a{href: '#speaker20', rel: 'speakers', class: 'fancybox'} Richard Cochrane
+        %p Debugging in Ruby on Rails
 
-    /     #speaker19.detail
-    /       .links.right
-    /         %a{:href=>"https://twitter.com/stucorbishley", :class=>"twitter"}= img "../images/twitter.png"
-    /         %a{:href=>"https://github.com/stuartc", :class=>"github"}= img "../images/github.png"
-    /       .name
-    /         = img "../images/speakers/stu.jpg"
-    /         %h2 Stuart Corbishley
-    /       .inner
-    /         %p Stuart is a Cape Town based developer who fell in love with Ruby in 2007 and has been his passion since.
-    /         %p Before then he was stuck in an unhealthy relationship with Delphi, and had courted PHP and C#. He is crazy about clean and minimalist design, photography and good beer.
-    /         %p In a past life he's pretty sure he wore a cape.
-    /         %h3 Abstracting a Service - A Case Study in Forward Thinking with SOA
-    /         %p A brief case study on Service Abstraction. Taking a monolithic Rails app, separating concerns and growing out.
-    /         %p I will be discussing the decision behind the abstraction, how we approached it and where a handful of gems made the process a whole lot easier.
-
-    /   %li.speaker
-    /     .rounded
-    /       %a{href: '#speaker20', rel: 'speaker_image', class: 'fancybox'}
-    /         = img "../images/speakers/luke.jpg", :class => 'bg'
-    /       %a{:href=>"https://twitter.com/luke_randall", :class=>"twitter"}= img "../images/twitter.png"
-    /       %a{:href=>"https://github.com/lukerandall", :class=>"github"}= img "../images/github.png"
-    /     %h2
-    /       %a{href: '#speaker20', rel: 'speakers', class: 'fancybox'} Luke Randall
-    /     %p CQRS
-
-    /     #speaker20.detail
-    /       .links.right
-    /         %a{:href=>"https://twitter.com/luke_randall", :class=>"twitter"}= img "../images/twitter.png"
-    /         %a{:href=>"https://github.com/lukerandall", :class=>"github"}= img "../images/github.png"
-    /       .name
-    /         = img "../images/speakers/luke.jpg"
-    /         %h2 Luke Randall
-    /       .inner
-    /         %p Outside of software development, my hobbies include finding new hobbies to pursue intently for 1 - 3 months, and selling equipment from abandoned hobbies on the Internet. I once wrote a quine in Ruby.
-    /         %h3 CQRS
-    /         %p A look at how this obscurely named pattern works and why you'd want to use it.
+        #speaker20.detail
+          .links.right
+            / %a{:href=>"https://twitter.com/luke_randall", :class=>"twitter"}= img "../images/twitter.png"
+            / %a{:href=>"https://github.com/lukerandall", :class=>"github"}= img "../images/github.png"
+          .name
+            = img "../images/speakers/richard.jpg"
+            %h2 Richard Cochrane
+          .inner
+            %p I worked for many years in Visual Basic 6, then, in 2008, changed jobs resulting in a magical transformation of my career. A patient guy took me under his wing and taught me Linux, Python, Django, MVC and developing the full web stack. That was almost 5 years ago. Last year, I took a job as a Ruby/Rails Developer and I've learnt a lot about developing the Rails way (services, policies, etc). Learning another framework is hugely challenging but interesting in allowing you to see how the same problems can be solved in different ways (routing, controllers, template rendering, etc.).
+            %h3 Debugging in Ruby on Rails
+            %p Great tools are key to great development and an awesome console and interactive debugger are up there on the list of tools EVERY developer should have access to. In particular, Pry and the Jazz Hands bundle that includes a few goodies with Pry (mostly, other Pry plugins) bring a very useful console for code exploration and a debugger that you can enter during any code execution, whether the app is running daemonised or not. It's not hard to use Pry but I'm astonished by how many developers deprive themselves of this absolute must-have tool.
 
     %div.clearfix
     = partial('../partials/signup')
