@@ -23,7 +23,7 @@
       <ul>
         <li class='js_nav_link'><a href="/#about">About</a></li>
         <li class='js_nav_link'><a href="/#speakers">Speakers</a></li>
-        <!-- %li.js_nav_link= link_to "Schedule", "/#schedule" -->
+        <li class='js_nav_link'><a href="/#schedule">Schedule</a></li>
         <li class='js_nav_link'><a href="/#workshops">Workshops</a></li>
         <li class='js_nav_link'><a href="/#venue">Venue</a></li>
         <li class='js_nav_link'><a href="/#sponsors">Sponsors</a></li>
@@ -824,7 +824,275 @@
     <!-- = link_to "I want to speak", "http://rubyfuza.wufoo.com/forms/rubyfuza-2013-lightning-talk-proposal/", :class => "hot" -->
   </div>
 </section>
-<!-- = partial('../partials/schedule') -->
+<section id='schedule'>
+  <div class='wrapper'>
+    <h1 class='heading'>
+      <span>Schedule</span>
+    </h1>
+    <div class='timeline'>
+      <div class='half'>
+        <h2>
+          Day One
+          <span>Thursday, 6 February 2013</span>
+        </h2>
+        <ul>
+          <li>
+            <time>8:30</time>
+            <p>Registration</p>
+          </li>
+          <li>
+            <time>9:30</time>
+            <p class='speaker'>
+              <img alt="Marcheiligers" src="../images/speakers/marcheiligers.jpeg"/>
+              Marc Heiligers
+              <a href='https://twitter.com/rubyfuza'>@rubyfuza</a>
+              <span>Welcome</span>
+            </p>
+          </li>
+          <li>
+            <time>9:40</time>
+            <p class='speaker'>
+              <img alt="Charlene" src="../images/speakers/charlene.jpg"/>
+              Charlene Tshitoka
+              <a href='https://twitter.com/charlymul'>@charlymul</a>
+              <span>Software Development in Africa</span>
+            </p>
+          </li>
+          <li>
+            <time>10:30</time>
+            <p class='speaker'>
+              <img alt="Ben" src="../images/speakers/ben.JPG"/>
+              Ben Janecke
+              <!-- %a{:href=>"https://twitter.com/djellemah"} @djellemah -->
+              <span>Ping Ping or: How I learned to stop worrying and love remote paring</span>
+            </p>
+          </li>
+          <li>
+            <time>11:00</time>
+            <p>Break</p>
+          </li>
+          <li>
+            <time>11:30</time>
+            <p class='speaker'>
+              <img alt="Rory" src="../images/speakers/rory.jpg"/>
+              Rory McKinley
+              <a href='https://twitter.com/rorymckinley'>@rorymckinley</a>
+              <span>TDD: When the thrill has gone</span>
+            </p>
+          </li>
+          <li>
+            <time>12:00</time>
+            <p class='speaker'>
+              <img alt="Murtuza" src="../images/speakers/murtuza.JPG"/>
+              Murtuza Kutub
+              <a href='https://twitter.com/murtazz'>@murtazz</a>
+              <span>The Ultimate Refactoring Cheat Sheet</span>
+            </p>
+          </li>
+          <li>
+            <time>12:30</time>
+            <p>Lightning Talks</p>
+          </li>
+          <li>
+            <time>13:00</time>
+            <p>Lunch</p>
+          </li>
+          <li>
+            <time>14:00</time>
+            <p class='speaker'>
+              <img alt="Johnanderson" src="../images/speakers/johnanderson.jpg"/>
+              John Anderson
+              <a href='https://twitter.com/djellemah'>@djellemah</a>
+              <span>What is an object, really?</span>
+            </p>
+          </li>
+          <li>
+            <time>14:30</time>
+            <p class='speaker'>
+              <img alt="Alex" src="../images/speakers/alex.jpg"/>
+              Alex Coles
+              <a href='https://twitter.com/myabc'>@myabc</a>
+              <span>Find Simplicity With Plain Old Ruby Objects</span>
+            </p>
+          </li>
+          <li>
+            <time>15:00</time>
+            <p class='speaker'>
+              <img alt="Marie" src="../images/speakers/marie.jpg"/>
+              Marié Whittington
+              <a href='https://twitter.com/mariebeetge'>@mariebeetge</a>
+              <span>Designing in a Rails Company</span>
+            </p>
+          </li>
+          <li>
+            <time>15:30</time>
+            <p>Break</p>
+          </li>
+          <li>
+            <time>16:00</time>
+            <p class='speaker'>
+              <img alt="Robert stuttaford" src="../images/speakers/Robert_Stuttaford.JPG"/>
+              Robert Stuttaford
+              <a href='https://twitter.com/RobStuttaford'>@RobStuttaford</a>
+              <span>Immutable Data...base?</span>
+            </p>
+          </li>
+          <li>
+            <time>16:30</time>
+            <p class='speaker'>
+              <img alt="Danieroux" src="../images/speakers/danieroux.jpg"/>
+              Danie Roux
+              <a href='https://twitter.com/danieroux'>@danieroux</a>
+              <span>Persistent data structures - good for UI</span>
+            </p>
+          </li>
+          <li>
+            <time>17:00</time>
+            <p class='speaker'>
+              <img alt="Daniel" src="../images/speakers/daniel.jpg"/>
+              Daniel Schierbeck
+              <a href='https://twitter.com/dasch'>@dasch</a>
+              <span>Curly — Refactoring the view layer</span>
+            </p>
+          </li>
+          <li>
+            <time>17:30</time>
+            <p>Drinkup</p>
+          </li>
+        </ul>
+      </div>
+      <div class='half'>
+        <h2>
+          Day Two
+          <span>Friday, 7 February 2013</span>
+        </h2>
+        <ul>
+          <li>
+            <time>8:30</time>
+            <p>Arrival</p>
+          </li>
+          <li>
+            <time>9:40</time>
+            <p class='speaker'>
+              <img alt="Tania" src="../images/speakers/tania.jpg"/>
+              Tania van Wyk de Vries
+              <!-- %a{:href=>"https://twitter.com/gigglegirl4e"} @gigglegirl4e -->
+              <span>Ruby on Microsoft Azure</span>
+            </p>
+          </li>
+          <li>
+            <time>10:30</time>
+            <p class='speaker'>
+              <img alt="Lance" src="../images/speakers/lance.jpg"/>
+              Lance Gleason
+              <a href='https://twitter.com/lgleasain'>@lgleasain</a>
+              <span>Analytics for the Busy Ruby Developer</span>
+            </p>
+          </li>
+          <li>
+            <time>11:00</time>
+            <p>Break</p>
+          </li>
+          <li>
+            <time>11:30</time>
+            <p class='speaker'>
+              <img alt="Mmongeau" src="../images/speakers/mmongeau.jpg"/>
+              Matthew Mongeau
+              <a href='https://twitter.com/danishkhan'>@halogenandtoast</a>
+              <span>The Art of Ruby</span>
+            </p>
+          </li>
+          <li>
+            <time>12:00</time>
+            <p class='speaker'>
+              <img alt="Kevin" src="../images/speakers/kevin.jpg"/>
+              Kevin McKelvin
+              <a href='https://twitter.com/kmckelvin'>@kmckelvin</a>
+              <span>Clean Code: Applying Object Oriented Principles</span>
+            </p>
+          </li>
+          <li>
+            <time>12:30</time>
+            <p>Lightning Talks</p>
+          </li>
+          <li>
+            <time>13:00</time>
+            <p>Lunch</p>
+          </li>
+          <li>
+            <time>14:00</time>
+            <p class='speaker'>
+              <img alt="Andre" src="../images/speakers/andre.jpg"/>
+              André Arko
+              <a href='https://twitter.com/indirect'>@indirect</a>
+              <span>Extreme Makeover: Rubygems Edition</span>
+            </p>
+          </li>
+          <li>
+            <time>14:30</time>
+            <p class='speaker'>
+              <img alt="Simon" src="../images/speakers/simon.jpg"/>
+              Simon van Dyk
+              <a href='https://twitter.com/siefi'>@siefi</a>
+              <span>The Birds &amp; The Bees</span>
+            </p>
+          </li>
+          <li>
+            <time>15:00</time>
+            <p class='speaker'>
+              <img alt="Sallylehman" src="../images/speakers/sallylehman.jpg"/>
+              Sally Lehman
+              <a href='https://twitter.com/SllyLhmn'>@SllyLhmn</a>
+              <span>Email Delivery for Rails Folks (or 'How to send lots of email and not look like spam')</span>
+            </p>
+          </li>
+          <li>
+            <time>15:30</time>
+            <p>Break</p>
+          </li>
+          <li>
+            <time>16:00</time>
+            <p class='speaker'>
+              <img alt="Nelson" src="../images/speakers/nelson.jpg"/>
+              Nelson Pascoal
+              <a href='https://twitter.com/foomip'>@foomip</a>
+              <span>Rubymotion - iOS and OSX development from a Ruby developer's perspective</span>
+            </p>
+          </li>
+          <li>
+            <time>16:30</time>
+            <p class='speaker'>
+              <img alt="Richard" src="../images/speakers/richard.jpg"/>
+              Richard Cochrane
+              <!-- %a{:href=>"https://twitter.com/kmckelvin"} @kmckelvin -->
+              <span>Debugging in Ruby on Rails</span>
+            </p>
+          </li>
+          <li>
+            <time>17:00</time>
+            <p class='speaker'>
+              <img alt="Zachary" src="../images/speakers/zachary.jpg"/>
+              Zachary Scott
+              <a href='https://twitter.com/_zzak'>@_zzak</a>
+              <span>
+                Contributing to Ruby
+              </span>
+            </p>
+          </li>
+          <li>
+            <time>17:30</time>
+            <p>Leave for Dinner</p>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- .full -->
+    <!-- %h2 -->
+    <!-- Download the -->
+    <!-- %a{:href=>"https://dl.dropbox.com/u/16854658/Rubyfuza/program.pdf"} Program Guide -->
+    <!-- (pdf, 2.3MB) -->
+  </div>
+</section>
 <section id='workshops'>
   <div class='wrapper'>
     <h1 class='heading'>
