@@ -30,36 +30,6 @@
 
       %li.speaker
         .rounded
-          %a{href: '#speaker2', rel: 'speaker_image', class: 'fancybox'}
-            = img "../images/speakers/alex.jpg"
-          %a{:href=>"https://twitter.com/myabc", :class=>"twitter"}= img "../images/twitter.png"
-          %a{:href=>"https://github.com/myabc", :class=>"github"}= img "../images/github.png"
-        %h2
-          %a{href: '#speaker2', rel: 'speakers', class: 'fancybox'} Alex Coles
-        %p Find Simplicity With Plain Old Ruby Objects
-
-        #speaker2.detail
-          .links.right
-            %a{:href=>"https://twitter.com/myabc", :class=>"twitter"}= img "../images/twitter.png"
-            %a{:href=>"https://github.com/myabc", :class=>"github"}= img "../images/github.png"
-          .name
-            = img "../images/speakers/alex.jpg"
-            %h2 Alex Coles
-          .inner
-            %p Alex Coles is a freelance web developer, unabashedly wearing the hat of "generalist". He is active in the Ruby community, having founded the annual eurucamp camp/conference in Berlin. He has also contributed extensively to many open-source projects including RefineryCMS and DataMapper.
-            %h3 Find Simplicity With Plain Old Ruby Objects
-            %p This talk will discuss why you might, when you set out to design a system, want to stop thinking about persistence. Rather than kicking off a project generating models that subclass ActiveRecord::Base, I will suggest beginning your application development by modelling behaviour with Plain Old Ruby Objects (POROs).
-            %p While including ideas from Avdi Grimm's Objects on Rails, the talk will primarily be based around my personal experience refactoring an-ActiveResource based system with Plain Old Ruby Objects and roar.
-            %p Included in this talk will be an exploration of:
-            %ul.list
-              %li patterns, such as Repository and Data Mapper, as coined by Martin Fowler,
-              %li how upcoming libraries &eldash; Curator, DataMappify, ROM.rb and Veritas &eldash; fit in with these patterns,
-              %li the parts of these libraries that are usable today,
-              %li how to make this methodology workable in the context of TDD (keeping components as testable as possible).
-            %p There will also be a discussion about the stage when you should begin implementing persistence.
-
-      %li.speaker
-        .rounded
           %a{href: '#speaker3', rel: 'speaker_image', class: 'fancybox'}
             = img "../images/speakers/andre.jpg"
           %a{:href=>"https://twitter.com/indirect", :class=>"twitter"}= img "../images/twitter.png"
@@ -329,6 +299,8 @@
             %h3 Immutable Data...base?
             %p We’ll take a whirlwind tour through Clojure - the rapidly rising functional language on the JVM - and Datomic, a novel take on immutable databases. We’ll see how the notion of immutability makes life as a working programmer a lot easier in Clojure, and in Datomic, how it becomes possible to query the past, query against what-if databases, query across databases, and more.
 
+    %div.clearfix
+    %ul
       %li.speaker
         .rounded
           %a{href: '#speaker13', rel: 'speaker_image', class: 'fancybox'}
@@ -502,6 +474,29 @@
             %p I worked for many years in Visual Basic 6, then, in 2008, changed jobs resulting in a magical transformation of my career. A patient guy took me under his wing and taught me Linux, Python, Django, MVC and developing the full web stack. That was almost 5 years ago. Last year, I took a job as a Ruby/Rails Developer and I've learnt a lot about developing the Rails way (services, policies, etc). Learning another framework is hugely challenging but interesting in allowing you to see how the same problems can be solved in different ways (routing, controllers, template rendering, etc.).
             %h3 Debugging in Ruby on Rails
             %p Great tools are key to great development and an awesome console and interactive debugger are up there on the list of tools EVERY developer should have access to. In particular, Pry and the Jazz Hands bundle that includes a few goodies with Pry (mostly, other Pry plugins) bring a very useful console for code exploration and a debugger that you can enter during any code execution, whether the app is running daemonised or not. It's not hard to use Pry but I'm astonished by how many developers deprive themselves of this absolute must-have tool.
+
+      %li.speaker
+        .rounded
+          %a{href: '#speaker2', rel: 'speaker_image', class: 'fancybox'}
+            = img "../images/speakers/dan.jpg"
+          / %a{:href=>"https://twitter.com/myabc", :class=>"twitter"}= img "../images/twitter.png"
+          / %a{:href=>"https://github.com/myabc", :class=>"github"}= img "../images/github.png"
+        %h2
+          %a{href: '#speaker2', rel: 'speakers', class: 'fancybox'} Daniel Acton
+        %p Google APIs for Ruby on Ruby on Rails on Google Compute Engine
+
+        #speaker2.detail
+          .links.right
+            %a{:href=>"https://twitter.com/myabc", :class=>"twitter"}= img "../images/twitter.png"
+            %a{:href=>"https://github.com/myabc", :class=>"github"}= img "../images/github.png"
+          .name
+            = img "../images/speakers/dan.jpg"
+            %h2 Daniel Acton
+          .inner
+            %p Technical Solutions Consultant, Publisher and Distribution Solutions, Google South Africa
+            %p Daniel is a Technical Solutions Consultant on the Publisher and Distribution Solutions team at Google South Africa. In this role, he focuses on helping partners implement Google's products, specifically Google's monetization products. Daniel also works with developer and entrepreneur groups in South Africa as part of Google's Developer Relations programmes.
+            %p Daniel holds a M.Sc from the University of Pretoria. He earned a bachelor's degree in Computer Science from the University of Cape Town, where he graduated with honours.
+            %h3 Google APIs for Ruby on Ruby on Rails on Google Compute Engine
 
     %div.clearfix
     = partial('../partials/signup')
