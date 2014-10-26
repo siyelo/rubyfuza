@@ -21,21 +21,19 @@
   <nav id='main'>
     <div class='wrapper'>
       <ul>
-        <li class='js_nav_link'><a href="/#about">About</a></li>
-        <li class='js_nav_link'><a href="/#speakers">Speakers</a></li>
-        <li class='js_nav_link'><a href="/#schedule">Schedule</a></li>
-        <li class='js_nav_link'><a href="/#workshops">Workshops</a></li>
-        <li class='js_nav_link'><a href="/#venue">Venue</a></li>
-        <li class='js_nav_link'><a href="/#sponsors">Sponsors</a></li>
-        <li class='js_nav_link'><a href="/#blog">Blog</a></li>
-        <li><a href="/2013">2013</a></li>
-        <li><a href="/2014">2014</a></li>
-        <li id='register'><a href="https://www.quicket.co.za/events/6934-rubyfuza-2015">Register</a></li>
+        <li class='js_nav_link'><a href="#about">About</a></li>
+        <li class='js_nav_link'><a href="#speakers">Speakers</a></li>
+        <li class='js_nav_link'><a href="#schedule">Schedule</a></li>
+        <li class='js_nav_link'><a href="#venue">Venue</a></li>
+        <li class='js_nav_link'><a href="#sponsors">Sponsors</a></li>
+        <li class='js_nav_link'><a href="#blog">Blog</a></li>
+        <li id='register'><a href="http://www.quicket.co.za/events/2752-rubyfuza-2014/">Register</a></li>
       </ul>
       <a class='register-now' href='/'>
-        <span>Back to 2015</span>
+        <span>
+          Back to 2015
+        </span>
       </a>
-      <!-- %span.register-now EARLY BIRD REGISTRATION FROM 1 SEPTEMBER -->
     </div>
   </nav>
   <div class='wrapper'>
@@ -54,7 +52,7 @@
       Africa's premier Ruby conference
       <span>Great talks, great people and great parties!</span>
     </h3>
-    <a class='action' href='http://www.quicket.co.za/events/2752-rubyfuza-2014/'>Book Your Ticket Now!</a>
+    <a class='action' href='http://www.youtube.com/rubyfuza'>View the videos!</a>
     <!-- /%a{:href=>"#", :class=>"action2 right"} Book Your Ticket Now! -->
     <div class='conf'>
       <img alt="Collage2013" src="../images/collage2013.png"/>
@@ -734,7 +732,7 @@
           var form = document.getElementById("mad_mimi_signup_form"),
               submit = document.getElementById("webform_submit_button"),
               email = /.+@.+\..+/;
-
+        
           form.onsubmit = function(event) {
             var isValid = validate();
             if(!isValid) {
@@ -746,7 +744,7 @@
               }
               return false;
             }
-
+        
             setTimeout(function() {
               for(var i = 0; i < form.getElementsByTagName("input").length; ++i) {
                 var input = form.getElementsByTagName("input")[i];
@@ -761,14 +759,14 @@
               }
             }, 3000);
           };
-
+        
           function validate() {
             var isValid = true;
-
+        
             for(var i = 0; i < form.elements.length; ++i) {
               var input = form.elements[i],
                   allDivs = input.parentNode.getElementsByTagName("div");
-
+        
               if(input.className.indexOf("required") >= 0) {
                 if(input.id == "signup_email") {
                   if(!email.test(input.value)) {
@@ -787,25 +785,25 @@
                 }
               }
             }
-
+        
             form.className = isValid ? "" : "mimi_invalid";
             submit.value = isValid ? submit.getAttribute("data-default-text") : submit.getAttribute("data-invalid-text");
             submit.disabled = !isValid;
             submit.className = isValid ? "submit" : "disabled";
-
+        
             return isValid;
           }
-
+        
           function emailErrorMessage(input, allDivs) {
             input.className = "required invalid";
             input.placeholder = input.getAttribute("data-required-message") || "This field is required";
           }
-
+        
           function fieldErrorMessage(input, allDivs) {
             input.className = "required invalid";
             input.placeholder = input.getAttribute("data-required-message") || "This field is required";
           }
-
+        
           function removeErrorMessage(input, allDivs) {
             input.className = "required";
           }
@@ -905,10 +903,10 @@
           <li>
             <time>14:30</time>
             <p class='speaker'>
-              <img alt="You" src="../images/speakers/you.png"/>
-              TBA
+              <img alt="Dan" src="../images/speakers/dan.jpg"/>
+              Daniel Acton
               <!-- %a{:href=>"https://twitter.com/myabc"} @myabc -->
-              <span>TBA</span>
+              <span>Google APIs for Ruby on Ruby on Rails on Google Compute Engine</span>
             </p>
           </li>
           <li>
@@ -1723,7 +1721,7 @@
 </section>
   <footer id='footer'>
     <div class='wrapper'>
-      © 2010 - 2013 Rubyfuza —
+      © 2010 - 2015 Rubyfuza —
       <a href="https://twitter.com/rubyfuza">Follow us on Twitter</a>
       |
       <a href="https://facebook.com/rubyfuza">Like us on Facebook</a>

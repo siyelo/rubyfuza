@@ -23,14 +23,14 @@
       <ul>
         <li class='js_nav_link'><a href="/#about">About</a></li>
         <li class='js_nav_link'><a href="/#speakers">Speakers</a></li>
-        <!-- <li class='js_nav_link'><a href="/#schedule">Schedule</a></li> we should only point to it once its up -->
-        <!-- <li class='js_nav_link'><a href="/#workshops">Workshops</a></li> we should  only point to it once its up -->
+        <!-- %li.js_nav_link= link_to "Schedule", "/#schedule" -->
+        <!-- %li.js_nav_link= link_to "Workshops", "/#workshops" -->
         <li class='js_nav_link'><a href="/#venue">Venue</a></li>
         <li class='js_nav_link'><a href="/#sponsors">Sponsors</a></li>
         <li class='js_nav_link'><a href="/#blog">Blog</a></li>
         <li><a href="/2013">2013</a></li>
         <li><a href="/2014">2014</a></li>
-        <li id='register'><a href="https://www.quicket.co.za/events/6934-rubyfuza-2015">Register</a></li>
+        <li id='register'><a href="http://www.quicket.co.za/events/1209-rubyfuza-2013/">Register</a></li>
       </ul>
       <a class='register-now' href='https://www.quicket.co.za/events/6934-rubyfuza-2015'>
         <span>Register now!</span>
@@ -42,8 +42,7 @@
     <a name='about'></a>
     <h1>
       <a alt='Rubyfuza Home' href='/'>
-        <img class="logo" src='../images/logo-gem.png' />
-        ruby<span>fu</span>za <span>2015</span>
+        <img src='../images/logo-2015.png' />
       </a>
     </h1>
     <h2>
@@ -54,7 +53,7 @@
       Africa's premier Ruby conference
       <span>Great talks, great people and great parties!</span>
     </h3>
-    <a class='action' href='http://www.quicket.co.za/events/2752-rubyfuza-2014/'>Book Your Ticket Now!</a>
+    <a class='action' href='https://www.quicket.co.za/events/6934-rubyfuza-2015'>Book Your Ticket Now!</a>
     <!-- /%a{:href=>"#", :class=>"action2 right"} Book Your Ticket Now! -->
     <div class='conf'>
       <img alt="Collage2013" src="../images/collage2013.png"/>
@@ -97,10 +96,10 @@
       <li class='speaker'>
         <div class='rounded'>
           <a class='fancybox' href='#speaker1' rel='speaker_image'>
-            <img alt="name" src="../images/speakers/speaker1.png"/>
+            <img alt="Speaker1" src="../images/speakers/speaker1.png"/>
           </a>
           <a class='twitter' href='https://twitter.com/twitterhandle'><img alt="Twitter" src="../images/twitter.png"/></a>
-          <a class='github' href='https://github.com/githubhandle'><img alt="Github" src="../images/github.png"/></a>
+          <a class='github' href='https://github.com/githubcreds'><img alt="Github" src="../images/github.png"/></a>
         </div>
         <h2>
           <a class='fancybox' href='#speaker1' rel='speakers'>Your name.</a>
@@ -109,24 +108,21 @@
         <div class='detail' id='speaker1'>
           <div class='links right'>
             <a class='twitter' href='https://twitter.com/twitterhandle'><img alt="Twitter" src="../images/twitter.png"/></a>
-            <a class='github' href='https://github.com/githubhandle'><img alt="Github" src="../images/github.png"/></a>
+            <a class='github' href='https://github.com/githubcreds'><img alt="Github" src="../images/github.png"/></a>
           </div>
           <div class='name'>
-            <img alt="speaker_name" src="../images/speakers/speaker1.png"/>
+            <img alt="Speaker1" src="../images/speakers/speaker1.png"/>
             <h2>Your name.</h2>
           </div>
           <div class='inner'>
-            <p>Your bio for the world to see!</p>
+            <p>Your biography will be right here!</p>
             <h3>Your talks name.</h3>
-            <p>Wow your talk is going to be awesome.</p>
-            <p>More about your talk.</p>
+            <p>Everyone is going to be pumped for this!</p>
+            <p>Even more about your awesome talk.</p>
           </div>
         </div>
       </li>
     </ul>
-
-    <!-- This is the signup for the news letter -->
-
     <div class='clearfix'></div>
     <p class='center'>
       Want us to keep you updated? Sign up below and get all the latest Rubyfuza announcements in your inbox.
@@ -148,7 +144,7 @@
           var form = document.getElementById("mad_mimi_signup_form"),
               submit = document.getElementById("webform_submit_button"),
               email = /.+@.+\..+/;
-
+        
           form.onsubmit = function(event) {
             var isValid = validate();
             if(!isValid) {
@@ -160,7 +156,7 @@
               }
               return false;
             }
-
+        
             setTimeout(function() {
               for(var i = 0; i < form.getElementsByTagName("input").length; ++i) {
                 var input = form.getElementsByTagName("input")[i];
@@ -175,14 +171,14 @@
               }
             }, 3000);
           };
-
+        
           function validate() {
             var isValid = true;
-
+        
             for(var i = 0; i < form.elements.length; ++i) {
               var input = form.elements[i],
                   allDivs = input.parentNode.getElementsByTagName("div");
-
+        
               if(input.className.indexOf("required") >= 0) {
                 if(input.id == "signup_email") {
                   if(!email.test(input.value)) {
@@ -201,25 +197,25 @@
                 }
               }
             }
-
+        
             form.className = isValid ? "" : "mimi_invalid";
             submit.value = isValid ? submit.getAttribute("data-default-text") : submit.getAttribute("data-invalid-text");
             submit.disabled = !isValid;
             submit.className = isValid ? "submit" : "disabled";
-
+        
             return isValid;
           }
-
+        
           function emailErrorMessage(input, allDivs) {
             input.className = "required invalid";
             input.placeholder = input.getAttribute("data-required-message") || "This field is required";
           }
-
+        
           function fieldErrorMessage(input, allDivs) {
             input.className = "required invalid";
             input.placeholder = input.getAttribute("data-required-message") || "This field is required";
           }
-
+        
           function removeErrorMessage(input, allDivs) {
             input.className = "required";
           }
@@ -234,454 +230,335 @@
     <!-- = link_to "I want to speak", "http://rubyfuza.wufoo.com/forms/rubyfuza-2013-lightning-talk-proposal/", :class => "hot" -->
   </div>
 </section>
-
-
-<!-- once all the speakers have submitted we should then create the schedule  -->
-
-
-<!-- <section id='schedule'>
-  <div class='wrapper'>
-    <h1 class='heading'>
-      <span>Schedule</span>
-    </h1>
-    <div class='timeline'>
-      <div class='half'>
-        <h2>
-          Day One
-          <span>Thursday, 5 February 2015</span>
-        </h2>
-        <ul>
-          <li>
-            <time>8:30</time>
-            <p>Registration</p>
-          </li>
-          <li>
-            <time>9:30</time>
-            <p class='speaker'>
-              <img alt="Marcheiligers" src="../images/speakers/marcheiligers.jpeg"/>
-              Marc Heiligers
-              <a href='https://twitter.com/twitterhandle'>@rubyfuza</a>
-              <span>Welcome</span>
-            </p>
-          </li>
-          <li>
-            <time>9:40</time>
-            <p class='speaker'>
-              <img alt="name" src="../images/speakers/name.jpg"/>
-              Name of speaker
-              <a href='https://twitter.com/twitterhandle'>@twitterhandle handle</a>
-              <span>talk name</span>
-            </p>
-          </li>
-          <li>
-            <time>10:30</time>
-            <p class='speaker'>
-              <img alt="name" src="../images/speakers/name.png"/>
-              name of speaker
-              <a href='http://twitter.com/twitterhandle'>@twitterhandle</a>
-              <span>talk name</span>
-            </p>
-          </li>
-          <li>
-            <time>11:00</time>
-            <p>Break</p>
-          </li>
-          <li>
-            <time>11:30</time>
-            <p class='speaker'>
-              <img alt="name" src="../images/speakers/name.png"/>
-              name of speaker
-              <a href='https://twitter.com/twitterhandle'>@twitterhandle</a>
-              <span>talk name</span>
-            </p>
-          </li>
-          <li>
-            <time>12:00</time>
-            <p class='speaker'>
-              <img alt="name" src="../images/speakers/name.png"/>
-              name of speaker
-              <a href='https://twitter.com/twitterhandle'>@twitterhandle</a>
-              <span>talk name</span>
-            </p>
-          </li>
-          <li>
-            <time>12:30</time>
-            <p>Lightning Talks</p>
-          </li>
-          <li>
-            <time>13:00</time>
-            <p>Lunch</p>
-          </li>
-          <li>
-            <time>14:00</time>
-            <p class='speaker'>
-              <img alt="name" src="../images/speakers/name.png"/>
-              name of speaker
-              <a href='https://twitter.com/twitterhandle'>@twitterhandle</a>
-              <span>talk name</span>
-            </p>
-          </li>
-          <li>
-            <time>14:30</time>
-            <p class='speaker'>
-              <img alt="name" src="../images/speakers/name.png"/>
-              name of speaker
-              <a href='https://twitter.com/twitterhandle'>@twitterhandle</a>
-              <span>talk name</span>
-            </p>
-          </li>
-          <li>
-            <time>15:00</time>
-            <p class='speaker'>
-              <img alt="name" src="../images/speakers/name.png"/>
-              name of speaker
-              <a href='https://twitter.com/twitterhandle'>@twitterhandle</a>
-              <span>talk name</span>
-            </p>
-          </li>
-          <li>
-            <time>15:30</time>
-            <p>Break</p>
-          </li>
-          <li>
-            <time>16:00</time>
-            <p class='speaker'>
-              <img alt="name stuttaford" src="../images/speakers/name.png"/>
-              name of speaker
-              <a href='https://twitter.com/twitterhandle'>@twitterhandle</a>
-              <span>talk name</span>
-            </p>
-          </li>
-          <li>
-            <time>16:30</time>
-            <p class='speaker'>
-              <img alt="name" src="../images/speakers/name.png"/>
-              name of speaker
-              <a href='https://twitter.com/twitterhandle'>@twitterhandle</a>
-              <span>talk name</span>
-            </p>
-          </li>
-          <li>
-            <time>17:00</time>
-            <p class='speaker'>
-              <img alt="name" src="../images/speakers/name.png"/>
-              name of speaker
-              <a href='https://twitter.com/twitterhandle'>@twitterhandle</a>
-              <span>talk name</span>
-            </p>
-          </li>
-          <li>
-            <time>17:30</time>
-            <p>Drinkup</p>
-          </li>
-        </ul>
-      </div>
-      <div class='half'>
-        <h2>
-          Day Two
-          <span>Friday, 6 February 2015</span>
-        </h2>
-        <ul>
-          <li>
-            <time>9:00</time>
-            <p>Arrival</p>
-          </li>
-          <li>
-            <time>10:00</time>
-            <p class='speaker'>
-              <img alt="name" src="../images/speakers/name.png"/>
-              name of speaker
-              <a href='https://twitter.com/twitterhandle'>@twitterhandle</a>
-              <span>talk name</span>
-            </p>
-          </li>
-          <li>
-            <time>10:30</time>
-            <p class='speaker'>
-              <img alt="name" src="../images/speakers/name.png"/>
-              name of speaker
-              <a href='https://twitter.com/twitterhandle'>@twitterhandle</a>
-              <span>talk name</span>
-            </p>
-          </li>
-          <li>
-            <time>11:00</time>
-            <p>Break</p>
-          </li>
-          <li>
-            <time>11:30</time>
-            <p class='speaker'>
-              <img alt="name" src="../images/speakers/name.png"/>
-              name of speaker
-              <a href='https://twitter.com/twitterhandle'>@twitterhandle</a>
-              <span>talk name</span>
-            </p>
-          </li>
-          <li>
-            <time>12:00</time>
-            <p class='speaker'>
-              <img alt="name" src="../images/speakers/name.png"/>
-              name of speaker
-              <a href='https://twitter.com/twitterhandle'>@twitterhandle</a>
-              <span>talk name</span>
-            </p>
-          </li>
-          <li>
-            <time>12:30</time>
-            <p>Lightning Talks</p>
-          </li>
-          <li>
-            <time>13:00</time>
-            <p>Lunch</p>
-          </li>
-          <li>
-            <time>14:00</time>
-            <p class='speaker'>
-              <img alt="name" src="../images/speakers/name.png"/>
-              name of speaker
-              <a href='https://twitter.com/twitterhandle'>@twitterhandle</a>
-              <span>talk name</span>
-            </p>
-          </li>
-          <li>
-            <time>14:30</time>
-            <p class='speaker'>
-              <img alt="name" src="../images/speakers/name.png"/>
-              name of speaker
-              <a href='https://twitter.com/twitterhandle'>@twitterhandle</a>
-              <span>talk name</span>
-            </p>
-          </li>
-          <li>
-            <time>15:00</time>
-            <p class='speaker'>
-              <img alt="name" src="../images/speakers/name.png"/>
-              name of speaker
-              <a href='https://twitter.com/twitterhandle'>@twitterhandle</a>
-              <span>talk name</span>
-            </p>
-          </li>
-          <li>
-            <time>15:30</time>
-            <p>Break</p>
-          </li>
-          <li>
-            <time>16:00</time>
-            <p class='speaker'>
-              <img alt="name" src="../images/speakers/name.png"/>
-              name of speaker
-              <a href='https://twitter.com/twitterhandle'>@twitterhandle</a>
-              <span>talk name</span>
-            </p>
-          </li>
-          <li>
-            <time>16:30</time>
-            <p class='speaker'>
-              <img alt="name" src="../images/speakers/name.png"/>
-              name of speaker
-              <a href='https://twitter.com/twitterhandle'>@twitterhandle</a>
-              <span>talk name</span>
-            </p>
-          </li>
-          <li>
-            <time>17:00</time>
-            <p class='speaker'>
-              <img alt="name" src="../images/speakers/name.png"/>
-              name of speaker
-              <a href='https://twitter.com/twitterhandle'>@twitterhandle</a>
-              <span>talk name</span>
-            </p>
-          </li>
-          <li>
-            <time>17:30</time>
-            <p>Leave for Dinner</p>
-          </li>
-        </ul>
-      </div>
-    </div>
-    <div class='full'>
-      <h2>
-        Download the
-        <a href='/downloads/Rubyfuza%202014%20Program%20Guide.pdf'>Program Guide</a>
-        (pdf, 3.7MB)
-      </h2>
-    </div>
-  </div>
-</section>
- -->
-
-<!-- <section id='workshops'>
-  <div class='wrapper'>
-    <h1 class='heading'>
-      <a name='workshops'></a>
-      <span>Workshops</span>
-    </h1> -->
-
-  <!--   <ul>
-      <li style='width: 15.5%'></li>
-      <li class='workshop'>
-        <h2>
-          <a class='fancybox' href='#workshop1' rel='workshops'>workshop_title</a>
-        </h2>
-        <p>An Introductory Ruby on Rails Workshop</p>
-        <p class='date'>Fri, 31 Jan &mdash; Sat, 1 Feb</p>
-        <div class='workshop detail' id='workshop1'>
-          <div class='name'>
-            <h2>RailsBridge</h2>
-            <p>The RailsBridge Workshop is a free one-and-a-bit day course run by a volunteer team of experienced and enthusiastic developers. It aims to promote diversity in the software industry by providing an accessible starting point to those interested in coding. The course covers an introduction to programming concepts, the available tools, and Ruby and Rails development techniques. It teaches practical skills useful to those investigating new career paths, looking to compliment their current skill set, or simply interested in gaining a better understanding of software.</p>
-          </div>
-          <h3 class='join'>
-            <a href='http://www.meetup.com/Rubyfuza/events/158384112/'>Join this workshop!</a>
-            &nbsp;&bull;&nbsp;
-            <a href='http://railsbridgecapetown.org/'>Learn more</a>
-          </h3>
-          <div class='inner'>
-            <div class='name'>
-              <img alt="Stevebarnett" src="../images/speakers/stevebarnett.jpg"/>
-              <h3>Steve Barnett</h3>
-            </div>
-            <p>Steve Barnett has a background in Maths and finance and started work as a Front End Developer in 2005, escaping to South Africa from his native England. He started at Unboxed Consulting in November 2012, and he’s most interested in the multi-device world and making the web accessible to all. You can find him at naga.co.za or on Twitter as @maxbarners.</p>
-          </div>
-        </div>
-      </li>
-      <li class='workshop'>
-        <h2>
-          <a class='fancybox' href='#workshop2' rel='workshops'>workshop_title Workshop</a>
-        </h2>
-        <p>Designing and building a distributed application using AWS services</p>
-        <p class='date'>Sat, 1 Feb</p>
-        <div class='workshop detail' id='workshop2'>
-          <div class='name'>
-            <h2>Designing and building a distributed application using AWS services</h2>
-            <p>Amazon Web Services is pleased to present a workshop in Cape Town the weekend before the Rubyfuza conference. The hack-day will provide hands-on experience designing and building a fun distributed application using AWS services.</p>
-            <p>The workshop is aimed at seasoned developers. Prior experience using AWS and our SDKs will be to your advantage; however they are well documented and easy to learn in the time you have available.</p>
-            <p>We'll be building a procedural music generator. You'll build up a library of sound samples by interacting with a variety of AWS services, learning AWS best practices along the way, and combine those samples into a piece of music.</p>
-            <p>Engineers from AWS will be on hand to help you design and build your system. They'll be doing the judging and will award some great prizes for the best piece of music, and the most creative applications.</p>
-            <p>We will credit your AWS account with enough money to build your application, as well as play with AWS services after the workshop.</p>
-            <h4>Prerequisites:</h4>
-            <ul class='list'>
-              <li>Your own AWS account - this requires a credit-card, and it will not be possible to sign up for an account on the day. Please don't use one from your employer!</li>
-              <li>A laptop with a development environment for your favourite language already configured</li>
-            </ul>
-            <p>
-              It's important that you sign up for an AWS account before the event - please drop us an email at
-              <a href='mailto:aws-rubyfuza@amazon.com'>aws-rubyfuza@amazon.com</a>
-              with your 12-digit AWS account ID so we can credit your account.
-            </p>
-          </div>
-          <h3 class='join'>
-            <a href='http://www.meetup.com/Rubyfuza/events/159132862/'>Join this workshop!</a>
-          </h3>
-          <div class='inner'>
-            Facilitators: Allen Brown, Matthew Eddey, Gideon Klompje and Ronen Agranat.
-            .name
-            = img "../images/speakers/stevebarnett.jpg"
-            %h3 Steve Barnett
-            %p Steve Barnett has a background in Maths and finance and started work as a Front End Developer in 2005, escaping to South Africa from his native England. He started at Unboxed Consulting in November 2012, and he’s most interested in the multi-device world and making the web accessible to all. You can find him at naga.co.za or on Twitter as @maxbarners.
-          </div>
-        </div>
-      </li>
-      <li class='workshop'>
-        <h2>
-          <a class='fancybox' href='#workshop3' rel='workshops'>workshop_title Programming</a>
-        </h2>
-        <p>An Introduction to Functional Programming for Ruby Developers</p>
-        <p class='date'>Sat, 8 Feb</p>
-        <div class='workshop detail' id='workshop3'>
-          <div class='name'>
-            <h2>An Introduction to Functional Programming for Ruby Developers</h2>
-            <p>There is a lot of buzz and hype around functional programming at the moment.  Many claiming it is the only way to scale and write safe code in our multi-core world.  Some of it is true and some of it is hype.  What I've learnt is that functional programming makes us better object oriented developers.  On more than one occasion, FP has offered us a cleaner, sweeter solutions to non-trivial problems.  In this workshop, we will give a hands-on introduction to the main themes of FP, cutting through the hype, favouring practice over theory.  We will play with a few languages like Clojure, Scala, JavaScript (yes!) and maybe Haskell or F# too.  So bring your laptop along and join in.</p>
-          </div>
-          <h3 class='join'>
-            <a href='http://www.meetup.com/Rubyfuza/events/158373392/'>Join this workshop!</a>
-          </h3>
-          <div class='inner'>
-            <div class='name'>
-              <img alt="Aslam" src="../images/speakers/aslam.jpg"/>
-              <h3>Aslam Khan</h3>
-            </div>
-            <p>
-              Aslam Khan is a software developer for more years than South Africa is a democracy.  He believes that all of software is just design and values code as an expression of design. And the same goes for architecture too - it's all design.  The one thing he has learnt, though, is that design is hard, very hard.  As developers we need thinking tools, and different paradigms gives us that diversity, hence his interest in functional programming.  He is currently writing a book on functional programming for Manning.  If that doesn't bore you, then try his blog at
-              <a href='http://f3yourmind.net'>http://f3yourmind.net</a>
-              .
-            </p>
-            <div class='name'>
-              <img alt="Ryan" src="../images/speakers/ryan.jpg"/>
-              <h3>Ryan Lemmer</h3>
-            </div>
-            <p>
-              Ryan Lemmer is a Cape Town based software developer. He believes that achieving the "soft" in software is the hardest part, that is, to make code that is pliable enough to withstand relentless change. Functional Programming offers some powerful tools, techniques and perspectives, towards achieving "soft" code. Ryan loves learning and facilitating learning in others.
-            </p>
-          </div>
-        </div>
-      </li>
-      <li class='workshop'>
-        <h2>
-          <a class='fancybox' href='#workshop4' rel='workshops'>workshop_title Simulation</a>
-        </h2>
-        <p>A Scrum Simulation for newbies and experienced agilists</p>
-        <p class='date'>Sat, 8 Feb</p>
-        <div class='workshop detail' id='workshop4'>
-          <div class='name'>
-            <h2>A Scrum Simulation for Newbies and Experienced Agilists</h2>
-            <p>Most software companies are trying some form of an agile process these days, but often people follow the mechanics without understanding the reasons behind why certain things are done.</p>
-            <p>Join us for a Scrum simulation using LEGO. We will build a product that needs to ship at the end of 2 sprints. We’ll go through each of the Scrum meetings: Backlog Grooming, Sprint Planning parts 1 & 2, Sprint Review and Sprint Retro. First we’ll explain the purpose of the meeting so you understand the reason for doing it, then you’ll get to do it, re-enforcing the learning.</p>
-            <p>Even if you’ve been doing Scrum for some time, this will be a great refresher of the basics and an opportunity to ask questions about some of the subtleties of Scrum.</p>
-          </div>
-          <h3 class='join'>
-            <a href='http://www.meetup.com/Rubyfuza/events/158928422/'>Join this workshop!</a>
-          </h3>
-          <div class='inner'>
-            <div class='name'>
-              <img alt="Karen" src="../images/speakers/Karen.jpg"/>
-              <h3>Karen Greaves</h3>
-            </div>
-            <p>Karen is an agile coach and trainer, and one half of Growing Agile. She’s worked in software her whole career as a tester, developer, and various management roles. She was fed up of always delivering late and working overtime, even considering leaving the industry when Scrum saved her. Now she helps others recover from Waterfall and tries to help people have fun at work again.</p>
-            <div class='name'>
-              <img alt="Sam" src="../images/speakers/Sam.jpg"/>
-              <h3>Sam Laing</h3>
-            </div>
-            <p>Sam is the other half of Growing Agile. Her personal motto is “Be Brave” and she embodies this by never saying no to a challenge, even if it’s scary.  In fact, she used to be terrified of public speaking, now she trains teams and speaks internationally at large conferences. She also started life as a developer, but now focuses more on the human side of software and how to get people to collaborate effectively.</p>
-          </div>
-        </div>
-      </li>
-      <li class='workshop'>
-        <h2>
-          <a class='fancybox' href='#workshop5' rel='workshops'>workshop_title</a>
-        </h2>
-        <p>An intensive practice event, focusing on the fundamentals of software development and design</p>
-        <p class='date'>Sat, 8 Feb</p>
-        <div class='workshop detail' id='workshop5'>
-          <div class='name'>
-            <h2>Coderetreat</h2>
-            <p>Coderetreat is a day-long, intensive practice event, focusing on the fundamentals of software development and design.</p>
-            <p>By providing developers the opportunity to take part in focused practice, away from the pressures of 'getting things done', the coderetreat format has proven itself to be a highly effective means of skill improvement.</p>
-            <p>Practicing the basic principles of modular and object-oriented design, developers can improve their ability to write code that minimizes the cost of change over time.</p>
-            <p>And it's great fun at the same time!</p>
-          </div>
-          <h3 class='join'>
-            <a href='http://www.meetup.com/Rubyfuza/events/158933022/'>Join this workshop!</a>
-            &nbsp;&bull;&nbsp;
-            <a href='http://coderetreat.org/'>Learn more</a>
-          </h3>
-          <div class='inner'>
-            Workshop facilitators to be announced.
-            .name
-            = img "../images/speakers/Karen.jpg"
-            %h3 Karen Greaves
-            %p Karen is an agile coach and trainer, and one half of Growing Agile. She’s worked in software her whole career as a tester, developer, and various management roles. She was fed up of always delivering late and working overtime, even considering leaving the industry when Scrum saved her. Now she helps others recover from Waterfall and tries to help people have fun at work again.
-            .name
-            = img "../images/speakers/Sam.jpg"
-            %h3 Sam Laing
-            %p Sam is the other half of Growing Agile. Her personal motto is “Be Brave” and she embodies this by never saying no to a challenge, even if it’s scary.  In fact, she used to be terrified of public speaking, now she trains teams and speaks internationally at large conferences. She also started life as a developer, but now focuses more on the human side of software and how to get people to collaborate effectively.
-          </div>
-        </div>
-      </li>
-    </ul> -->
-<!--   </div>
-</section> -->
-
-
+<!-- %section#schedule -->
+<!-- .wrapper -->
+<!-- %h1.heading -->
+<!-- %span Schedule -->
+<!-- .timeline -->
+<!-- .half -->
+<!-- %h2 -->
+<!-- Day One -->
+<!-- %span Thursday, 5 February 2015 -->
+<!-- %ul -->
+<!-- %li -->
+<!-- %time 8:30 -->
+<!-- %p Registration -->
+<!-- %li -->
+<!-- %time 9:30 -->
+<!-- %p.speaker -->
+<!-- = img "../images/speakers/name.png" -->
+<!-- Speakers name -->
+<!-- %a{:href=>"https://twitter.com/twitterhandle"} @twitterhandle -->
+<!-- %span Talk name. -->
+<!-- %li -->
+<!-- %time 9:40 -->
+<!-- %p.speaker -->
+<!-- = img "../images/speakers/name.png" -->
+<!-- Speakers name -->
+<!-- %a{:href=>"https://twitter.com/twitterhandle"} @twitterhandle -->
+<!-- %span Talk name. -->
+<!-- %li -->
+<!-- %time 10:30 -->
+<!-- %p.speaker -->
+<!-- = img "../images/speakers/name.png" -->
+<!-- Speakers name -->
+<!-- / %a{:href=>"https://twitter.com/twitterhandle"} @twitterhandle -->
+<!-- %span Talk name. -->
+<!-- %li -->
+<!-- %time 11:00 -->
+<!-- %p Break -->
+<!-- %li -->
+<!-- %time 11:30 -->
+<!-- %p.speaker -->
+<!-- = img "../images/speakers/name.png" -->
+<!-- Speakers name -->
+<!-- %a{:href=>"https://twitter.com/twitterhandle"} @twitterhandle -->
+<!-- %span Talk name. -->
+<!-- %li -->
+<!-- %time 12:00 -->
+<!-- %p.speaker -->
+<!-- = img "../images/speakers/name.png" -->
+<!-- Speakers name -->
+<!-- %a{:href=>"https://twitter.com/twitterhandle"} @twitterhandle -->
+<!-- %span Talk name. -->
+<!-- %li -->
+<!-- %time 12:30 -->
+<!-- %p Lightning Talks -->
+<!-- %li -->
+<!-- %time 13:00 -->
+<!-- %p Lunch -->
+<!-- %li -->
+<!-- %time 14:00 -->
+<!-- %p.speaker -->
+<!-- = img "../images/speakers/name.png" -->
+<!-- Speakers name -->
+<!-- %a{:href=>"https://twitter.com/twitterhandle"} @twitterhandle -->
+<!-- %span Talk name. -->
+<!-- %li -->
+<!-- %time 14:30 -->
+<!-- %p.speaker -->
+<!-- = img "../images/speakers/name.png" -->
+<!-- Speakers name -->
+<!-- / %a{:href=>"https://twitter.com/twitterhandle"} @twitterhandle -->
+<!-- %span Talk name. -->
+<!-- %li -->
+<!-- %time 15:00 -->
+<!-- %p.speaker -->
+<!-- = img "../images/speakers/name.png" -->
+<!-- Speakers name -->
+<!-- %a{:href=>"https://twitter.com/twitterhandle"} @twitterhandle -->
+<!-- %span Talk name. -->
+<!-- %li -->
+<!-- %time 15:30 -->
+<!-- %p Break -->
+<!-- %li -->
+<!-- %time 16:00 -->
+<!-- %p.speaker -->
+<!-- = img "../images/speakers/name.png" -->
+<!-- Speakers name -->
+<!-- %a{:href=>"https://twitter.com/twitterhandle"} @twitterhandle -->
+<!-- %span Talk name. -->
+<!-- %li -->
+<!-- %time 16:30 -->
+<!-- %p.speaker -->
+<!-- = img "../images/speakers/name.png" -->
+<!-- Speakers name -->
+<!-- %a{:href=>"https://twitter.com/twitterhandle"} @twitterhandle -->
+<!-- %span Talk name. -->
+<!-- %li -->
+<!-- %time 17:00 -->
+<!-- %p.speaker -->
+<!-- = img "../images/speakers/name.png" -->
+<!-- Speakers name -->
+<!-- %a{:href=>"https://twitter.com/twitterhandle"} @twitterhandle -->
+<!-- %span Talk name. -->
+<!-- %li -->
+<!-- %time 17:30 -->
+<!-- %p Drinkup -->
+<!-- .half -->
+<!-- %h2 -->
+<!-- Day Two -->
+<!-- %span Friday, 6 February 2015 -->
+<!-- %ul -->
+<!-- %li -->
+<!-- %time 9:00 -->
+<!-- %p Arrival -->
+<!-- %li -->
+<!-- %time 10:00 -->
+<!-- %p.speaker -->
+<!-- = img "../images/speakers/name.png" -->
+<!-- Tania van Wyk Speakers name -->
+<!-- / %a{:href=>"https://twitter.com/twitterhandle"} @twitterhandle -->
+<!-- %span Talk name. -->
+<!-- %li -->
+<!-- %time 10:30 -->
+<!-- %p.speaker -->
+<!-- = img "../images/speakers/name.png" -->
+<!-- Speakers name -->
+<!-- %a{:href=>"https://twitter.com/twitterhandle"} @twitterhandle -->
+<!-- %span Talk name. -->
+<!-- %li -->
+<!-- %time 11:00 -->
+<!-- %p Break -->
+<!-- %li -->
+<!-- %time 11:30 -->
+<!-- %p.speaker -->
+<!-- = img "../images/speakers/name.png" -->
+<!-- Speakers name -->
+<!-- %a{:href=>"https://twitter.com/twitterhandle"} @twitterhandle -->
+<!-- %span Talk name. -->
+<!-- %li -->
+<!-- %time 12:00 -->
+<!-- %p.speaker -->
+<!-- = img "../images/speakers/name.png" -->
+<!-- Speakers name -->
+<!-- %a{:href=>"https://twitter.com/twitterhandle"} @twitterhandle -->
+<!-- %span Talk name. -->
+<!-- %li -->
+<!-- %time 12:30 -->
+<!-- %p Lightning Talks -->
+<!-- %li -->
+<!-- %time 13:00 -->
+<!-- %p Lunch -->
+<!-- %li -->
+<!-- %time 14:00 -->
+<!-- %p.speaker -->
+<!-- = img "../images/speakers/name.png" -->
+<!-- Speakers name -->
+<!-- %a{:href=>"https://twitter.com/twitterhandle"} @twitterhandle -->
+<!-- %span Talk name. -->
+<!-- %li -->
+<!-- %time 14:30 -->
+<!-- %p.speaker -->
+<!-- = img "../images/speakers/name.png" -->
+<!-- Simon Speakers name -->
+<!-- %a{:href=>"https://twitter.com/twitterhandle"} @twitterhandle -->
+<!-- %span Talk name. -->
+<!-- %li -->
+<!-- %time 15:00 -->
+<!-- %p.speaker -->
+<!-- = img "../images/speakers/name.png" -->
+<!-- Speakers name -->
+<!-- %a{:href=>"https://twitter.com/twitterhandle"} @twitterhandle -->
+<!-- %span Talk name. -->
+<!-- %li -->
+<!-- %time 15:30 -->
+<!-- %p Break -->
+<!-- %li -->
+<!-- %time 16:00 -->
+<!-- %p.speaker -->
+<!-- = img "../images/speakers/name.png" -->
+<!-- Speakers name -->
+<!-- %a{:href=>"https://twitter.com/twitterhandle"} @twitterhandle -->
+<!-- %span Talk name. -->
+<!-- %li -->
+<!-- %time 16:30 -->
+<!-- %p.speaker -->
+<!-- = img "../images/speakers/name.png" -->
+<!-- Speakers name -->
+<!-- / %a{:href=>"https://twitter.com/twitterhandle"} @twitterhandle -->
+<!-- %span Talk name. -->
+<!-- %li -->
+<!-- %time 17:00 -->
+<!-- %p.speaker -->
+<!-- = img "../images/speakers/name.png" -->
+<!-- Speakers name -->
+<!-- %a{:href=>"https://twitter.com/twitterhandle"} @twitterhandle -->
+<!-- %span Talk name. -->
+<!-- %li -->
+<!-- %time 17:30 -->
+<!-- %p Leave for Dinner -->
+<!-- .full -->
+<!-- %h2 -->
+<!-- Download the -->
+<!-- %a{:href=>"/downloads/Rubyfuza%202014%20Program%20Guide.pdf"} Program Guide -->
+<!-- (pdf, 3.7MB) -->
+<!-- %section#workshops -->
+<!-- .wrapper -->
+<!-- %h1.heading -->
+<!-- %a{:name=>"workshops"} -->
+<!-- %span Workshops -->
+<!-- %ul -->
+<!-- %li{style: 'width: 15.5%'} -->
+<!-- %li.workshop -->
+<!-- %h2 -->
+<!-- %a{href: '#workshop1', rel: 'workshops', class: 'fancybox'} RailsBridge -->
+<!-- %p An Introductory Ruby on Rails Workshop -->
+<!-- %p.date Fri, 31 Jan &mdash; Sat, 1 Feb -->
+<!-- #workshop1.workshop.detail -->
+<!-- .name -->
+<!-- %h2 RailsBridge -->
+<!-- %p The RailsBridge Workshop is a free one-and-a-bit day course run by a volunteer team of experienced and enthusiastic developers. It aims to promote diversity in the software industry by providing an accessible starting point to those interested in coding. The course covers an introduction to programming concepts, the available tools, and Ruby and Rails development techniques. It teaches practical skills useful to those investigating new career paths, looking to compliment their current skill set, or simply interested in gaining a better understanding of software. -->
+<!-- %h3.join -->
+<!-- %a{href: 'http://www.meetup.com/Rubyfuza/events/158384112/'} Join this workshop! -->
+<!-- &nbsp;&bull;&nbsp; -->
+<!-- %a{href: 'http://railsbridgecapetown.org/'} Learn more -->
+<!-- .inner -->
+<!-- .name -->
+<!-- = img "../images/speakers/stevebarnett.jpg" -->
+<!-- %h3 Steve Barnett -->
+<!-- %p Steve Barnett has a background in Maths and finance and started work as a Front End Developer in 2005, escaping to South Africa from his native England. He started at Unboxed Consulting in November 2012, and he’s most interested in the multi-device world and making the web accessible to all. You can find him at naga.co.za or on Twitter as @maxbarners. -->
+<!-- %li.workshop -->
+<!-- %h2 -->
+<!-- %a{href: '#workshop2', rel: 'workshops', class: 'fancybox'} AWS Workshop -->
+<!-- %p Designing and building a distributed application using AWS services -->
+<!-- %p.date Sat, 1 Feb -->
+<!-- #workshop2.workshop.detail -->
+<!-- .name -->
+<!-- %h2 Designing and building a distributed application using AWS services -->
+<!-- %p Amazon Web Services is pleased to present a workshop in Cape Town the weekend before the Rubyfuza conference. The hack-day will provide hands-on experience designing and building a fun distributed application using AWS services. -->
+<!-- %p The workshop is aimed at seasoned developers. Prior experience using AWS and our SDKs will be to your advantage; however they are well documented and easy to learn in the time you have available. -->
+<!-- %p We'll be building a procedural music generator. You'll build up a library of sound samples by interacting with a variety of AWS services, learning AWS best practices along the way, and combine those samples into a piece of music. -->
+<!-- %p Engineers from AWS will be on hand to help you design and build your system. They'll be doing the judging and will award some great prizes for the best piece of music, and the most creative applications. -->
+<!-- %p We will credit your AWS account with enough money to build your application, as well as play with AWS services after the workshop. -->
+<!-- %h4 Prerequisites: -->
+<!-- %ul.list -->
+<!-- %li Your own AWS account - this requires a credit-card, and it will not be possible to sign up for an account on the day. Please don't use one from your employer! -->
+<!-- %li A laptop with a development environment for your favourite language already configured -->
+<!-- %p -->
+<!-- It's important that you sign up for an AWS account before the event - please drop us an email at -->
+<!-- %a{href: 'mailto:aws-rubyfuza@amazon.com'} aws-rubyfuza@amazon.com -->
+<!-- with your 12-digit AWS account ID so we can credit your account. -->
+<!-- %h3.join -->
+<!-- %a{href: 'http://www.meetup.com/Rubyfuza/events/159132862/'} Join this workshop! -->
+<!-- .inner -->
+<!-- Facilitators: Allen Brown, Matthew Eddey, Gideon Klompje and Ronen Agranat. -->
+<!-- .name -->
+<!-- = img "../images/speakers/stevebarnett.jpg" -->
+<!-- %h3 Steve Barnett -->
+<!-- %p Steve Barnett has a background in Maths and finance and started work as a Front End Developer in 2005, escaping to South Africa from his native England. He started at Unboxed Consulting in November 2012, and he’s most interested in the multi-device world and making the web accessible to all. You can find him at naga.co.za or on Twitter as @maxbarners. -->
+<!-- %li.workshop -->
+<!-- %h2 -->
+<!-- %a{href: '#workshop3', rel: 'workshops', class: 'fancybox'} Functional Programming -->
+<!-- %p An Introduction to Functional Programming for Ruby Developers -->
+<!-- %p.date Sat, 8 Feb -->
+<!-- #workshop3.workshop.detail -->
+<!-- .name -->
+<!-- %h2 An Introduction to Functional Programming for Ruby Developers -->
+<!-- %p There is a lot of buzz and hype around functional programming at the moment.  Many claiming it is the only way to scale and write safe code in our multi-core world.  Some of it is true and some of it is hype.  What I've learnt is that functional programming makes us better object oriented developers.  On more than one occasion, FP has offered us a cleaner, sweeter solutions to non-trivial problems.  In this workshop, we will give a hands-on introduction to the main themes of FP, cutting through the hype, favouring practice over theory.  We will play with a few languages like Clojure, Scala, JavaScript (yes!) and maybe Haskell or F# too.  So bring your laptop along and join in. -->
+<!-- %h3.join -->
+<!-- %a{href: 'http://www.meetup.com/Rubyfuza/events/158373392/'} Join this workshop! -->
+<!-- .inner -->
+<!-- .name -->
+<!-- = img "../images/speakers/aslam.jpg" -->
+<!-- %h3 Aslam Khan -->
+<!-- %p -->
+<!-- Aslam Khan is a software developer for more years than South Africa is a democracy.  He believes that all of software is just design and values code as an expression of design. And the same goes for architecture too - it's all design.  The one thing he has learnt, though, is that design is hard, very hard.  As developers we need thinking tools, and different paradigms gives us that diversity, hence his interest in functional programming.  He is currently writing a book on functional programming for Manning.  If that doesn't bore you, then try his blog at -->
+<!-- %a{href: 'http://f3yourmind.net'} http://f3yourmind.net -->
+<!-- \. -->
+<!-- .name -->
+<!-- = img "../images/speakers/ryan.jpg" -->
+<!-- %h3 Ryan Lemmer -->
+<!-- %p -->
+<!-- Ryan Lemmer is a Cape Town based software developer. He believes that achieving the "soft" in software is the hardest part, that is, to make code that is pliable enough to withstand relentless change. Functional Programming offers some powerful tools, techniques and perspectives, towards achieving "soft" code. Ryan loves learning and facilitating learning in others. -->
+<!-- %li.workshop -->
+<!-- %h2 -->
+<!-- %a{href: '#workshop4', rel: 'workshops', class: 'fancybox'} Scrum Simulation -->
+<!-- %p A Scrum Simulation for newbies and experienced agilists -->
+<!-- %p.date Sat, 8 Feb -->
+<!-- #workshop4.workshop.detail -->
+<!-- .name -->
+<!-- %h2 A Scrum Simulation for Newbies and Experienced Agilists -->
+<!-- %p Most software companies are trying some form of an agile process these days, but often people follow the mechanics without understanding the reasons behind why certain things are done. -->
+<!-- %p Join us for a Scrum simulation using LEGO. We will build a product that needs to ship at the end of 2 sprints. We’ll go through each of the Scrum meetings: Backlog Grooming, Sprint Planning parts 1 & 2, Sprint Review and Sprint Retro. First we’ll explain the purpose of the meeting so you understand the reason for doing it, then you’ll get to do it, re-enforcing the learning. -->
+<!-- %p Even if you’ve been doing Scrum for some time, this will be a great refresher of the basics and an opportunity to ask questions about some of the subtleties of Scrum. -->
+<!-- %h3.join -->
+<!-- %a{href: 'http://www.meetup.com/Rubyfuza/events/158928422/'} Join this workshop! -->
+<!-- .inner -->
+<!-- .name -->
+<!-- = img "../images/speakers/Karen.jpg" -->
+<!-- %h3 Karen Greaves -->
+<!-- %p Karen is an agile coach and trainer, and one half of Growing Agile. She’s worked in software her whole career as a tester, developer, and various management roles. She was fed up of always delivering late and working overtime, even considering leaving the industry when Scrum saved her. Now she helps others recover from Waterfall and tries to help people have fun at work again. -->
+<!-- .name -->
+<!-- = img "../images/speakers/Sam.jpg" -->
+<!-- %h3 Sam Laing -->
+<!-- %p Sam is the other half of Growing Agile. Her personal motto is “Be Brave” and she embodies this by never saying no to a challenge, even if it’s scary.  In fact, she used to be terrified of public speaking, now she trains teams and speaks internationally at large conferences. She also started life as a developer, but now focuses more on the human side of software and how to get people to collaborate effectively. -->
+<!-- %li.workshop -->
+<!-- %h2 -->
+<!-- %a{href: '#workshop5', rel: 'workshops', class: 'fancybox'} Coderetreat -->
+<!-- %p An intensive practice event, focusing on the fundamentals of software development and design -->
+<!-- %p.date Sat, 8 Feb -->
+<!-- #workshop5.workshop.detail -->
+<!-- .name -->
+<!-- %h2 Coderetreat -->
+<!-- %p Coderetreat is a day-long, intensive practice event, focusing on the fundamentals of software development and design. -->
+<!-- %p By providing developers the opportunity to take part in focused practice, away from the pressures of 'getting things done', the coderetreat format has proven itself to be a highly effective means of skill improvement. -->
+<!-- %p Practicing the basic principles of modular and object-oriented design, developers can improve their ability to write code that minimizes the cost of change over time. -->
+<!-- %p And it's great fun at the same time! -->
+<!-- %h3.join -->
+<!-- %a{href: 'http://www.meetup.com/Rubyfuza/events/158933022/'} Join this workshop! -->
+<!-- &nbsp;&bull;&nbsp; -->
+<!-- %a{href: 'http://coderetreat.org/'} Learn more -->
+<!-- .inner -->
+<!-- Workshop facilitators to be announced. -->
+<!-- .name -->
+<!-- = img "../images/speakers/Karen.jpg" -->
+<!-- %h3 Karen Greaves -->
+<!-- %p Karen is an agile coach and trainer, and one half of Growing Agile. She’s worked in software her whole career as a tester, developer, and various management roles. She was fed up of always delivering late and working overtime, even considering leaving the industry when Scrum saved her. Now she helps others recover from Waterfall and tries to help people have fun at work again. -->
+<!-- .name -->
+<!-- = img "../images/speakers/Sam.jpg" -->
+<!-- %h3 Sam Laing -->
+<!-- %p Sam is the other half of Growing Agile. Her personal motto is “Be Brave” and she embodies this by never saying no to a challenge, even if it’s scary.  In fact, she used to be terrified of public speaking, now she trains teams and speaks internationally at large conferences. She also started life as a developer, but now focuses more on the human side of software and how to get people to collaborate effectively. -->
 <section id='venue'>
   <div class='wrapper'>
     <h1 class='heading'>
@@ -701,177 +578,140 @@
     <a class="more" href="mailto:info@rubyfuza.org?subject=Looking%20for%20accommodation">Find accommodation</a>
   </div>
 </section>
-
-
-
 <section id='sponsors'>
   <div class='wrapper'>
     <h1 class='heading'>
       <a name='sponsors'></a>
       <span>Sponsors</span>
     </h1>
-<!--     <ul class='sponsors-list'>
-      <li class='third'>
-        <a class='info fancybox' href='#hetzner' rel='sponsors' title='Hetzner, Trusted in Hosting'>
-          <img src='../images/logos/hetzner.png' />
-        </a>
-        <div class='row'>
-          <a href='http://www.hetzner.co.za' target='_blank' title='Hetzner, Trusted in Hosting'>hetzner.co.za</a>
-        </div>
-        <small>Ruby-level sponsor</small>
-        <div class='detail' id='hetzner'>
-          <a href='http://www.hetzner.co.za' target='_blank' title='Hetzner, Trusted in Hosting'>
-            <img class='square' src='../images/logos/hetzner2.png' />
-          </a>
-          <p>At Hetzner South Africa we are passionate about web hosting – it’s our core business and it’s what we do best. By consistently delivering excellent service and cost effective web hosting, dedicated servers and custom hosting solutions, Hetzner has exponentially grown its market share, making it the leading web hosting company in South Africa. Inspired by our brand promise ‘Trusted in Hosting’, we focus on providing efficient, sustainable business models, quality service and customer satisfaction. A key contributor to our success is our people. We aim for our teams to manage themselves rather than rely on several layers of hierarchy. We want to give our people the freedom to explore, innovate and create. We recognise that our customers expect reliability and good value from us and it remains our ongoing commitment to earn and retain their trust.</p>
-          <span class='right'>Ruby-level sponsor</span>
-          <a href='http://www.hetzner.co.za' target='_blank' title='Hetzner, Trusted in Hosting'>hetzner.co.za</a>
-        </div>
-      </li>
-      <li class='third'>
-        <a class='info fancybox' href='#madmimi' rel='sponsors' title='Mad Mimi'>
-          <img src='../images/logos/madmimi.png' />
-        </a>
-        <div class='row'>
-          <a href='http://www.madmimi.com' target='_blank' title='Mad Mimi'>madmimi.com</a>
-        </div>
-        <small>Ruby-level sponsor</small>
-        <div class='detail' id='madmimi'>
-          <a href='https://www.madmimi.com'>
-            <img class='square' src='../images/logos/madmimi2.png' />
-          </a>
-          <p>Mad Mimi is a simple, intelligent and powerful email marketing utility that anyone can use. Mad Mimi makes email marketing easy for the creator, and easier on the eyes for the receiver. With ground-breaking technology, Mad Mimi is the simplest way to create branded, well-designed newsletters and promotions. Sign up free today and get started with simple, lovely email marketing.</p>
-          <span class='right'>Ruby-level sponsor</span>
-          <a href='http://www.madmimi.com' target='_blank' title='Mad Mimi'>madmimi.com</a>
-        </div>
-      </li>
-      <li class='third'>
-        <a class='info fancybox' href='#platform45' rel='sponsors' title='Platform45'>
-          <img src='../images/logos/platform45.png' />
-        </a>
-        <div class='row'>
-          <a href='http://www.platform45.com' target='_blank' title='Platform45'>platform45.com</a>
-        </div>
-        <small>Ruby-level sponsor</small>
-        <div class='detail' id='platform45'>
-          <a href='http://platform45.com' target='_blank' title='Platform45'>
-            <img class='square' src='../images/logos/platform452.png' />
-          </a>
-          <p>At Platform45 we believe software is essential to the advancement of human potential. All businesses will, if they haven't already, become software businesses.</p>
-          <p>
-            We work with our clients to
-            <strong>create custom web and mobile software</strong>
-            that allows them to automate, innovate and ultimately engineer a better business.
-          </p>
-          <span class='right'>Ruby-level sponsor</span>
-          <a href='http://www.platform45.com' target='_blank' title='Platform45'>platform45.com</a>
-        </div>
-      </li>
-    </ul>
-    <ul class='sponsors-list'>
-      <li class='sixth'></li>
-      <li class='third'>
-        <a class='info fancybox' href='#amazon' rel='sponsors' title='Amazon Development Centre South Africa'>
-          <img src='../images/logos/adccpt.png' />
-        </a>
-        <div class='row'>
-          <a href='http://www.adccpt.com/?page_id=95' target='_blank' title='Amazon Development Centre South Africa'>www.adccpt.com</a>
-        </div>
-        <small>Sapphire-level and Workshop sponsor</small>
-        <div class='detail' id='amazon'>
-          <a href='http://www.adccpt.com/?page_id=95'>
-            <img class='square' src='../images/logos/adccpt2.png' />
-          </a>
-          <p>In 2006, Amazon Web Services (AWS) began offering IT infrastructure services to businesses in the form of web services -- now commonly known as cloud computing. One of the key benefits of cloud computing is the opportunity to replace up-front capital infrastructure expenses with low variable costs that scale with your business. With the Cloud, businesses no longer need to plan for and procure servers and other IT infrastructure weeks or months in advance. Instead, they can instantly spin up hundreds or thousands of servers in minutes and deliver results faster. Today, Amazon Web Services provides a highly reliable, scalable, low-cost infrastructure platform in the cloud that powers hundreds of thousands of businesses in 190 countries around the world.</p>
-          <p>
-            We have
-            <a href='http://www.adccpt.com/?page_id=19'>open roles available in Cape Town</a>
-            for:
-          </p>
-          <ul class='list'>
-            <li>Software Development Managers</li>
-            <li>Senior Software Developers</li>
-            <li>Cloud Support Engineers – Linux</li>
-          </ul>
-          <p>
-            If you have a background in Computer Science and are passionate about cloud computing, send your CV to
-            <a href='mailto:rubyfuza@amazon.com'>rubyfuza@amazon.com</a>
-          </p>
-          <p></p>
-          <span class='right'>Sapphire-level and Workshop sponsor</span>
-          <a href='http://www.adccpt.com/?page_id=95' target='_blank' title='Amazon Web Services'>www.adccpt.com</a>
-        </div>
-      </li>
-      <li class='third'>
-        <a class='info fancybox' href='#google' rel='sponsors' title='Google'>
-          <img src='../images/logos/google.png' />
-        </a>
-        <div class='row'>
-          <a href='http://developers.google.com' target='_blank' title='Google'>developers.google.com</a>
-        </div>
-        <small>Sapphire-level sponsor</small>
-        <div class='detail' id='google'>
-          <a href='http://developers.google.com'>
-            <img class='square' src='../images/logos/google2.png' />
-          </a>
-          <p>Google’s innovative search technologies connect millions of people around the world with information every day. Founded in 1998 by Stanford Ph.D. students Larry Page and Sergey Brin, Google today is a top web property in all major global markets. Google's mission in Africa is to make the internet an integral part of everyday life in Africa, by increasing its relevance and usefulness, eliminating access barriers for potential users, and developing products that are meaningful for the countries in the region. Google is headquartered in Silicon Valley with offices throughout the Americas, Europe, Africa and Asia.</p>
-          <p>
-            For more information, visit
-            <a href='http://developers.google.com'>developers.google.com</a>
-            , and follow us on Google+ at
-            <a href='https://plus.google.com/+GoogleDevelopers'>plus.google.com/+GoogleDevelopers</a>
-          </p>
-          <span class='right'>Sapphire-level sponsor</span>
-          <a href='http://developers.google.com' target='_blank' title='google Web Services'>developers.google.com</a>
-        </div>
-      </li>
-      <li class='sixth'></li>
-    </ul>
-    <ul class='sponsors-list'>
-      <li class='sixth'></li>
-      <li class='third'>
-        <a class='info fancybox' href='#github' rel='sponsors' title='Github'>
-          <img src='../images/logos/github_logo.png' />
-        </a>
-        <div class='row'>
-          <a href='https://www.github.com' target='_blank' title='Github'>github.com</a>
-        </div>
-        <small>Drinkup sponsor</small>
-        <div class='detail' id='github'>
-          <a href='http://github.com'>
-            <img class='square' src='../images/logos/github_logo2.png' />
-          </a>
-          <p>GitHub is the best place to share code with friends, co-workers, classmates, and complete strangers. Over two million people use GitHub to build amazing things together.</p>
-          <p>With the collaborative features of GitHub.com, our desktop and mobile apps, and GitHub Enterprise, it has never been easier for individuals and teams to write better code, faster.</p>
-          <p>Originally founded by Tom Preston-Werner, Chris Wanstrath, and PJ Hyett to simplify sharing code, GitHub has grown into the largest code host in the world.</p>
-          <span class='right'>Drinkup sponsor</span>
-          <a href='http://www.github.com' target='_blank' title='Github'>github.com</a>
-        </div>
-      </li>
-      <li class='third'>
-        <a class='info fancybox' href='#unboxedconsulting' rel='sponsors' title='Unboxed Consulting'>
-          <img src='../images/logos/unboxedconsulting.png' style='width:60%' />
-        </a>
-        <div class='row'>
-          <a href='http://unboxedconsulting.com' target='_blank' title='Unboxed Consulting'>unboxedconsulting.com</a>
-        </div>
-        <small>Emerald-level sponsor</small>
-        <div class='detail' id='unboxedconsulting'>
-          <a href='http://unboxedconsulting.com'>
-            <img class='square' src='../images/logos/unboxedconsulting2.png' />
-          </a>
-          <p>Unboxed Consulting build innovative and robust applications. We have a solid and well-honed development process that we are very proud of. Our first love is Ruby on Rails but we like to play the field as well. Based in Cape Town and London we work with large ambitious clients and also inspiring startups in both South Africa and the UK.</p>
-          <span class='right'>Emerald-level sponsor</span>
-          <a href='http://unboxedconsulting.com' target='_blank' title='Unboxed Consulting'>unboxedconsulting.com</a>
-        </div>
-      </li>
-      <li class='sixth'></li>
-    </ul> -->
-
-
-   <!-- older stuff is in haml gash danit! -->
-
-
+    <!-- %ul.sponsors-list -->
+    <!-- %li.third -->
+    <!-- %a{:href=>"#hetzner", :class=>"info fancybox", rel: 'sponsors', :title=>"Hetzner, Trusted in Hosting"} -->
+    <!-- %img{:src=>"../images/logos/hetzner.png"} -->
+    <!-- .row -->
+    <!-- %a{:href=>"http://www.hetzner.co.za", :target=>"_blank", :title=>"Hetzner, Trusted in Hosting"} hetzner.co.za -->
+    <!-- / %span &#9679; -->
+    <!-- / %a{:href=>"#hetzner", :class=>"info fancybox", rel: 'sponsors'} info -->
+    <!-- %small Ruby-level sponsor -->
+    <!-- #hetzner.detail -->
+    <!-- %a{:href=>"http://www.hetzner.co.za", :target=>"_blank", :title=>"Hetzner, Trusted in Hosting"} -->
+    <!-- %img{:src=>"../images/logos/hetzner2.png", :class=>"square"} -->
+    <!-- %p At Hetzner South Africa we are passionate about web hosting – it’s our core business and it’s what we do best. By consistently delivering excellent service and cost effective web hosting, dedicated servers and custom hosting solutions, Hetzner has exponentially grown its market share, making it the leading web hosting company in South Africa. Inspired by our brand promise ‘Trusted in Hosting’, we focus on providing efficient, sustainable business models, quality service and customer satisfaction. A key contributor to our success is our people. We aim for our teams to manage themselves rather than rely on several layers of hierarchy. We want to give our people the freedom to explore, innovate and create. We recognise that our customers expect reliability and good value from us and it remains our ongoing commitment to earn and retain their trust. -->
+    <!-- %span.right Ruby-level sponsor -->
+    <!-- %a{:href=>"http://www.hetzner.co.za", :target=>"_blank", :title=>"Hetzner, Trusted in Hosting"} hetzner.co.za -->
+    <!-- %li.third -->
+    <!-- %a{:href=>"#madmimi", :class=>"info fancybox", rel: 'sponsors', :title=>"Mad Mimi"} -->
+    <!-- %img{:src=>"../images/logos/madmimi.png"} -->
+    <!-- .row -->
+    <!-- %a{:href=>"http://www.madmimi.com", :target=>"_blank", :title=>"Mad Mimi"} madmimi.com -->
+    <!-- / %span &#9679; -->
+    <!-- / %a{:href=>"#madmimi", :class=>"info fancybox", rel: 'sponsors'} info -->
+    <!-- %small Ruby-level sponsor -->
+    <!-- #madmimi.detail -->
+    <!-- %a{:href=>"https://www.madmimi.com"} -->
+    <!-- %img{:src=>"../images/logos/madmimi2.png", :class=>"square"} -->
+    <!-- %p Mad Mimi is a simple, intelligent and powerful email marketing utility that anyone can use. Mad Mimi makes email marketing easy for the creator, and easier on the eyes for the receiver. With ground-breaking technology, Mad Mimi is the simplest way to create branded, well-designed newsletters and promotions. Sign up free today and get started with simple, lovely email marketing. -->
+    <!-- %span.right Ruby-level sponsor -->
+    <!-- %a{:href=>"http://www.madmimi.com", :target=>"_blank", :title=>"Mad Mimi"} madmimi.com -->
+    <!-- %li.third -->
+    <!-- %a{:href=>"#platform45", :class=>"info fancybox", rel: 'sponsors', :title=>"Platform45"} -->
+    <!-- %img{:src=>"../images/logos/platform45.png"} -->
+    <!-- .row -->
+    <!-- %a{:href=>"http://www.platform45.com", :target=>"_blank", :title=>"Platform45"} platform45.com -->
+    <!-- / %span &#9679; -->
+    <!-- / %a{:href=>"#platform45", :class=>"info fancybox", rel: 'sponsors'} info -->
+    <!-- %small Ruby-level sponsor -->
+    <!-- #platform45.detail -->
+    <!-- %a{:href=>"http://platform45.com", :target=>"_blank", :title=>"Platform45"} -->
+    <!-- %img{:src=>"../images/logos/platform452.png", :class=>"square"} -->
+    <!-- %p At Platform45 we believe software is essential to the advancement of human potential. All businesses will, if they haven't already, become software businesses. -->
+    <!-- %p -->
+    <!-- We work with our clients to -->
+    <!-- %strong create custom web and mobile software -->
+    <!-- that allows them to automate, innovate and ultimately engineer a better business. -->
+    <!-- %span.right Ruby-level sponsor -->
+    <!-- %a{:href=>"http://www.platform45.com", :target=>"_blank", :title=>"Platform45"} platform45.com -->
+    <!-- %ul.sponsors-list -->
+    <!-- %li.sixth -->
+    <!-- %li.third -->
+    <!-- %a{:href=>"#amazon", :class=>"info fancybox", rel: 'sponsors', :title=>"Amazon Development Centre South Africa"} -->
+    <!-- %img{:src=>"../images/logos/adccpt.png"} -->
+    <!-- .row -->
+    <!-- %a{:href=>"http://www.adccpt.com/?page_id=95", :target=>"_blank", :title=>"Amazon Development Centre South Africa"} www.adccpt.com -->
+    <!-- / %span &#9679; -->
+    <!-- / %a{:href=>"#amazon", :class=>"info fancybox", rel: 'sponsors'} info -->
+    <!-- %small Sapphire-level and Workshop sponsor -->
+    <!-- #amazon.detail -->
+    <!-- %a{:href=>"http://www.adccpt.com/?page_id=95"} -->
+    <!-- %img{:src=>"../images/logos/adccpt2.png", :class=>"square"} -->
+    <!-- %p In 2006, Amazon Web Services (AWS) began offering IT infrastructure services to businesses in the form of web services -- now commonly known as cloud computing. One of the key benefits of cloud computing is the opportunity to replace up-front capital infrastructure expenses with low variable costs that scale with your business. With the Cloud, businesses no longer need to plan for and procure servers and other IT infrastructure weeks or months in advance. Instead, they can instantly spin up hundreds or thousands of servers in minutes and deliver results faster. Today, Amazon Web Services provides a highly reliable, scalable, low-cost infrastructure platform in the cloud that powers hundreds of thousands of businesses in 190 countries around the world. -->
+    <!-- %p -->
+    <!-- We have -->
+    <!-- %a{:href=>'http://www.adccpt.com/?page_id=19'} open roles available in Cape Town -->
+    <!-- for: -->
+    <!-- %ul.list -->
+    <!-- %li Software Development Managers -->
+    <!-- %li Senior Software Developers -->
+    <!-- %li Cloud Support Engineers – Linux -->
+    <!-- %p -->
+    <!-- If you have a background in Computer Science and are passionate about cloud computing, send your CV to -->
+    <!-- %a{:href => 'mailto:rubyfuza@amazon.com'} rubyfuza@amazon.com -->
+    <!-- %p -->
+    <!-- %span.right Sapphire-level and Workshop sponsor -->
+    <!-- %a{:href=>"http://www.adccpt.com/?page_id=95", :target=>"_blank", :title=>"Amazon Web Services"} www.adccpt.com -->
+    <!-- %li.third -->
+    <!-- %a{:href=>"#google", :class=>"info fancybox", rel: 'sponsors', :title=>"Google"} -->
+    <!-- %img{:src=>"../images/logos/google.png"} -->
+    <!-- .row -->
+    <!-- %a{:href=>"http://developers.google.com", :target=>"_blank", :title=>"Google"} developers.google.com -->
+    <!-- / %span &#9679; -->
+    <!-- / %a{:href=>"#google", :class=>"info fancybox", rel: 'sponsors'} info -->
+    <!-- %small Sapphire-level sponsor -->
+    <!-- #google.detail -->
+    <!-- %a{:href=>"http://developers.google.com"} -->
+    <!-- %img{:src=>"../images/logos/google2.png", :class=>"square"} -->
+    <!-- %p Google’s innovative search technologies connect millions of people around the world with information every day. Founded in 1998 by Stanford Ph.D. students Larry Page and Sergey Brin, Google today is a top web property in all major global markets. Google's mission in Africa is to make the internet an integral part of everyday life in Africa, by increasing its relevance and usefulness, eliminating access barriers for potential users, and developing products that are meaningful for the countries in the region. Google is headquartered in Silicon Valley with offices throughout the Americas, Europe, Africa and Asia. -->
+    <!-- %p -->
+    <!-- For more information, visit -->
+    <!-- %a{ :href => 'http://developers.google.com' } developers.google.com -->
+    <!-- , and follow us on Google+ at -->
+    <!-- %a{ :href => 'https://plus.google.com/+GoogleDevelopers' } plus.google.com/+GoogleDevelopers -->
+    <!-- %span.right Sapphire-level sponsor -->
+    <!-- %a{:href=>"http://developers.google.com", :target=>"_blank", :title=>"google Web Services"} developers.google.com -->
+    <!-- %li.sixth -->
+    <!-- %ul.sponsors-list -->
+    <!-- %li.sixth -->
+    <!-- %li.third -->
+    <!-- %a{:href=>"#github", :class=>"info fancybox", rel: 'sponsors', :title=>"Github"} -->
+    <!-- %img{:src=>"../images/logos/github_logo.png"} -->
+    <!-- .row -->
+    <!-- %a{:href=>"https://www.github.com", :target=>"_blank", :title=>"Github"} github.com -->
+    <!-- / %span &#9679; -->
+    <!-- / %a{:href=>"#github", :class=>"info fancybox", rel: 'sponsors'} info -->
+    <!-- %small Drinkup sponsor -->
+    <!-- #github.detail -->
+    <!-- %a{:href=>"http://github.com"} -->
+    <!-- %img{:src=>"../images/logos/github_logo2.png", :class=>"square"} -->
+    <!-- %p GitHub is the best place to share code with friends, co-workers, classmates, and complete strangers. Over two million people use GitHub to build amazing things together. -->
+    <!-- %p With the collaborative features of GitHub.com, our desktop and mobile apps, and GitHub Enterprise, it has never been easier for individuals and teams to write better code, faster. -->
+    <!-- %p Originally founded by Tom Preston-Werner, Chris Wanstrath, and PJ Hyett to simplify sharing code, GitHub has grown into the largest code host in the world. -->
+    <!-- %span.right Drinkup sponsor -->
+    <!-- %a{:href=>"http://www.github.com", :target=>"_blank", :title=>"Github"} github.com -->
+    <!-- %li.third -->
+    <!-- %a{:href=>"#unboxedconsulting", :class=>"info fancybox", rel: 'sponsors', :title=>"Unboxed Consulting"} -->
+    <!-- %img{:src=>"../images/logos/unboxedconsulting.png", :style=>'width:60%'} -->
+    <!-- .row -->
+    <!-- %a{:href=>"http://unboxedconsulting.com", :target=>"_blank", :title=>"Unboxed Consulting"} unboxedconsulting.com -->
+    <!-- / %span &#9679; -->
+    <!-- / %a{:href=>"#unboxedconsulting", :class=>"info fancybox", rel: 'sponsors'} info -->
+    <!-- %small Emerald-level sponsor -->
+    <!-- #unboxedconsulting.detail -->
+    <!-- %a{:href=>"http://unboxedconsulting.com"} -->
+    <!-- %img{:src=>"../images/logos/unboxedconsulting2.png", :class=>"square"} -->
+    <!-- %p Unboxed Consulting build innovative and robust applications. We have a solid and well-honed development process that we are very proud of. Our first love is Ruby on Rails but we like to play the field as well. Based in Cape Town and London we work with large ambitious clients and also inspiring startups in both South Africa and the UK. -->
+    <!-- %span.right Emerald-level sponsor -->
+    <!-- %a{:href=>"http://unboxedconsulting.com", :target=>"_blank", :title=>"Unboxed Consulting"} unboxedconsulting.com -->
+    <!-- %li.sixth -->
     <!-- %ul.sponsors-list -->
     <!-- %li.third -->
     <!-- %a{:href=>"#amazon", :class=>"info fancybox", rel: 'sponsors', :title=>"Amazon Web Services"} -->
@@ -988,82 +828,60 @@
     <!-- %p Shuntyard Technologies specialises in web based systems using Ruby on Rails and related technologies. We are an innovative team with a proven track record in new development and the rescue of legacy systems. We love what we do and it shows in our work. We are based in Cape Town with clients as far afield as Brazil, China, Australia and New Zealand. -->
     <!-- %span.right Emerald-level sponsor -->
     <!-- %a{:href=>"http://shuntyard.co.za", :target=>"_blank", :title=>"Shuntyard Techologies"} shuntyard.co.za -->
-
-
-  <!-- Older sponsers are above written in haml gash danit -->
-
-
-<!--     <ul class='sponsors-list'>
-      <li class='eighth'></li>
-      <li class='fourth'>
-        <a class='info fancybox' href='#vulcanlabs' rel='sponsors' title='Vulcan Labs'>
-          <img src='../images/logos/vulcanlabs.png' />
-        </a>
-        <div class='row'>
-          <a href='http://www.vulcanlabs.com' target='_blank' title='Vulcan Labs'>vulcanlabs.com</a>
-        </div>
-        <small>Topaz-level sponsor</small>
-        <div class='detail' id='vulcanlabs'>
-          <a href='http://www.vulcanlabs.com' target='_blank' title='Vulcan Labs'>
-            <img class='square' src='../images/logos/vulcanlabs2.png' />
-          </a>
-          <p>At Vulcan Labs we go above and beyond to ensure our clients get the best solution for their unique challenge. Getting it right through clear communication channels, regular consultations and keeping our clients up to date.</p>
-          <span class='right'>Topaz-level sponsor</span>
-          <a href='http://www.vulcanlabs.com' target='_blank' title='Vulcan Labs'>vulcanlabs.com</a>
-        </div>
-      </li>
-      <li class='fourth'>
-        <a class='info fancybox' href='#polyglot' rel='sponsors' title='Polyglot Programming Inc'>
-          <img src='../images/logos/polyglot.png' />
-        </a>
-        <div class='row'>
-          <a href='http://www.polyglotprogramminginc.com' target='_blank' title='Polyglot Programming Inc'>polyglotprogramminginc.com</a>
-        </div>
-        <small>Topaz-level sponsor</small>
-        <div class='detail' id='polyglot'>
-          <a href='http://www.polyglotprogramminginc.com' target='_blank' title='Polyglot Programming Inc'>
-            <img class='square' src='../images/logos/polyglot2.png' />
-          </a>
-          <p>
-            Polyglot Programming is an Atlanta based software company with strong
-            South African ties. Managing partners Lance and Marlene, an
-            ex-Pretorian, lead a team of developers who are passionate about Ruby
-            on Rails and other best in breed technologies. We work with startups
-            and companies to develop prototypes, launch ideas, scale existing web
-            applications and supplement internal development teams. Our Agile
-            development process focuses on testing and ensures that we deliver
-            feature-rich applications quickly and within budget. When they're not
-            writing code, you'll find the team "purr programming" with resident
-            company cat Allie or sampling wine and cheering for the Springboks.
-          </p>
-          <span class='right'>Topaz-level sponsor</span>
-          <a href='http://www.polyglotprogramminginc.com' target='_blank' title='Polyglot Programming Inc'>polyglotprogramminginc.com</a>
-        </div>
-      </li>
-      <li class='fourth'>
-        <a class='info fancybox' href='#africanstay' rel='sponsors' title='African Stay'>
-          <img src='../images/logos/africanstay.png' />
-        </a>
-        <div class='row'>
-          <a href='http://www.africanstay.co.za' target='_blank' title='African Stay'>africanstay.co.za</a>
-        </div>
-        <small>Conference organization</small>
-        <div class='detail' id='africanstay'>
-          <a href='http://www.africanstay.co.za' target='_blank' title='African Stay'>
-            <img class='square' src='../images/logos/africanstay2.png' />
-          </a>
-          <p>African Stay is a reputable and reliable reservations company that arranges your accommodation in luxurious safari lodges, camps and exclusive hotels throughout Southern Africa.The accommodation we represent all offer unique facilities. Most especially, you will enjoy rare splendour and superb hospitality to make your visit unforgettable.</p>
-          <span class='right'>Conference organization sponsor</span>
-          <a href='http://www.africanstay.co.za' target='_blank' title='African Stay'>africanstay.co.za</a>
-        </div>
-      </li>
-    </ul>
- -->
-
-    <!-- siyelo stuff below seems as if they where a sponser at one time, feeling a come back -->
-
-
-
+    <!-- %ul.sponsors-list -->
+    <!-- %li.eighth -->
+    <!-- %li.fourth -->
+    <!-- %a{:href=>"#vulcanlabs", :class=>"info fancybox", rel: 'sponsors', :title=>"Vulcan Labs"} -->
+    <!-- %img{:src=>"../images/logos/vulcanlabs.png"} -->
+    <!-- .row -->
+    <!-- %a{:href=>"http://www.vulcanlabs.com", :target=>"_blank", :title=>"Vulcan Labs"} vulcanlabs.com -->
+    <!-- / %span &#9679; -->
+    <!-- / %a{:href=>"#vulcanlabs", :class=>"info fancybox", rel: 'sponsors'} info -->
+    <!-- %small Topaz-level sponsor -->
+    <!-- #vulcanlabs.detail -->
+    <!-- %a{:href=>"http://www.vulcanlabs.com", :target=>"_blank", :title=>"Vulcan Labs"} -->
+    <!-- %img{:src=>"../images/logos/vulcanlabs2.png", :class=>"square"} -->
+    <!-- %p At Vulcan Labs we go above and beyond to ensure our clients get the best solution for their unique challenge. Getting it right through clear communication channels, regular consultations and keeping our clients up to date. -->
+    <!-- %span.right Topaz-level sponsor -->
+    <!-- %a{:href=>"http://www.vulcanlabs.com", :target=>"_blank", :title=>"Vulcan Labs"} vulcanlabs.com -->
+    <!-- %li.fourth -->
+    <!-- %a{:href=>"#polyglot", :class=>"info fancybox", rel: 'sponsors', :title=>"Polyglot Programming Inc"} -->
+    <!-- %img{:src=>"../images/logos/polyglot.png"} -->
+    <!-- .row -->
+    <!-- %a{:href=>"http://www.polyglotprogramminginc.com", :target=>"_blank", :title=>"Polyglot Programming Inc"} polyglotprogramminginc.com -->
+    <!-- / %span &#9679; -->
+    <!-- / %a{:href=>"#polyglot", :class=>"info fancybox", rel: 'sponsors'} info -->
+    <!-- %small Topaz-level sponsor -->
+    <!-- #polyglot.detail -->
+    <!-- %a{:href=>"http://www.polyglotprogramminginc.com", :target=>"_blank", :title=>"Polyglot Programming Inc"} -->
+    <!-- %img{:src=>"../images/logos/polyglot2.png", :class=>"square"} -->
+    <!-- %p -->
+    <!-- Polyglot Programming is an Atlanta based software company with strong -->
+    <!-- South African ties. Managing partners Lance and Marlene, an -->
+    <!-- ex-Pretorian, lead a team of developers who are passionate about Ruby -->
+    <!-- on Rails and other best in breed technologies. We work with startups -->
+    <!-- and companies to develop prototypes, launch ideas, scale existing web -->
+    <!-- applications and supplement internal development teams. Our Agile -->
+    <!-- development process focuses on testing and ensures that we deliver -->
+    <!-- feature-rich applications quickly and within budget. When they're not -->
+    <!-- writing code, you'll find the team "purr programming" with resident -->
+    <!-- company cat Allie or sampling wine and cheering for the Springboks. -->
+    <!-- %span.right Topaz-level sponsor -->
+    <!-- %a{:href=>"http://www.polyglotprogramminginc.com", :target=>"_blank", :title=>"Polyglot Programming Inc"} polyglotprogramminginc.com -->
+    <!-- %li.fourth -->
+    <!-- %a{:href=>"#africanstay", :class=>"info fancybox", rel: 'sponsors', :title=>"African Stay"} -->
+    <!-- %img{:src=>"../images/logos/africanstay.png"} -->
+    <!-- .row -->
+    <!-- %a{:href=>"http://www.africanstay.co.za", :target=>"_blank", :title=>"African Stay"} africanstay.co.za -->
+    <!-- / %span &#9679; -->
+    <!-- / %a{:href=>"#africanstay", :class=>"info fancybox", rel: 'sponsors'} info -->
+    <!-- %small Conference organization -->
+    <!-- #africanstay.detail -->
+    <!-- %a{:href=>"http://www.africanstay.co.za", :target=>"_blank", :title=>"African Stay"} -->
+    <!-- %img{:src=>"../images/logos/africanstay2.png", :class=>"square"} -->
+    <!-- %p African Stay is a reputable and reliable reservations company that arranges your accommodation in luxurious safari lodges, camps and exclusive hotels throughout Southern Africa.The accommodation we represent all offer unique facilities. Most especially, you will enjoy rare splendour and superb hospitality to make your visit unforgettable. -->
+    <!-- %span.right Conference organization sponsor -->
+    <!-- %a{:href=>"http://www.africanstay.co.za", :target=>"_blank", :title=>"African Stay"} africanstay.co.za -->
     <!-- %li.fourth -->
     <!-- %a{:href=>"#siyelo", :class=>"info fancybox", rel: 'sponsors', :title=>"Siyelo Software"} -->
     <!-- %img{:src=>"../images/logos/siyelo.png"} -->
@@ -1094,9 +912,6 @@
     <!-- %p Originally founded by Tom Preston-Werner, Chris Wanstrath, and PJ Hyett to simplify sharing code, GitHub has grown into the largest code host in the world. -->
     <!-- %span.right Drinkup sponsor -->
     <!-- %a{:href=>"http://www.github.com", :target=>"_blank", :title=>"Github"} github.com -->
-
-
-
     <h2 class='highlight'>
       Interested in sponsoring this event?
       Check out the
@@ -1152,7 +967,7 @@
       |
       <a href="https://facebook.com/rubyfuza">Like us on Facebook</a>
       |
-      <a href="/">Join us on Lanyrd</a>
+      <a href="http://lanyrd.com/2014/rubyfuza/">Join us on Lanyrd</a>
       |
       <a href="mailto:info@rubyfuza.org">Email us</a>
       <p>
