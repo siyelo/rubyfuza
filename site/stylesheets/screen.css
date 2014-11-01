@@ -1017,13 +1017,13 @@ nav#main a {
 }
 /* line 267, /Users/marc/Projects/Rubyfuza/rubyfuza/src/stylesheets/partials/_content.sass */
 #venue img {
-  border-top: 5px solid white;
-  border-bottom: 5px solid white;
+  border: 5px solid white;
   margin: 10px 0 30px;
   width: 100%;
 }
-/* line 272, /Users/marc/Projects/Rubyfuza/rubyfuza/src/stylesheets/partials/_content.sass */
-#venue .rounded {
+/* line 271, /Users/marc/Projects/Rubyfuza/rubyfuza/src/stylesheets/partials/_content.sass */
+#venue .map {
+  border: 5px solid white;
   margin: 0 20px 0 0;
   max-width: 200px;
 }
