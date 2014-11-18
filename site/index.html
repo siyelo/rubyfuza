@@ -545,15 +545,29 @@
       <span>Venue</span>
     </h1>
     <h2>
-      <a href="https://www.capetown.gov.za/en/Pages/default.aspx">Cape Town</a>
+      <a href="http://www.lagoonbeachhotel.co.za/">Lagoon Beach Hotel, Cape Town</a>
     </h2>
-    <img alt="1280px cape town cbd tblmnt" src="../images/1280px-Cape_Town_CBD_TblMnt.jpg"/>
+    <img alt="Cape town lagoon beach" src="../images/cape_town_lagoon_beach.png"/>
     <div class='map left'>
-      <iframe class='left' frameborder='0' height='200' marginheight='0' marginwidth='0' scrolling='no' src='http://maps.google.com/?ie=UTF8&amp;t=m&amp;ll=-33.919503,18.420897&amp;spn=0.029843,0.066047&amp;z=16&amp;output=embed' width='200'></iframe>
+      <script src='http://maps.google.com/maps/api/js?sensor=false' type='text/javascript'></script>
+      <div style='overflow:hidden;height:200px;width:200px;'>
+        <div id='gmap_canvas' style='height:200px;width:200px;'></div>
+        <style type='text/css'>
+          /*<![CDATA[*/
+            #gmap_canvas img{max-width:none!important;background:none!important}
+          /*]]>*/
+        </style>
+        <a class='google-map-code' href='http://goertz-gutschein-map.com' id='get-map-data'>unterschiedlichsten</a>
+      </div>
+      <script type='text/javascript'>
+        //<![CDATA[
+          function init_map(){var myOptions = {zoom:15,center:new google.maps.LatLng(-33.891698,18.48435100000006),mapTypeId: google.maps.MapTypeId.ROADMAP};map = new google.maps.Map(document.getElementById("gmap_canvas"), myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(-33.891698, 18.48435100000006)});infowindow = new google.maps.InfoWindow({content:"<b>The Lagoon Beach Hotel</b><br/>Lagoon Beach Drive<br/> Cape Town" });google.maps.event.addListener(marker, "click", function(){infowindow.open(map,marker);});}google.maps.event.addDomListener(window, 'load', init_map);
+        //]]>
+      </script>
     </div>
-    <p>Cape town, Technological hub of Southern Africa.</p>
-    <p>We are currently looking for a new venue to accommodate the ever growing Rubyfuza event! The city’s many major tourist attractions, such as Table Mountain, Robben Island and the V&A Waterfront, are also within easy access from the hotel. Other notable landmarks nearby include the Cape Town International Convention Centre, and the Green Point Stadium, which was constructed for the 2010 FIFA World Cup. The stadium is now home to many other major sports tournaments.</p>
-    <a href="https://www.google.co.za/maps/place/Cape+Town/@-33.9149861,18.6560594,9z/data=!3m1!4b1!4m2!3m1!1s0x1dcc500f8826eed7:0x687fe1fc2828aa87?hl=en" target="rubyfuza_map">View Map</a>
+    <p>Lagoon beach hotel, Cape town.</p>
+    <p>Lagoon Beach Hotel in Cape Town is where it all comes together beautifully. Situated on Lagoon Beach, it is the only hotel in Cape Town with direct beach access! The city’s many major tourist attractions, such as Table Mountain, Robben Island and the V&A Waterfront, are also within easy access from the hotel. Other notable landmarks nearby include the Cape Town International Convention Centre, and the Green Point Stadium, which was constructed for the 2010 FIFA World Cup. The stadium is now home to many other major sports tournaments.</p>
+    <a href="https://maps.google.com/maps?f=q&source=embed&hl=en&geocode=&q=Lagoon+Beach+Hotel,+Marine+Drive,+Cape+Town,+Western+Cape,+South+Africa&aq=0&oq=Lagoon+Beach+Hotel&sll=37.0625,-95.677068&sspn=39.592876,92.285156&ie=UTF8&hq=Lagoon+Beach+Hotel,+Marine+Drive,+Cape+Town,+Western+Cape,+South+Africa&t=m&cid=9361034554452866999&hnear=&ll=-33.879965,18.490763&spn=0.036626,0.051413&z=14&iwloc=A" target="rubyfuza_map">View Map</a>
     <a class="more" href="mailto:info@rubyfuza.org?subject=Looking%20for%20accommodation">Find accommodation</a>
   </div>
 </section>
