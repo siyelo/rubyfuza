@@ -7,13 +7,185 @@
     %ul
       %li.speaker
         .rounded
-          %a{href: 'http://cfp.rubyfuza.org', rel: 'speaker_image', class: 'fancybox'}
-            = img "../images/speakers/you.png"
-          %a{:href=>"https://twitter.com/rubyfuza", :class=>"twitter"}= img "../images/twitter.png"
-          %a{:href=>"https://github.com/siyelo/rubyfuza", :class=>"github"}= img "../images/github.png"
+          %a{href: '#speaker1', rel: 'speaker_image', class: 'fancybox'}
+            = img "../images/speakers/2015/brendon_mclean.jpg"
+          %a{:href=>"https://twitter.com/brendon9x", :class=>"twitter"}= img "../images/twitter.png"
+          %a{:href=>"https://github.com/brendon9x", :class=>"github"}= img "../images/github.png"
         %h2
-          %a{href: 'http://cfp.rubyfuza.org', rel: 'speakers', class: 'fancybox'} You?
-        %p We're looking for speakers
+          %a{href: '#speaker1', rel: 'speakers', class: 'fancybox'} Brendon McLean
+        %p Extending Ruby by harnessing other languages
+
+        #speaker1.detail
+          .links.right
+            %a{:href=>"https://twitter.com/brendon9x", :class=>"twitter"}= img "../images/twitter.png"
+            %a{:href=>"https://github.com/brendon9x", :class=>"github"}= img "../images/github.png"
+          .name
+            = img "../images/speakers/2015/brendon_mclean.jpg"
+            %h2 Brendon McLean
+          .inner
+            %p Brendon McLean studied engineering because his career guidance councillor told him there were no jobs in software. He's been writing software ever since. He narrowly escaped a verbose career in enterprise Java when he was offered the role of heading up development at Intellection, a start-up in market research analytics. He jumped at the opportunity and helped build their data analytics platform for market research in Ruby.
+            %h3 Extending Ruby by harnessing other languages
+            %p What do you do when your Ruby startup takes off and you realise that Ruby might not be best suited for everything? This talk covers our initial attempts to use Ruby as a data analytics platform, and how we ultimately ended up solving the problem using ideas from LISP and ActiveRecord scopes to bring the power and performance of data science languages to Ruby. We will also cover how Ruby can learn from other languages, and why Ruby is still our language of choice.
+
+      %li.speaker
+        .rounded
+          %a{href: '#speaker2', rel: 'speaker_image', class: 'fancybox'}
+            = img "../images/speakers/2015/chris_stefano.jpg"
+          %a{:href=>"https://twitter.com/virtstaticvoid", :class=>"twitter"}= img "../images/twitter.png"
+          %a{:href=>"https://github.com/virtualstaticvoid", :class=>"github"}= img "../images/github.png"
+        %h2
+          %a{href: '#speaker1', rel: 'speakers', class: 'fancybox'} Chris Stefano
+        %p Riveting Rails
+
+        #speaker2.detail
+          .links.right
+            %a{:href=>"https://twitter.com/virtstaticvoid", :class=>"twitter"}= img "../images/twitter.png"
+            %a{:href=>"https://github.com/virtualstaticvoid", :class=>"github"}= img "../images/github.png"
+          .name
+            = img "../images/speakers/2015/chris_stefano.jpg"
+            %h2 Chris Stefano
+          .inner
+            %p Eternal newbie, software developer, solutions architect and open source contributor. Currently development director at StatPro and architect of their next generation cloud-based financial analytics platform, R+.
+            %h3 Riveting Rails
+            %p Rails is a rich framework for developing web applications; following the Ruby mantra of "developer happiness"; it provides an elegant approach to structuring code and functionality to achieve this.
+            %p However, there are times when Rails isn't enough, particularly when applications are complex, have lots of functional requirements and a large code base. The talk discusses approaches for extending Rails for continued developer happiness in tackling more complex problems
+
+      %li.speaker
+        .rounded
+          %a{href: '#speaker3', rel: 'speaker_image', class: 'fancybox'}
+            = img "../images/speakers/2015/garren_smith.jpg"
+          %a{:href=>"https://twitter.com/garrensmith", :class=>"twitter"}= img "../images/twitter.png"
+          %a{:href=>"https://github.com/garrensmith", :class=>"github"}= img "../images/github.png"
+        %h2
+          %a{href: '#speaker1', rel: 'speakers', class: 'fancybox'} Garren Smith
+        %p Introducing Couchdb 2.0.
+
+        #speaker3.detail
+          .links.right
+            %a{:href=>"https://twitter.com/garrensmith", :class=>"twitter"}= img "../images/twitter.png"
+            %a{:href=>"https://github.com/garrensmith", :class=>"github"}= img "../images/github.png"
+          .name
+            = img "../images/speakers/2015/garren_smith.jpg"
+            %h2 Garren Smith
+          .inner
+            %p Garren is a JavaScript fanatic. As a CouchDB Committer, he has spent the last year working on Fauxton, the new CouchDB Web Interface. He is the founder of Red Comet Labs, where he works as a consultant developer and is a regular contributor to OpenSource code. Garren is also the creator of Classroom 7, an online course building application. He loves living under the African sun in Johannesburg, South Africa.
+            %h3 Introducing Couchdb 2.0.
+            %p CouchDB is a NoSQL database that completely embraces the web. It will soon be reaching a major milestone, CouchDB 2.0, which has support for clustering with DynamoDB-inspired read/write semantics. This talk will introduce the new features, go through some use cases for CouchDB, and demonstrate how to combine PouchDB and CouchDB for amazing offline-first web applications.
+
+      %li.speaker
+        .rounded
+          %a{href: '#speaker4', rel: 'speaker_image', class: 'fancybox'}
+            = img "../images/speakers/2015/jackline_mutua.jpg"
+          %a{:href=>"https://twitter.com/imkatim", :class=>"twitter"}= img "../images/twitter.png"
+          %a{:href=>"https://github.com/katmutua", :class=>"github"}= img "../images/github.png"
+        %h2
+          %a{href: '#speaker1', rel: 'speakers', class: 'fancybox'} Jackline Mutua
+        %p Yet Another Technical Intimidation Talk
+
+        #speaker4.detail
+          .links.right
+            %a{:href=>"https://twitter.com/imkatim", :class=>"twitter"}= img "../images/twitter.png"
+            %a{:href=>"https://github.com/katmutua", :class=>"github"}= img "../images/github.png"
+          .name
+            = img "../images/speakers/2015/jackline_mutua.jpg"
+            %h2 Jackline Mutua
+          .inner
+            %p Jackie is a Ruby Enthusiast and nomad Developer currently working for ThoughtWorks Pan-Africa.
+            %h3 Yet Another Technical Intimidation Talk
+            %p As Developers we often have certain perceptions of our heroes in developer communities and some of these shape what we think we should aspire for ourselves and why we are presently capable or incapable of different things (contributing to your favorite language or framework e.t.c.). In doing so we become constantly trolled by Tech's invisible monsters though there exists an infinite learning continuum. This talk gives the audience a chance to learn how to become philomath Developers and why its a less draining path to eternal gratification and happiness as Developers.
+
+      %li.speaker
+        .rounded
+          %a{href: '#speaker5', rel: 'speaker_image', class: 'fancybox'}
+            = img "../images/speakers/2015/kenneth_kalmer.jpg"
+          %a{:href=>"https://twitter.com/kennethkalmer", :class=>"twitter"}= img "../images/twitter.png"
+          %a{:href=>"https://github.com/kennethkalmer", :class=>"github"}= img "../images/github.png"
+        %h2
+          %a{href: '#speaker1', rel: 'speakers', class: 'fancybox'} Kenneth Kalmer
+        %p Shattered dreams & broken promises
+
+        #speaker5.detail
+          .links.right
+            %a{:href=>"https://twitter.com/kennethkalmer", :class=>"twitter"}= img "../images/twitter.png"
+            %a{:href=>"https://github.com/kennethkalmer", :class=>"github"}= img "../images/github.png"
+          .name
+            = img "../images/speakers/2015/kenneth_kalmer.jpg"
+            %h2 Kenneth Kalmer
+          .inner
+            %p Performing regular wizardry through open-source software // Ruby developer at large
+            %h3 Shattered dreams & broken promises
+            %p We simply cannot trust our guts, we need to make decisions based on empirical evidence. We need to make measurable improvements to our applications.
+            %p Whether we're improving performance, hunting a memory leak, or planning a new feature, it all becomes easier and more reliable when we have real data to build on top of.
+            %p In order to call ourselves engineers or scientists, we'd better start acting like real scientists & engineers.
+
+      %li.speaker
+        .rounded
+          %a{href: '#speaker6', rel: 'speaker_image', class: 'fancybox'}
+            = img "../images/speakers/2015/mandla_magagula.jpg"
+          %a{:href=>"https://twitter.com/mandlamag", :class=>"twitter"}= img "../images/twitter.png"
+          %a{:href=>"https://github.com/mandlamag", :class=>"github"}= img "../images/github.png"
+        %h2
+          %a{href: '#speaker1', rel: 'speakers', class: 'fancybox'} Mandla Magagula
+        %p Fixing the future of programming
+
+        #speaker6.detail
+          .links.right
+            %a{:href=>"https://twitter.com/mandlamag", :class=>"twitter"}= img "../images/twitter.png"
+            %a{:href=>"https://github.com/mandlamag", :class=>"github"}= img "../images/github.png"
+          .name
+            = img "../images/speakers/2015/mandla_magagula.jpg"
+            %h2 Mandla Magagula
+          .inner
+            %p A C# Developer working for Driven Alliance. Loves teaching complex concepts to kids to test his own understanding.
+            %h3 Fixing the future of programming
+            %p There has been a global drive in recent years to teach programming to kids in schools. This is a huge opportunity for kids, and more so for South African kids. South Africa is a unique country with unique challenges. Most South African schools lack basic needs such as running water. Computers are perceived as a 'luxury item' and, as a result, kids in these communities have never seen, let alone use a computer before. How do we ensure that these kids still get to learn to code ( the right way) despite all these proudly South African challenges?
+
+      %li.speaker
+        .rounded
+          %a{href: '#speaker7', rel: 'speaker_image', class: 'fancybox'}
+            = img "../images/speakers/2015/marc_heiligers.jpg"
+          %a{:href=>"https://twitter.com/marcheiligers", :class=>"twitter"}= img "../images/twitter.png"
+          %a{:href=>"https://github.com/marcheiligers", :class=>"github"}= img "../images/github.png"
+        %h2
+          %a{href: '#speaker1', rel: 'speakers', class: 'fancybox'} Marc Heiligers
+        %p Sweet Ruby
+
+        #speaker7.detail
+          .links.right
+            %a{:href=>"https://twitter.com/marcheiligers", :class=>"twitter"}= img "../images/twitter.png"
+            %a{:href=>"https://github.com/marcheiligers", :class=>"github"}= img "../images/github.png"
+          .name
+            = img "../images/speakers/2015/marc_heiligers.jpg"
+            %h2 Marc Heiligers
+          .inner
+            %p Marc has been dabbling in software of all sorts for a few years and now primarily fiddles with Ruby and JavaScript. He has been known to occasionally "get things right" and some of his code is even running in production.
+            %h3 Sweet Ruby
+            %p I was originally going name this talk something silly like "Ruby Meta-programming" but then I realised that it's more about making Ruby sweet using syntactic sugar, some of which involves meta-programming, but it's more than that. So "Sweet Ruby" it is.
+
+      %li.speaker
+        .rounded
+          %a{href: '#speaker8', rel: 'speaker_image', class: 'fancybox'}
+            = img "../images/speakers/2015/simon_stewart.jpg"
+          %a{:href=>"https://twitter.com/SimonStewart", :class=>"twitter"}= img "../images/twitter.png"
+          %a{:href=>"https://github.com/simonstewart", :class=>"github"}= img "../images/github.png"
+        %h2
+          %a{href: '#speaker1', rel: 'speakers', class: 'fancybox'} Simon Stewart
+        %p How to be an effective Freelancer by not learning from corporates
+
+        #speaker8.detail
+          .links.right
+            %a{:href=>"https://twitter.com/SimonStewart", :class=>"twitter"}= img "../images/twitter.png"
+            %a{:href=>"https://github.com/simonstewart", :class=>"github"}= img "../images/github.png"
+          .name
+            = img "../images/speakers/2015/simon_stewart.jpg"
+            %h2 Simon Stewart
+          .inner
+            %p JSinSA conference founder and start up chap who's in a convincing disguise as a consultant. He also runs the
+            %a{:href=>"https://www.FindFreeWiFi.co.za"} FindFreeWifi.co.za
+            site.
+            %h3 How to be an effective Freelancer by not learning from corporates
+            %p Many of us dream about the day we can make money sitting on a beach somewhere with our notebook deploying something cool for a customer.
+            %p This talk lays the foundation for that by running through the battle-scars I've picked up working for corporates, start-ups and my own company.
 
     %div.clearfix
     = partial('../partials/signup')
