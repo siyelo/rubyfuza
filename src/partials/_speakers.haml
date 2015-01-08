@@ -7,7 +7,7 @@
     %ul
       %li.speaker
         .rounded
-          %a{href: '#speaker1', rel: 'speaker_image', class: 'fancybox'}
+          %a{href: '#speaker1', rel: 'speaker_image', class: 'fancybox', id: 'brendon_mclean'}
             = img "../images/speakers/2015/brendon_mclean.jpg"
           %a{:href=>"https://twitter.com/brendon9x", :class=>"twitter"}= img "../images/twitter.png"
           %a{:href=>"https://github.com/brendon9x", :class=>"github"}= img "../images/github.png"
@@ -29,7 +29,7 @@
 
       %li.speaker
         .rounded
-          %a{href: '#speaker2', rel: 'speaker_image', class: 'fancybox'}
+          %a{href: '#speaker2', rel: 'speaker_image', class: 'fancybox', id: 'chris_stefano'}
             = img "../images/speakers/2015/chris_stefano.jpg"
           %a{:href=>"https://twitter.com/virtstaticvoid", :class=>"twitter"}= img "../images/twitter.png"
           %a{:href=>"https://github.com/virtualstaticvoid", :class=>"github"}= img "../images/github.png"
@@ -52,7 +52,7 @@
 
       %li.speaker
         .rounded
-          %a{href: '#speaker3', rel: 'speaker_image', class: 'fancybox'}
+          %a{href: '#speaker3', rel: 'speaker_image', class: 'fancybox', id: 'garren_smith'}
             = img "../images/speakers/2015/garren_smith.jpg"
           %a{:href=>"https://twitter.com/garrensmith", :class=>"twitter"}= img "../images/twitter.png"
           %a{:href=>"https://github.com/garrensmith", :class=>"github"}= img "../images/github.png"
@@ -74,7 +74,7 @@
 
       %li.speaker
         .rounded
-          %a{href: '#speaker4', rel: 'speaker_image', class: 'fancybox'}
+          %a{href: '#speaker4', rel: 'speaker_image', class: 'fancybox', id: 'jackline_mutua'}
             = img "../images/speakers/2015/jackline_mutua.jpg"
           %a{:href=>"https://twitter.com/imkatim", :class=>"twitter"}= img "../images/twitter.png"
           %a{:href=>"https://github.com/katmutua", :class=>"github"}= img "../images/github.png"
@@ -96,7 +96,7 @@
 
       %li.speaker
         .rounded
-          %a{href: '#speaker5', rel: 'speaker_image', class: 'fancybox'}
+          %a{href: '#speaker5', rel: 'speaker_image', class: 'fancybox', id: 'kenneth_kalmer'}
             = img "../images/speakers/2015/kenneth_kalmer.jpg"
           %a{:href=>"https://twitter.com/kennethkalmer", :class=>"twitter"}= img "../images/twitter.png"
           %a{:href=>"https://github.com/kennethkalmer", :class=>"github"}= img "../images/github.png"
@@ -120,7 +120,7 @@
 
       %li.speaker
         .rounded
-          %a{href: '#speaker6', rel: 'speaker_image', class: 'fancybox'}
+          %a{href: '#speaker6', rel: 'speaker_image', class: 'fancybox', id: 'mandla_magagula'}
             = img "../images/speakers/2015/mandla_magagula.jpg"
           %a{:href=>"https://twitter.com/mandlamag", :class=>"twitter"}= img "../images/twitter.png"
           %a{:href=>"https://github.com/mandlamag", :class=>"github"}= img "../images/github.png"
@@ -142,7 +142,7 @@
 
       %li.speaker
         .rounded
-          %a{href: '#speaker7', rel: 'speaker_image', class: 'fancybox'}
+          %a{href: '#speaker7', rel: 'speaker_image', class: 'fancybox', id: 'marc_heiligers'}
             = img "../images/speakers/2015/marc_heiligers.jpg"
           %a{:href=>"https://twitter.com/marcheiligers", :class=>"twitter"}= img "../images/twitter.png"
           %a{:href=>"https://github.com/marcheiligers", :class=>"github"}= img "../images/github.png"
@@ -164,7 +164,7 @@
 
       %li.speaker
         .rounded
-          %a{href: '#speaker8', rel: 'speaker_image', class: 'fancybox'}
+          %a{href: '#speaker8', rel: 'speaker_image', class: 'fancybox', id: 'simon_stewart'}
             = img "../images/speakers/2015/simon_stewart.jpg"
           %a{:href=>"https://twitter.com/SimonStewart", :class=>"twitter"}= img "../images/twitter.png"
           %a{:href=>"https://github.com/simonstewart", :class=>"github"}= img "../images/github.png"
@@ -186,6 +186,52 @@
             %h3 How to be an effective Freelancer by not learning from corporates
             %p Many of us dream about the day we can make money sitting on a beach somewhere with our notebook deploying something cool for a customer.
             %p This talk lays the foundation for that by running through the battle-scars I've picked up working for corporates, start-ups and my own company.
+
+      %li.speaker
+        .rounded
+          %a{href: '#speaker9', rel: 'speaker_image', class: 'fancybox', id: 'loren_segal'}
+            = img "../images/speakers/2015/loren_segal.jpg"
+          %a{:href=>"https://twitter.com/lsegal", :class=>"twitter"}= img "../images/twitter.png"
+          %a{:href=>"https://github.com/lsegal", :class=>"github"}= img "../images/github.png"
+        %h2
+          %a{href: '#speaker9', rel: 'speakers', class: 'fancybox'} Loren Segal
+        %p How not to rewrite your library: tips on stable APIs
+
+        #speaker9.detail
+          .links.right
+            %a{:href=>"https://twitter.com/lsegal", :class=>"twitter"}= img "../images/twitter.png"
+            %a{:href=>"https://github.com/lsegal", :class=>"github"}= img "../images/github.png"
+          .name
+            = img "../images/speakers/2015/loren_segal.jpg"
+            %h2 Loren Segal
+          .inner
+            %p Loren Segal is an SDKs and Tools developer at Amazon Web Services working on the AWS SDKs for JavaScript. In his spare time, Loren likes to create technology and hacks on a diverse set of open source projects like YARD, a Ruby documentation tool, RubyCorrect, a static analysis and automatic test case generation tool, and Samus, a tool to help with project releases.
+            %h3 How not to rewrite your library: tips on stable APIs
+            %p No library developer enjoys breaking their users with API changes, but sometimes you have no choice. Or do you?
+
+            %p Tl;dr you do! Learn some tricks on avoiding backwards incompatible changes as well as mitigating the impact of those changes when they do happen through backward compatibility adapters and ethical deprecation practices. This talk will cover a handful of OSS projects I've maintained and contributed to over the years in order to find out which practices work and which don't. Have you been thinking about completely gutting your library's API? Come to this talk; there is another way!
+
+      %li.speaker
+        .rounded
+          %a{href: '#speaker10', rel: 'speaker_image', class: 'fancybox', id: 'charles_nutter'}
+            = img "../images/speakers/2015/charles_nutter.jpg"
+          %a{:href=>"https://twitter.com/headius", :class=>"twitter"}= img "../images/twitter.png"
+          %a{:href=>"https://github.com/headius", :class=>"github"}= img "../images/github.png"
+        %h2
+          %a{href: '#speaker10', rel: 'speakers', class: 'fancybox'} Charles Oliver Nutter
+        %p Over 9000: JRuby in 2015
+
+        #speaker10.detail
+          .links.right
+            %a{:href=>"https://twitter.com/headius", :class=>"twitter"}= img "../images/twitter.png"
+            %a{:href=>"https://github.com/headius", :class=>"github"}= img "../images/github.png"
+          .name
+            = img "../images/speakers/2015/charles_nutter.jpg"
+            %h2 Charles Oliver Nutter
+          .inner
+            %p Charles works on JRuby and JVM languages at Red Hat.
+            %h3 Over 9000: JRuby in 2015
+            %p JRuby 9000 is our biggest release ever, with a new optimizing runtime, reimplemented IO and encoding subsystems, and better POSIX native behavior across the board. We've updated to full Ruby 2.2 compatibility, giving us more time to focus on performance, concurrency, and improving the Ruby and JRuby ecosystems. I'll talk about the plans for JRuby in 2015 and hopefully get you excited about the fast, parallel, and fun features of JRuby. It's going to be a great year.
 
     %div.clearfix
     = partial('../partials/signup')
