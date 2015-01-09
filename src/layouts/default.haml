@@ -55,6 +55,20 @@
   %script{:src => 'js/plugins.js'}
   %script{:src => 'js/script.js'}
 
+  :javascript
+    var thisHash = window.location.hash;
+    $(document).ready(function() {
+     if(window.location.hash) {
+      $(thisHash).fancybox({
+        padding: 0
+        // more API options
+      }).trigger('click');
+     }
+     $('.fancylink').fancybox({
+        padding: 0
+        // more API options
+     });
+    }); // ready
 
   -# end scripts
 
