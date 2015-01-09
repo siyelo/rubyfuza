@@ -1749,6 +1749,23 @@
   <script src='js/libs/jquery.mousewheel-3.0.6.pack.js'></script>
   <script src='js/plugins.js'></script>
   <script src='js/script.js'></script>
+  <script type='text/javascript'>
+    //<![CDATA[
+      var thisHash = window.location.hash;
+      $(document).ready(function() {
+       if(window.location.hash) {
+        $(thisHash).fancybox({
+          padding: 0
+          // more API options
+        }).trigger('click');
+       }
+       $('.fancylink').fancybox({
+          padding: 0
+          // more API options
+       });
+      }); // ready
+    //]]>
+  </script>
   <script>
     window._gaq = [['_setAccount','UAXXXXXXXX1'],['_trackPageview'],['_trackPageLoadTime']];
     Modernizr.load({load: ('https:' == location.protocol ? '//ssl' : '//www') + '.google-analytics.com/ga.js'});
