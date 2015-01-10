@@ -1120,6 +1120,35 @@ strong {
   font-weight: bold;
 }
 
+/* line 1, /Users/marc/Projects/Rubyfuza/rubyfuza/src/stylesheets/partials/_links.sass */
+.links {
+  *zoom: 1;
+}
+/* line 38, /Users/marc/.rvm/gems/ruby-2.0.0-p247@rubyfuza/gems/compass-0.11.7/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+.links:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* line 4, /Users/marc/Projects/Rubyfuza/rubyfuza/src/stylesheets/partials/_links.sass */
+.links li {
+  font-size: 1.1em;
+}
+/* line 6, /Users/marc/Projects/Rubyfuza/rubyfuza/src/stylesheets/partials/_links.sass */
+.links li span {
+  color: #98c9ee;
+  display: block;
+  padding-top: 8px;
+  text-indent: 12px;
+  font: 1.2em "Patua One", Arial, sans-serif;
+}
+/* line 12, /Users/marc/Projects/Rubyfuza/rubyfuza/src/stylesheets/partials/_links.sass */
+.links li .left {
+  max-width: 32px;
+  width: 25%;
+  opacity: 0.3;
+}
+
 /* line 1, /Users/marc/Projects/Rubyfuza/rubyfuza/src/stylesheets/partials/_footer.sass */
 #footer {
   background: rgba(0, 0, 0, 0.12);
