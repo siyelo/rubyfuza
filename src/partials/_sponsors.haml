@@ -5,8 +5,23 @@
 			%span Sponsors
 
 		%ul.sponsors-list
-			%li.sixth
-			%li.third
+			%li.half
+				%a{:href=>"#hetzner", :class=>"info fancybox", rel: 'sponsors', :title=>"Hetzner, Trusted in Hosting"}
+					%img{:src=>"../images/logos/hetzner.png"}
+				.row
+					%a{:href=>"http://www.hetzner.co.za", :target=>"_blank", :title=>"Hetzner, Trusted in Hosting"} hetzner.co.za
+					/ %span &#9679;
+					/ %a{:href=>"#hetzner", :class=>"info fancybox", rel: 'sponsors'} info
+				%small Ruby-level sponsor
+
+				#hetzner.detail
+					%a{:href=>"http://www.hetzner.co.za", :target=>"_blank", :title=>"Hetzner, Trusted in Hosting"}
+						%img{:src=>"../images/logos/hetzner2.png", :class=>"square"}
+					%p At Hetzner South Africa we are passionate about web hosting – it’s our core business and it’s what we do best. By consistently delivering excellent service and cost effective web hosting, dedicated servers and custom hosting solutions, Hetzner has exponentially grown its market share, making it the leading web hosting company in South Africa. Inspired by our brand promise ‘Trusted in Hosting’, we focus on providing efficient, sustainable business models, quality service and customer satisfaction. A key contributor to our success is our people. We aim for our teams to manage themselves rather than rely on several layers of hierarchy. We want to give our people the freedom to explore, innovate and create. We recognise that our customers expect reliability and good value from us and it remains our ongoing commitment to earn and retain their trust.
+					%span.right Ruby-level sponsor
+					%a{:href=>"http://www.hetzner.co.za", :target=>"_blank", :title=>"Hetzner, Trusted in Hosting"} hetzner.co.za
+
+			%li.half
 				%a{:href=>"#platform45", :class=>"info fancybox", rel: 'sponsors', :title=>"Platform45"}
 					%img{:src=>"../images/logos/platform45n.png"}
 				.row
@@ -26,7 +41,8 @@
 					%span.right Ruby-level sponsor
 					%a{:href=>"http://www.platform45.com", :target=>"_blank", :title=>"Platform45"} platform45.com
 
-			%li.third
+		%ul.sponsors-list
+			%li.half
 				%a{:href=>"#prodigyfinance", :class=>"info fancybox", rel: 'sponsors', :title=>"Prodigy Finance"}
 					%img{:src=>"../images/logos/prodigy-white.png"}
 				.row
@@ -44,27 +60,9 @@
 					%span.right Ruby-level sponsor
 					%a{:href=>"https://www.prodigyfinance.com/", :target=>"_blank", :title=>"Prodigy Finance"} prodigyfinance.com
 
-		%ul.sponsors-list
-			%li.sixth
-			%li.third
-				%a{:href=>"#hetzner", :class=>"info fancybox", rel: 'sponsors', :title=>"Hetzner, Trusted in Hosting"}
-					%img{:src=>"../images/logos/hetzner.png"}
-				.row
-					%a{:href=>"http://www.hetzner.co.za", :target=>"_blank", :title=>"Hetzner, Trusted in Hosting"} hetzner.co.za
-					/ %span &#9679;
-					/ %a{:href=>"#hetzner", :class=>"info fancybox", rel: 'sponsors'} info
-				%small Ruby-level sponsor
-
-				#hetzner.detail
-					%a{:href=>"http://www.hetzner.co.za", :target=>"_blank", :title=>"Hetzner, Trusted in Hosting"}
-						%img{:src=>"../images/logos/hetzner2.png", :class=>"square"}
-					%p At Hetzner South Africa we are passionate about web hosting – it’s our core business and it’s what we do best. By consistently delivering excellent service and cost effective web hosting, dedicated servers and custom hosting solutions, Hetzner has exponentially grown its market share, making it the leading web hosting company in South Africa. Inspired by our brand promise ‘Trusted in Hosting’, we focus on providing efficient, sustainable business models, quality service and customer satisfaction. A key contributor to our success is our people. We aim for our teams to manage themselves rather than rely on several layers of hierarchy. We want to give our people the freedom to explore, innovate and create. We recognise that our customers expect reliability and good value from us and it remains our ongoing commitment to earn and retain their trust.
-					%span.right Ruby-level sponsor
-					%a{:href=>"http://www.hetzner.co.za", :target=>"_blank", :title=>"Hetzner, Trusted in Hosting"} hetzner.co.za
-
-			%li.third
+			%li.half
 				%a{:href=>"#internet_solutions", :class=>"info fancybox", rel: 'sponsors', :title=>"Internet Solutions"}
-					%img{:src=>"../images/logos/is.png"}
+					%img{:src=>"../images/logos/is.png", :style=>"width:278px;height:120px;"}
 				.row
 					%a{:href=>"http://www.is.co.za", :target=>"_blank", :title=>"Internet Solutions"} is.co.za
 					/ %span &#9679;
@@ -116,7 +114,8 @@
 					%a{:href=>"http://www.github.com", :target=>"_blank", :title=>"Github"} github.com
 
 		%ul.sponsors-list
-			%li.third
+			%li.fourth
+			%li.sixth
 				%a{:href=>"#vulcanlabs", :class=>"info fancybox", rel: 'sponsors', :title=>"Vulcan Labs"}
 					%img{:src=>"../images/logos/vulcanlabs.png"}
 				.row
@@ -133,7 +132,7 @@
 					%span.right Topaz-level sponsor
 					%a{:href=>"http://www.vulcanlabs.com", :target=>"_blank", :title=>"Vulcan Labs"} vulcanlabs.com
 
-			%li.third
+			%li.sixth
 				%a{:href=>"#simplepay", :class=>"info fancybox", rel: 'sponsors', :title=>"SimplePay"}
 					%img{:src=>"../images/logos/simplepay.png"}
 				.row
@@ -155,7 +154,7 @@
 					%span.right Topaz-level sponsor
 					%a{:href=>"http://www.simplepay.co.za", :target=>"_blank", :title=>"SimplePay"} simplepay.co.za
 
-			%li.third
+			%li.sixth
 				%a{:href=>"#africanstay", :class=>"info fancybox", rel: 'sponsors', :title=>"African Stay"}
 					%img{:src=>"../images/logos/african_stay.png", :style => 'max-height: 56px; height: 56px; max-width: 105px; width: 105px'}
 				.row
