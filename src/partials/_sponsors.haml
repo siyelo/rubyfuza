@@ -5,6 +5,7 @@
 			%span Sponsors
 
 		%ul.sponsors-list
+			%li.sixth
 			%li.third
 				%a{:href=>"#platform45", :class=>"info fancybox", rel: 'sponsors', :title=>"Platform45"}
 					%img{:src=>"../images/logos/platform45n.png"}
@@ -43,6 +44,8 @@
 					%span.right Ruby-level sponsor
 					%a{:href=>"https://www.prodigyfinance.com/", :target=>"_blank", :title=>"Prodigy Finance"} prodigyfinance.com
 
+		%ul.sponsors-list
+			%li.sixth
 			%li.third
 				%a{:href=>"#hetzner", :class=>"info fancybox", rel: 'sponsors', :title=>"Hetzner, Trusted in Hosting"}
 					%img{:src=>"../images/logos/hetzner.png"}
@@ -59,10 +62,26 @@
 					%span.right Ruby-level sponsor
 					%a{:href=>"http://www.hetzner.co.za", :target=>"_blank", :title=>"Hetzner, Trusted in Hosting"} hetzner.co.za
 
+			%li.third
+				%a{:href=>"#internet_solutions", :class=>"info fancybox", rel: 'sponsors', :title=>"Internet Solutions"}
+					%img{:src=>"../images/logos/is.png"}
+				.row
+					%a{:href=>"http://www.is.co.za", :target=>"_blank", :title=>"Internet Solutions"} is.co.za
+					/ %span &#9679;
+					/ %a{:href=>"#internet_solutions", :class=>"info fancybox", rel: 'sponsors'} info
+				%small Ruby-level sponsor
+
+				#internet_solutions.detail
+					%a{:href=>"http://www.is.co.za", :target=>"_blank", :title=>"Internet Solutions"}
+						%img{:src=>"../images/logos/is2.png", :class=>"square"}
+					%p Internet Solutions is a wholly owned subsidiary of Dimension Data. The company is southern Africa's most established and experienced Internet service provider. Since 1993 Internet Solutions has been providing innovative end-to-end connectivity solutions and related services across the African continent. Today IS is a provider of Internet Protocol-based connectivity, communications, and cloud and carrier services in the African market and for African clients into the global market. IS provides services to large public and private sector organisations, medium sized organisations, and through its value channel programme to smaller organisations and consumers.
+					%span.right Ruby-level sponsor
+					%a{:href=>"http://www.is.co.za", :target=>"_blank", :title=>"Internet Solutions"} is.co.za
+
 
 		%ul.sponsors-list
-			%li.third
-			%li.third
+			%li.fourth
+			%li.fourth
 				%a{:href=>"#unboxedconsulting", :class=>"info fancybox", rel: 'sponsors', :title=>"Unboxed Consulting"}
 					%img{:src=>"../images/logos/unboxedconsulting.png", :style=>'width:60%'}
 				.row
@@ -78,15 +97,32 @@
 					%span.right Sapphire-level sponsor
 					%a{:href=>"http://unboxedconsulting.com", :target=>"_blank", :title=>"Unboxed Consulting"} unboxedconsulting.com
 
+			%li.fourth
+				%a{:href=>"#github", :class=>"info fancybox", rel: 'sponsors', :title=>"Github"}
+					%img{:src=>"../images/logos/github_logo.png"}
+				.row
+					%a{:href=>"https://www.github.com", :target=>"_blank", :title=>"Github"} github.com
+					/ %span &#9679;
+					/ %a{:href=>"#github", :class=>"info fancybox", rel: 'sponsors'} info
+				%small Sapphire + speaker sponsorship
+
+				#github.detail
+					%a{:href=>"http://github.com"}
+						%img{:src=>"../images/logos/github_logo2.png", :class=>"square"}
+					%p GitHub is the best place to share code with friends, co-workers, classmates, and complete strangers. Over two million people use GitHub to build amazing things together.
+					%p With the collaborative features of GitHub.com, our desktop and mobile apps, and GitHub Enterprise, it has never been easier for individuals and teams to write better code, faster.
+					%p Originally founded by Tom Preston-Werner, Chris Wanstrath, and PJ Hyett to simplify sharing code, GitHub has grown into the largest code host in the world.
+					%span.right Sapphire + speaker sponsorship
+					%a{:href=>"http://www.github.com", :target=>"_blank", :title=>"Github"} github.com
+
 		%ul.sponsors-list
-			%li.fourth
-			%li.fourth
+			%li.third
 				%a{:href=>"#vulcanlabs", :class=>"info fancybox", rel: 'sponsors', :title=>"Vulcan Labs"}
 					%img{:src=>"../images/logos/vulcanlabs.png"}
 				.row
 					%a{:href=>"http://www.vulcanlabs.com", :target=>"_blank", :title=>"Vulcan Labs"} vulcanlabs.com
 					/ %span &#9679;
-					/ %a{:href=>"#vulcanlabs", :class=>"info fancybox", rel: 'sponsors'} info
+					/ %a{:href=>"#simplepay", :class=>"info fancybox", rel: 'sponsors'} info
 				%small Topaz-level sponsor
 
 				#vulcanlabs.detail
@@ -97,7 +133,29 @@
 					%span.right Topaz-level sponsor
 					%a{:href=>"http://www.vulcanlabs.com", :target=>"_blank", :title=>"Vulcan Labs"} vulcanlabs.com
 
-			%li.fourth
+			%li.third
+				%a{:href=>"#simplepay", :class=>"info fancybox", rel: 'sponsors', :title=>"SimplePay"}
+					%img{:src=>"../images/logos/simplepay.png"}
+				.row
+					%a{:href=>"http://www.simplepay.co.za", :target=>"_blank", :title=>"SimplePay"} simplepay.co.za
+					/ %span &#9679;
+					/ %a{:href=>"#simplepay", :class=>"info fancybox", rel: 'sponsors'} info
+				%small Topaz-level sponsor
+
+				#simplepay.detail
+					%a{:href=>"http://www.simplepay.co.za", :target=>"_blank", :title=>"SimplePay"}
+						%img{:src=>"../images/logos/simplepay2.png", :class=>"square"}
+					%p You don't have time to struggle with complicated payroll software. We get that. And you want to be sure you are up to date with all the changing requirements from SARS. That's why we designed our online payroll system to take as much as possible off your hands.
+					%ul.list
+						%li Designed from the ground up to deal with South African payroll legislation.
+						%li Takes the hassle out of payroll administration. Statutory deductions and contributions are calculated automatically (Tax, UIF, SDL). SimplePay will ask you the right questions to ensure that payroll deductions are done in the correct manner.
+						%li Assumes no knowledge of payroll legislation, nor experience with other payroll software / systems.
+						%li The system will tell you when your submissions are due and remind you to prevent late submissions. You'll always be 100% compliant. Submissions are done electronically wherever possible.
+
+					%span.right Topaz-level sponsor
+					%a{:href=>"http://www.simplepay.co.za", :target=>"_blank", :title=>"SimplePay"} simplepay.co.za
+
+			%li.third
 				%a{:href=>"#africanstay", :class=>"info fancybox", rel: 'sponsors', :title=>"African Stay"}
 					%img{:src=>"../images/logos/african_stay.png", :style => 'max-height: 56px; height: 56px; max-width: 105px; width: 105px'}
 				.row
