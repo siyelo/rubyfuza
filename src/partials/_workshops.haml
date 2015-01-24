@@ -1,38 +1,89 @@
-/ %section#workshops
-/   .wrapper
-/     %h1.heading
-/       %a{:name=>"workshops"}
-/       %span Workshops
+%section#workshops
+  .wrapper
+    %h1.heading
+      %a{:name=>"workshops"}
+      %span Workshops
 
-/     %ul
-/       %li{style: 'width: 15.5%'}
+    %ul
 
-/       %li.workshop
-/         %h2
-/           %a{href: '#workshop1', rel: 'workshops', class: 'fancybox'} RailsBridge
-/         %p An Introductory Ruby on Rails Workshop
-/         %p.date Fri, 31 Jan &mdash; Sat, 1 Feb
+      %li.workshop
+        %h2
+          %a{href: '#workshop1', rel: 'workshops', class: 'fancybox'} Legacy CodeRetreat
+        %p Legacy CodeRetreat with Jacques de Vos and Martin Cronje
+        %p.date Sat, 7 Jan: 08:00 - 16:00
 
-/         #workshop1.workshop.detail
-/           .name
-/             %h2 RailsBridge
-/             %p The RailsBridge Workshop is a free one-and-a-bit day course run by a volunteer team of experienced and enthusiastic developers. It aims to promote diversity in the software industry by providing an accessible starting point to those interested in coding. The course covers an introduction to programming concepts, the available tools, and Ruby and Rails development techniques. It teaches practical skills useful to those investigating new career paths, looking to compliment their current skill set, or simply interested in gaining a better understanding of software.
-/           %h3.join
-/             %a{href: 'http://www.meetup.com/Rubyfuza/events/158384112/'} Join this workshop!
-/             &nbsp;&bull;&nbsp;
-/             %a{href: 'http://railsbridgecapetown.org/'} Learn more
+        #workshop1.workshop.detail
+          .name
+            %h2 Legacy CodeRetreat
+            %p There used to be a sentiment that "real programmers" only do green-fields projects. Nowadays we know that's simply false: rescuing and improving legacy code bases are some of the most important and hardest tasks that we face as software engineers.
+            %p The Legacy Coderetreat follows the same format as the very well known Coderetreat but with a twist. Developers will be working with an existing piece of code.
+            %p This is a hands-on practice event, where we will try out various legacy refactoring techniques. We will have fun trying to revive a terrible piece of code, in a stress-free environment.
+          %h3.join
+            %a{href: 'http://www.meetup.com/Rubyfuza/events/219835965/'} Join this workshop!
+            &nbsp;&bull;&nbsp;
 
-/           .inner
-/             .name
-/               = img "../images/speakers/stevebarnett.jpg"
-/               %h3 Steve Barnett
-/             %p Steve Barnett has a background in Maths and finance and started work as a Front End Developer in 2005, escaping to South Africa from his native England. He started at Unboxed Consulting in November 2012, and he’s most interested in the multi-device world and making the web accessible to all. You can find him at naga.co.za or on Twitter as @maxbarners.
+          .inner
+            .name
+              = img "../images/speakers/2015/jacque_de_vos.jpg"
+              %h3 Jacque De Vos
+            %p I'm a Software Engineer who cares deeply about delivering pragmatic solutions. Most of my 10+ years of experience has been in developing crucial font-end applications, specifically in the financial industries: online trading, online banking and insurance. Lately I divide my time between developing awesome startup products, and coaching software development teams of all shapes and sizes on building the right products, well.
+            .name
+              = img "../images/speakers/2015/martin_cronje.jpg"
+              %h3 Martin Cronje
+            %p I'm a software developer who spends most of my time coaching and mentoring software teams to help them master their craft. During my career I've contributed to projects ranging from mobile apps, data analytics, high volume systems integration to mission-critical systems. The most notable projects directly affected the South African economy and democracy. Programming makes me happy. When not coaching I spends my time building software products on anything from C#, ObjC, node.js or Ruby.
 
-/       %li.workshop
-/         %h2
-/           %a{href: '#workshop2', rel: 'workshops', class: 'fancybox'} AWS Workshop
-/         %p Designing and building a distributed application using AWS services
-/         %p.date Sat, 1 Feb
+      %li.workshop
+        %h2
+          %a{href: '#workshop2', rel: 'workshops', class: 'fancybox'} Interactive Workshop
+        %p Ansible deployments for fun and profit with Steven Ringo
+        %p.date Sat, 7 Jan: 09:00 - 12:00
+
+        #workshop2.workshop.detail
+          .name
+            %h2 Interactive Workshop
+            %p Deployments are hard. There are many moving parts and a complex lifecycle.
+            %p From provisioning servers to managing dependencies and deploying code, while keeping it secure, automated and up-to-date is a daunting task.
+            %p Ansible is conceptually simple yet incredibly powerful IT automation tool. It can configure systems, deploy software, and orchestrate continuous deployments or zero downtime rolling updates. Its beautiful in its elegance of operation. A joy to use, and has a friendly and supportive community.
+            %p Steven has used Ansible successfully in a number of different environments (many on Ruby) and turned deployment from an error-prone nightmare to something trivial and confident.
+            %p This workshop aims to provide an overview of Ansible that will show you how to confidently deploy your ruby apps and servers and have some fun doing it.
+            %p We'll focus on ruby/rails and rack app deployments as well as how to provision servers running on cloud providers such as AWS and DigitalOcean.
+          %h3.join
+            %a{href: 'http://www.meetup.com/Rubyfuza/events/219811203/'} Join this workshop!
+            &nbsp;&bull;&nbsp;
+
+          .inner
+            .name
+              = img "../images/speakers/2015/steven_ringo.jpg"
+              %h3 Steven Ringo
+            %p A jack-of-all-trades and Ruby tragic, I work with companies to help them develop, manage and deploy applications. Currently driving initiatives in two companies to move Ruby and other apps from traditional/internal data-centre hosting to cloud-based deployments in environments that need to comply with strict financial and healthcare regulations respectively.
+
+      %li.workshop
+        %h2
+          %a{href: '#workshop3', rel: 'workshops', class: 'fancybox'} Interactive Workshop
+        %p Dataflow Concurrency in Ruby with John Anderson
+        %p.date Sat, 7 Jan: 13:30 - 16:30
+
+        #workshop3.workshop.detail
+          .name
+            %h2 Interactive Workshop
+            %p Dataflow variables fall in the same category as Futures, Promises and I-Vars.
+            %p Dataflow concurrency is a simple but powerful idea. It rests on single-assignment variables with blocking semantics (dataflow variables). Any thread attempting to use an unbound variable will wait until another thread assigns a value to it.
+            %p Deterministic dataflow is a form of functional programming.
+          %h3.join
+            %a{href: 'http://www.meetup.com/Rubyfuza/events/219836212/'} Join this workshop!
+            &nbsp;&bull;&nbsp;
+
+          .inner
+            .name
+              = img "../images/speakers/2015/john_anderson.jpg"
+              %h3 John Anderson
+            %p Ruby since 2004. c++, java, perl since 1994. Nevertheless, still learning. Interested in Prolog, Oz and Haskell.
+
+      / %li.workshop
+      /   %h2
+      /     %a{href: '#workshop2', rel: 'workshops', class: 'fancybox'} AWS Workshop
+      /   %p Designing and building a distributed application using AWS services
+      /   %p.date Sat, 1 Feb
 
 /         #workshop2.workshop.detail
 /           .name
