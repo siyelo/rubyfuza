@@ -638,6 +638,34 @@
           </div>
         </div>
       </li>
+      <li class='speaker'>
+        <div class='rounded'>
+          <a class='fancybox' href='#speaker20' id='steven_mcd' rel='speaker_image'>
+            <img alt="Raymond" src="../images/speakers/2015/raymond_t_hightower.png"/>
+          </a>
+          <a class='twitter' href='https://twitter.com/RayHightower'><img alt="Twitter" src="../images/twitter.png"/></a>
+          <a class='github' href='http://github.com/rayhightower'><img alt="Github" src="../images/github.png"/></a>
+        </div>
+        <h2>
+          <a class='fancybox' href='#speaker20' rel='speakers'>Ray Hightower</a>
+        </h2>
+        <p>Citizen Science With OpenROV</p>
+        <div class='detail' id='speaker20'>
+          <div class='links right'>
+            <a class='twitter' href='https://twitter.com/RayHightower'><img alt="Twitter" src="../images/twitter.png"/></a>
+            <a class='github' href='http://github.com/rayhightower'><img alt="Github" src="../images/github.png"/></a>
+          </div>
+          <div class='name'>
+            <img alt="Raymond" src="../images/speakers/2015/raymond_t_hightower.png"/>
+            <h2>Steven McDonald</h2>
+          </div>
+          <div class='inner'>
+            <p>Ray Hightower is a software developer, founder of WisdomGroup, organizer of ChicagoRuby, and producer of WindyCityRails & RubyCaribe. He blogs about about Ruby, Rails, RubyMotion, iOS, IoT, and business growth at <a href="http://rayhightower.com">http://rayhightower.com.</a></p>
+            <h3>Citizen Science With OpenROV</h3>
+            <p>OpenROV is an underwater robot running Linux and Node.js. The robot offers a great way for us to explore the Internet of Things (IoT) and to use our software development skills to drive something in the physical world.This talk will describe the internal workings of OpenROV, possible uses, and potential future. The Internet of Things (IoT) is happening now.</p>
+          </div>
+        </div>
+      </li>
     </ul>
     <div class='clearfix'></div>
     <p class='center'>
@@ -660,7 +688,7 @@
           var form = document.getElementById("mad_mimi_signup_form"),
               submit = document.getElementById("webform_submit_button"),
               email = /.+@.+\..+/;
-        
+
           form.onsubmit = function(event) {
             var isValid = validate();
             if(!isValid) {
@@ -672,7 +700,7 @@
               }
               return false;
             }
-        
+
             setTimeout(function() {
               for(var i = 0; i < form.getElementsByTagName("input").length; ++i) {
                 var input = form.getElementsByTagName("input")[i];
@@ -687,14 +715,14 @@
               }
             }, 3000);
           };
-        
+
           function validate() {
             var isValid = true;
-        
+
             for(var i = 0; i < form.elements.length; ++i) {
               var input = form.elements[i],
                   allDivs = input.parentNode.getElementsByTagName("div");
-        
+
               if(input.className.indexOf("required") >= 0) {
                 if(input.id == "signup_email") {
                   if(!email.test(input.value)) {
@@ -713,25 +741,25 @@
                 }
               }
             }
-        
+
             form.className = isValid ? "" : "mimi_invalid";
             submit.value = isValid ? submit.getAttribute("data-default-text") : submit.getAttribute("data-invalid-text");
             submit.disabled = !isValid;
             submit.className = isValid ? "submit" : "disabled";
-        
+
             return isValid;
           }
-        
+
           function emailErrorMessage(input, allDivs) {
             input.className = "required invalid";
             input.placeholder = input.getAttribute("data-required-message") || "This field is required";
           }
-        
+
           function fieldErrorMessage(input, allDivs) {
             input.className = "required invalid";
             input.placeholder = input.getAttribute("data-required-message") || "This field is required";
           }
-        
+
           function removeErrorMessage(input, allDivs) {
             input.className = "required";
           }
