@@ -822,44 +822,50 @@ nav#main a {
 /* line 145, /Users/adriaan/Dev/rubyfuza/src/stylesheets/partials/_content.sass */
 #schedule li {
   border-top: 1px solid rgba(255, 255, 255, 0.08);
-  display: table;
-  padding: 10px;
-  width: 100%;
+  padding: 0px;
 }
-/* line 150, /Users/adriaan/Dev/rubyfuza/src/stylesheets/partials/_content.sass */
-#schedule li > * {
+/* line 148, /Users/adriaan/Dev/rubyfuza/src/stylesheets/partials/_content.sass */
+#schedule li a {
+  padding: 10px;
+  display: table;
+  width: 100%;
+  text-decoration: none;
+  color: #eeeeee;
+}
+/* line 154, /Users/adriaan/Dev/rubyfuza/src/stylesheets/partials/_content.sass */
+#schedule li a > * {
   display: table-cell;
 }
-/* line 152, /Users/adriaan/Dev/rubyfuza/src/stylesheets/partials/_content.sass */
-#schedule li time {
+/* line 156, /Users/adriaan/Dev/rubyfuza/src/stylesheets/partials/_content.sass */
+#schedule li a time {
   color: #98c9ee;
   width: 50px;
 }
-/* line 155, /Users/adriaan/Dev/rubyfuza/src/stylesheets/partials/_content.sass */
-#schedule li p {
+/* line 159, /Users/adriaan/Dev/rubyfuza/src/stylesheets/partials/_content.sass */
+#schedule li a p {
   padding: 0 0 0 10px;
 }
-/* line 157, /Users/adriaan/Dev/rubyfuza/src/stylesheets/partials/_content.sass */
-#schedule li p span {
+/* line 161, /Users/adriaan/Dev/rubyfuza/src/stylesheets/partials/_content.sass */
+#schedule li a p span {
   display: block;
   font-weight: normal;
   font-style: italic;
 }
-/* line 161, /Users/adriaan/Dev/rubyfuza/src/stylesheets/partials/_content.sass */
-#schedule li p.speaker {
+/* line 165, /Users/adriaan/Dev/rubyfuza/src/stylesheets/partials/_content.sass */
+#schedule li a p.speaker {
   font-weight: bold;
 }
-/* line 164, /Users/adriaan/Dev/rubyfuza/src/stylesheets/partials/_content.sass */
-#schedule li a {
+/* line 168, /Users/adriaan/Dev/rubyfuza/src/stylesheets/partials/_content.sass */
+#schedule li a a {
   font-weight: normal;
   margin-left: 3px;
   text-align: right;
 }
-/* line 168, /Users/adriaan/Dev/rubyfuza/src/stylesheets/partials/_content.sass */
-#schedule li:hover, #schedule li:focus {
+/* line 172, /Users/adriaan/Dev/rubyfuza/src/stylesheets/partials/_content.sass */
+#schedule li a:hover, #schedule li a:focus {
   background: rgba(0, 0, 0, 0.03);
 }
-/* line 170, /Users/adriaan/Dev/rubyfuza/src/stylesheets/partials/_content.sass */
+/* line 174, /Users/adriaan/Dev/rubyfuza/src/stylesheets/partials/_content.sass */
 #schedule img {
   float: left;
   margin-right: 10px;
@@ -872,7 +878,7 @@ nav#main a {
   border-radius: 50%;
 }
 
-/* line 176, /Users/adriaan/Dev/rubyfuza/src/stylesheets/partials/_content.sass */
+/* line 180, /Users/adriaan/Dev/rubyfuza/src/stylesheets/partials/_content.sass */
 .highlight {
   background: rgba(0, 0, 0, 0.1);
   font-family: "Open Sans", arial;
@@ -882,47 +888,47 @@ nav#main a {
   text-align: center;
 }
 
-/* line 186, /Users/adriaan/Dev/rubyfuza/src/stylesheets/partials/_content.sass */
+/* line 190, /Users/adriaan/Dev/rubyfuza/src/stylesheets/partials/_content.sass */
 #sponsors h1 {
   margin-bottom: 1em;
 }
-/* line 189, /Users/adriaan/Dev/rubyfuza/src/stylesheets/partials/_content.sass */
+/* line 193, /Users/adriaan/Dev/rubyfuza/src/stylesheets/partials/_content.sass */
 #sponsors .big-sponsor {
   display: table;
   margin-bottom: 40px;
   height: 110px;
 }
-/* line 193, /Users/adriaan/Dev/rubyfuza/src/stylesheets/partials/_content.sass */
+/* line 197, /Users/adriaan/Dev/rubyfuza/src/stylesheets/partials/_content.sass */
 #sponsors .big-sponsor p, #sponsors .big-sponsor a {
   display: table-cell;
   vertical-align: middle;
 }
-/* line 196, /Users/adriaan/Dev/rubyfuza/src/stylesheets/partials/_content.sass */
+/* line 200, /Users/adriaan/Dev/rubyfuza/src/stylesheets/partials/_content.sass */
 #sponsors .big-sponsor p {
   margin-bottom: 1em;
   padding-left: 5%;
   width: 65%;
 }
-/* line 200, /Users/adriaan/Dev/rubyfuza/src/stylesheets/partials/_content.sass */
+/* line 204, /Users/adriaan/Dev/rubyfuza/src/stylesheets/partials/_content.sass */
 #sponsors .big-sponsor a {
   width: 30%;
 }
-/* line 202, /Users/adriaan/Dev/rubyfuza/src/stylesheets/partials/_content.sass */
+/* line 206, /Users/adriaan/Dev/rubyfuza/src/stylesheets/partials/_content.sass */
 #sponsors .big-sponsor a img {
   max-width: 380px;
   width: 100%;
 }
-/* line 205, /Users/adriaan/Dev/rubyfuza/src/stylesheets/partials/_content.sass */
+/* line 209, /Users/adriaan/Dev/rubyfuza/src/stylesheets/partials/_content.sass */
 #sponsors .big-sponsor.hidden {
   display: none;
 }
-/* line 207, /Users/adriaan/Dev/rubyfuza/src/stylesheets/partials/_content.sass */
+/* line 211, /Users/adriaan/Dev/rubyfuza/src/stylesheets/partials/_content.sass */
 #sponsors .big-sponsor p {
   position: absolute;
   height: 100px;
   overflow-y: auto;
 }
-/* line 212, /Users/adriaan/Dev/rubyfuza/src/stylesheets/partials/_content.sass */
+/* line 216, /Users/adriaan/Dev/rubyfuza/src/stylesheets/partials/_content.sass */
 #sponsors ul {
   *zoom: 1;
 }
@@ -932,11 +938,11 @@ nav#main a {
   display: table;
   clear: both;
 }
-/* line 214, /Users/adriaan/Dev/rubyfuza/src/stylesheets/partials/_content.sass */
+/* line 218, /Users/adriaan/Dev/rubyfuza/src/stylesheets/partials/_content.sass */
 #sponsors ul li {
   margin-bottom: 40px;
 }
-/* line 216, /Users/adriaan/Dev/rubyfuza/src/stylesheets/partials/_content.sass */
+/* line 220, /Users/adriaan/Dev/rubyfuza/src/stylesheets/partials/_content.sass */
 #sponsors ul a {
   display: block;
   opacity: 0.75;
@@ -946,36 +952,36 @@ nav#main a {
   -o-transition: opacity 0.5s;
   transition: opacity 0.5s;
 }
-/* line 221, /Users/adriaan/Dev/rubyfuza/src/stylesheets/partials/_content.sass */
+/* line 225, /Users/adriaan/Dev/rubyfuza/src/stylesheets/partials/_content.sass */
 #sponsors ul a:hover, #sponsors ul a:focus {
   opacity: 1;
 }
-/* line 223, /Users/adriaan/Dev/rubyfuza/src/stylesheets/partials/_content.sass */
+/* line 227, /Users/adriaan/Dev/rubyfuza/src/stylesheets/partials/_content.sass */
 #sponsors ul img {
   max-width: 380px;
   width: 80%;
 }
-/* line 226, /Users/adriaan/Dev/rubyfuza/src/stylesheets/partials/_content.sass */
+/* line 230, /Users/adriaan/Dev/rubyfuza/src/stylesheets/partials/_content.sass */
 #sponsors ul.sponsors-list li {
   text-align: center;
 }
-/* line 229, /Users/adriaan/Dev/rubyfuza/src/stylesheets/partials/_content.sass */
+/* line 233, /Users/adriaan/Dev/rubyfuza/src/stylesheets/partials/_content.sass */
 #sponsors .row {
   color: #98c9ee;
   display: block;
   letter-spacing: 0.05em;
   margin-top: 7px;
 }
-/* line 234, /Users/adriaan/Dev/rubyfuza/src/stylesheets/partials/_content.sass */
+/* line 238, /Users/adriaan/Dev/rubyfuza/src/stylesheets/partials/_content.sass */
 #sponsors .row a {
   display: inline;
   padding: 3px;
 }
-/* line 238, /Users/adriaan/Dev/rubyfuza/src/stylesheets/partials/_content.sass */
+/* line 242, /Users/adriaan/Dev/rubyfuza/src/stylesheets/partials/_content.sass */
 #sponsors .fifth .row {
   font-size: 0.9em;
 }
-/* line 241, /Users/adriaan/Dev/rubyfuza/src/stylesheets/partials/_content.sass */
+/* line 245, /Users/adriaan/Dev/rubyfuza/src/stylesheets/partials/_content.sass */
 #sponsors small {
   background-color: rgba(0, 0, 0, 0.1);
   color: #c93131;
@@ -990,12 +996,12 @@ nav#main a {
   -khtml-border-radius: 5px;
   border-radius: 5px;
 }
-/* line 250, /Users/adriaan/Dev/rubyfuza/src/stylesheets/partials/_content.sass */
+/* line 254, /Users/adriaan/Dev/rubyfuza/src/stylesheets/partials/_content.sass */
 #sponsors .detail {
   display: none;
 }
 
-/* line 254, /Users/adriaan/Dev/rubyfuza/src/stylesheets/partials/_content.sass */
+/* line 258, /Users/adriaan/Dev/rubyfuza/src/stylesheets/partials/_content.sass */
 #venue .wrapper > a {
   background: #1e3146;
   background: rgba(0, 0, 0, 0.15);
@@ -1006,28 +1012,28 @@ nav#main a {
   padding: 10px 30px 10px 70px;
   text-decoration: none;
 }
-/* line 263, /Users/adriaan/Dev/rubyfuza/src/stylesheets/partials/_content.sass */
+/* line 267, /Users/adriaan/Dev/rubyfuza/src/stylesheets/partials/_content.sass */
 #venue .wrapper > a:hover, #venue .wrapper > a:focus {
   background: rgba(0, 0, 0, 0.1);
 }
-/* line 265, /Users/adriaan/Dev/rubyfuza/src/stylesheets/partials/_content.sass */
+/* line 269, /Users/adriaan/Dev/rubyfuza/src/stylesheets/partials/_content.sass */
 #venue .wrapper > a.more {
   margin-left: 10px;
   padding-left: 30px;
 }
-/* line 268, /Users/adriaan/Dev/rubyfuza/src/stylesheets/partials/_content.sass */
+/* line 272, /Users/adriaan/Dev/rubyfuza/src/stylesheets/partials/_content.sass */
 #venue img {
   border: 5px solid white;
   margin: 10px 0 30px;
   width: 100%;
 }
-/* line 272, /Users/adriaan/Dev/rubyfuza/src/stylesheets/partials/_content.sass */
+/* line 276, /Users/adriaan/Dev/rubyfuza/src/stylesheets/partials/_content.sass */
 #venue .map {
   border: 5px solid white;
   margin: 0 20px 0 0;
   max-width: 200px;
 }
-/* line 276, /Users/adriaan/Dev/rubyfuza/src/stylesheets/partials/_content.sass */
+/* line 280, /Users/adriaan/Dev/rubyfuza/src/stylesheets/partials/_content.sass */
 #venue iframe {
   float: left;
   position: relative;
@@ -1039,12 +1045,12 @@ nav#main a {
   -khtml-border-radius: 50%;
   border-radius: 50%;
 }
-/* line 282, /Users/adriaan/Dev/rubyfuza/src/stylesheets/partials/_content.sass */
+/* line 286, /Users/adriaan/Dev/rubyfuza/src/stylesheets/partials/_content.sass */
 #venue p {
   margin-top: 15px;
 }
 
-/* line 287, /Users/adriaan/Dev/rubyfuza/src/stylesheets/partials/_content.sass */
+/* line 291, /Users/adriaan/Dev/rubyfuza/src/stylesheets/partials/_content.sass */
 #blog .wrapper > a {
   border-top: 1px solid rgba(255, 255, 255, 0.07);
   display: block;
@@ -1052,7 +1058,7 @@ nav#main a {
   padding: 15px 0;
   text-align: center;
 }
-/* line 293, /Users/adriaan/Dev/rubyfuza/src/stylesheets/partials/_content.sass */
+/* line 297, /Users/adriaan/Dev/rubyfuza/src/stylesheets/partials/_content.sass */
 #blog ul {
   *zoom: 1;
 }
@@ -1062,31 +1068,31 @@ nav#main a {
   display: table;
   clear: both;
 }
-/* line 295, /Users/adriaan/Dev/rubyfuza/src/stylesheets/partials/_content.sass */
+/* line 299, /Users/adriaan/Dev/rubyfuza/src/stylesheets/partials/_content.sass */
 #blog article {
   margin-left: 20px;
   padding: 0 45px;
   position: relative;
 }
-/* line 299, /Users/adriaan/Dev/rubyfuza/src/stylesheets/partials/_content.sass */
+/* line 303, /Users/adriaan/Dev/rubyfuza/src/stylesheets/partials/_content.sass */
 #blog article header {
   padding-bottom: 12px;
 }
-/* line 301, /Users/adriaan/Dev/rubyfuza/src/stylesheets/partials/_content.sass */
+/* line 305, /Users/adriaan/Dev/rubyfuza/src/stylesheets/partials/_content.sass */
 #blog article h2 {
   line-height: 1.3;
 }
-/* line 303, /Users/adriaan/Dev/rubyfuza/src/stylesheets/partials/_content.sass */
+/* line 307, /Users/adriaan/Dev/rubyfuza/src/stylesheets/partials/_content.sass */
 #blog article small {
   color: #98c9ee;
 }
-/* line 305, /Users/adriaan/Dev/rubyfuza/src/stylesheets/partials/_content.sass */
+/* line 309, /Users/adriaan/Dev/rubyfuza/src/stylesheets/partials/_content.sass */
 #blog article time {
   left: 0;
   position: absolute;
   top: 2px;
 }
-/* line 309, /Users/adriaan/Dev/rubyfuza/src/stylesheets/partials/_content.sass */
+/* line 313, /Users/adriaan/Dev/rubyfuza/src/stylesheets/partials/_content.sass */
 #blog article time span {
   color: #98c9ee;
   font-family: "Patua One", "open sans", arial, sans-serif;
@@ -1094,34 +1100,34 @@ nav#main a {
   letter-spacing: 0.075em;
   text-transform: uppercase;
 }
-/* line 315, /Users/adriaan/Dev/rubyfuza/src/stylesheets/partials/_content.sass */
+/* line 319, /Users/adriaan/Dev/rubyfuza/src/stylesheets/partials/_content.sass */
 #blog article time span.day {
   font-size: 2.5em;
   line-height: 0.9;
 }
-/* line 318, /Users/adriaan/Dev/rubyfuza/src/stylesheets/partials/_content.sass */
+/* line 322, /Users/adriaan/Dev/rubyfuza/src/stylesheets/partials/_content.sass */
 #blog article time span.month {
   font-size: 1.3em;
   line-height: 1;
 }
-/* line 321, /Users/adriaan/Dev/rubyfuza/src/stylesheets/partials/_content.sass */
+/* line 325, /Users/adriaan/Dev/rubyfuza/src/stylesheets/partials/_content.sass */
 #blog article time span.year {
   font-size: 1.05em;
   line-height: 1;
 }
 
-/* line 325, /Users/adriaan/Dev/rubyfuza/src/stylesheets/partials/_content.sass */
+/* line 329, /Users/adriaan/Dev/rubyfuza/src/stylesheets/partials/_content.sass */
 .light {
   background: rgba(0, 0, 0, 0.2);
 }
 
-/* line 328, /Users/adriaan/Dev/rubyfuza/src/stylesheets/partials/_content.sass */
+/* line 332, /Users/adriaan/Dev/rubyfuza/src/stylesheets/partials/_content.sass */
 .subtle {
   color: #dddddd;
   font-size: 0.8em;
 }
 
-/* line 332, /Users/adriaan/Dev/rubyfuza/src/stylesheets/partials/_content.sass */
+/* line 336, /Users/adriaan/Dev/rubyfuza/src/stylesheets/partials/_content.sass */
 strong {
   font-weight: bold;
 }
