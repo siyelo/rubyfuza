@@ -78,7 +78,7 @@
 
 
 		%ul.sponsors-list
-			%li.fourth
+			%li.eighth
 			%li.fourth
 				%a{:href=>"#unboxedconsulting", :class=>"info fancybox", rel: 'sponsors', :title=>"Unboxed Consulting"}
 					%img{:src=>"../images/logos/unboxedconsulting.png", :style=>'width:60%'}
@@ -113,6 +113,27 @@
 					%span.right Sapphire + speaker sponsorship
 					%a{:href=>"http://www.github.com", :target=>"_blank", :title=>"Github"} github.com
 
+			%li.fourth
+				%a{:href=>"#google", :class=>"info fancybox", rel: 'sponsors', :title=>"Google"}
+					%img{:src=>"../images/logos/google.png"}
+				.row
+					%a{:href=>"http://developers.google.com", :target=>"_blank", :title=>"Google"} developers.google.com
+					/ %span &#9679;
+					/ %a{:href=>"#google", :class=>"info fancybox", rel: 'sponsors'} info
+				%small Sapphire-level sponsor
+
+				#google.detail
+					%a{:href=>"http://developers.google.com"}
+						%img{:src=>"../images/logos/google2.png", :class=>"square"}
+					%p Google’s innovative search technologies connect millions of people around the world with information every day. Founded in 1998 by Stanford Ph.D. students Larry Page and Sergey Brin, Google today is a top web property in all major global markets. Google's mission in Africa is to make the internet an integral part of everyday life in Africa, by increasing its relevance and usefulness, eliminating access barriers for potential users, and developing products that are meaningful for the countries in the region. Google is headquartered in Silicon Valley with offices throughout the Americas, Europe, Africa and Asia.
+					%p
+						For more information, visit
+						%a{ :href => 'http://developers.google.com' } developers.google.com
+						, and follow us on Google+ at
+						%a{ :href => 'https://plus.google.com/+GoogleDevelopers' } plus.google.com/+GoogleDevelopers
+					%span.right Sapphire-level sponsor
+					%a{:href=>"http://developers.google.com", :target=>"_blank", :title=>"google Web Services"} developers.google.com
+
 		%ul.sponsors-list
 			%li.fourth
 			%li.sixth
@@ -136,23 +157,20 @@
 				%a{:href=>"#simplepay", :class=>"info fancybox", rel: 'sponsors', :title=>"SimplePay"}
 					%img{:src=>"../images/logos/simplepay.png"}
 				.row
-					%a{:href=>"http://www.simplepay.co.za", :target=>"_blank", :title=>"SimplePay"} simplepay.co.za
+					%a{:href=>"https://www.simplepay.co.za/careers", :target=>"_blank", :title=>"SimplePay"} simplepay.co.za
 					/ %span &#9679;
 					/ %a{:href=>"#simplepay", :class=>"info fancybox", rel: 'sponsors'} info
 				%small Topaz-level sponsor
 
 				#simplepay.detail
-					%a{:href=>"http://www.simplepay.co.za", :target=>"_blank", :title=>"SimplePay"}
+					%a{:href=>"https://www.simplepay.co.za/careers", :target=>"_blank", :title=>"SimplePay"}
 						%img{:src=>"../images/logos/simplepay2.png", :class=>"square"}
-					%p You don't have time to struggle with complicated payroll software. We get that. And you want to be sure you are up to date with all the changing requirements from SARS. That's why we designed our online payroll system to take as much as possible off your hands.
-					%ul.list
-						%li Designed from the ground up to deal with South African payroll legislation.
-						%li Takes the hassle out of payroll administration. Statutory deductions and contributions are calculated automatically (Tax, UIF, SDL). SimplePay will ask you the right questions to ensure that payroll deductions are done in the correct manner.
-						%li Assumes no knowledge of payroll legislation, nor experience with other payroll software / systems.
-						%li The system will tell you when your submissions are due and remind you to prevent late submissions. You'll always be 100% compliant. Submissions are done electronically wherever possible.
+					%p SimplePay is an online payroll software company servicing South Africa, Singapore and soon Ireland.  We help thousands of businesses do their payrolls in new and innovative ways that they never thought were possible. Made with Ruby and love.
+
+					%p We're hiring passionate software developers who are serious about code quality for our Cape Town office. Come help with our international expansion!
 
 					%span.right Topaz-level sponsor
-					%a{:href=>"http://www.simplepay.co.za", :target=>"_blank", :title=>"SimplePay"} simplepay.co.za
+					%a{:href=>"https://www.simplepay.co.za/careers", :target=>"_blank", :title=>"SimplePay"} simplepay.co.za
 
 			%li.sixth
 				%a{:href=>"#africanstay", :class=>"info fancybox", rel: 'sponsors', :title=>"African Stay"}
@@ -217,26 +235,6 @@
 		/ 			%span.right Sapphire-level and Workshop sponsor
 		/ 			%a{:href=>"http://www.adccpt.com/?page_id=95", :target=>"_blank", :title=>"Amazon Web Services"} www.adccpt.com
 
-		/ 	%li.third
-		/ 		%a{:href=>"#google", :class=>"info fancybox", rel: 'sponsors', :title=>"Google"}
-		/ 			%img{:src=>"../images/logos/google.png"}
-		/ 		.row
-		/ 			%a{:href=>"http://developers.google.com", :target=>"_blank", :title=>"Google"} developers.google.com
-		/ 			/ %span &#9679;
-		/ 			/ %a{:href=>"#google", :class=>"info fancybox", rel: 'sponsors'} info
-		/ 		%small Sapphire-level sponsor
-
-		/ 		#google.detail
-		/ 			%a{:href=>"http://developers.google.com"}
-		/ 				%img{:src=>"../images/logos/google2.png", :class=>"square"}
-		/ 			%p Google’s innovative search technologies connect millions of people around the world with information every day. Founded in 1998 by Stanford Ph.D. students Larry Page and Sergey Brin, Google today is a top web property in all major global markets. Google's mission in Africa is to make the internet an integral part of everyday life in Africa, by increasing its relevance and usefulness, eliminating access barriers for potential users, and developing products that are meaningful for the countries in the region. Google is headquartered in Silicon Valley with offices throughout the Americas, Europe, Africa and Asia.
-		/ 			%p
-		/ 				For more information, visit
-		/ 				%a{ :href => 'http://developers.google.com' } developers.google.com
-		/ 				, and follow us on Google+ at
-		/ 				%a{ :href => 'https://plus.google.com/+GoogleDevelopers' } plus.google.com/+GoogleDevelopers
-		/ 			%span.right Sapphire-level sponsor
-		/ 			%a{:href=>"http://developers.google.com", :target=>"_blank", :title=>"google Web Services"} developers.google.com
 		/ 	%li.sixth
 
 		/ %ul.sponsors-list
